@@ -4,7 +4,7 @@ Here you can find stuff from me thats not published on my Uni Repository
 
 <hr/>
 
-## Who am I?
+# Who am I?
 
 I am a 20-year-old Israeli-German Computer Science student at the University of Bremen in Germany.
 
@@ -20,38 +20,14 @@ All sorts of stuff, from reverse shells to full-on AIs, all provided with docume
 
 Of course! You may also modify them at will. However any trouble caused by them will be your own problem, not mine! :)
 
-You can use the [editor on GitHub](https://github.com/leolion3/Portfolio/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+<hr/>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Ok I'm in, where are the tools?
 
-### Markdown
+Well you can stick around and take a look at the tools below, or you can go browse the repository!
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<hr/>
 
-```markdown
-Syntax highlighted code block
+# Contact
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/leolion3/Portfolio/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+You can contact me using my email address: s_xsipo6@uni-bremen.de , or on Instagram @xleolion3
