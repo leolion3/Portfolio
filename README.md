@@ -1,18 +1,23 @@
-## Welcome to my portfolio
+## Welcome, friend
 
-Here you can find other stuff from me, not published on my Uni Repository
+Here you can find stuff from me thats not published on my Uni Repository
+
+<hr/>
 
 ## Who am I?
 
 I am a 20-year-old Israeli-German Computer Science student at the University of Bremen in Germany.
 
+<hr/>
+
 ## What can you find here?
 
-All sorts of stuff, from reverse shells to full-on GUI applications, all provided with documentation and under the MIT License.
+All sorts of stuff, from reverse shells to full-on AIs, all provided with documentation and under the MIT License.
 
+<hr/>
 ## Can I use your tools?
 
-Of course, you may also modify them at will. However any trouble caused by them will be your own problem, not mine! :)
+Of course! You may also modify them at will. However any trouble caused by them will be your own problem, not mine! :)
 
 You can use the [editor on GitHub](https://github.com/leolion3/Portfolio/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
