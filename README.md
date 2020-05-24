@@ -26,6 +26,14 @@ Of course! You may also modify them at will. However any trouble caused by them 
 
 Well you can stick around and take a look at the tools below, or you can go browse the repository!
 
+<a href="https://github.com/leolion3/Portfolio/tree/master/Python/PasswordVault"><h2>Python Password Vault</h2></a>
+
+``` 
+A full-on password vault using multi-layer AES-256 encryption (in a very chaotically smart way) with an local sqlite database. 
+- Never use a password manager ever again :)
+
+```
+
 <hr/>
 
 # Contact
