@@ -1,6 +1,6 @@
 ## Welcome, friend
 
-Here you can find stuff from me thats not published on my Uni Repository
+Here you can find stuff from me that's not published on my Uni Repository
 
 ### What can you find here?
 
@@ -26,9 +26,9 @@ Well you can stick around and take a look at the tools below, or you can go brow
 
 <h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/PasswordVault">Python Password Vault</a></h3>
 
-``` 
-A full-on password vault using multi-layer AES-256 encryption (in a very chaotically smart way) 
-with a local sqlite database. 
+```
+A full-on password vault using multi-layer AES-256 encryption (in a very chaotically smart way)
+with a local sqlite database.
 - Never use a password manager ever again :)
 
 ```
@@ -37,4 +37,4 @@ with a local sqlite database.
 
 # Contact
 
-You can contact me using my email address: s_xsipo6@uni-bremen.de , or on Instagram @xleolion3
+You can contact me using my <a href="mailto:s_xsipo6@uni-bremen.de">email address</a>, or on Instagram @xleolion3
