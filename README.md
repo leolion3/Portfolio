@@ -52,13 +52,13 @@ Supports both single videos and entire playlists.
 
 # More from Me
 
-Check out my Google Play Apps:
+Check out my Google Play Apps!
 
 ### Sharky the Hungry Sharkfish Game <a href="https://play.google.com/store/apps/details?id=com.SpaceAhoy.Sharky">(link)</a>
 
-### Open Source Password Generator <a href="https://play.google.com/store/apps/details?id=com.spaceahoy.semesterplaner">(link)</a>
+### Open Source Password Generator <a href="https://play.google.com/store/apps/details?id=processing.test.password_generator">(link)</a>
 
-### SemesterPlanet - Create your semester schdule in seconds <a href="https://play.google.com/store/apps/details?id=processing.test.password_generator">(link)</a>
+### SemesterPlanet - Create your semester schdule in seconds <a href="https://play.google.com/store/apps/details?id=com.spaceahoy.semesterplaner">(link)</a>
 
 <hr/>
 
