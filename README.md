@@ -33,6 +33,21 @@ with a local sqlite database.
 
 ```
 
+<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/Markdown">Python Markdown/Text Editor</a></h3>
+
+```
+An easy to use Markdown Text Editor with HTML Preview and Code Execution
+
+```
+
+<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/YouTube">YouTube MP3 Downloader</a></h3>
+
+```
+Download any YouTube video to MP3 in Seconds using this tool.
+Supports both single videos and entire playlists.
+
+```
+
 <hr/>
 
 # Contact
