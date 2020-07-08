@@ -50,6 +50,18 @@ Supports both single videos and entire playlists.
 
 <hr/>
 
+# More from Me
+
+Check out my Google Play Apps:
+
+### Sharky the Hungry Sharkfish Game <a href="https://play.google.com/store/apps/details?id=com.SpaceAhoy.Sharky">(link)</a>
+
+### Open Source Password Generator <a href="https://play.google.com/store/apps/details?id=com.spaceahoy.semesterplaner">(link)</a>
+
+### SemesterPlanet - Create your semester schdule in seconds <a href="https://play.google.com/store/apps/details?id=processing.test.password_generator">(link)</a>
+
+<hr/>
+
 # Contact
 
 You can contact me using my <a href="mailto:s_xsipo6@uni-bremen.de">email address</a>, or on Instagram @xleolion3
