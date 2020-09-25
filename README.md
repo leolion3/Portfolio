@@ -50,6 +50,8 @@ Of course! You may also modify them at will. However any trouble caused by them 
 
 Well you can stick around and take a look at the tools below, or you can go browse the repository!
 
+<h3><a href="https://github.com/leolion3/Portfolio/tree/master/CustomCommands">Custom Windows Commands and Git Shortcuts</a></h3>
+
 <h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/PasswordVault">Python Password Vault</a></h3>
 
 ```
