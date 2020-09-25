@@ -12,6 +12,32 @@ All sorts of stuff, from reverse shells to full-on AIs, all provided with docume
 
 I am a 20-year-old Israeli-German Computer Science student at the University of Bremen in Germany.
 
+I am fluent in 4 Languages:
+<ul>
+    <li>English</li>
+    <li>German</li>
+    <li>Arabic</li>
+    <li>Hebrew</li>
+</ul>
+
+And I'm fluent in multiple Programming and Scripting Languages:
+<ul>
+    <li>Java</li>
+    <li>Python</li>
+    <li>C#, C and C++</li>
+    <li>Haskell</li>
+    <li>Powershell</li>
+    <li>Batch</li>
+    <li>RISC-V Assmebly</li>
+    <li>SQL</li>
+    <li>Duckyscript</li>
+    <li>...</li>
+</ul>
+
+I have multiple Google Play Apps that you can find at the bottom of the page. Additionally I am always open for development requests, see the email section for this.
+
+All tools provided on this website are free to use and change, misuse hoever, is prohibited. Any damage caused by these tools, in addition to violations of local restrictions, are your own problem, not mine.  
+
 <hr/>
 
 ## Can I use your tools?
