@@ -82,14 +82,56 @@ Supports both single videos and entire playlists.
 
 Check out my Google Play Apps!
 
-### Sharky the Hungry Sharkfish Game <a href="https://play.google.com/store/apps/details?id=com.SpaceAhoy.Sharky">(link)</a>
+<h2>
+	<img src="https://www.gstatic.com/android/market_images/web/play_prism_hlock_2x.png" width="168" height="35">
+</h2>
+<ul>
+  <li>
+		<h2>
+			<img src="https://lh3.googleusercontent.com/iwBywQJPRV8Rk-uuHzMzSspSaTO8AHjgBgeqovw8SlWpdej_vcU68LPLaRa9jptfHlk=s180-rw" width="24" height="24"> Sharky the hungry Sharkfish Game <a target="_blank" href="https://play.google.com/store/apps/details?id=com.SpaceAhoy.Sharky">(Google Play)</a>
+		</h2>
+	  <img src="https://lh3.googleusercontent.com/O04pRpbIiKpY2r_QRSajjbVJ0cxDMSwJhoHZuXFl6fTBdlJUFj6oSbgS1nTyJghnz7E=w720-h310-rw">
+		<p>
+			Sharky is very Hungry! Help by feeding him as many fish as you can, but watch out for those nasty harpoons!<br />
+	  	Sharky is a family-friendly game designed for all ages. Furthermore it is completely FREE<br /> and AD-FREE. Collect coins to unlock powerups and new skins, and get that highscore!<br />
+	  	Sharky is a great time killer for your free time as well!<br /> Be it while waiting at the airport, or in the subway, sharky can played anywhere at any given time!<br /> What are you still waiting for? Get Sharky today!
+		</p>
+	</li>
 
-### Open Source Password Generator <a href="https://play.google.com/store/apps/details?id=processing.test.password_generator">(link)</a>
+  <li>
+		<h2>
+			<img src="https://lh3.googleusercontent.com/asPozAuGQpJqNz-PB0yesBw9wRGkLDuquGqCf0p47rqBSvhxU5pdNHS27O5fuSF_RyY=s180-rw" width="24" height="24"> SemesterPlaner - Plan your Schedule! <a target="_blank" href="https://play.google.com/store/apps/details?id=com.spaceahoy.semesterplaner">(Google Play)</a>
+		</h2>
+		<img src="https://lh3.googleusercontent.com/7VQlwaGV-Btk3i9eHY-unfSE1El_0YdQxBfO8yCXA_h4qVnpycARmJgWVFGvnavCuw=w720-h310-rw">
+		<img src="https://lh3.googleusercontent.com/7vt1bGzJIL-Pk_uBpK5hXMpATIz9thDZc0m6LmaNn4gdaKkqvnxuE-q4IvZXAUXxiDbc=w720-h310-rw">
+		<img src="https://lh3.googleusercontent.com/Dri_kxSxbTtZj5vPwaAgBcjHYk9ICKFnsz52YkFK-V0Y9HEDO4dQ-yBHipLJpQLOksw=w720-h310-rw">
+		<img src="https://lh3.googleusercontent.com/jBKn8CFZGN5S1iTFMFcjZJ4ZcbAf668fpEZxE8FHthfntdCOAIEJmE-umYJbYAK-e80=w720-h310-rw">
+		<p>Tired of using the same old photoshop template for your semester schedule?<br />
+		Why not automate your schedule creation today using Semester Planer!<br />
+		Just select your work days, how long you work per day and hit that button!<br />
+		Semester Planer will automatically create you a schedule table that can be filled,<br />edited and exported to PNG at any
+		given time!<br /> Stop wasting your time and use Semester Planer today!</p>
+	</li>
 
-### SemesterPlanet - Create your semester schdule in seconds <a href="https://play.google.com/store/apps/details?id=com.spaceahoy.semesterplaner">(link)</a>
+  <li>
+		<h2>
+			<img src="https://lh3.googleusercontent.com/w_qN0qkMH9B-XmVHDn4GDEFfaISZ3ItJuwahMIqq0BfqW-3_GtLsETiG6URyOy_vKA=s180-rw" width="24" height="24"> Open-Source Password Generator App <a target="_blank" href="https://play.google.com/store/apps/details?id=processing.test.password_generator">(Google Play)</a>
+		</h2>
+	  <img src="https://lh3.googleusercontent.com/XVku5gPbTFGz4LMZX9N8PnA-ptAwuMck9XifV_vJ3XIFe9pAS-debgjAPU0nlq5ZbZU=w720-h310-rw">
+	  <img src="https://lh3.googleusercontent.com/F2CGan-SO4JPkvI7RxjksN97mC5EerzL-rKvzuMvwIOji1COJS_-2Bk59p4tXLd8bsQ=w720-h310-rw">
+	  <img src="https://lh3.googleusercontent.com/Ebmg4CAn755JETg3MU2DIOVTVZLZUvJdVINBK2n6PykKf4f_i0coL_gEQObh_VCIA0Y=w720-h310-rw">
+		<img src="https://lh3.googleusercontent.com/AZq9XFuuxM06D02eTipgmsPg7UO7iIZL2OiMvayBcOLDG8j3VbrKWBr7gdd1rCt-Aw=w720-h310-rw">
+	  <p>
+			Passwords can be a real hustle, especially when you have a thousand accounts for a gazillion different websites...<br />
+	  	There are some great password generators out there, however how can you ever really trust such a service if it is not open sourced?<br />Stop worrying about your passwords today, with this Free, Open-Source Password Generator!<br />
+			Password Generator is completely FREE and AD-FREE, it works 100% offline an creates you a password in seconds!<br />
+			The source code can be found on <a href="https://github.com/leolion3/App-Tutorial/tree/master/Password_Generator" target="_blank">Github</a>
+		</p>
+	</li>
+</ul>
 
 <hr/>
 
 # Contact
 
-You can contact me using my <a href="mailto:s_xsipo6@uni-bremen.de">email address</a>, or on Instagram @xleolion3
+You can contact me using my <a href="mailto:s_xsipo6@uni-bremen.de">email address</a>, or on Instagram <a target="_blank" href="https://www.instagram.com/xleolion3">@xleolion3</a>
