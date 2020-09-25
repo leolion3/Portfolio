@@ -34,9 +34,9 @@ And I'm fluent in multiple Programming and Scripting Languages:
     <li>...</li>
 </ul>
 
-I have multiple Google Play Apps that you can find at the bottom of the page. Additionally I am always open for development requests, see the email section for this.
+I have multiple Google Play Apps that you can find at the bottom of the page. Additionally I am always open for development requests, see the Contact section for this.
 
-All tools provided on this website are free to use and change, misuse hoever, is prohibited. Any damage caused by these tools, in addition to violations of local restrictions, are your own problem, not mine.  
+All tools provided on this website are free to use and change, misuse however, is prohibited. Any damage caused by these tools, in addition to violations of local restrictions, are your own problem, not mine.  
 
 <hr/>
 
