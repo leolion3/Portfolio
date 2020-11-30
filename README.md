@@ -10,7 +10,7 @@ All sorts of stuff, from reverse shells to full-on AIs, all provided with docume
 
 # Who am I?
 
-I am a 20-year-old Israeli-German Computer Science student at the University of Bremen in Germany.
+I am a 21-year-old Israeli-German Computer Science student at the University of Bremen in Germany.
 
 I am fluent in 4 Languages:
 <ul>
