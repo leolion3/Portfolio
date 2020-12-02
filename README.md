@@ -50,6 +50,14 @@ Of course! You may also modify them at will. However any trouble caused by them 
 
 Well you can stick around and take a look at the tools below, or you can go browse the repository!
 
+<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/Python%20Reverse%20Shell">Python Reverse Shell</a></h3>
+
+```
+
+A very simple reverse shell implementation in Python. Not much more needs to be said.
+
+```
+
 <h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/MonoalphabeticDecypherer">Monoalphabetic Decypherer</a></h3>
 
 ```
