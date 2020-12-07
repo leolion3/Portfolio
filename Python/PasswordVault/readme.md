@@ -16,7 +16,7 @@ The first salt is used with the password in order to encrypt the second salt. Th
 
 The second salt, along with the encrypted password is used to encrypt the 3rd salt. The 3rd salt is used with the password's hash (salted with 2nd salt) in order to encrypt the database data.
 
-DO NOT LOSE THE MASTER KEY OR YOU WILL LOSE ACCESS TO ALL THE DATA IN THE DATABASE
+DO NOT LOSE THE MASTER PASSWORD OR YOU WILL LOSE ACCESS TO ALL THE DATA IN THE DATABASE
 
 
 ## License
