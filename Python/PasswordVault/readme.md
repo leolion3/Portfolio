@@ -10,7 +10,7 @@ Created by: Leonard Haddad
 
 ## Function
 
-The script uses 3 (2 of which are encrypted) salts to generate the database key. The database key is then used to encrypt the data within the database.
+The script uses 3 salts (2 of which are encrypted) to generate the database key. The database key is then used to encrypt the data within the database.
 
 The first salt is used with the password in order to encrypt the second salt. The second salt can therefor only be accessed with the correct password, don't lose the master password! (Can be modified from within the app)
 
