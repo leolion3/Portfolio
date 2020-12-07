@@ -14,7 +14,7 @@ The script uses 3 salts (2 of which are encrypted) to generate the database key.
 
 The first salt is used with the password in order to encrypt the second salt. The second salt can therefor only be accessed with the correct password, don't lose the master password! (Can be modified from within the app)
 
-The second salt, along with the encrypted password is used to encrypt the 3rd salt. The 3rd salt is used with the password's hash (salted) in order to encrypt the database data.
+The second salt, along with the encrypted password is used to encrypt the 3rd salt. The 3rd salt is used with the password's hash (salted with 2nd salt) in order to encrypt the database data.
 
 DO NOT LOSE THE MASTER KEY OR YOU WILL LOSE ACCESS TO ALL THE DATA IN THE DATABASE
 
