@@ -1,7 +1,8 @@
 import pyperclip
 import random
+import string
 
-alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*()[]{}|":;><,./?+=-'
+alphabet = string.ascii_letters + string.digits + string.punctuation + string.digits
 
 user_alphabet = input("Select custom alphabet or leave empty for default: ")
 
