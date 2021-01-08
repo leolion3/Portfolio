@@ -50,7 +50,15 @@ Of course! You may also modify them at will. However any trouble caused by them 
 
 Well you can stick around and take a look at the tools below, or you can go browse the repository!
 
-<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/Python%20Reverse%20Shell">Python Reverse Shell</a></h3>
+<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/ShellGenerator" target="_blank">Powershell TCP Reverse Shell Generator</a>
+	
+```
+
+Automatically generate Powershell Reverse TCP Payloads using Batch and Python
+
+```
+
+<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/Python%20Reverse%20Shell" target="_blank">Python Reverse Shell</a></h3>
 
 ```
 
@@ -58,7 +66,7 @@ A very simple reverse shell implementation in Python. Not much more needs to be 
 
 ```
 
-<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/MonoalphabeticDecypherer">Monoalphabetic Decypherer</a></h3>
+<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/MonoalphabeticDecypherer" target="_blank">Monoalphabetic Decypherer</a></h3>
 
 ```
 
@@ -66,7 +74,7 @@ A Monoalphabetic-Cypher decypherer, featuring a variety of options, including wo
 
 ```
 
-<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/PasswordVault">Python Password Vault</a></h3>
+<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/PasswordVault" target="_blank">Python Password Vault</a></h3>
 
 ```
 A full-on password vault using multi-layer AES-256 encryption (in a very chaotically smart way)
@@ -75,14 +83,14 @@ with a local sqlite database.
 
 ```
 
-<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/Markdown">Python Markdown/Text Editor</a></h3>
+<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/Markdown" target="_blank">Python Markdown/Text Editor</a></h3>
 
 ```
 An easy to use Markdown Text Editor with HTML Preview and Code Execution
 
 ```
 
-<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/YouTube">YouTube MP3 Downloader</a></h3>
+<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/YouTube" target="_blank">YouTube MP3 Downloader</a></h3>
 
 ```
 Download any YouTube video to MP3 in Seconds using this tool.
@@ -90,7 +98,7 @@ Supports both single videos and entire playlists.
 
 ```
 
-<h3><a href="https://github.com/leolion3/Portfolio/tree/master/CustomCommands">Custom Windows Commands and Git Shortcuts</a></h3>
+<h3><a href="https://github.com/leolion3/Portfolio/tree/master/CustomCommands" target="_blank">Custom Windows Commands and Git Shortcuts</a></h3>
 
 <hr/>
 
