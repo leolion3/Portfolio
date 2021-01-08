@@ -41,5 +41,5 @@ shellgen.py export_path template_path ip_address port
 
 ## Disclaimer
 
-Privilege Escalation Exploit - By lokiuox on <a href="https://forums.hak5.org/topic/45439-powershell-real-uac-bypass">Hak5 Forums</a>
-Powershell TCP Reverse Shell - By bascoe10 on <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md">Github</a>
+* Privilege Escalation Exploit - By lokiuox on <a href="https://forums.hak5.org/topic/45439-powershell-real-uac-bypass">Hak5 Forums</a>
+* Powershell TCP Reverse Shell - By bascoe10 on <a href="https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md">Github</a>
