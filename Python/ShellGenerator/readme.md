@@ -18,11 +18,12 @@ shellgen.cmd ip_address port
 
 ```
 
-ip_address - Address that the payload should connect to using reverse connection (attacker IP address)
-port       - The port to connect to
+* ip_address - Address that the payload should connect to using reverse connection (attacker IP address)
+* port       - The port to connect to
 
 [Note]: When using the batch file, the path to the output file is set to the current directory, and the path to the template file is read out of the batch file
 
+<hr>
  
 ### [Python]
 
@@ -33,10 +34,10 @@ shellgen.py export_path template_path ip_address port
 
 ```
 
-export_path   - The path to export the payload.ps1 file to
-template_path - Template file path (including filename and extension)
-ip_address    - Attacker IP Address
-port          - Attacker port
+* export_path   - The path to export the payload.ps1 file to
+* template_path - Template file path (including filename and extension)
+* ip_address    - Attacker IP Address
+* port          - Attacker port
 
 ## Disclaimer
 
