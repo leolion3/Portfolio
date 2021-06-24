@@ -12,7 +12,7 @@ def fetch_balance(address):
 	session = HTMLSession()
 	
 	r = session.get(url)
-	r.html.render()
+	r.html.render(sleep=5)
 
 	soup = BeautifulSoup(r.html.raw_html, "html.parser")
 	element = soup.find_all("span", class_="current-balance")
