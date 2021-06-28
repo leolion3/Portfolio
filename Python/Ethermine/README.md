@@ -2,14 +2,77 @@
 
 ## Usage
 
-Set the ADDRESS constant to your ethereum address, or call the method with your ethereum address.
+Set the ADDRESS constant to your ethereum address, and the API_TOKEN to your Etherscan API Token.
+
+Output example:
+
+```bash
+#> ./ethermine_fetch_outstanding_balance.py
+===== Ethermine status =====
+
+Unpaid Balance: x.xxxxx ⧫
+Next Payout in: x days
+Account Balance: x.x ⧫
+
+============================
+```
 
 ## Requirements
 
-This script only requires 1 module: requests_html
+The script requires the following modules:
 
-This is used hence the webpage needs to execute it's javascript in order to render the outstanding/current balance elements, which are not rendered when using the regular requests library.
+```
+requests_html
+requests
+BeautifulSoup - ships with requests_html
+```
+
+Please note that getting the requests_html library to work on ARM Chips (for instance Raspberry Pi's) requires a bit of additional fiddling, check the guide below.
 
 ## Author
 
-Leonard Haddad, June 2021
+Leonard Haddad
+
+## Requests_html on ARM
+
+### One-Liners
+
+Chromium installation:
+
+```bash
+sudo apt install python3-pip libxslt-dev chromium-codecs-ffmpeg-extra chromium-browser -y && pip3 install --upgrade requests && pip3 install --upgrade requests_html
+```
+
+Replacing x86/x64 version of chromium with ARM version:
+
+```bash
+rm -rf ~/.local/share/pyppeteer/local-chromium/588429/chrome-linux/* && cd ~/.local/share/pyppeteer/local-chromium/588429/chrome-linux/ && ln -s /usr/bin/chromium-browser chrome && cd ~
+```
+
+### Detailed Documentation
+
+Install pip3 using
+
+```bash
+sudo apt install python3-pip -y
+```
+
+Install the required libraries
+
+```bash
+pip3 install requests && pip3 install requests_html
+```
+
+To get the ARM chromium browser running (used in background by requests_html) execute
+
+```bash
+sudo apt-get install libxslt-dev chromium-codecs-ffmpeg-extra chromium-browser -y
+```
+
+Now execute the python script, this will download a x86/x64 Version of Chromium, however just let it run. The script will then spit out an error as the browser can't be run on the ARM Chip, this however is completely fine.
+
+Execute the following to remove the x86/x64 version of chromium and create a symbolic link in its place pointing to the ARM version of chromium
+
+```bash
+rm -rf ~/.local/share/pyppeteer/local-chromium/588429/chrome-linux/* && cd ~/.local/share/pyppeteer/local-chromium/588429/chrome-linux/ && ln -s /usr/bin/chromium-browser chrome && cd ~
+```
