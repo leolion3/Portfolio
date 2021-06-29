@@ -48,7 +48,28 @@ def fetch_payout_date(address):
 	return next_payout
 
 
-def fetch_ether_balande(address, api_key):
+def fetch_current_hashrate(address):
+
+	url = f'https://ethermine.org/miners/{address}/dashboard'
+	
+	session = HTMLSession()
+	
+	r = session.get(url)
+	r.html.render(timeout = 0, sleep = 1)
+
+	soup = BeautifulSoup(r.html.raw_html, "html.parser")
+	elements = soup.find_all("div", class_="tooltip")
+
+	for element in elements:
+		if '(MH/s)' in str(element):
+			break
+
+	element = ''.join(str(element).split('>MH/s')[0].split('</')[:-1]).split('>')[-1]
+
+	return element
+
+
+def fetch_ether_balance(address, api_key):
 
 	url = f'https://api.etherscan.io/api?module=account&action=balance&address=0x{address}&tag=latest&apikey={api_key}'
 
@@ -62,7 +83,8 @@ def fetch_ether_balande(address, api_key):
 
 if __name__ == '__main__':
 	print('===== Ethermine status =====\n')
+	print(f'Current Hashrate: {fetch_current_hashrate(ADDRESS)} MH/s')
 	print(f'Unpaid Balance: {fetch_unpaid(ADDRESS)} ⧫')
 	print(f'Next Payout in: {fetch_payout_date(ADDRESS)} days')
-	print(f'Account Balance: {str(fetch_ether_balande(ADDRESS, API_TOKEN))[0:6]} ⧫\n')
+	print(f'Account Balance: {str(fetch_ether_balance(ADDRESS, API_TOKEN))[0:6]} ⧫\n')
 	print('============================')
