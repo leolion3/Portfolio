@@ -11,9 +11,10 @@ Output example:
 ===== Ethermine status =====
 
 Current Hashrate: x MH/s
+Reported Hashrate: x MH/s
 Unpaid Balance: x.xxxxx ⧫
 Next Payout in: x days
-Account Balance: x.x ⧫
+Account Balance: x.xxxx ⧫
 
 ============================
 ```
