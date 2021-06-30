@@ -9,18 +9,29 @@ from bs4 import BeautifulSoup
 ADDRESS = "YOUR_ETH_ADDRESS"
 # Your Etherscan API Token
 API_TOKEN = 'YOUR_ETHERSCAN_API_KEY'
+# Cache of javascript websites
+ethermine_cache = { }
+
+
+def get_cached_website(url):
+	if url in ethermine_cache:
+		return ethermine_cache[url]
+	else:
+		session = HTMLSession()
+	
+		r = session.get(url)
+		r.html.render(timeout = 0, sleep = 1)
+
+		ethermine_cache[url] = r.html.raw_html
+
+		return ethermine_cache[url]
 
 
 def fetch_unpaid(address):
 	
 	url = f'https://ethermine.org/miners/{address}/dashboard'
 	
-	session = HTMLSession()
-	
-	r = session.get(url)
-	r.html.render(timeout = 0, sleep = 1)
-
-	soup = BeautifulSoup(r.html.raw_html, "html.parser")
+	soup = BeautifulSoup(get_cached_website(url), "html.parser")
 	element = soup.find_all("span", class_="current-balance")
 	balance = str(element).split('>')[1].split('</')[0]
 
@@ -31,12 +42,7 @@ def fetch_payout_date(address):
 
 	url = f'https://ethermine.org/miners/{address}/payouts'
 	
-	session = HTMLSession()
-	
-	r = session.get(url)
-	r.html.render(timeout = 0, sleep = 1)
-
-	soup = BeautifulSoup(r.html.raw_html, "html.parser")
+	soup = BeautifulSoup(get_cached_website(url), "html.parser")
 	elements = soup.find_all("div", class_="workers card")
 
 	for element in elements:
@@ -51,13 +57,8 @@ def fetch_payout_date(address):
 def fetch_current_hashrate(address):
 
 	url = f'https://ethermine.org/miners/{address}/dashboard'
-	
-	session = HTMLSession()
-	
-	r = session.get(url)
-	r.html.render(timeout = 0, sleep = 1)
 
-	soup = BeautifulSoup(r.html.raw_html, "html.parser")
+	soup = BeautifulSoup(get_cached_website(url), "html.parser")
 	elements = soup.find_all("div", class_="tooltip")
 
 	for element in elements:
