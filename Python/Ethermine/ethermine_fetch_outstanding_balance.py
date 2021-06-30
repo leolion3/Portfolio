@@ -20,7 +20,7 @@ def get_cached_website(url):
 		session = HTMLSession()
 	
 		r = session.get(url)
-		r.html.render(timeout = 0, sleep = 1)
+		r.html.render(timeout = 0, sleep = 5)
 
 		ethermine_cache[url] = r.html.raw_html
 
@@ -70,6 +70,22 @@ def fetch_current_hashrate(address):
 	return element
 
 
+def fetch_reported_hashrate(address):
+
+	url = f'https://ethermine.org/miners/{address}/dashboard'
+
+	soup = BeautifulSoup(get_cached_website(url), "html.parser")
+	elements = soup.find_all("div", class_="tooltip")
+
+	for element in elements:
+		if 'Reported' in str(element):
+			break
+
+	element = str(element).split('span')[1].split('>')[1].split('<')[0] 
+
+	return element
+
+
 def fetch_ether_balance(address, api_key):
 
 	url = f'https://api.etherscan.io/api?module=account&action=balance&address=0x{address}&tag=latest&apikey={api_key}'
@@ -85,6 +101,7 @@ def fetch_ether_balance(address, api_key):
 if __name__ == '__main__':
 	print('===== Ethermine status =====\n')
 	print(f'Current Hashrate: {fetch_current_hashrate(ADDRESS)} MH/s')
+	print(f'Reported Hashrate: {fetch_reported_hashrate(ADDRESS)} MH/s')
 	print(f'Unpaid Balance: {fetch_unpaid(ADDRESS)} ⧫')
 	print(f'Next Payout in: {fetch_payout_date(ADDRESS)} days')
 	print(f'Account Balance: {str(fetch_ether_balance(ADDRESS, API_TOKEN))[0:6]} ⧫\n')
