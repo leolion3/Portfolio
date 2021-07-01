@@ -1,4 +1,4 @@
-#!/bin/usr/env python3
+#!/usr/bin/env python3
 from requests_html import HTMLSession
 import requests
 import json
