@@ -1,4 +1,4 @@
-# Ethermine Outstanding Balance Checker
+# Ethermine Ticker
 
 ## Usage
 
