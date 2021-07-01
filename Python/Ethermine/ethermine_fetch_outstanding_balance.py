@@ -81,7 +81,7 @@ def fetch_reported_hashrate(address):
 		if 'Reported' in str(element):
 			break
 
-	element = str(element).split('span')[1].split('>')[1].split('<')[0] 
+	element = str(element).split('<span')[2].split('>')[1].split('<')[0] 
 
 	return element
 
