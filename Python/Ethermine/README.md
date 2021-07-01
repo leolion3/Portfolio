@@ -10,11 +10,16 @@ Output example:
 #> ./ethermine_fetch_outstanding_balance.py
 ===== Ethermine status =====
 
+Account Balance: x.xxxx ⧫
+
 Current Hashrate: x MH/s
 Reported Hashrate: x MH/s
 Unpaid Balance: x.xxxxx ⧫
+Active Workers: x
+Valid Shares: x
+Invalid Shares: x
+Stale Shares: x
 Next Payout in: x days
-Account Balance: x.xxxx ⧫
 
 ============================
 ```
