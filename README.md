@@ -1,16 +1,10 @@
 ## Welcome, friend
 
-Here you can find stuff from me that's not published on my Uni Repository
-
-### What can you find here?
-
-All sorts of stuff, from reverse shells to full-on AIs, all provided with documentation and under the MIT License.
-
-<hr/>
-
 # Who am I?
 
-I am a 21-year-old Israeli-German Computer Science student at the University of Bremen in Germany.
+My name is Leonard Haddad. I am a 21-year-old Israeli-German Computer Science student at the University of Bremen in Germany. 
+I've dedicated every little bit of my freetime into learning the basics of networking, studying for the CCNA Certification in addition to learning pentesting, web-dev, and dozens of more things.
+This repo provides some of the useful little tools I've created which I personally use on a daily basis.
 
 I am fluent in 4 Languages:
 <ul>
@@ -20,7 +14,7 @@ I am fluent in 4 Languages:
     <li>Hebrew</li>
 </ul>
 
-And I'm fluent in multiple Programming and Scripting Languages:
+A couple programming/scripting/etc languages I use:
 <ul>
     <li>Java</li>
     <li>Python</li>
@@ -28,7 +22,6 @@ And I'm fluent in multiple Programming and Scripting Languages:
     <li>Haskell</li>
     <li>Powershell</li>
     <li>Batch</li>
-    <li>RISC-V Assmebly</li>
     <li>SQL</li>
     <li>Duckyscript</li>
     <li>...</li>
@@ -49,6 +42,14 @@ Of course! You may also modify them at will. However any trouble caused by them 
 ## Ok I'm in, where are the tools?
 
 Well you can stick around and take a look at the tools below, or you can go browse the repository!
+
+<h3><a href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank'>Python File Transfer Tool</a></h3>
+
+```
+
+Send files accross the network with ease using this mega simple tool
+
+```
 
 <h3><a href='https://github.com/leolion3/Portfolio/tree/master/Python/Ethermine' target='_blank'>Ethermine Ticker</a></h3>
 
