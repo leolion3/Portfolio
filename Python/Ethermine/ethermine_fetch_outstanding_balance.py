@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 from requests_html import HTMLSession
 import requests
 import json
@@ -20,7 +19,7 @@ HASHRATE_DIGITS = 2
 ADDRESS = "YOUR_ETH_ADDRESS"
 
 # Your Etherscan API Token
-API_TOKEN = 'YOUR_ETHERSCAN_API_TOKEN'
+API_TOKEN = 'YOUR_ETHERSCAN_API_KEY'
 
 # Cache of javascript websites
 ethermine_cache = { }
@@ -37,7 +36,7 @@ def get_cached_website(url):
 		session = HTMLSession()
 	
 		r = session.get(url)
-		r.html.render(timeout = 0, sleep = 5)
+		r.html.render(timeout = 0, sleep = 1)
 
 		ethermine_cache[url] = r.html.raw_html
 
@@ -61,7 +60,7 @@ def fetch_unpaid(address):
 	
 	data = get_cached_ethermine_api_data(url)
 
-	converted = float(data['data']['currentStatistics']['unpaid']) / ETH_NORMAL
+	converted = float(data.get('data').get('currentStatistics').get('unpaid')) / ETH_NORMAL
 
 	return round(converted, ETH_DIGITS)
 
@@ -77,8 +76,11 @@ def fetch_payout_date(address):
 		if 'Next Payout' in str(element):
 			break
 
-	next_payout = str(element).split('≈')[1].split('>')[1].split('<')[0]
-
+	try:
+		next_payout = str(element).split('≈')[1].split('>')[1].split('<')[0]
+	except:
+		next_payout = "N/A"
+		
 	return next_payout
 
 
@@ -88,7 +90,7 @@ def fetch_current_hashrate(address):
 	
 	data = get_cached_ethermine_api_data(url)
 
-	converted = data['data']['currentStatistics']['currentHashrate'] / HASHRATE_UNIT
+	converted = data.get('data').get('currentStatistics').get('currentHashrate') / HASHRATE_UNIT
 
 	return round(converted,HASHRATE_DIGITS)
 
@@ -99,7 +101,7 @@ def fetch_reported_hashrate(address):
 	
 	data = get_cached_ethermine_api_data(url)
 
-	converted = data['data']['currentStatistics']['reportedHashrate'] / HASHRATE_UNIT
+	converted = data.get('data').get('currentStatistics').get('reportedHashrate') / HASHRATE_UNIT
 
 	return round(converted,HASHRATE_DIGITS)
 
@@ -110,7 +112,7 @@ def fetch_active_workers(address):
 	
 	data = get_cached_ethermine_api_data(url)
 
-	return data['data']['currentStatistics']['activeWorkers']
+	return data.get('data').get('currentStatistics').get('activeWorkers')
 
 
 def fetch_valid_shares(address):
@@ -119,7 +121,7 @@ def fetch_valid_shares(address):
 	
 	data = get_cached_ethermine_api_data(url)
 
-	return data['data']['currentStatistics']['validShares']
+	return data.get('data').get('currentStatistics').get('validShares')
 
 
 def fetch_stale_shares(address):
@@ -128,7 +130,7 @@ def fetch_stale_shares(address):
 	
 	data = get_cached_ethermine_api_data(url)
 
-	return data['data']['currentStatistics']['staleShares']
+	return data.get('data').get('currentStatistics').get('staleShares')
 
 
 def fetch_invalid_shares(address):
@@ -137,7 +139,7 @@ def fetch_invalid_shares(address):
 	
 	data = get_cached_ethermine_api_data(url)
 
-	return data['data']['currentStatistics']['invalidShares']
+	return data.get('data').get('currentStatistics').get('invalidShares')
 
 
 def fetch_ether_balance(address, api_key):
