@@ -1,3 +1,4 @@
+# Note: fetching the payout date is momentarily not possible
 from requests_html import HTMLSession
 import requests
 import json
@@ -65,6 +66,7 @@ def fetch_unpaid(address):
 	return round(converted, ETH_DIGITS)
 
 
+# Momentarily not working
 def fetch_payout_date(address):
 
 	url = f'https://ethermine.org/miners/{address}/payouts'
@@ -163,6 +165,6 @@ if __name__ == '__main__':
 	print(f'Active Workers: {str(fetch_active_workers(ADDRESS))}')
 	print(f'Valid Shares: {str(fetch_valid_shares(ADDRESS))}')
 	print(f'Invalid Shares: {str(fetch_invalid_shares(ADDRESS))}')
-	print(f'Stale Shares: {str(fetch_stale_shares(ADDRESS))}')
-	print(f'Next Payout in: {fetch_payout_date(ADDRESS)} days\n')
+	print(f'Stale Shares: {str(fetch_stale_shares(ADDRESS))}\n')
+	#print(f'Next Payout in: {fetch_payout_date(ADDRESS)} days\n')
 	print('============================')
