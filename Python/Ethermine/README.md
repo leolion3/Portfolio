@@ -2,16 +2,34 @@
 
 ## Usage
 
-Set the ADDRESS constant to your ethereum address, and the API_TOKEN to your Etherscan API Token.
+Set the ADDRESS constant to your ethereum address, the API_TOKEN to your Etherscan API Token and the POLY_API_TOKEN to your Polygonscan API Token. 
 
-Output example:
+Get API Tokens:
+
+Etherscan:
+```
+https://etherscan.io/apis
+```
+
+Polyscan:
+```
+https://polygonscan.com/apis
+```
+
+Output example (number of x's after the comma is predefined as seen below):
 
 ```bash
 #> ./ethermine_fetch_outstanding_balance.py
 ===== Ethermine status =====
 
+--- Account Statistics ---
 Account Balance: x.xxxx ⧫
+Polygon Balance: x.xxxx ⧫
+---------------------------
+Total Balance: x.xxxx ⧫
+Total Balance USD: x.xx $
 
+--- Miner Statistics ---
 Current Hashrate: x MH/s
 Reported Hashrate: x MH/s
 Unpaid Balance: x.xxxxx ⧫
@@ -19,7 +37,6 @@ Active Workers: x
 Valid Shares: x
 Invalid Shares: x
 Stale Shares: x
-Next Payout in: x days
 
 ============================
 ```
@@ -29,9 +46,8 @@ Next Payout in: x days
 The script requires the following modules:
 
 ```
-requests_html
+# requests_html - not required unless you want to view the next payout date, currently not working
 requests
-BeautifulSoup - ships with requests_html
 ```
 
 Please note that getting the requests_html library to work on ARM Chips (for instance Raspberry Pi's) requires a bit of additional fiddling, check the guide below.
