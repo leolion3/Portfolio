@@ -1,0 +1,24 @@
+{
+	"income" : [
+			 2000,
+			 300 
+		],
+	"income_change_time" : 5,
+	"changed_income" : [
+			700
+		],
+	"additional_starting_cash" : [
+			50
+		],
+	"expenses" : {
+			"1" : 700,
+			"3" : 50,
+			"6" : 1500
+		},
+	"limited_expenses" : {
+			"2" :  150
+		},
+	"food" : [
+			400
+		]
+}
