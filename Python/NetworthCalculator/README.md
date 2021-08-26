@@ -1,0 +1,72 @@
+# Net Bank-Account Balance Calculator
+
+This tool calculates over a given period of time how much money you will have in your bank account based on your income(s) and expenses.
+
+## Prerequisites
+
+Needed libraries:
+
+```python
+matplotlib
+```
+
+## Usage:
+
+Open the file config.js and set the parameters. These are as follows:
+
+- The array "income" lists a set of income streams
+- The "income_change_time" should be set to an amount of months after which your income changes to a new amount. If it doesn't change, set it to Zero (0).
+- The "changed_income" parameter works just like the income parameter, only it is only used after the "income_change_time" has passed.
+- The "additional_starting_cash" is money that should be taken into account when starting the calculation, for instance money that people owe you, redeemable credit card points, coupons or similar stuff.
+- The "expenses" are your expenses. These have the format {"every_x_months" : how_much_is_paid}. An example is a monthly payment of 100$: {"1" : 100} where 1 stands for paid 1x per month and 100 is the amount paid.
+- The "limited_expenses" are expenses that will stop being paid after a given amount of time, such as loans or similar. The format here is {"months_remaining" : amount_per_month}. Example: a 50$/month payment plan that has 3 months remaining would be formatted as {"3" : 50}.
+- The "food" is self explanatory. It lists your food expenses, seperated by commas, similar to the income parameter.
+
+To execute the script, use the following syntax:
+
+```bash
+python3 calc.py current_bank_balance months_to_calculate config.json 
+```
+
+Where:
+- "current_bank_balance" is how much you currently have in your account and
+- "months_to_calculate" is how many months ahead you want to calculate (BE WARNED that with too many values the plot will be filled to the brim!)
+
+## Example
+
+### Config.json
+
+```json
+{
+	"income" : [
+			 2000,
+			 300 
+		],
+	"income_change_time" : 5,
+	"changed_income" : [
+			700
+		],
+	"additional_starting_cash" : [
+			50
+		],
+	"expenses" : {
+			"1" : 700,
+			"3" : 50,
+			"6" : 1500
+		},
+	"limited_expenses" : {
+			"2" :  150
+		},
+	"food" : [
+			400
+		]
+}
+```
+
+```bash
+python3 calc.py 696 12 config.json 
+```
+
+### Output
+
+![alt text](demo.png "Example")
