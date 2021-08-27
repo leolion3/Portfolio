@@ -66,7 +66,7 @@ for a in range(1, months + 1):
 
 # Compute growth
 monetary_change  = round(plotted_available[-1] - plotted_available[0], 2)
-growth = round((1 - float(plotted_available[0]) / float(plotted_available[-1])) * 100, 2)
+growth = round((1 + (plotted_available[-1] - plotted_available[0]) / plotted_available[0]) * 100, 2)
 
 
 # Set graph colors
