@@ -43,6 +43,18 @@ Of course! You may also modify them at will. However any trouble caused by them 
 
 Well you can stick around and take a look at the tools below, or you can go browse the repository!
 
+<h3><a href='https://github.com/leolion3/Portfolio/tree/master/Python/NetworthCalculator' target='_blank'>Bank-Balance Calculator</a></h3>
+
+```
+
+Calculates your bank balance over time taking into account your income,
+your expenses and other payments.
+
+```
+
+![Demo](./Python/NetworthCalculator/demo.png "Example")
+
+
 <h3><a href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank'>Python File Transfer Tool</a></h3>
 
 ```
