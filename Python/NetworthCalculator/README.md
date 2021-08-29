@@ -34,6 +34,8 @@ Where:
 
 ## Example
 
+The below example runs a computation over 12 months time with a current bank balance of 696$, an income of 2300$ (consisting of 2 different income streams), a changed income after 5 months (new income is 700$ down from 2300$), 50$ in additional starting cash (let's assume he got a gift from a friend or something), 700$ in monthly expenses, 50$ in quarterly expenses, 1500$ in semstraly expenses, 400$/month for food and a payment plan for 2 months for 150$/month.
+
 ### Config.json
 
 ```json
