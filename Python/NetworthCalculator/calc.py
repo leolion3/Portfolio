@@ -47,10 +47,10 @@ for a in range(1, months + 1):
 	current_payments = []
 	for key, value in expenses.items():
 		if a % int(key) == 0:
-			current_payments.append(value)
+			current_payments.append(sum(value))
 	for key, value in limited_expenses.items():
 		if a <= int(key):
-			current_payments.append(value) 
+			current_payments.append(sum(value)) 
 	# Too many sum calls, but idc :P
 	if a > income_change_time:
 		current_cash = current_cash + sum(changed_income) - sum(current_payments) - sum(food)
@@ -66,8 +66,10 @@ for a in range(1, months + 1):
 
 # Compute growth
 monetary_change  = round(plotted_available[-1] - plotted_available[0], 2)
-growth = round((1 + (plotted_available[-1] - plotted_available[0]) / plotted_available[0]) * 100, 2)
-
+growth = (plotted_available[-1] - plotted_available[0]) / plotted_available[0]
+if growth > 0:
+	growth+=1
+growth = round(growth * 100, 2)
 
 # Set graph colors
 plt.rcParams['axes.facecolor']='black'
@@ -94,6 +96,8 @@ for i,j in zip(plotted_months, plotted_expenses):
 
 # Plot income 
 ax.plot(plotted_months, plotted_income, color='blue', marker='o')
+for i,j in zip(plotted_months, plotted_income):
+	ax.annotate(f'{str(round(j))} $', xy=(i,j), weight="bold", fontsize=12, color='blue', horizontalalignment='right', verticalalignment='bottom')
 
 
 # MORE GRAPH COLOOOOORS :D
@@ -107,4 +111,5 @@ if growth > 0:
 	ax.set_title(f'Growth: +{growth}% | +{monetary_change}$', color='lime')
 else:
 	ax.set_title(f'Growth: {growth}% | {monetary_change}$', color='red')
+plt.legend(['Available Balance', 'Expenses', 'Income'], labelcolor=['lime', 'red', 'blue'])
 plt.show()

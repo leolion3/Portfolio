@@ -18,8 +18,8 @@ Open the file config.js and set the parameters. These are as follows:
 - The "income_change_time" should be set to an amount of months after which your income changes to a new amount. If it doesn't change, set it to Zero (0).
 - The "changed_income" parameter works just like the income parameter, only it is only used after the "income_change_time" has passed.
 - The "additional_starting_cash" is money that should be taken into account when starting the calculation, for instance money that people owe you, redeemable credit card points, coupons or similar stuff.
-- The "expenses" are your expenses. These have the format {"every_x_months" : how_much_is_paid}. An example is a monthly payment of 100$: {"1" : 100} where 1 stands for paid 1x per month and 100 is the amount paid.
-- The "limited_expenses" are expenses that will stop being paid after a given amount of time, such as loans or similar. The format here is {"months_remaining" : amount_per_month}. Example: a 50$/month payment plan that has 3 months remaining would be formatted as {"3" : 50}.
+- The "expenses" are your expenses. These have the format {"every_x_months" : [payments_seperated_by_commas]}. An example is a monthly payment of 100$: {"1" : [ 100 ]} where 1 stands for paid 1x per month and 100 is the amount paid. Multiple payments would look like this: {"1" : [50, 100, 30]}.
+- The "limited_expenses" are expenses that will stop being paid after a given amount of time, such as loans or similar. The format here is {"months_remaining" : [payments_seperated_by_commas]}. Example: a 50$/month payment plan that has 3 months remaining would be formatted as {"3" : [50]}. Multiple payments would have the format {"3" : [69, 420, 66]}
 - The "food" is self explanatory. It lists your food expenses, seperated by commas, similar to the income parameter.
 
 To execute the script, use the following syntax:
@@ -52,12 +52,25 @@ The below example runs a computation over 12 months time with a current bank bal
 			50
 		],
 	"expenses" : {
-			"1" : 700,
-			"3" : 50,
-			"6" : 1500
+			"1" : [
+					500,
+					150,
+					50
+				],
+			"3" : [
+					10,
+					35,
+					5
+				],
+			"6" : [
+					1500
+				]
 		},
 	"limited_expenses" : {
-			"2" :  150
+			"2" :  [
+					50,
+					100
+				]
 		},
 	"food" : [
 			400
