@@ -121,6 +121,8 @@ Supports both single videos and entire playlists.
 
 <h3><a href="https://github.com/leolion3/Portfolio/tree/master/CustomCommands" target="_blank">Custom Windows Commands and Git Shortcuts</a></h3>
 
+<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Powershell/Customization" target="_blank">Windows Terminal Customization</a></h3>
+
 <hr/>
 
 # More from Me
