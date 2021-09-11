@@ -19,6 +19,7 @@ from Crypto.Util.Padding import pad
 from Crypto.Util.Padding import unpad
 import pyperclip
 BLOCK_SIZE = 32
+BYTE_LEN = 16
 
 
 plain_text_salt = b''
@@ -72,12 +73,12 @@ def decrypt_everything():
     iv = base64.b64decode(iv)
     encrypted_password_hash = base64.b64decode(encrypted_password_hash)
     # Decrypt first step salt using password
-    first_step_salt = decrypt_data(bytes(password[0:16],'utf-8'),encrypted_first_step_salt,iv)
+    first_step_salt = decrypt_data(bytes(password[0:BYTE_LEN],'utf-8'),encrypted_first_step_salt,iv)
     # Encrypt password using plain text salt
     encrypted_password = encrypt_data(plain_text_salt,bytes(password,'utf-8'),iv)
     # Decrypt second salt using password and first step salt
     second_step_salt_key = str(encrypted_password[0:8]) + str(first_step_salt[0:8])
-    second_step_salt = decrypt_data(bytes(second_step_salt_key[0:16],'utf-8'),encrypted_second_step_salt,iv)
+    second_step_salt = decrypt_data(bytes(second_step_salt_key[0:BYTE_LEN],'utf-8'),encrypted_second_step_salt,iv)
     # Decrypt password hash using second salt
     password_hash = decrypt_data(second_step_salt,encrypted_password_hash,iv)
     
@@ -108,7 +109,9 @@ def change_password():
     encrypted_data = database_cursor.fetchall()
     data = []
     for a in encrypted_data:
-        data.append((decrypt_data(database_encryption_key[0:16],base64.b64decode(a[1]),iv),decrypt_data(database_encryption_key[0:16],base64.b64decode(a[2]),iv)))
+        new_iv_encoded = a[3]
+        new_iv = base64.b64decode(new_iv_encoded)
+        data.append((decrypt_data(database_encryption_key[0:BYTE_LEN],base64.b64decode(a[1]),new_iv),decrypt_data(database_encryption_key[0:BYTE_LEN],base64.b64decode(a[2]),new_iv)))
     query = """DROP TABLE passwords;"""
     database_cursor.execute(query)
     database_connection.commit()
@@ -144,13 +147,16 @@ def change_password():
     decrypt_everything()
     print('decrypted data')
     database_encryption_key = bytes(hash_data(password_hash.decode(),plain_text_salt),'utf-8')
-    query = """CREATE TABLE IF NOT EXISTS passwords (id integer PRIMARY KEY AUTOINCREMENT,username BLOB,password BLOB);"""
+    query = """CREATE TABLE IF NOT EXISTS passwords (id integer PRIMARY KEY AUTOINCREMENT,username BLOB,password BLOB,iv BLOB,searchIndex BLOB);"""
     database_cursor.execute(query)
     for a in data:
         print('trying to persist data')
-        encrypted_username = base64.b64encode(encrypt_data(database_encryption_key[0:16],a[0],iv))
-        encrypted_password = base64.b64encode(encrypt_data(database_encryption_key[0:16],a[1],iv))
-        database_cursor.execute("""INSERT INTO passwords VALUES (NULL,?,?);""",(encrypted_username,encrypted_password))
+        new_iv = get_random_bytes(BYTE_LEN)
+        searchIndex = base64.b64encode(bytes(hash_data(a[0].decode(),iv),'utf-8'))
+        encrypted_username = base64.b64encode(encrypt_data(database_encryption_key[0:BYTE_LEN],a[0],new_iv))
+        encrypted_password = base64.b64encode(encrypt_data(database_encryption_key[0:BYTE_LEN],a[1],new_iv))
+        new_iv_encoded = base64.b64encode(new_iv)
+        database_cursor.execute("""INSERT INTO passwords VALUES (NULL,?,?,?,?);""",(encrypted_username,encrypted_password,new_iv_encoded,searchIndex,))
     database_connection.commit()
     print('\nPassword changed successfully!\n')
     print('You will need to relog! Loggin out in 3 seconds!')
@@ -161,17 +167,24 @@ def change_password():
 # ===== Edit Password =====
 def edit_password(username, password, newusername, newpassword, ID):
     global database_cursor, database_encryption_key, iv, database_connection
-    encrypted_username = base64.b64encode(encrypt_data(database_encryption_key[0:16],bytes(username,'utf-8'),iv))
-    encrypted_password = base64.b64encode(encrypt_data(database_encryption_key[0:16],bytes(password,'utf-8'),iv))
-    database_cursor.execute("""SELECT * FROM passwords WHERE username = ? AND id = ? AND password = ?;""",(encrypted_username,int(ID),encrypted_password))
+    searchIndex = base64.b64encode(bytes(hash_data(username,iv),'utf-8'))
+    database_cursor.execute("""SELECT * FROM passwords WHERE id = ? AND searchIndex = ?;""",(int(ID),searchIndex))
     data = database_cursor.fetchall()
+    new_iv = b''
+    for a in data:
+        new_iv_encoded = a[3]
+        new_iv = base64.b64decode(new_iv_encoded)
+        encrypted_username = base64.b64encode(encrypt_data(database_encryption_key[0:BYTE_LEN],bytes(username,'utf-8'),new_iv))
+        encrypted_password = base64.b64encode(encrypt_data(database_encryption_key[0:BYTE_LEN],bytes(password,'utf-8'),new_iv))
+        if not (encrypted_username == a[1] and encrypted_password == a[2]):
+            data.remove(a)
     if len(data) == 0:
-        print('Username or Password incorrect!')
+        print('Username or password incorrect!')
     else:
         database_cursor.execute("""DELETE FROM passwords WHERE username = ? AND id = ? AND password = ?;""",(encrypted_username,int(ID),encrypted_password))
-        encrypted_username = base64.b64encode(encrypt_data(database_encryption_key[0:16],bytes(newusername,'utf-8'),iv))
-        encrypted_password = base64.b64encode(encrypt_data(database_encryption_key[0:16],bytes(newpassword,'utf-8'),iv))
-        database_cursor.execute("""INSERT INTO passwords VALUES (NULL,?,?);""",(encrypted_username,encrypted_password))
+        encrypted_username = base64.b64encode(encrypt_data(database_encryption_key[0:BYTE_LEN],bytes(newusername,'utf-8'),new_iv))
+        encrypted_password = base64.b64encode(encrypt_data(database_encryption_key[0:BYTE_LEN],bytes(newpassword,'utf-8'),new_iv))
+        database_cursor.execute("""INSERT INTO passwords VALUES (NULL,?,?,?,?);""",(encrypted_username,encrypted_password,new_iv_encoded,searchIndex))
         database_connection.commit()
         print('\n===== Updated Successfully! =====\n')
 
@@ -180,12 +193,14 @@ def edit_password(username, password, newusername, newpassword, ID):
 def copy_password(username,ID):
     global database_cursor, database_encryption_key, iv, database_connection
     encrypted_data = []
-    encrypted_username = base64.b64encode(encrypt_data(database_encryption_key[0:16],bytes(username,'utf-8'),iv))
-    database_cursor.execute("""SELECT * FROM passwords WHERE username = ? AND id = ?;""",(encrypted_username,int(ID)))
+    searchIndex = base64.b64encode(bytes(hash_data(username,iv),'utf-8'))
+    database_cursor.execute("""SELECT * FROM passwords WHERE searchIndex = ? AND id = ?;""",(searchIndex,int(ID)))
     encrypted_data = database_cursor.fetchall()
     data = []
     for a in encrypted_data:
-        data.append((str(decrypt_data(database_encryption_key[0:16],base64.b64decode(a[1]),iv))[2:-1],str(decrypt_data(database_encryption_key[0:16],base64.b64decode(a[2]),iv))[2:-1]))
+        new_iv_encoded = a[3]
+        new_iv = base64.b64decode(new_iv_encoded)
+        data.append((str(decrypt_data(database_encryption_key[0:BYTE_LEN],base64.b64decode(a[1]),new_iv))[2:-1],str(decrypt_data(database_encryption_key[0:BYTE_LEN],base64.b64decode(a[2]),new_iv))[2:-1]))
     for a in data:
         pyperclip.copy(a[1])
         print('\n===== Password copied to clipboard! =====\n')
@@ -195,12 +210,14 @@ def copy_password(username,ID):
 def display_password(username,ID):
     global database_cursor, database_encryption_key, iv, database_connection
     encrypted_data = []
-    encrypted_username = base64.b64encode(encrypt_data(database_encryption_key[0:16],bytes(username,'utf-8'),iv))
-    database_cursor.execute("""SELECT * FROM passwords WHERE username = ? AND id = ?;""",(encrypted_username,int(ID)))
+    searchIndex = base64.b64encode(bytes(hash_data(username,iv),'utf-8'))
+    database_cursor.execute("""SELECT * FROM passwords WHERE searchIndex = ? AND id = ?;""",(searchIndex,int(ID)))
     encrypted_data = database_cursor.fetchall()
     data = []
     for a in encrypted_data:
-        data.append((str(decrypt_data(database_encryption_key[0:16],base64.b64decode(a[1]),iv))[2:-1],str(decrypt_data(database_encryption_key[0:16],base64.b64decode(a[2]),iv))[2:-1]))
+        new_iv_encoded = a[3]
+        new_iv = base64.b64decode(new_iv_encoded)
+        data.append((str(decrypt_data(database_encryption_key[0:BYTE_LEN],base64.b64decode(a[1]),new_iv))[2:-1],str(decrypt_data(database_encryption_key[0:BYTE_LEN],base64.b64decode(a[2]),new_iv))[2:-1]))
     for a in data:
         print('\n===== Password =====\n\nUsername: %s | Password: %s\n\n====================\n' % (a[0],a[1]))
         
@@ -211,8 +228,8 @@ def remove_password(username,ID):
     print('\n===== Are you sure? =====\n')
     user_input = input("Yes? #> ")
     if 'y' in user_input.lower():
-        encrypted_username = base64.b64encode(encrypt_data(database_encryption_key[0:16],bytes(username,'utf-8'),iv))
-        database_cursor.execute("""DELETE FROM passwords WHERE username = ? AND id = ?;""",(encrypted_username,int(ID)))
+        searchIndex = base64.b64encode(bytes(hash_data(username,iv),'utf-8'))
+        database_cursor.execute("""DELETE FROM passwords WHERE searchIndex = ? AND id = ?;""",(searchIndex,int(ID)))
         database_connection.commit()
     print('\n===== Deleted! =====\n')
 
@@ -220,9 +237,12 @@ def remove_password(username,ID):
 # ===== Store Password =====
 def add_password(username,password):
     global database_cursor, database_encryption_key, iv, database_connection
-    encrypted_username = base64.b64encode(encrypt_data(database_encryption_key[0:16],bytes(username,'utf-8'),iv))
-    encrypted_password = base64.b64encode(encrypt_data(database_encryption_key[0:16],bytes(password,'utf-8'),iv))
-    database_cursor.execute("""INSERT INTO passwords VALUES (NULL,?,?);""",(encrypted_username,encrypted_password))  
+    new_iv = get_random_bytes(BYTE_LEN)
+    encrypted_username = base64.b64encode(encrypt_data(database_encryption_key[0:BYTE_LEN],bytes(username,'utf-8'),new_iv))
+    encrypted_password = base64.b64encode(encrypt_data(database_encryption_key[0:BYTE_LEN],bytes(password,'utf-8'),new_iv))
+    searchIndex = base64.b64encode(bytes(hash_data(username,iv),'utf-8'))
+    new_iv_encoded = base64.b64encode(new_iv)
+    database_cursor.execute("""INSERT INTO passwords VALUES (NULL,?,?,?,?);""",(encrypted_username,encrypted_password,new_iv_encoded,searchIndex,))  
     database_connection.commit()
     print('\n===== Password added successfully! =====\n')
 
@@ -232,8 +252,8 @@ def list(name):
     global database_cursor,database_encryption_key, iv
     encrypted_data = []
     if len(name)>0:
-        encrypted_username = base64.b64encode(encrypt_data(database_encryption_key[0:16],bytes(name,'utf-8'),iv))
-        database_cursor.execute("""SELECT * FROM passwords WHERE username = ?;""",(encrypted_username,))
+        searchIndex = base64.b64encode(bytes(hash_data(username,iv),'utf-8'))
+        database_cursor.execute("""SELECT * FROM passwords WHERE searchIndex = ?;""",(searchIndex,))
         encrypted_data = database_cursor.fetchall()
     else:
         query = """SELECT * FROM passwords;"""
@@ -241,7 +261,9 @@ def list(name):
         encrypted_data = database_cursor.fetchall()
     data = []
     for a in encrypted_data:
-        data.append((a[0],str(decrypt_data(database_encryption_key[0:16],base64.b64decode(a[1]),iv))[2:-1]))
+        new_iv_encoded = a[3]
+        new_iv = base64.b64decode(new_iv_encoded)
+        data.append((a[0],str(decrypt_data(database_encryption_key[0:BYTE_LEN],base64.b64decode(a[1]),new_iv))[2:-1]))
     print('\n========== Stored Passwords ==========\n')
     for a in data:
         print('Username: %s | Password: Hidden | ID: %s' % (a[1],str(a[0])))
@@ -343,6 +365,7 @@ def login():
         running()
     except Exception as e:
         #clear()
+        print(e)
         print('\nIncorrect credentials! Terminating!\n')
         time.sleep(3)
         exit()
@@ -351,10 +374,10 @@ def login():
 # ===== Sign-up =====
 def sign_up():
     global plain_text_salt,encrypted_first_step_salt,encrypted_second_step_salt,iv, encrypted_password_hash
-    plain_text_salt = get_random_bytes(16)
-    first_step_salt = get_random_bytes(16)
-    second_step_salt = get_random_bytes(16)
-    iv = get_random_bytes(16)
+    plain_text_salt = get_random_bytes(BYTE_LEN)
+    first_step_salt = get_random_bytes(BYTE_LEN)
+    second_step_salt = get_random_bytes(BYTE_LEN)
+    iv = get_random_bytes(BYTE_LEN)
     print('Select a password!')
     password = getpass('Password: ')
     password2 = getpass('Again: ')
@@ -363,18 +386,18 @@ def sign_up():
         time.sleep(3)
         clear()
         sign_up()
-    if len(password) < 16:
+    if len(password) < BYTE_LEN:
         print('Password must be at least 16 characters long!')
         time.sleep(3)
         clear()
         sign_up()
     # Encrypt first salt using password
-    encrypted_first_step_salt = encrypt_data(bytes(password[0:16],'utf-8'),first_step_salt,iv)
+    encrypted_first_step_salt = encrypt_data(bytes(password[0:BYTE_LEN],'utf-8'),first_step_salt,iv)
     # Encrypt password  using plain text salt
     encrypted_password = encrypt_data(plain_text_salt,bytes(password,'utf-8'),iv)
     # Encrypt second salt using encrypted password + first salt
     second_step_salt_key = str(encrypted_password[0:8]) + str(first_step_salt[0:8])
-    encrypted_second_step_salt = encrypt_data(bytes(second_step_salt_key[0:16],'utf-8'),second_step_salt,iv)
+    encrypted_second_step_salt = encrypt_data(bytes(second_step_salt_key[0:BYTE_LEN],'utf-8'),second_step_salt,iv)
     # Hash password using password with second salt as salt
     password_hash = hash_data(password,second_step_salt)
     # Encrypt the password hash
