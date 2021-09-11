@@ -4,20 +4,42 @@ This small script contains a standalone password vault, secured with Multi-Layer
 
 The passwords are stored within an unencrypted SQLite Database, the data inside the database is however fully encrypted.
 
+## Functionality
+
+The Password Vault - like any good password manager - can store as many passwords as you wish. These can be modified at any point
+with the appropriate commands.
+
+* Note: the ID parameter is the Primary Key used in the SQLite database, it can be shown using the --list command *
+
+The following commands are supported by the Password Vault:
+
+```python
+--list [username]                 - list all stored password usernames (passwords are hidden)
+--display username ID             - display password for a specific username
+--copy username ID                - Copy a password to clipboard
+--add username password           - add a new password to the database
+--edit usr pass newusr newpass ID - edit an existing password
+--remove username ID              - remove a password from the database
+--changepass                      - change login password
+clear or cls                      - clear the screen
+--exit                            - exit
+```
+
+**NOTE: LOSING THE MASTER PASSWORD MEANS LOSING ACCESS TO THE DATABASE! DO. NOT. LOSE. THE. MASTER. PASSWORD.**
+
+## Technical Functionality
+
+Disclaimer: I'd like to state first and foremost that I'm no expert in cryptography and this is one of my first cryptographic projects. I did however do my research and take into account the security risks involved in creating such a project.
+
+As such, the database uses AES-CBC to encrypt its data. The database encryption key is encrypted using 2 layers of AES-256 and 3 different salts (each layer unlocks the next) which can be found in the "decryptEverything" function.
+
+To prevent brute-force attacks against the password, the password hash is computed in combination with the 3 abovementioned salts and a bit of AES-256 (completely insane, but does the job). The password is used to decrypt the first salt. The password is then encrypted using the first salt, then concatenated with the first salt to create the decryption key for the second salt. The second salt is then used along with the encrypted second salt as the decryption key for the saved password hash, which is then ran against the hash of the entered password. As mentioned before, insane.
+
+The password hash is then concatenated with the first salt to create a decryption key for the database key, which is finally used to decrypt the actual data in the SQLite database.
+
 ## Author
 
 Created by: Leonard Haddad 
-
-## Function
-
-The script uses 3 salts (2 of which are encrypted) to generate the database key. The database key is then used to encrypt the data within the database.
-
-The first salt is used with the password in order to encrypt the second salt. The second salt can therefor only be accessed with the correct password, don't lose the master password! (Can be modified from within the app)
-
-The second salt, along with the encrypted password is used to encrypt the 3rd salt. The 3rd salt is used with the password's hash (salted with 2nd salt) in order to encrypt the database data.
-
-DO NOT LOSE THE MASTER PASSWORD OR YOU WILL LOSE ACCESS TO ALL THE DATA IN THE DATABASE
-
 
 ## License
 
