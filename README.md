@@ -61,6 +61,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	{% capture p1 %}{% include_relative Python/NetworthCalculator/README.md %}{% endcapture %}
 	  {{ p1 | markdownify }}
   </div>
+  <a href="#bank-balance-calculator">Back to Top</a>
 </details>
 
 <hr/>
@@ -77,6 +78,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	{% capture p2 %}{% include_relative Python/PasswordVault/README.md %}{% endcapture %}
 	  {{ p2 | markdownify }}
   </div>
+  <a href="#python-password-vault">Back to Top</a>
 </details>
 
 <hr/>
@@ -94,6 +96,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	{% capture p3 %}{% include_relative Python/FileSender/README.md %}{% endcapture %}
 	  {{ p3 | markdownify }}
   </div>
+  <a href="#python-file-transfer-tool">Back to Top</a>
 </details>
 
 <hr/>
@@ -110,6 +113,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	{% capture p4 %}{% include_relative Python/Ethermine/README.md %}{% endcapture %}
 	  {{ p4 | markdownify }}
   </div>
+  <a href="#ethermine-ticker">Back to Top</a>
 </details>
 
 <hr/>
@@ -126,6 +130,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	{% capture p5 %}{% include_relative Python/MonoalphabeticDecypherer/README.md %}{% endcapture %}
 	  {{ p5 | markdownify }}
   </div>
+  <a href="#monoalphabetic-decypherer">Back to Top</a>
 </details>
 
 <hr/>
@@ -142,6 +147,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	{% capture p6 %}{% include_relative Python/PythonReverseShell/README.md %}{% endcapture %}
 	  {{ p6 | markdownify }}
   </div>
+  <a href="#python-reverse-shell">Back to Top</a>
 </details>
 
 <hr/>
@@ -158,6 +164,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	{% capture p7 %}{% include_relative Python/Markdown/README.md %}{% endcapture %}
 	  {{ p7 | markdownify }}
   </div>
+  <a href="#python-markdowntext-editor">Back to Top</a>
 </details>
 
 <hr/>
@@ -174,6 +181,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	{% capture p8 %}{% include_relative Python/YouTube/README.md %}{% endcapture %}
 	  {{ p8 | markdownify }}
   </div>
+  <a href="#youtube-mp3-downloader">Back to Top</a>
 </details>
 
 <hr/>
@@ -190,6 +198,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	{% capture p9 %}{% include_relative Python/ShellGenerator/README.md %}{% endcapture %}
 	  {{ p9 | markdownify }}
   </div>
+  <a href="#powershell-tcp-reverse-shell-generator">Back to Top</a>
 </details>
 <hr/>
 </details>
