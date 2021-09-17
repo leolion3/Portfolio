@@ -111,6 +111,22 @@ Well you can stick around and take a look at the tools below, or you can go brow
 	  {{ p4 | markdownify }}
   </div>
 </details>
+
+<hr/>
+<!---
+	Monoalphabetic Decypherer
+-->
+<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/MonoalphabeticDecypherer" target="_blank">Monoalphabetic Decypherer</a></h3>
+
+<details>
+  <summary>
+  	<b>Click to view Details</b>
+  </summary>
+  <div>
+  	{% capture p5 %}{% include_relative Python/MonoalphabeticDecypherer/README.md %}{% endcapture %}
+	  {{ p5 | markdownify }}
+  </div>
+</details>
 </details>
 
 
