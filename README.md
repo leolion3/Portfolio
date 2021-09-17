@@ -44,7 +44,9 @@ Of course! You may also modify them at will. However any trouble caused by them 
 Well you can stick around and take a look at the tools below, or you can go browse the repository!
 
 
-
+<!---
+	Bank Balance Calculator
+-->
 <h3><a href='https://github.com/leolion3/Portfolio/tree/master/Python/NetworthCalculator' target='_blank'>Bank-Balance Calculator</a></h3>
 
 <details>
@@ -57,13 +59,38 @@ Well you can stick around and take a look at the tools below, or you can go brow
   </div>
 </details>
 
+
+<!---
+	Password Vault
+-->
+<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/PasswordVault" target="_blank">Python Password Vault</a></h3>
+
+<details>
+  <summary>
+  	<b>Click to view Details</b>
+  </summary>
+  <div>
+	  {% capture p2 %}{% include_relative  Python/PasswordVault/README.md %}{% endcapture %}
+	  {{ p2 | markdownify }}
+  </div>
+</details>
+
+
+<!---
+	File Transfer Tool
+-->
 <h3><a href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank'>Python File Transfer Tool</a></h3>
 
-```
+<details>
+  <summary>
+  	<b>Click to view Details</b>
+  </summary>
+  <div>
+	  {% capture p3 %}{% include_relative  Python/FileSender/README.md %}{% endcapture %}
+	  {{ p3 | markdownify }}
+  </div>
+</details>
 
-Send files accross the network with ease using this mega simple tool
-
-```
 
 <h3><a href='https://github.com/leolion3/Portfolio/tree/master/Python/Ethermine' target='_blank'>Ethermine Ticker</a></h3>
 
@@ -94,15 +121,6 @@ A very simple reverse shell implementation in Python. Not much more needs to be 
 ```
 
 A Monoalphabetic-Cypher decypherer, featuring a variety of options, including word-matching and brute-force.
-
-```
-
-<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/PasswordVault" target="_blank">Python Password Vault</a></h3>
-
-```
-A full-on password vault using multi-layer AES-256 encryption (in a very chaotically smart way)
-with a local sqlite database.
-- Never use a password manager ever again :)
 
 ```
 
