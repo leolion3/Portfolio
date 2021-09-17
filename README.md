@@ -57,7 +57,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	<b>Click to view Details</b>
   </summary>
   <div>
-	  {% capture p1 %}{% include_relative  Python/NetworthCalculator/README.md %}{% endcapture %}
+	  {% capture p1 %}{% include_relative Python/NetworthCalculator/README.md %}{% endcapture %}
 	  {{ p1 | markdownify }}
   </div>
 </details>
@@ -73,7 +73,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	<b>Click to view Details</b>
   </summary>
   <div>
-	  {% capture p2 %}{% include_relative  Python/PasswordVault/README.md %}{% endcapture %}
+	  {% capture p2 %}{% include_relative Python/PasswordVault/README.md %}{% endcapture %}
 	  {{ p2 | markdownify }}
   </div>
 </details>
@@ -89,7 +89,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	<b>Click to view Details</b>
   </summary>
   <div>
-	  {% capture p3 %}{% include_relative  Python/FileSender/README.md %}{% endcapture %}
+	  {% capture p3 %}{% include_relative Python/FileSender/README.md %}{% endcapture %}
 	  {{ p3 | markdownify }}
   </div>
 </details>
@@ -105,7 +105,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	<b>Click to view Details</b>
   </summary>
   <div>
-	  {% capture p4 %}{% include_relative  Python/Ethermine/README.md %}{% endcapture %}
+	  {% capture p4 %}{% include_relative Python/Ethermine/README.md %}{% endcapture %}
 	  {{ p4 | markdownify }}
   </div>
 </details>
@@ -121,7 +121,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	<b>Click to view Details</b>
   </summary>
   <div>
-	  {% capture p5 %}{% include_relative  Python/MonoalphabeticDecypherer/readme.md %}{% endcapture %}
+	  {% capture p5 %}{% include_relative Python/MonoalphabeticDecypherer/readme.md %}{% endcapture %}
 	  {{ p5 | markdownify }}
   </div>
 </details>
@@ -137,7 +137,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	<b>Click to view Details</b>
   </summary>
   <div>
-	  {% capture p6 %}{% include_relative  "Python/Python Reverse Shell/readme.md" %}{% endcapture %}
+	  {% capture p6 %}{% include_relative "Python/Python Reverse Shell/readme.md" %}{% endcapture %}
 	  {{ p6 | markdownify }}
   </div>
 </details>
@@ -153,7 +153,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	<b>Click to view Details</b>
   </summary>
   <div>
-	  {% capture p7 %}{% include_relative  Python/Markdown/readme.md %}{% endcapture %}
+	  {% capture p7 %}{% include_relative Python/Markdown/readme.md %}{% endcapture %}
 	  {{ p7 | markdownify }}
   </div>
 </details>
@@ -169,7 +169,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	<b>Click to view Details</b>
   </summary>
   <div>
-	  {% capture p8 %}{% include_relative  Python/YouTube/readme.md %}{% endcapture %}
+	  {% capture p8 %}{% include_relative Python/YouTube/readme.md %}{% endcapture %}
 	  {{ p8 | markdownify }}
   </div>
 </details>
@@ -185,7 +185,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	<b>Click to view Details</b>
   </summary>
   <div>
-	  {% capture p9 %}{% include_relative  Python/ShellGenerator/readme.md %}{% endcapture %}
+	  {% capture p9 %}{% include_relative Python/ShellGenerator/readme.md %}{% endcapture %}
 	  {{ p9 | markdownify }}
   </div>
 </details>
