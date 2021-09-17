@@ -1,4 +1,4 @@
-{% capture p1 %}{% include_relative Python/NetworthCalculator/README.md %}{% endcapture %}
+{% capture p1 %}{% include_relative Python/NetworthCalculator/README.md %}
 {% capture p2 %}{% include_relative Python/PasswordVault/README.md %}{% endcapture %}
 
 ## Welcome, friend
