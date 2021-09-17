@@ -84,4 +84,4 @@ python3 calc.py 696 12 config.json
 
 ### Output
 
-![alt text](./demo.png "Example")
+![alt text](demo.png "Example")
