@@ -65,7 +65,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
 
 <!---
 	Password Vault
--->
+
 <h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/PasswordVault" target="_blank">Python Password Vault</a></h3>
 
 <details>
@@ -77,7 +77,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
 	  {{ p2 | markdownify }}
   </div>
 </details>
-
+-->
 
 <!---
 	File Transfer Tool
