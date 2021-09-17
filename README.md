@@ -191,8 +191,8 @@ Well you can stick around and take a look at the tools below, or you can go brow
 	  {{ p9 | markdownify }}
   </div>
 </details>
+<hr/>
 </details>
-
 
 <h3><a href="https://github.com/leolion3/Portfolio/tree/master/CustomCommands" target="_blank">Custom Windows Commands and Git Shortcuts</a></h3>
 
