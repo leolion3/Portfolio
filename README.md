@@ -214,7 +214,6 @@ Well you can stick around and take a look at the tools below, or you can go brow
 <h3><a href="https://github.com/leolion3/Portfolio/tree/master/Powershell/Customization" target="_blank">Windows Terminal Customization</a></h3>
 <hr/>
 </details>
-<hr/>
 
 # More from Me
 
