@@ -51,9 +51,10 @@ Well you can stick around and take a look at the tools below, or you can go brow
   <summary>
   	<b>Click to view Details</b>
   </summary>
-
-  {% include_relative  Python/NetworthCalculator/README.md %}
-
+  <div>
+	  {% capture p1 %}{% include_relative  Python/NetworthCalculator/README.md %}{% endcapture %}
+	  {{ p1 | markdownify }}
+  </div>
 </details>
 
 <h3><a href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank'>Python File Transfer Tool</a></h3>
