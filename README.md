@@ -92,52 +92,101 @@ Well you can stick around and take a look at the tools below, or you can go brow
 </details>
 
 
+<!---
+	Python Ethermine Ticker
+-->
 <h3><a href='https://github.com/leolion3/Portfolio/tree/master/Python/Ethermine' target='_blank'>Ethermine Ticker</a></h3>
 
-```
+<details>
+  <summary>
+  	<b>Click to view Details</b>
+  </summary>
+  <div>
+	  {% capture p4 %}{% include_relative  Python/Ethermine/README.md %}{% endcapture %}
+	  {{ p4 | markdownify }}
+  </div>
+</details>
 
-Check on the fly how much ether you have mined and when the next payout date is!
 
-```
-
-<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/ShellGenerator" target="_blank">Powershell TCP Reverse Shell Generator</a></h3>
-	
-```
-
-Automatically generate Powershell Reverse TCP Payloads using Batch and Python
-
-```
-
-<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/Python%20Reverse%20Shell" target="_blank">Python Reverse Shell</a></h3>
-
-```
-
-A very simple reverse shell implementation in Python. Not much more needs to be said.
-
-```
-
+<!---
+	Monoalphabetic Decypherer
+-->
 <h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/MonoalphabeticDecypherer" target="_blank">Monoalphabetic Decypherer</a></h3>
 
-```
+<details>
+  <summary>
+  	<b>Click to view Details</b>
+  </summary>
+  <div>
+	  {% capture p5 %}{% include_relative  Python/MonoalphabeticDecypherer/readme.md %}{% endcapture %}
+	  {{ p5 | markdownify }}
+  </div>
+</details>
 
-A Monoalphabetic-Cypher decypherer, featuring a variety of options, including word-matching and brute-force.
 
-```
+<!---
+	Reverse Shell
+-->
+<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/Python%20Reverse%20Shell" target="_blank">Python Reverse Shell</a></h3>
 
+<details>
+  <summary>
+  	<b>Click to view Details</b>
+  </summary>
+  <div>
+	  {% capture p6 %}{% include_relative  "Python/Python Reverse Shell/readme.md" %}{% endcapture %}
+	  {{ p6 | markdownify }}
+  </div>
+</details>
+
+
+<!---
+	Markdown Text Editor
+-->
 <h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/Markdown" target="_blank">Python Markdown/Text Editor</a></h3>
 
-```
-An easy to use Markdown Text Editor with HTML Preview and Code Execution
+<details>
+  <summary>
+  	<b>Click to view Details</b>
+  </summary>
+  <div>
+	  {% capture p7 %}{% include_relative  Python/Markdown/readme.md %}{% endcapture %}
+	  {{ p7 | markdownify }}
+  </div>
+</details>
 
-```
 
+<!---
+	Youtube to MP3
+-->
 <h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/YouTube" target="_blank">YouTube MP3 Downloader</a></h3>
 
-```
-Download any YouTube video to MP3 in Seconds using this tool.
-Supports both single videos and entire playlists.
+<details>
+  <summary>
+  	<b>Click to view Details</b>
+  </summary>
+  <div>
+	  {% capture p8 %}{% include_relative  Python/YouTube/readme.md %}{% endcapture %}
+	  {{ p8 | markdownify }}
+  </div>
+</details>
 
-```
+
+<!---
+	Revshell Payload Generator
+-->
+<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/ShellGenerator" target="_blank">Powershell TCP Reverse Shell Generator</a></h3>
+	
+<details>
+  <summary>
+  	<b>Click to view Details</b>
+  </summary>
+  <div>
+	  {% capture p9 %}{% include_relative  Python/ShellGenerator/readme.md %}{% endcapture %}
+	  {{ p9 | markdownify }}
+  </div>
+</details>
+
 
 <h3><a href="https://github.com/leolion3/Portfolio/tree/master/CustomCommands" target="_blank">Custom Windows Commands and Git Shortcuts</a></h3>
 
