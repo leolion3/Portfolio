@@ -56,7 +56,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
 
 <details>
   <summary>
-  	<b>Click to view Details</b>
+  	<b style="color: red;">Click to view Details</b>
   </summary>
   <div>
   	{% capture p1 %}{% include_relative Python/NetworthCalculator/README.md %}{% endcapture %}
@@ -73,7 +73,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
 
 <details>
   <summary>
-  	<b>Click to view Details</b>
+  	<b style="color: red;">Click to view Details</b>
   </summary>
   <div>
   	{% capture p2 %}{% include_relative Python/PasswordVault/README.md %}{% endcapture %}
@@ -91,7 +91,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
 
 <details>
   <summary>
-  	<b>Click to view Details</b>
+  	<b style="color: red;">Click to view Details</b>
   </summary>
   <div>
   	{% capture p3 %}{% include_relative Python/FileSender/README.md %}{% endcapture %}
@@ -108,7 +108,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
 
 <details>
   <summary>
-  	<b>Click to view Details</b>
+  	<b style="color: red;">Click to view Details</b>
   </summary>
   <div>
   	{% capture p4 %}{% include_relative Python/Ethermine/README.md %}{% endcapture %}
@@ -125,7 +125,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
 
 <details>
   <summary>
-  	<b>Click to view Details</b>
+  	<b style="color: red;">Click to view Details</b>
   </summary>
   <div>
   	{% capture p5 %}{% include_relative Python/MonoalphabeticDecypherer/README.md %}{% endcapture %}
@@ -142,7 +142,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
 
 <details>
   <summary>
-  	<b>Click to view Details</b>
+  	<b style="color: red;">Click to view Details</b>
   </summary>
   <div>
   	{% capture p6 %}{% include_relative Python/PythonReverseShell/README.md %}{% endcapture %}
@@ -159,7 +159,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
 
 <details>
   <summary>
-  	<b>Click to view Details</b>
+  	<b style="color: red;">Click to view Details</b>
   </summary>
   <div>
   	{% capture p7 %}{% include_relative Python/Markdown/README.md %}{% endcapture %}
@@ -176,7 +176,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
 
 <details>
   <summary>
-  	<b>Click to view Details</b>
+  	<b style="color: red;">Click to view Details</b>
   </summary>
   <div>
   	{% capture p8 %}{% include_relative Python/YouTube/README.md %}{% endcapture %}
@@ -193,7 +193,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
 	
 <details>
   <summary>
-  	<b>Click to view Details</b>
+  	<b style="color: red;">Click to view Details</b>
   </summary>
   <div>
   	{% capture p9 %}{% include_relative Python/ShellGenerator/README.md %}{% endcapture %}
