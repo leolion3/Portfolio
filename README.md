@@ -63,6 +63,21 @@ Well you can stick around and take a look at the tools below, or you can go brow
 </details>
 
 
+<!---
+	Password Vault
+-->
+<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/PasswordVault" target="_blank">Python Password Vault</a></h3>
+
+<details>
+  <summary>
+  	<b>Click to view Details</b>
+  </summary>
+  <div>
+	  {% capture p2 %}{% include_relative Python/PasswordVault/README.md %}{% endcapture %}
+	  {{ p2 | markdownify }}
+  </div>
+</details>
+
 </details>
 
 
