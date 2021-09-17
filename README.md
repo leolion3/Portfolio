@@ -139,8 +139,56 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	<b>Click to view Details</b>
   </summary>
   <div>
-  	{% capture p6 %}{% include_relative Python/Python%20Reverse%20Shell/README.md %}{% endcapture %}
+  	{% capture p6 %}{% include_relative Python/PythonReverseShell/README.md %}{% endcapture %}
 	  {{ p6 | markdownify }}
+  </div>
+</details>
+
+<hr/>
+<!---
+	Markdown Text Editor
+-->
+<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/Markdown" target="_blank">Python Markdown/Text Editor</a></h3>
+
+<details>
+  <summary>
+  	<b>Click to view Details</b>
+  </summary>
+  <div>
+  	{% capture p7 %}{% include_relative Python/Markdown/README.md %}{% endcapture %}
+	  {{ p7 | markdownify }}
+  </div>
+</details>
+
+<hr/>
+<!---
+	Youtube to MP3
+-->
+<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/YouTube" target="_blank">YouTube MP3 Downloader</a></h3>
+
+<details>
+  <summary>
+  	<b>Click to view Details</b>
+  </summary>
+  <div>
+  	{% capture p8 %}{% include_relative Python/YouTube/README.md %}{% endcapture %}
+	  {{ p8 | markdownify }}
+  </div>
+</details>
+
+<hr/>
+<!---
+	Revshell Payload Generator
+-->
+<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/ShellGenerator" target="_blank">Powershell TCP Reverse Shell Generator</a></h3>
+	
+<details>
+  <summary>
+  	<b>Click to view Details</b>
+  </summary>
+  <div>
+  	{% capture p9 %}{% include_relative Python/ShellGenerator/README.md %}{% endcapture %}
+	  {{ p9 | markdownify }}
   </div>
 </details>
 </details>
