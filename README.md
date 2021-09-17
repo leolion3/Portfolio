@@ -43,7 +43,10 @@ Of course! You may also modify them at will. However any trouble caused by them 
 
 Well you can stick around and take a look at the tools below, or you can go browse the repository!
 
-
+<details>
+  <summary>
+  	<b>Python</b>
+  </summary>
 <!---
 	Bank Balance Calculator
 -->
@@ -185,6 +188,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
 	  {% capture p9 %}{% include_relative  Python/ShellGenerator/readme.md %}{% endcapture %}
 	  {{ p9 | markdownify }}
   </div>
+</details>
 </details>
 
 
