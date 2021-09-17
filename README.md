@@ -203,10 +203,16 @@ Well you can stick around and take a look at the tools below, or you can go brow
 <hr/>
 </details>
 
+<details>
+  <summary>
+  	<b style="color: limegreen;">Windows Terminal/Batchfile</b>
+  	<hr/>
+  </summary>
 <h3><a href="https://github.com/leolion3/Portfolio/tree/master/CustomCommands" target="_blank">Custom Windows Commands and Git Shortcuts</a></h3>
-
+<hr/>
 <h3><a href="https://github.com/leolion3/Portfolio/tree/master/Powershell/Customization" target="_blank">Windows Terminal Customization</a></h3>
-
+<hr/>
+</details>
 <hr/>
 
 # More from Me
