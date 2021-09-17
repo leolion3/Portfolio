@@ -65,7 +65,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
 
 <!---
 	Password Vault
-
+-->
 <h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/PasswordVault" target="_blank">Python Password Vault</a></h3>
 
 <details>
@@ -77,11 +77,11 @@ Well you can stick around and take a look at the tools below, or you can go brow
 	  {{ p2 | markdownify }}
   </div>
 </details>
--->
+
 
 <!---
 	File Transfer Tool
-
+-->
 <h3><a href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank'>Python File Transfer Tool</a></h3>
 
 <details>
@@ -95,7 +95,9 @@ Well you can stick around and take a look at the tools below, or you can go brow
 </details>
 
 
-
+<!---
+	Python Ethermine Ticker
+-->
 <h3><a href='https://github.com/leolion3/Portfolio/tree/master/Python/Ethermine' target='_blank'>Ethermine Ticker</a></h3>
 
 <details>
@@ -109,7 +111,9 @@ Well you can stick around and take a look at the tools below, or you can go brow
 </details>
 
 
-
+<!---
+	Monoalphabetic Decypherer
+-->
 <h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/MonoalphabeticDecypherer" target="_blank">Monoalphabetic Decypherer</a></h3>
 
 <details>
@@ -123,11 +127,25 @@ Well you can stick around and take a look at the tools below, or you can go brow
 </details>
 
 
-
+<!---
+	Reverse Shell
+-->
 <h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/Python%20Reverse%20Shell" target="_blank">Python Reverse Shell</a></h3>
 
+<details>
+  <summary>
+  	<b>Click to view Details</b>
+  </summary>
+  <div>
+	  {% capture p6 %}{% include_relative  "Python/Python Reverse Shell/readme.md" %}{% endcapture %}
+	  {{ p6 | markdownify }}
+  </div>
+</details>
 
 
+<!---
+	Markdown Text Editor
+-->
 <h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/Markdown" target="_blank">Python Markdown/Text Editor</a></h3>
 
 <details>
@@ -141,7 +159,9 @@ Well you can stick around and take a look at the tools below, or you can go brow
 </details>
 
 
-
+<!---
+	Youtube to MP3
+-->
 <h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/YouTube" target="_blank">YouTube MP3 Downloader</a></h3>
 
 <details>
@@ -155,7 +175,9 @@ Well you can stick around and take a look at the tools below, or you can go brow
 </details>
 
 
-
+<!---
+	Revshell Payload Generator
+-->
 <h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/ShellGenerator" target="_blank">Powershell TCP Reverse Shell Generator</a></h3>
 	
 <details>
@@ -167,7 +189,6 @@ Well you can stick around and take a look at the tools below, or you can go brow
 	  {{ p9 | markdownify }}
   </div>
 </details>
--->
 </details>
 
 
