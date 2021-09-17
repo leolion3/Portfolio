@@ -71,7 +71,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   </div>
 </details>
 
-
+<hr/>
 <!---
 	Password Vault
 -->
@@ -86,7 +86,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   </div>
 </details>
 
-
+<hr/>
 <!---
 	File Transfer Tool
 -->
@@ -101,7 +101,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   </div>
 </details>
 
-
+<hr/>
 <!---
 	Python Ethermine Ticker
 -->
@@ -116,7 +116,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   </div>
 </details>
 
-
+<hr/>
 <!---
 	Monoalphabetic Decypherer
 -->
@@ -131,7 +131,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   </div>
 </details>
 
-
+<hr/>
 <!---
 	Reverse Shell
 -->
@@ -146,7 +146,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   </div>
 </details>
 
-
+<hr/>
 <!---
 	Markdown Text Editor
 -->
@@ -161,7 +161,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   </div>
 </details>
 
-
+<hr/>
 <!---
 	Youtube to MP3
 -->
@@ -176,7 +176,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   </div>
 </details>
 
-
+<hr/>
 <!---
 	Revshell Payload Generator
 -->
