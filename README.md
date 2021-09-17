@@ -139,7 +139,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	<b>Click to view Details</b>
   </summary>
   <div>
-  	{% capture p6 %}{% include_relative Python/Python\ Reverse\ Shell/README.md %}{% endcapture %}
+  	{% capture p6 %}{% include_relative Python/Python%20Reverse%20Shell/README.md %}{% endcapture %}
 	  {{ p6 | markdownify }}
   </div>
 </details>
