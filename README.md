@@ -3,8 +3,8 @@
 # Who am I?
 
 My name is Leonard Haddad. I am a 21-year-old Israeli-German Computer Science student at the University of Bremen in Germany. 
-I've dedicated every little bit of my freetime into learning the basics of networking, studying for the CCNA Certification in addition to learning pentesting, web-dev, and dozens of more things.
-This repo provides some of the useful little tools I've created which I personally use on a daily basis.
+I've dedicated every little bit of my freetime into learning the basics of networking, studying for the CCNA Certification in addition to learning pentesting, web-dev, and dozens of other things.
+This repo provides some of the useful tools I've created and which I use on a daily basis.
 
 I am fluent in 4 Languages:
 <ul>
@@ -26,20 +26,21 @@ A couple programming/scripting/etc languages I use:
     <li>Duckyscript</li>
     <li>...</li>
 </ul>
+ 
 
 I have multiple Google Play Apps that you can find at the bottom of the page. Additionally I am always open for development requests, see the Contact section for this.
 
-All tools provided on this website are free to use and change, misuse however, is prohibited. Any damage caused by these tools, in addition to violations of local restrictions, are your own problem, not mine.  
+**All tools provided on this website are free to use and change, misuse however, is prohibited. Any damage caused by these tools, in addition to violations of local restrictions, are your own problem, not mine.** 
 
 <hr/>
 
-## Can I use your tools?
+# Can I use your tools?
 
 Of course! You may also modify them at will. However any trouble caused by them will be your own problem, not mine! :)
 
 <hr/>
 
-## Ok I'm in, where are the tools?
+# Ok I'm in, where are the tools?
 
 Well you can stick around and take a look at the tools below, or you can go browse the repository!
 
