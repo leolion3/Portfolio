@@ -1,5 +1,5 @@
 {% capture p1 %}{% include_relative Python/NetworthCalculator/README.md %}{% endcapture %}
-{% capture p2 %}{% include_relative Python/PasswordVault/README.md %}{% endcapture %}
+{% capture p1 %}{% include_relative Python/PasswordVault/README.md %}{% endcapture %}
 
 ## Welcome, friend
 
@@ -75,7 +75,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	<b>Click to view Details</b>
   </summary>
   <div>
-	  
+	  {{ p1 | markdownify }}
   </div>
 </details>
 
