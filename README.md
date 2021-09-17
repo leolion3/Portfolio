@@ -95,6 +95,22 @@ Well you can stick around and take a look at the tools below, or you can go brow
 	  {{ p3 | markdownify }}
   </div>
 </details>
+
+<hr/>
+<!---
+	Python Ethermine Ticker
+-->
+<h3><a href='https://github.com/leolion3/Portfolio/tree/master/Python/Ethermine' target='_blank'>Ethermine Ticker</a></h3>
+
+<details>
+  <summary>
+  	<b>Click to view Details</b>
+  </summary>
+  <div>
+  	{% capture p4 %}{% include_relative Python/Ethermine/README.md %}{% endcapture %}
+	  {{ p4 | markdownify }}
+  </div>
+</details>
 </details>
 
 
