@@ -127,6 +127,22 @@ Well you can stick around and take a look at the tools below, or you can go brow
 	  {{ p5 | markdownify }}
   </div>
 </details>
+
+<hr/>
+<!---
+	Reverse Shell
+-->
+<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/Python%20Reverse%20Shell" target="_blank">Python Reverse Shell</a></h3>
+
+<details>
+  <summary>
+  	<b>Click to view Details</b>
+  </summary>
+  <div>
+  	{% capture p6 %}{% include_relative Python/Python\ Reverse\ Shell/README.md %}{% endcapture %}
+	  {{ p6 | markdownify }}
+  </div>
+</details>
 </details>
 
 
