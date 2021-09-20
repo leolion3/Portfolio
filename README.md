@@ -52,7 +52,9 @@ Well you can stick around and take a look at the tools below, or you can go brow
 <!---
 	Bank Balance Calculator
 -->
-<h3><a href='https://github.com/leolion3/Portfolio/tree/master/Python/NetworthCalculator' target='_blank'>Bank-Balance Calculator</a></h3>
+<h3>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/NetworthCalculator' target='_blank' id='bank-balance-ref'>Bank-Balance Calculator</a>
+</h3>
 
 <details>
   <summary>
@@ -62,14 +64,16 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	{% capture p1 %}{% include_relative Python/NetworthCalculator/README.md %}{% endcapture %}
 	  {{ p1 | markdownify }}
   </div>
-  <a href="#bank-balance-calculator">Back to Top</a>
+  <a href="#bank-balance-ref">Back to Top</a>
 </details>
 
 <hr/>
 <!---
 	Password Vault
 -->
-<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/PasswordVault" target="_blank">Python Password Vault</a></h3>
+<h3>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/PasswordVault" target="_blank" id='password-vault-ref'>Python Password Vault</a>
+</h3>
 
 <details>
   <summary>
@@ -79,7 +83,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	{% capture p2 %}{% include_relative Python/PasswordVault/README.md %}{% endcapture %}
 	  {{ p2 | markdownify }}
   </div>
-  <a href="#python-password-vault">Back to Top</a>
+  <a href="#password-vault-ref">Back to Top</a>
 </details>
 
 <hr/>
@@ -87,7 +91,9 @@ Well you can stick around and take a look at the tools below, or you can go brow
 <!---
 	File Transfer Tool
 -->
-<h3><a href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank'>Python File Transfer Tool</a></h3>
+<h3>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank' id='file-transfer-ref'>Python File Transfer Tool</a>
+</h3>
 
 <details>
   <summary>
@@ -97,14 +103,16 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	{% capture p3 %}{% include_relative Python/FileSender/README.md %}{% endcapture %}
 	  {{ p3 | markdownify }}
   </div>
-  <a href="#python-file-transfer-tool">Back to Top</a>
+  <a href="#file-transfer-ref">Back to Top</a>
 </details>
 
 <hr/>
 <!---
 	Python Ethermine Ticker
 -->
-<h3><a href='https://github.com/leolion3/Portfolio/tree/master/Python/Ethermine' target='_blank'>Ethermine Ticker</a></h3>
+<h3>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/Ethermine' target='_blank' id='ethermine-ticker-ref'>Ethermine Ticker</a>
+</h3>
 
 <details>
   <summary>
@@ -114,14 +122,16 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	{% capture p4 %}{% include_relative Python/Ethermine/README.md %}{% endcapture %}
 	  {{ p4 | markdownify }}
   </div>
-  <a href="#ethermine-ticker">Back to Top</a>
+  <a href="#ethermine-ticker-ref">Back to Top</a>
 </details>
 
 <hr/>
 <!---
 	Monoalphabetic Decypherer
 -->
-<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/MonoalphabeticDecypherer" target="_blank">Monoalphabetic Decypherer</a></h3>
+<h3>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/MonoalphabeticDecypherer" target="_blank" id='monoalphabetic-decypherer-ref'>Monoalphabetic Decypherer</a>
+</h3>
 
 <details>
   <summary>
@@ -131,14 +141,16 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	{% capture p5 %}{% include_relative Python/MonoalphabeticDecypherer/README.md %}{% endcapture %}
 	  {{ p5 | markdownify }}
   </div>
-  <a href="#monoalphabetic-decypherer">Back to Top</a>
+  <a href="#monoalphabetic-decypherer-ref">Back to Top</a>
 </details>
 
 <hr/>
 <!---
 	Reverse Shell
 -->
-<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/Python%20Reverse%20Shell" target="_blank">Python Reverse Shell</a></h3>
+<h3>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/Python%20Reverse%20Shell" target="_blank" id='py-revshell-ref'>Python Reverse Shell</a>
+</h3>
 
 <details>
   <summary>
@@ -148,14 +160,16 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	{% capture p6 %}{% include_relative Python/PythonReverseShell/README.md %}{% endcapture %}
 	  {{ p6 | markdownify }}
   </div>
-  <a href="#python-reverse-shell">Back to Top</a>
+  <a href="#py-revshell-ref">Back to Top</a>
 </details>
 
 <hr/>
 <!---
 	Markdown Text Editor
 -->
-<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/Markdown" target="_blank">Python Markdown/Text Editor</a></h3>
+<h3>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/Markdown" target="_blank" id='py-texteditor-ref'>Python Markdown/Text Editor</a>
+</h3>
 
 <details>
   <summary>
@@ -165,14 +179,16 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	{% capture p7 %}{% include_relative Python/Markdown/README.md %}{% endcapture %}
 	  {{ p7 | markdownify }}
   </div>
-  <a href="#python-markdowntext-editor">Back to Top</a>
+  <a href="#py-texteditor-ref">Back to Top</a>
 </details>
 
 <hr/>
 <!---
 	Youtube to MP3
 -->
-<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/YouTube" target="_blank">YouTube MP3 Downloader</a></h3>
+<h3>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/YouTube" target="_blank" id='yt-downloader-ref'>YouTube MP3 Downloader</a>
+</h3>
 
 <details>
   <summary>
@@ -182,14 +198,16 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	{% capture p8 %}{% include_relative Python/YouTube/README.md %}{% endcapture %}
 	  {{ p8 | markdownify }}
   </div>
-  <a href="#youtube-mp3-downloader">Back to Top</a>
+  <a href="#yt-downloader-ref">Back to Top</a>
 </details>
 
 <hr/>
 <!---
 	Revshell Payload Generator
 -->
-<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Python/ShellGenerator" target="_blank">Powershell TCP Reverse Shell Generator</a></h3>
+<h3>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/ShellGenerator" target="_blank" id='powershell-revshell-ref'>Powershell TCP Reverse Shell Generator</a>
+</h3>
 	
 <details>
   <summary>
@@ -199,7 +217,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	{% capture p9 %}{% include_relative Python/ShellGenerator/README.md %}{% endcapture %}
 	  {{ p9 | markdownify }}
   </div>
-  <a href="#powershell-tcp-reverse-shell-generator">Back to Top</a>
+  <a href="#powershell-revshell-ref">Back to Top</a>
 </details>
 <hr/>
 </details>
