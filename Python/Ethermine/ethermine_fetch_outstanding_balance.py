@@ -34,22 +34,6 @@ ethermine_cache = { }
 ethermine_api_cache = { }
 
 
-"""
-# Loads Javascript content in webpages and then caches them
-def get_cached_website(url):
-	if url in ethermine_cache:
-		return ethermine_cache[url]
-	else:
-		session = HTMLSession()
-		r = session.get(url)
-		r.html.render(timeout = 4, sleep = 4)
-
-		ethermine_cache[url] = r.html.raw_html
-
-		return ethermine_cache[url]
-"""
-
-
 # Fetches ethermine api data
 def get_cached_ethermine_api_data(url):
 	if url in ethermine_api_cache:
@@ -67,32 +51,11 @@ def fetch_unpaid(address):
 	
 	data = get_cached_ethermine_api_data(url)
 
-	converted = float(data.get('data').get('currentStatistics').get('unpaid')) / ETH_NORMAL
-
-	return round(converted, ETH_DIGITS)
-
-
-"""
-def fetch_payout_date(address):
-
-	url = f'https://ethermine.org/miners/{address}/payouts'
-	
-	soup = BeautifulSoup(get_cached_website(url), "html.parser")
-	elements = soup.find_all("div")
-	print(soup)
-	for element in elements:
-		print(element)
-		if 'days' in str(element):
-			break
-
 	try:
-		print(element)
-		next_payout = str(element).split('≈')[1].split('>')[1].split('<')[0]
+		converted = float(data.get('data').get('currentStatistics').get('unpaid')) / ETH_NORMAL
 	except:
-		next_payout = "N/A"
-		
-	return next_payout
-"""
+		return 0
+	return round(converted, ETH_DIGITS)
 
 
 def fetch_current_hashrate(address):
@@ -101,8 +64,10 @@ def fetch_current_hashrate(address):
 	
 	data = get_cached_ethermine_api_data(url)
 
-	converted = data.get('data').get('currentStatistics').get('currentHashrate') / HASHRATE_UNIT
-
+	try:
+		converted = data.get('data').get('currentStatistics').get('currentHashrate') / HASHRATE_UNIT
+	except:
+		return 0
 	return round(converted,HASHRATE_DIGITS)
 
 
@@ -111,9 +76,10 @@ def fetch_reported_hashrate(address):
 	url = f'https://api.ethermine.org/miner/{address}/dashboard'
 	
 	data = get_cached_ethermine_api_data(url)
-
-	converted = data.get('data').get('currentStatistics').get('reportedHashrate') / HASHRATE_UNIT
-
+	try:
+		converted = data.get('data').get('currentStatistics').get('reportedHashrate') / HASHRATE_UNIT
+	except:
+		return 0
 	return round(converted,HASHRATE_DIGITS)
 
 
@@ -123,7 +89,10 @@ def fetch_active_workers(address):
 	
 	data = get_cached_ethermine_api_data(url)
 
-	return data.get('data').get('currentStatistics').get('activeWorkers')
+	try:
+		return data.get('data').get('currentStatistics').get('activeWorkers')
+	except:
+		return 0
 
 
 def fetch_valid_shares(address):
@@ -131,8 +100,10 @@ def fetch_valid_shares(address):
 	url = f'https://api.ethermine.org/miner/{address}/dashboard'
 	
 	data = get_cached_ethermine_api_data(url)
-
-	return data.get('data').get('currentStatistics').get('validShares')
+	try:
+		return data.get('data').get('currentStatistics').get('validShares')
+	except:
+		return 0
 
 
 def fetch_stale_shares(address):
@@ -140,8 +111,10 @@ def fetch_stale_shares(address):
 	url = f'https://api.ethermine.org/miner/{address}/dashboard'
 	
 	data = get_cached_ethermine_api_data(url)
-
-	return data.get('data').get('currentStatistics').get('staleShares')
+	try:
+		return data.get('data').get('currentStatistics').get('staleShares')
+	except:
+		return 0
 
 
 def fetch_invalid_shares(address):
@@ -149,8 +122,10 @@ def fetch_invalid_shares(address):
 	url = f'https://api.ethermine.org/miner/{address}/dashboard'
 	
 	data = get_cached_ethermine_api_data(url)
-
-	return data.get('data').get('currentStatistics').get('invalidShares')
+	try:
+		return data.get('data').get('currentStatistics').get('invalidShares')
+	except:
+		return 0
 
 
 def fetch_ether_balance(address, api_key):
@@ -160,8 +135,10 @@ def fetch_ether_balance(address, api_key):
 	r = requests.get(url)
 
 	response_content = json.loads(r.text)
-
-	return round(float(response_content.get('result')) / ETH_NORMAL, ETH_DIGITS)
+	try:
+		return round(float(response_content.get('result')) / ETH_NORMAL, ETH_DIGITS)
+	except:
+		return 0
 
 
 def fetch_poly_balance(address, api_key, wrapped_eth):
@@ -170,8 +147,10 @@ def fetch_poly_balance(address, api_key, wrapped_eth):
 	r = requests.get(url)
 
 	response_content = json.loads(r.text)
-
-	return round(float(response_content.get('result')) / ETH_NORMAL, ETH_DIGITS)
+	try:
+		return round(float(response_content.get('result')) / ETH_NORMAL, ETH_DIGITS)
+	except:
+		return 0
 
 
 def get_ether_price(api_key):
@@ -180,15 +159,17 @@ def get_ether_price(api_key):
 	r = requests.get(url)
 
 	response_content = json.loads(r.text)
-
-	return response_content.get('result').get('ethusd')
+	try:
+		return response_content.get('result').get('ethusd')
+	except:
+		return 0
 
 
 def get_account_statistics():
 	global ADDRESS, API_TOKEN, POLY_API_TOKEN, WRAPPED_ETHER
 	eth_balance = fetch_ether_balance(ADDRESS, API_TOKEN)
 	poly_balance = fetch_poly_balance(ADDRESS, POLY_API_TOKEN, WRAPPED_ETHER)
-	total_balance = eth_balance + poly_balance
+	total_balance = round(eth_balance + poly_balance, 4)
 	balance_USD = round(float(get_ether_price(API_TOKEN)) * total_balance, 2)
 	print('--- Account Statistics ---')
 	print(f'Account Balance: {str(eth_balance)} ⧫')
@@ -208,7 +189,6 @@ def get_miner_statistics():
 	print(f'Valid Shares: {str(fetch_valid_shares(ADDRESS))}')
 	print(f'Invalid Shares: {str(fetch_invalid_shares(ADDRESS))}')
 	print(f'Stale Shares: {str(fetch_stale_shares(ADDRESS))}\n')
-	#print(f'Next Payout in: {fetch_payout_date(ADDRESS)} days\n')
 
 
 if __name__ == '__main__':
