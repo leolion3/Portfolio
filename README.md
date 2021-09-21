@@ -237,7 +237,9 @@ Well you can stick around and take a look at the tools below, or you can go brow
 
 ## Teespring Merch
 
-<img src='html/teespring.png' width='100%'/>
+<a href='https://leolions-merch.creator-spring.com/' target='_blank'>
+	<img src='html/teespring.png' width='100%'/>
+</a>
 
 Check out the various cool merch on my <a href='https://leolions-merch.creator-spring.com/' target='_blank'>Teespring store</a>
 
