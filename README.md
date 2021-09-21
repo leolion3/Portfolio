@@ -235,10 +235,18 @@ Well you can stick around and take a look at the tools below, or you can go brow
 
 # More from Me
 
+## Teespring Merch
+
+<img src='html/teespring.png' width='100%'/>
+
+Check out the various cool merch on my <a href='https://leolions-merch.creator-spring.com/' target='_blank'>Teespring store</a>
+
+## Android
+
 Check out my Google Play Apps!
 
 <h2>
-	<img src="https://www.gstatic.com/android/market_images/web/play_prism_hlock_2x.png" width="168" height="35">
+	<img src="https://www.gstatic.com/android/market_images/web/play_prism_hlock_2x.png" width="168" height="35"/>
 </h2>
 <ul>
   <li>
