@@ -220,7 +220,6 @@ Well you can stick around and take a look at the tools below, or you can go brow
   <a href="#powershell-revshell-ref">Back to Top</a>
 </details>
 <hr/>
-</details>
 
 <h3>
 	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/Introduction" target="_blank" id='python-introduction-ref'>Python Introduction</a>
