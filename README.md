@@ -222,6 +222,23 @@ Well you can stick around and take a look at the tools below, or you can go brow
 <hr/>
 </details>
 
+<h3>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/Introduction" target="_blank" id='python-introduction-ref'>Python Introduction</a>
+</h3>
+
+<details>
+  <summary>
+  	<b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+  	{% capture p10 %}{% include_relative Python/Introduction/README.md %}{% endcapture %}
+	  {{ p10 | markdownify }}
+  </div>
+  <a href="#python-introduction-ref">Back to Top</a>
+</details>
+<hr/>
+</details>
+
 <details>
   <summary>
   	<b style="color: cyan;">Windows Terminal/Batchfile</b>
