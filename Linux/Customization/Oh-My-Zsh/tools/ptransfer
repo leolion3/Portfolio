@@ -1,0 +1,152 @@
+#!/usr/bin/env python3
+import os
+from os import system, name
+import socket
+import sys
+import hashlib
+
+if len(sys.argv) < 2:
+    print("Usage: ptransfer ip_addr")
+    exit()
+
+
+# Remote ip address
+IPAddr = sys.argv[1]
+
+
+# Port used for connection
+Port = 5050
+
+
+if len(sys.argv) > 2:
+	Port = int(sys.argv[2])
+
+
+# Filename
+fileName = "" 
+
+
+# Clear the screen
+def clear():
+    if name == 'nt':
+        _ = system('cls')
+    else:
+        _ = system('clear')
+
+
+# Hash a given value using SHA256
+def hash256(fileName):
+    sha256_hash = hashlib.sha256()
+    with open(fileName,"rb") as f:
+        for byte_block in iter(lambda: f.read(4096),b""):
+            sha256_hash.update(byte_block)
+    return sha256_hash.hexdigest()
+        
+        
+# Send file to remote
+def send_file():
+    global IPAddr, Port, fileName
+    print("Please enter filename with extension!")
+    fileName = input("#> ")
+    if not len(fileName):
+        send_file()
+    server = socket.socket()
+    server.bind((IPAddr, Port))
+    server.listen(1)
+    while True:
+        s, addr = server.accept()
+        s.send(bytes(fileName, 'utf-8'))
+        s.recv(4096)
+        f = open(fileName,'rb')
+        s.send(bytes(str(os.path.getsize(fileName)),'utf-8'))
+        print(s.recv(1024).decode())
+        while True:
+            try:
+                data = f.read(2000000)
+                if not len(data):
+                    break
+                s.send(data)
+            except Exception as e:
+                break
+        s.send(b"[DONE]")
+        s.recv(4096).decode()
+        original_hash = hash256(fileName)
+        s.send(bytes(original_hash, 'utf-8'))
+        f.close()
+        print("[File Sent]")
+        break
+
+
+# Receive file from remote
+def receive_file():
+    global IPAddr, Port, fileName
+    client_socket = socket.socket()
+    client_socket.connect((IPAddr,Port))
+    fileName = client_socket.recv(4096)
+    client_socket.send(b"Received Name")
+    fileSize = int(client_socket.recv(4096).decode())
+    original_size = fileSize
+    # Readable file size
+    # GB = 1k MB = 1M Kb = 1B Bytes
+    if fileSize > 1000000000:
+        fileSize = "%s.%s GB" % (str(int(fileSize / 1000000000)), str(int(fileSize / 10000000))[-2:-1])
+    elif fileSize > 1000000:
+        fileSize = "%s.%s MB" % (str(int(fileSize / 1000000)), str(int(fileSize / 10000))[-2:-1])
+    elif fileSize > 1000:
+        fileSize = "%s.%s KB" % (str(int(fileSize / 1000)), str(int(fileSize / 100))[-1])
+    print("Receiving file with size %s" % (fileSize))
+    client_socket.send(b'Confirmed!')
+    f = open(fileName, 'wb+')
+    i = 0
+    while True:
+        data = client_socket.recv(2000000)
+        i = i + len(data)
+        done = False
+        if i > original_size:
+            data = data[:-6]
+            i-=6
+            done = True
+        f.write(data)
+        clear()
+        received_size = ""
+        if i > 1000000000:
+            received_size = str(int(i/1000000000)) + "." + str(int(i/ 10000000))[-2:-1] + " GB"
+        elif i > 1000000:
+            received_size = str(int(i/1000000)) + "." + str(int(i/ 10000))[-2:-1] + " MB"
+        elif i > 1000:
+            received_size = str(int(i/1000)) + "." + str(int(i/100))[-1] + " KB"
+        print("Received " + received_size + "/" + str(fileSize))
+        if not len(data) or done:
+            break
+    f.close()
+    print("[Checking Hashes]:")
+    client_socket.send(b"GIVE_ME_HASH")
+    original_hash = client_socket.recv(4096).decode()
+    received_file_hash = hash256(fileName)
+    print("   [Original Hash]: %s\n   [Received File Hash]: %s" % (original_hash, received_file_hash))
+    if original_hash == received_file_hash:
+        print("   [Hashes match!]")
+    else:
+        print("Hash mismatch, delete file?")
+        user_input = input("Y/N #> ")
+        if 'y' in user_input.lower():
+            os.remove(fileName)
+            print("Deleted File!")
+    print("Done, exiting!")
+    client_socket.close()
+    exit()
+
+
+# Setup
+def setup():
+    print("Please select type send/receive")
+    selected = input("#> ")
+    if "s" in selected:
+        send_file()
+    elif "r" in selected:
+        receive_file()
+    else:
+        setup()
+
+
+setup()
