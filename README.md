@@ -252,7 +252,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
 
 <details>
   <summary>
-  	<b style="color: cyan;">Linux/Bash</b>
+  	<b style="color: orange;">Linux/Bash</b>
   	<hr/>
   </summary>
 	<details>
