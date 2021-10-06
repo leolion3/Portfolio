@@ -247,6 +247,29 @@ Well you can stick around and take a look at the tools below, or you can go brow
 <hr/>
 <h3><a href="https://github.com/leolion3/Portfolio/tree/master/Powershell/Customization" target="_blank">Windows Terminal Customization</a></h3>
 <hr/>
+
+</details>
+
+<details>
+  <summary>
+  	<b style="color: cyan;">Linux/Bash</b>
+  	<hr/>
+  </summary>
+	<details>
+	<h3>
+		<a href="https://github.com/leolion3/Portfolio/tree/master/Linux/Customization/Oh-My-Zsh" target="_blank" id='terminal-customization'>Customize Terminal with Oh-My-Zsh</a>
+	</h3>
+	<summary>
+		<b style="color: purple;">Click to view Details</b>
+	</summary>
+		<div>
+			{% capture p10 %}{% include_relative Linux/Customization/Oh-My-Zsh/README.md %}{% endcapture %}
+			{{ p10 | markdownify }}
+		</div>
+		<a href="#terminal-customization">Back to Top</a>
+	</details>
+	<hr/>
+
 </details>
 
 # More from Me
