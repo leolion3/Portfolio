@@ -255,10 +255,10 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	<b style="color: orange;">Linux/Bash</b>
   	<hr/>
   </summary>
-	<details>
-	<h3>
+  <h3>
 		<a href="https://github.com/leolion3/Portfolio/tree/master/Linux/Customization/Oh-My-Zsh" target="_blank" id='terminal-customization'>Customize Terminal with Oh-My-Zsh</a>
 	</h3>
+	<details>
 	<summary>
 		<b style="color: purple;">Click to view Details</b>
 	</summary>
