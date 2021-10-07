@@ -243,9 +243,33 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	<b style="color: cyan;">Windows Terminal/Batchfile</b>
   	<hr/>
   </summary>
-<h3><a href="https://github.com/leolion3/Portfolio/tree/master/CustomCommands" target="_blank">Custom Windows Commands and Git Shortcuts</a></h3>
+<h3>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Powershell/Customization" target="_blank" id='wt-customization'>Windows Terminal Customization</a>
+</h3>
+	<details>
+		<summary>
+			<b style="color: purple;">Click to view Details</b>
+		</summary>
+		<div>
+			{% capture p11 %}{% include_relative Powershell/Customization/README.md %}{% endcapture %}
+			{{ p11 | markdownify }}
+		</div>
+		<a href="#wt-customization">Back to Top</a>
+	</details>
 <hr/>
-<h3><a href="https://github.com/leolion3/Portfolio/tree/master/Powershell/Customization" target="_blank">Windows Terminal Customization</a></h3>
+<h3>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/CustomCommands" target="_blank" id='custom-commands'>Custom Windows Commands and Git Shortcuts</a>
+</h3>
+<details>
+		<summary>
+			<b style="color: purple;">Click to view Details</b>
+		</summary>
+		<div>
+			{% capture p12 %}{% include_relative CustomCommands/README.md %}{% endcapture %}
+			{{ p12 | markdownify }}
+		</div>
+		<a href="#custom-commands">Back to Top</a>
+	</details>
 <hr/>
 
 </details>
