@@ -2,9 +2,10 @@
 
 # Who am I?
 
-My name is Leonard Haddad. I am a 21-year-old Israeli-German Computer Science student at the University of Bremen in Germany. 
+My name is Leonard Haddad. I am a 22-year-old Israeli-German Computer Science student at the University of Bremen in Germany. 
 I've dedicated every little bit of my freetime into learning the basics of networking, studying for the CCNA Certification in addition to learning pentesting, web-dev, and dozens of other things.
 This repo provides some of the useful tools I've created and which I use on a daily basis.
+For resources to help you with University subjects, check out my other <a href="https://uni.leolion.tk/" target="_blank">website</a>
 
 I am fluent in 4 Languages:
 <ul>
