@@ -19,6 +19,11 @@ Most commands work out-of-the-box. The following commands require a file path to
 
 ## Features
 
+## Requirements
+
+For the python scripts to work, pyperclip and hashlib need to be installed. A requirements.txt file is available in the Scipts subdirectory.
+For the password vault to work, check out <a href="https://github.com/leolion3/Portfolio/tree/master/Python/PasswordVault">its page</a>
+
 ### Git Shortcuts
 
 Note: the use of the world "params" is used to showcase that the given command can receive parameters.
