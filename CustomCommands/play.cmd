@@ -9,11 +9,11 @@ set player=%1
 goto %player%
 
 :ndr2
-start vlc --intf dummy https://ndr-ndr2-niedersachsen.cast.addradio.de/ndr/ndr2/niedersachsen/mp3/128/stream.mp3
+start vlc --intf dummy https://icecast.ndr.de/ndr/ndr2/niedersachsen/mp3/128/stream.mp3
 goto playing
 
 :ffn
-start vlc --intf dummy https://stream.ffn.de/ffn/mp3-192/?ref=radioplayer
+start vlc --intf dummy https://ffn-stream29.radiohost.de/ffn_mp3-192
 goto playing
 
 :rotana
