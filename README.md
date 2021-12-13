@@ -311,7 +311,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	<b style="color: purple;">Click to view Details</b>
   </summary>
   <div>
-    <script src="https://gist.github.com/leolion3/ccf654ab60c8e110c65ef948da6af461.js"></script>
+    {% capture p15 %}{% gist ccf654ab60c8e110c65ef948da6af461 %}{{ p15 | markdownify }}
   </div>
   <a href="#dlu">Back to Top</a>
 </details>
