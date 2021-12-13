@@ -311,7 +311,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   </summary>
   <div>
 			{% capture p15 %}
-				{% include_relative Etc/DLU/DLUSetup.md %}{% endcapture %}
+				
 			{{ p15 | markdownify }}
 	</div>
   <a href="#dlu">Back to Top</a>
