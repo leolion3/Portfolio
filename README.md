@@ -297,6 +297,28 @@ Well you can stick around and take a look at the tools below, or you can go brow
 
 </details>
 
+<details>
+  <summary>
+  	<b style="color: yellow;">Etc</b>
+  	<hr/>
+  </summary>
+<h3>
+	<a href='https://gist.github.com/leolion3/ccf654ab60c8e110c65ef948da6af461' target='_blank' id='dlu'>DLU Lego Universe Server Setup</a>
+</h3>
+
+<details>
+  <summary>
+  	<b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    <script src="https://gist.github.com/leolion3/ccf654ab60c8e110c65ef948da6af461.js"></script>
+  </div>
+  <a href="#dlu">Back to Top</a>
+</details>
+
+
+</details>
+
 # More from Me
 
 ## Teespring Merch
