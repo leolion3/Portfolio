@@ -311,8 +311,10 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	<b style="color: purple;">Click to view Details</b>
   </summary>
   <div>
-	<iframe src="https://gist.githubusercontent.com/leolion3/ccf654ab60c8e110c65ef948da6af461/raw/42e371e3c53c28f70324431d9c310d0c7ac38c9b/DLUSetup.md"></iframe>
-  </div>
+			{% capture p15 %}
+				{% include_relative Etc/DLU/DLUSetup.md %}{% endcapture %}
+			{{ p15 | markdownify }}
+	</div>
   <a href="#dlu">Back to Top</a>
 </details>
 
