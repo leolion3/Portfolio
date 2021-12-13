@@ -27,7 +27,6 @@ A couple programming/scripting/etc languages I use:
     <li>Duckyscript</li>
     <li>...</li>
 </ul>
- 
 
 I have multiple Google Play Apps that you can find at the bottom of the page. Additionally I am always open for development requests, see the Contact section for this.
 
