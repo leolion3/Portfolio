@@ -303,7 +303,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	<hr/>
   </summary>
 <h3>
-	<a href='https://gist.github.com/leolion3/ccf654ab60c8e110c65ef948da6af461' target='_blank' id='dlu'>DLU Lego Universe Server Setup</a>
+	<a href="https://gist.github.com/leolion3/ccf654ab60c8e110c65ef948da6af461" target="_blank" id="dlu">DLU Lego Universe Server Setup</a>
 </h3>
 
 <details>
