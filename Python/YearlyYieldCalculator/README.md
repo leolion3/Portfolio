@@ -1,4 +1,4 @@
-# Investment Returns Calculator
+# Investment Yield Calculator
 
 Calculates the amount of money one gets for a given annual yield percentage, a certain amount of starting cash and a given timespan. Can also be given an annual investment value so the accumulative wealth is calculated over time.
 
