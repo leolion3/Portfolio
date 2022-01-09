@@ -32,4 +32,4 @@ To toggle graph visualisation, add the 5th commandline argument:
 
 ### Output
 
-![Demonstration](demo.png "Example")
+![Demonstration](yield_demo.png "Example")
