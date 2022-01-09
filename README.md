@@ -50,6 +50,25 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	<hr/>
   </summary>
 <!---
+	Yearly Investment Yield Calculator
+-->
+<h3>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/YearlyYieldCalculator' target='_blank' id='investment-yield-ref'>Investment Yield Calculator</a>
+</h3>
+
+<details>
+  <summary>
+  	<b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+  	{% capture p13 %}{% include_relative Python/YearlyYieldCalculator/README.md %}{% endcapture %}
+	  {{ p13 | markdownify }}
+  </div>
+  <a href="#investment-yield-ref">Back to Top</a>
+</details>
+
+<hr/>
+<!---
 	Bank Balance Calculator
 -->
 <h3>
