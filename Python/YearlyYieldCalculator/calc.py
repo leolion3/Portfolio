@@ -27,7 +27,8 @@ years = int(sys.argv[2])
 annual_yield = float(sys.argv[3])
 invested_per_year = 0
 if len(sys.argv) > 5:
-	if sys.argv[5] == 'True':
+	if sys.argv[5].lower() == 'true':
+		invested_per_year = float(sys.argv[4])
 		import matplotlib.pyplot as plt
 		use_graph = True
 		values.append(val)
