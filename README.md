@@ -1,7 +1,5 @@
 ## Welcome, friend
 
-test
-
 # Who am I?
 
 My name is Leonard Haddad. I am a 22-year-old Israeli-German Computer Science student at the University of Bremen in Germany. 
