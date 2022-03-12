@@ -1,3 +1,4 @@
 pycryptodome
 pyperclip
 getpass
+hashlib
