@@ -6,10 +6,10 @@ Use this tool to troll your friends/family by showing them who is the real typin
 
 ## Requirements
 
-This module requires the modules pyautogui and keyboard. Install them using
+This module requires the modules pyautogui and keyboard (and pyperclip for super speed). Install them using
 
 ```bash
-pip install pyautogui keyboard
+pip install pyautogui keyboard pyperclip
 ```
 
 ## Usage
