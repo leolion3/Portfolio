@@ -240,6 +240,26 @@ Well you can stick around and take a look at the tools below, or you can go brow
 </details>
 <hr/>
 
+<!---
+	Chat spammer
+-->
+<h3>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/ChatSpammer" target="_blank" id='py-chatspammer-ref'>Python Chat Spammer</a>
+</h3>
+
+<details>
+  <summary>
+  	<b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+  	{% capture p16 %}{% include_relative Python/ChatSpammer/README.md %}{% endcapture %}
+	  {{ p16 | markdownify }}
+  </div>
+  <a href="#py-chatspammer-ref">Back to Top</a>
+</details>
+
+<hr/>
+
 <h3>
 	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/Introduction" target="_blank" id='python-introduction-ref'>Python Introduction</a>
 </h3>
