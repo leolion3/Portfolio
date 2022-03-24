@@ -4,6 +4,17 @@ This small script contains a standalone password vault, secured with Multi-Layer
 
 The passwords are stored within an unencrypted SQLite Database, the data inside the database is however fully encrypted.
 
+## Requirements
+
+The following libraries are required to run the software:
+
+```
+pycryptodome
+pyperclip
+getpass
+hashlib
+```
+
 ## Functionality
 
 The Password Vault - like any good password manager - can store as many passwords as you wish. These can be modified at any point

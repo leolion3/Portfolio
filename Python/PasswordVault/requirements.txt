@@ -1,0 +1,4 @@
+pycryptodome
+pyperclip
+getpass
+hashlib
