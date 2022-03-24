@@ -3,6 +3,7 @@ import time
 import keyboard
 import sys
 import os
+import pyperclip
 
 spam = ''
 for a in sys.argv:
@@ -13,9 +14,10 @@ print('[BOOT] Starting spammer in 3 seconds...')
 print('[INFO] Press "q" anytime to quit')
 time.sleep(3)
 print('[INFO] Spamming...')
+pyperclip.copy(spam)
 
 while(True):
-	pyautogui.write(spam)
+	pyautogui.hotkey('ctrl','v')
 	pyautogui.press('enter')
 	try:
 		if keyboard.is_pressed('q'):
