@@ -359,6 +359,18 @@ Well you can stick around and take a look at the tools below, or you can go brow
 
 </details>
 
+<h1 id="publications">Publications</h1>
+
+<h2 id="bachelor-robots">B-More-Human: Dynamic Cheering Reactions for humanoid Football-Robots (Bachelor Thesis)</h2>
+
+<img src="html/b-human.jpg"/>
+
+The B-Human football robots were incapable of showing emotions during RoboCup games. This has been changed. The process of doing so required various tweaks dozens of code-fragments throughout the B-Human framework and the introduction of various new mechanisms. 
+
+**The thesis can be found <a href="https://leolion3.github.io/University_Stuff/Publications/BA_B-More-Human_leonard_haddad_SoSe22.pdf">here</a>.**
+
+**\* The corrections and my grade can be provided upon request. Long live upon source and free access to information!**
+
 # More from Me
 
 ## Teespring Merch
