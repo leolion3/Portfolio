@@ -39,7 +39,7 @@ Install-Module PSReadLine -AllowPrerelease -Force
 
 ```powershell
 Install-Module posh-git -Scope CurrentUser
-Install-Module oh-my-posh -Scope CurrentUser
+winget install oh-my-posh
 ```
 
 ## Add Theme to powershell profile
@@ -47,7 +47,7 @@ Install-Module oh-my-posh -Scope CurrentUser
 ```
 nano $PROFILE
 Import-Module posh-git
-Import-Module oh-my-posh
+oh-my-posh init pwsh --config ~/.aliens.omp.json | Invoke-Expression
 Set-PoshPrompt -Theme aliens
 ```
 
@@ -114,7 +114,7 @@ The complete $PROFILE file looks like this:
 
 ```powershell
 Import-Module posh-git
-Import-Module oh-my-posh
+oh-my-posh init pwsh --config ~/.aliens.omp.json | Invoke-Expression
 Set-PoshPrompt -Theme aliens
 Import-Module -Name Terminal-Icons
 Import-Module PSReadLine
