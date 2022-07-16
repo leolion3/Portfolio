@@ -39,7 +39,7 @@ Install-Module PSReadLine -AllowPrerelease -Force
 
 ```powershell
 Install-Module posh-git -Scope CurrentUser
-winget install oh-my-posh
+winget install JanDeDobbeleer.OhMyPosh -s winget
 ```
 
 ## Add Theme to powershell profile
