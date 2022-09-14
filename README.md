@@ -140,7 +140,7 @@ Well you can stick around and take a look at the tools below, or you can go brow
   </summary>
   <div>
   	{% capture p20 %}{% include_relative Python/PasswordUtils/README.md %}{% endcapture %}
-	  {{ p3 | markdownify }}
+	  {{ p20 | markdownify }}
   </div>
   <a href="#password-transfer-ref">Back to Top</a>
 </details>
