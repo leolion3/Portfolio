@@ -1,0 +1,51 @@
+#!/usr/bin/env python3
+import socket
+import getpass
+import pyperclip
+import sys
+
+
+PORT = 5050
+IP_ADDRESS = None
+
+
+if len(sys.argv) >= 2:
+	IP_ADDRESS = sys.argv[1]
+
+
+def sendpass():
+	global IP_ADDRESS, PORT
+	if not IP_ADDRESS:
+		IP_ADDRESS = input("Enter host IP: ")
+		if not IP_ADDRESS:
+			exit(0)
+	try:
+		text = pyperclip.paste()
+	except:
+		text = getpass.getpass()
+	s = socket.socket()
+	s.bind((IP_ADDRESS, PORT))
+	s.listen(1)
+	client, addr = s.accept()
+	client.send(bytes(text + "test", 'utf-8'))
+	client.close()
+	s.close()
+
+
+def recvpass():
+	global IP_ADDRESS, PORT
+	if not IP_ADDRESS:
+		IP_ADDRESS = input("Remote IP: ")
+		if not IP_ADDRESS:
+			exit(0)
+	s = socket.socket()
+	s.connect((IP_ADDRESS, PORT))
+	data = s.recv(4096).decode('utf-8')
+	pyperclip.copy(data)
+
+
+script_type = input('Select type send/receive: ')
+if 's' in script_type:
+	sendpass()
+else:
+	recvpass()

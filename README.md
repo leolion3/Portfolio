@@ -126,6 +126,27 @@ Well you can stick around and take a look at the tools below, or you can go brow
 </details>
 
 <hr/>
+
+<!---
+	Password Transfer Tool
+-->
+<h3>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/PasswordUtils' target='_blank' id='password-transfer-ref'>Python File Transfer Tool</a>
+</h3>
+
+<details>
+  <summary>
+  	<b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+  	{% capture p20 %}{% include_relative Python/PasswordUtils/README.md %}{% endcapture %}
+	  {{ p3 | markdownify }}
+  </div>
+  <a href="#password-transfer-ref">Back to Top</a>
+</details>
+
+<hr/>
+
 <!---
 	Python Ethermine Ticker
 -->
