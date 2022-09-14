@@ -8,7 +8,7 @@ The tool can be used with the sender's IP Address as a CMD argument, or it can b
 The password is read **from the sender's clipboard** using Pyperclip or using getpass if Pyperclip fails to do so.
 
 ```bash
-./passtransfer [optional_sender's_ip_address]
+./passtransfer [senders_ip_address]
 ```
 
 ## Requirements
