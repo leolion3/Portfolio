@@ -148,6 +148,26 @@ Well you can stick around and take a look at the tools below, or you can go brow
 <hr/>
 
 <!---
+	Spotify Module
+-->
+<h3>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/SpotifyAPI' target='_blank' id='spotify-api-ref'>Python Spotify API Modules</a>
+</h3>
+
+<details>
+  <summary>
+  	<b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+  	{% capture p20 %}{% include_relative Python/SpotifyAPI/README.md %}{% endcapture %}
+	  {{ p20 | markdownify }}
+  </div>
+  <a href="#spotify-api-ref">Back to Top</a>
+</details>
+
+<hr/>
+
+<!---
 	Python Ethermine Ticker
 -->
 <h3>
