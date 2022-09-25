@@ -27,7 +27,7 @@ def sendpass():
 	s.bind((IP_ADDRESS, PORT))
 	s.listen(1)
 	client, addr = s.accept()
-	client.send(bytes(text + "test", 'utf-8'))
+	client.send(bytes(text, 'utf-8'))
 	client.close()
 	s.close()
 
