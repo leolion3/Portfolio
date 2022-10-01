@@ -4,6 +4,7 @@ from os import system, name
 import socket
 import sys
 import hashlib
+import time
 
 
 if len(sys.argv) < 2:
@@ -46,95 +47,109 @@ def hash256(fileName):
         
 # Send file to remote
 def send_file():
-    global IPAddr, Port, fileName
-    print("Please enter filename with extension!")
-    fileName = input("#> ")
-    if not len(fileName):
-        send_file()
     server = socket.socket()
-    server.bind((IPAddr, Port))
-    server.listen(1)
-    while True:
-        s, addr = server.accept()
-        s.send(bytes(fileName, 'utf-8'))
-        s.recv(4096)
-        f = open(fileName,'rb')
-        s.send(bytes(str(os.path.getsize(fileName)),'utf-8'))
-        print(s.recv(1024).decode())
+    try:
+        global IPAddr, Port, fileName
+        print("Please enter filename with extension!")
+        fileName = input("#> ")
+        if not len(fileName):
+            send_file()
+        server.bind((IPAddr, Port))
+        server.listen(1)
         while True:
-            try:
-                data = f.read(2000000)
-                if not len(data):
+            s, addr = server.accept()
+            s.send(bytes(fileName, 'utf-8'))
+            s.recv(4096)
+            f = open(fileName,'rb')
+            s.send(bytes(str(os.path.getsize(fileName)),'utf-8'))
+            print(s.recv(1024).decode())
+            while True:
+                try:
+                    data = f.read(2000000)
+                    if not len(data):
+                        break
+                    s.send(data)
+                except Exception as e:
                     break
-                s.send(data)
-            except Exception as e:
-                break
-        s.send(b"[DONE]")
-        s.recv(4096).decode()
-        original_hash = hash256(fileName)
-        s.send(bytes(original_hash, 'utf-8'))
-        f.close()
-        print("[File Sent]")
-        break
-
-
-# Receive file from remote
-def receive_file():
-    global IPAddr, Port, fileName
-    client_socket = socket.socket()
-    client_socket.connect((IPAddr,Port))
-    fileName = client_socket.recv(4096)
-    client_socket.send(b"Received Name")
-    fileSize = int(client_socket.recv(4096).decode())
-    original_size = fileSize
-    # Readable file size
-    # GB = 1k MB = 1M Kb = 1B Bytes
-    if fileSize > 1000000000:
-        fileSize = "%s.%s GB" % (str(int(fileSize / 1000000000)), str(int(fileSize / 10000000))[-2:-1])
-    elif fileSize > 1000000:
-        fileSize = "%s.%s MB" % (str(int(fileSize / 1000000)), str(int(fileSize / 10000))[-2:-1])
-    elif fileSize > 1000:
-        fileSize = "%s.%s KB" % (str(int(fileSize / 1000)), str(int(fileSize / 100))[-1])
-    print("Receiving file with size %s" % (fileSize))
-    client_socket.send(b'Confirmed!')
-    f = open(fileName, 'wb+')
-    i = 0
-    while True:
-        data = client_socket.recv(2000000)
-        i = i + len(data)
-        done = False
-        if i > original_size:
-            data = data[:-6]
-            i-=6
-            done = True
-        f.write(data)
-        clear()
-        received_size = ""
-        if i > 1000000000:
-            received_size = str(int(i/1000000000)) + "." + str(int(i/ 10000000))[-2:-1] + " GB"
-        elif i > 1000000:
-            received_size = str(int(i/1000000)) + "." + str(int(i/ 10000))[-2:-1] + " MB"
-        elif i > 1000:
-            received_size = str(int(i/1000)) + "." + str(int(i/100))[-1] + " KB"
-        print("Received " + received_size + "/" + str(fileSize))
-        if not len(data) or done:
+            s.send(b"[DONE]")
+            s.recv(4096).decode()
+            original_hash = hash256(fileName)
+            s.send(bytes(original_hash, 'utf-8'))
+            f.close()
+            print("File transfer complete.")
             break
-    f.close()
-    print("[Checking Hashes]:")
+    finally:
+        server.close()
+
+
+def get_readable_file_size(fileSize):
+    if fileSize > 1000000000:
+        return "%s.%s GB" % (str(int(fileSize / 1000000000)), str(int(fileSize / 10000000))[-2:-1])
+    elif fileSize > 1000000:
+        return "%s.%s MB" % (str(int(fileSize / 1000000)), str(int(fileSize / 10000))[-2:-1])
+    elif fileSize > 1000:
+        return "%s.%s KB" % (str(int(fileSize / 1000)), str(int(fileSize / 100))[-1])
+    return str(fileSize)
+
+
+def print_file_size(received_size, previous_file_size, fileSize):
+    if previous_file_size != fileSize:
+        print(f"Received {received_size} / {fileSize}")
+
+
+def check_hashes_match(client_socket, fileName):
+    print("Checking Hashes:")
     client_socket.send(b"GIVE_ME_HASH")
     original_hash = client_socket.recv(4096).decode()
     received_file_hash = hash256(fileName)
-    print("   [Original Hash]: %s\n   [Received File Hash]: %s" % (original_hash, received_file_hash))
+    print("\t[Original Hash]: %s\n\t[Received File Hash]: %s" % (original_hash, received_file_hash))
     if original_hash == received_file_hash:
-        print("   [Hashes match!]")
+        print("Hashes match!")
     else:
         print("Hash mismatch, delete file?")
         user_input = input("Y/N #> ")
         if 'y' in user_input.lower():
             os.remove(fileName)
             print("Deleted File!")
-    print("Done, exiting!")
-    client_socket.close()
+
+
+# Receive file from remote
+def receive_file():
+    global IPAddr, Port, fileName
+    client_socket = socket.socket()
+    try:
+        client_socket.connect((IPAddr,Port))
+        fileName = client_socket.recv(4096)
+        client_socket.send(b"Received Name")
+        fileSize = int(client_socket.recv(4096).decode())
+        original_size = fileSize
+        fileSize = get_readable_file_size(fileSize)
+        previous_file_size = ""
+        # Readable file size
+        # GB = 1k MB = 1M Kb = 1B Bytes
+        print("Receiving file with size %s" % (fileSize))
+        client_socket.send(b'Beginning file transfer...')
+        start_time = time.time()
+        f = open(fileName, 'wb+')
+        i = 0
+        done = False
+        while not done:
+            data = client_socket.recv(2000000)
+            i = i + len(data)
+            if i > original_size:
+                data = data[:-6]
+                done = True
+            f.write(data)
+            clear()
+            received_size = get_readable_file_size(i)
+            print_file_size(received_size, previous_file_size, fileSize)
+            previous_file_size = received_size
+        f.close()
+        end_time = time.time()
+        check_hashes_match(client_socket, fileName)
+        print(f'Transfer done in {round(end_time - start_time, 1)} seconds.')
+    finally:
+        client_socket.close()
     exit()
 
 
