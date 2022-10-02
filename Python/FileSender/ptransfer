@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 import os
 from os import system, name
+from os.path import exists
+from os.path import getsize
 import socket
 import sys
 import hashlib
@@ -44,42 +46,65 @@ def hash256(fileName):
             sha256_hash.update(byte_block)
     return sha256_hash.hexdigest()
         
-        
+
+def client_file_exists(s):
+    data = s.recv(4096).decode()
+    if 'SIZE' in data:
+        return (True, int(data.split('SIZE:')[1]))
+    return (False, 0)
+
+
+def get_read_threshold(fileSize):
+    if fileSize > 2000000:
+        return 2000000
+    elif fileSize > 200000:
+        return 200000
+    elif fileSize > 20000:
+        return 20000
+    elif fileSize > 2000:
+        return 2000
+    return 1
+
+
 # Send file to remote
-def send_file():
-    server = socket.socket()
-    try:
-        global IPAddr, Port, fileName
-        print("Please enter filename with extension!")
-        fileName = input("#> ")
-        if not len(fileName):
-            send_file()
-        server.bind((IPAddr, Port))
-        server.listen(1)
-        while True:
-            s, addr = server.accept()
-            s.send(bytes(fileName, 'utf-8'))
-            s.recv(4096)
-            f = open(fileName,'rb')
-            s.send(bytes(str(os.path.getsize(fileName)),'utf-8'))
-            print(s.recv(1024).decode())
-            while True:
-                try:
-                    data = f.read(2000000)
-                    if not len(data):
-                        break
-                    s.send(data)
-                except Exception as e:
-                    break
-            s.send(b"[DONE]")
-            s.recv(4096).decode()
-            original_hash = hash256(fileName)
-            s.send(bytes(original_hash, 'utf-8'))
-            f.close()
-            print("File transfer complete.")
+def send_file(server):
+    global IPAddr, Port, fileName
+    print("Please enter filename with extension!")
+    fileName = input("#> ")
+    if not len(fileName):
+        send_file()
+    server.bind((IPAddr, Port))
+    server.listen(1)
+    s, addr = server.accept()
+    s.send(bytes(fileName, 'utf-8'))
+    s.recv(4096)
+    f = open(fileName,'rb')
+    s.send(bytes(str(getsize(fileName)),'utf-8'))
+    exists, current_size = client_file_exists(s)
+    if exists:
+        print(f'File exists! Reading {current_size} bytes...')
+        i = 0
+        while i < current_size:
+            threshold = get_read_threshold(current_size - i)
+            f.read(threshold)
+            i += threshold
+    s.send(b'Ready for transfer!')
+    s.recv(4096).decode()
+    while True:
+        try:
+            data = f.read(2000000)
+            if not len(data):
+                break
+            s.send(data)
+        except Exception as e:
             break
-    finally:
-        server.close()
+    s.send(b"[DONE]")
+    s.recv(4096).decode()
+    original_hash = hash256(fileName)
+    s.send(bytes(original_hash, 'utf-8'))
+    f.close()
+    print("File transfer complete.")
+    server.close()
 
 
 def get_readable_file_size(fileSize):
@@ -113,25 +138,52 @@ def check_hashes_match(client_socket, fileName):
             print("Deleted File!")
 
 
-# Receive file from remote
+def initial_client_comm(client_socket):
+    fileName = client_socket.recv(4096).decode()
+    client_socket.send(b"Received Name")
+    original_size = int(client_socket.recv(4096).decode())
+    print("Receiving file...")
+    return (fileName, original_size)
+
+
+def check_file_exists(client_socket, fileName, file_exists):
+    if file_exists:
+        current_size = getsize(fileName)
+        old_filename = fileName + 'old'
+        os.rename(fileName, old_filename)
+        i = 0
+        old_fis = open(old_filename, 'rb')
+        with open(fileName, 'wb+') as f:
+            while i < current_size:
+                threshold = get_read_threshold(current_size - i)
+                f.write(old_fis.read(threshold))
+                i += threshold
+        os.remove(old_filename)
+        client_socket.send(bytes(f'SIZE:{current_size}', 'utf-8'))
+        return current_size
+    else:
+        client_socket.send(b'NONEXISTANT')
+        return 0
+
+
 def receive_file():
     global IPAddr, Port, fileName
     client_socket = socket.socket()
     try:
         client_socket.connect((IPAddr,Port))
-        fileName = client_socket.recv(4096)
-        client_socket.send(b"Received Name")
-        fileSize = int(client_socket.recv(4096).decode())
-        original_size = fileSize
-        fileSize = get_readable_file_size(fileSize)
+        fileName, original_size = initial_client_comm(client_socket)
+        fileSize = get_readable_file_size(original_size)
         previous_file_size = ""
-        # Readable file size
-        # GB = 1k MB = 1M Kb = 1B Bytes
-        print("Receiving file with size %s" % (fileSize))
-        client_socket.send(b'Beginning file transfer...')
         start_time = time.time()
-        f = open(fileName, 'wb+')
-        i = 0
+        file_exists = exists(fileName)
+        i = check_file_exists(client_socket, fileName, file_exists)
+        print(client_socket.recv(4096).decode())
+        client_socket.send(b'Beginning file transfer...')
+        f = None
+        if exists:
+            f = open(fileName, 'ab')
+        else:
+            f = open(fileName, 'wb+')
         done = False
         while not done:
             data = client_socket.recv(2000000)
@@ -158,7 +210,11 @@ def setup():
     print("Please select type send/receive")
     selected = input("#> ")
     if "s" in selected:
-        send_file()
+        server = socket.socket()
+        try:
+            send_file(server)
+        except:
+            server.close()
     elif "r" in selected:
         receive_file()
     else:
