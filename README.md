@@ -16,7 +16,6 @@ Wanna know if you should hire me or need a software developed? Check out my inte
   	{% capture p21 %}{% include_relative CV/README.md %}{% endcapture %}
 	  {{ p21 | markdownify }}
   </div>
-  <a href="#digital-resume">Back to Top</a>
 </details>
 
 ---
