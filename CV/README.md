@@ -9,11 +9,26 @@ This section is included, should you be interested in my capabilities for whatev
 - ### [Education, Certifications, Trainings](#education)
 - ### [Work Experience](#work_experience)
 - ### [Projects](#my_projects)
+- ### [Apps](#my_apps)
 - ### [Languages](#my_languages)
 - ### [Programming and Scripting Languages](#programming_langs)
 - ### [Operating Systems](#oss)
 - ### [Tools I use](#tools)
 - ### [Skills](#my_skills)
+
+---
+
+<h2 id="me_in_a_nutshell">This is me</h2>
+
+This is me.
+
+![Me, in a picture.](media/pic.png)
+
+My name is Leonard Haddad. I am 23 years old and I am working on my Computer Science Masters degree at the University of Bremen in Germany.
+
+I come originally from Israel (with both the Israeli and German passports), but am currently residing in Bremen. 
+
+<a href="#toc">Back to top</a>
 
 ---
 
@@ -23,7 +38,7 @@ This section is included, should you be interested in my capabilities for whatev
 
 Don't think it interests anyone, but here you go:
 
-- Finished high school with Israeli Bagrut in 2018. Main subjects: Physics, Mathematics, Electronics and English.
+- Finished high school with Israeli Bagrut in 2017. Main subjects: Physics, Mathematics, Electronics and English.
 
 ### Earned Certifications
 
@@ -53,8 +68,9 @@ I'm persuing the following certifications:
 
 Here's my work experience so far (*dates are in european format - DD/MM*):
 
+- Every now and then: Tutoring and ghost writing.
 - Since 2015: Tech Support, System and Network Administration at [Gech-BJ Engineering](https://goo.gl/maps/zQoQCBHnWRMwrq867).
-- Since 2021: Freelance Software and App Development and ghostwriting ([Contact](https://www.facebook.com/IsratechSoftware/)).
+- Since 2021: Freelance Software and App Development ([Contact](https://www.facebook.com/IsratechSoftware/)).
 - Since 01/2022: Java Full Stack and [FirstSpirit®](https://www.e-spirit.com/us/product/firstspirit-dxp/enterprise-cms/) developer at [Adesso SE](https://www.adesso.de/de/index.jsp) (as a working student - basically no difference to full-time work).
 - 10/2019 - 02/2022: [Media informatics](https://www.uni-bremen.de/life/life-themenfelder/informatik-digitale-medien-digitalisierung/lifeflex-moduluebersicht/grundlagen-der-medieninformatik-1) tutor at [University of Bremen](https://www.uni-bremen.de/) (basics of computer science media).
 
@@ -73,6 +89,24 @@ Here's my work experience so far (*dates are in european format - DD/MM*):
 A couple projects I worked on:
 
 - [B-Human](https://b-human.de/index.html) Framework. See my [publication](https://leolion3.github.io/University_Stuff/Publications/BA_B-More-Human_leonard_haddad_SoSe22.pdf) for more infos.
+- [Projekt SEE](https://see.uni-bremen.de/)
+- Hotel management system (Freelance, JavaEE with an H2 Database using Wildfly as the application server): A hotel management software which keeps track of what guests are located in what rooms, where their luggage is, when they are leaving (and where they are leaving to) and a couple other features. **Closed source for my client's privacy.**
+- Student grading system (Freelance, JavaFX with Sqlite): A simple app which keeps track of students and their grades. **Closed source for my client's privacy.**
+- Galaxytrucker - a clone of the game [FTL: Faster Than Light](https://store.steampowered.com/app/212680/FTL_Faster_Than_Light/) (University Project, using LibGDX as the game engine, a client/server architecture with an H2 Database and manual network communication using the Java Sockets API). Source code: [Gitlab](https://gitlab.informatik.uni-bremen.de/s_xsipo6/galaxytrucker).
+- SFB Farbige Zustaende (University Project, JavaEE with an H2 Database using Wildfly as the application server): A system for managing staff, experiment results and sample data. Source code: [Gitlab](https://gitlab.informatik.uni-bremen.de/s_xsipo6/softwareprojekt-2).
+
+<a href="#toc">Back to top</a>
+
+---
+
+<h2 id="my_apps">Apps</h2>
+
+I've published a couple apps on the Google Play Store. Check them out below (the code is mostly terrible, then again it was one of the first things I did):
+
+- [Sharky the Angry Sharkfish](https://play.google.com/store/apps/details?id=com.SpaceAhoy.Sharky) (C# and Unity for Android)
+- [Open-Source Password Generator]() (Java with the [processing](https://processing.org/) library). Source code: [Github](https://play.google.com/store/apps/details?id=processing.test.password_generator).
+- [Semester Planer Schedule Generator](https://play.google.com/store/apps/details?id=com.spaceahoy.semesterplaner) (Java with Android SDK).
+
 
 <a href="#toc">Back to top</a>
 
@@ -126,11 +160,15 @@ Some of the programming languages I regularly use:
 	- PostgreSQL
 	- SQLite
 - FirstSpirit® XML (Custom scripting syntax)
+- HTML
+- CSS
 - Bash
 - Powershell
 - Batch
 - DuckyScript
 - Markdown (as you see)
+- [LaTeX](https://www.latex-project.org/)
+- RISC-V Assembly (academically)
 
 ### Learning
 
@@ -173,6 +211,7 @@ Tools I use at work:
 - Jetbrains IDEs
 - FirstSpirit®
 - Docker
+- Git
 - Termius
 - Postman
 - Terminal
@@ -186,6 +225,19 @@ Tools I use at work:
 Tools I generally use (in addition to the abovementioned ones):
 
 - Visual Studio and Visual Studio Code
+- Adobe Creative Cloud
+	- Photoshop
+	- After Effects
+	- Premiere Pro
+	- Lightroom
+	- Illustrator
+- [VEGAS Pro](https://www.vegascreativesoftware.com/us/vegas-pro/)
+- [Hitfilm Express](https://fxhome.com/product/hitfilm)
+- Autodesk [Pixlr](https://pixlr.com/)
+- Autodesk AutoCAD
+- Blender
+- Unity Engine
+- Unreal Engine
 - VirtualBox
 - Windows Terminal (with Powershell 7 and WSL)
 - MS Office Tools
