@@ -6,7 +6,22 @@ For resources to help you with University subjects, check out my other <a href="
 
 # Who am I?
 
-Wanna know if you should hire me or need a software developed? Check out [my interactive digital resume](https://github.com/leolion3/Portfolio/tree/master/CV/README.md).
+Wanna know if you should hire me or need a software developed? Check out my interactive digital resume below.
+
+<h3>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/CV/' target='_blank' id='digital-resume'>My Resume</a>
+</h3>
+
+<details>
+  <summary>
+  	<b style="color: purple;">Show Resume</b>
+  </summary>
+  <div>
+  	{% capture p21 %}{% include_relative CV/README.md %}{% endcapture %}
+	  {{ p21 | markdownify }}
+  </div>
+  <a href="#digital-resume">Back to Top</a>
+</details>
 
 ---
 
