@@ -22,7 +22,7 @@ This section is included, should you be interested in my capabilities for whatev
 
 This is me.
 
-![Me, in a picture.](https://github.com/leolion3/Portfolio/blob/master/CV/media/pic.png)
+![Me, in a picture.](https://raw.githubusercontent.com/leolion3/Portfolio/master/CV/media/pic.png)
 
 My name is Leonard Haddad. I am 23 years old and I am working on my Computer Science Masters degree at the University of Bremen in Germany.
 
