@@ -1,38 +1,14 @@
 ## Welcome, friend
 
-# Who am I?
-
-My name is Leonard Haddad. I am a 22-year-old Israeli-German Computer Science student at the University of Bremen in Germany. 
-I've dedicated every little bit of my freetime into learning the basics of networking, studying for the CCNA Certification in addition to learning pentesting, web-dev, and dozens of other things.
-This repo provides some of the useful tools I've created and which I use on a daily basis.
 For resources to help you with University subjects, check out my other <a href="https://uni.leolion.tk/" target="_blank">website</a>
-
-I am fluent in 4 Languages:
-<ul>
-    <li>English</li>
-    <li>German</li>
-    <li>Arabic</li>
-    <li>Hebrew</li>
-</ul>
-
-A couple programming/scripting/etc languages I use:
-<ul>
-    <li>Java</li>
-    <li>Python</li>
-    <li>C#, C and C++</li>
-    <li>Haskell</li>
-    <li>Powershell</li>
-    <li>Batch</li>
-    <li>SQL</li>
-    <li>Duckyscript</li>
-    <li>...</li>
-</ul>
-
-I have multiple Google Play Apps that you can find at the bottom of the page. Additionally I am always open for development requests, see the Contact section for this.
 
 **All tools provided on this website are free to use and change, misuse however, is prohibited. Any damage caused by these tools, in addition to violations of local restrictions, are your own problem, not mine.** 
 
-<hr/>
+# Who am I?
+
+Wanna know if you should hire me or need a software developed? Check out [my interactive digital resume](https://github.com/leolion3/Portfolio/tree/master/CV/README.md).
+
+---
 
 # Can I use your tools?
 
