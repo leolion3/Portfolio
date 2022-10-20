@@ -88,12 +88,14 @@ Here's my work experience so far (*dates are in european format - DD/MM*):
 
 A couple projects I worked on:
 
-- [B-Human](https://b-human.de/index.html) Framework. See my [publication](https://leolion3.github.io/University_Stuff/Publications/BA_B-More-Human_leonard_haddad_SoSe22.pdf) for more infos.
-- [Projekt SEE](https://see.uni-bremen.de/)
-- Hotel management system (Freelance, JavaEE with an H2 Database using Wildfly as the application server): A hotel management software which keeps track of what guests are located in what rooms, where their luggage is, when they are leaving (and where they are leaving to) and a couple other features. **Closed source for my client's privacy.**
-- Student grading system (Freelance, JavaFX with Sqlite): A simple app which keeps track of students and their grades. **Closed source for my client's privacy.**
-- Galaxytrucker - a clone of the game [FTL: Faster Than Light](https://store.steampowered.com/app/212680/FTL_Faster_Than_Light/) (University Project, using LibGDX as the game engine, a client/server architecture with an H2 Database and manual network communication using the Java Sockets API). Source code: [Gitlab](https://gitlab.informatik.uni-bremen.de/s_xsipo6/galaxytrucker).
-- SFB Farbige Zustaende (University Project, JavaEE with an H2 Database using Wildfly as the application server): A system for managing staff, experiment results and sample data. Source code: [Gitlab](https://gitlab.informatik.uni-bremen.de/s_xsipo6/softwareprojekt-2).
+- [**B-Human**](https://b-human.de/index.html) Framework. See my [publication](https://leolion3.github.io/University_Stuff/Publications/BA_B-More-Human_leonard_haddad_SoSe22.pdf) for more infos.
+- [**Projekt SEE**](https://see.uni-bremen.de/)
+- **Hotel management system** (Freelance, JavaEE with an H2 Database using Wildfly as the application server): A hotel management software which keeps track of what guests are located in what rooms, where their luggage is, when they are leaving (and where they are leaving to) and a couple other features. **Closed source for my client's privacy.**
+- **Student grading system** (Freelance, JavaFX with Sqlite): A simple app which keeps track of students and their grades. **Closed source for my client's privacy.**
+- **Galaxytrucker** - a clone of the game [FTL: Faster Than Light](https://store.steampowered.com/app/212680/FTL_Faster_Than_Light/) (University Project, using LibGDX as the game engine, a client/server architecture with an H2 Database and manual network communication using the Java Sockets API). Source code: [Gitlab](https://gitlab.informatik.uni-bremen.de/s_xsipo6/galaxytrucker).
+- **SFB Farbige Zustaende** (University Project, JavaEE with an H2 Database using Wildfly as the application server): A system for managing staff, experiment results and sample data. Source code: [Gitlab](https://gitlab.informatik.uni-bremen.de/s_xsipo6/softwareprojekt-2).
+
+\* *Of course there are also the projects from work. These however cannot be mentioned for obvious reasons.*
 
 <a href="#toc">Back to top</a>
 
@@ -169,6 +171,7 @@ Some of the programming languages I regularly use:
 - Markdown (as you see)
 - [LaTeX](https://www.latex-project.org/)
 - RISC-V Assembly (academically)
+- Solidity (check out my proof-of-concept crypto currency ["Salvation"](https://gist.github.com/leolion3/ead3f9159b4da424e1e365e9b9b47d50))
 
 ### Learning
 
@@ -195,6 +198,7 @@ I regularly use the following operating systems:
 	- Arch
 	- Raspbian Buster (both Headless and with GUI)
 	- HiveOS
+- [Unifi OS](https://ui.com/consoles) by Ubiquiti
 
 <a href="#toc">Back to top</a>
 
@@ -211,7 +215,9 @@ Tools I use at work:
 - Jetbrains IDEs
 - FirstSpirit®
 - Docker
-- Git
+- Git (commandline)
+- Maven
+- Gradle
 - Termius
 - Postman
 - Terminal
@@ -219,11 +225,15 @@ Tools I use at work:
 - Microsoft Teams, Outlook
 - Obsidian (Notebook)
 - GnuPG
+- Tmux
+- Nano
+- Vim
 
 ### In my daily life
 
 Tools I generally use (in addition to the abovementioned ones):
 
+- Anaconda
 - Visual Studio and Visual Studio Code
 - Adobe Creative Cloud
 	- Photoshop
@@ -239,6 +249,14 @@ Tools I generally use (in addition to the abovementioned ones):
 - Unity Engine
 - Unreal Engine
 - VirtualBox
+- Pentesting frameworks
+	- Metasploit
+	- Hashcat
+	- John the Ripper
+	- Dirbuster
+- Netcat
+- OpenSSH
+- Metamask
 - Windows Terminal (with Powershell 7 and WSL)
 - MS Office Tools
 
@@ -250,6 +268,9 @@ Tools I generally use (in addition to the abovementioned ones):
 
 Some skills I have (besides flirting and dark humor):
 
+- IT Consulting (6+ years experience)
+- Pentesting (3 years experience)
+- Scrum Master/Project Management (2 years experience)
 - Regex (regular expressions)
 - Googling (apparantly a skill)
 - Teaching and tutoring
