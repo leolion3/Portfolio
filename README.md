@@ -396,7 +396,28 @@ The B-Human football robots were incapable of showing emotions during RoboCup ga
 
 **The thesis can be found <a href="https://leolion3.github.io/University_Stuff/Publications/BA_B-More-Human_leonard_haddad_SoSe22.pdf">here</a>.**
 
-**\* The corrections and my grade can be provided upon request. Long live upon source and free access to information!**
+**The thesis was graded with a 1.3 (an A if an A+ is the highest possible grade).**
+
+**\* The professors' assessments can be provided upon request. Long live upon source and free access to information!**
+
+<p id="dancing-robots">Check out the dancing robots below!</p>
+
+<details>
+  <summary>
+  	<b style="color: purple;">See some dancing robots!</b>
+  </summary>
+  <div>
+			{% include youtube.html id="zWgDolhWsEk" %}
+			{% include youtube.html id="-_vlZ9nGPxQ" %}
+			{% include youtube.html id="d9McmzbOyaA" %}
+			{% include youtube.html id="adCF4C8HlTs" %}
+			{% include youtube.html id="NRGpaM_M4x8" %}
+			{% include youtube.html id="QJQhpZUD9jg" %}
+			{% include youtube.html id="C-O1FXAt7Ek" %}
+			{% include youtube.html id="yvMbB3C7fME" %}
+	</div>
+  <a href="#dancing-robots">Back to Top</a>
+</details>
 
 # More from Me
 
