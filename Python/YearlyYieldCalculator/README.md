@@ -32,4 +32,4 @@ To toggle graph visualisation, add the 5th commandline argument:
 
 ### Output
 
-![Demonstration](yield_demo.png "Example")
+![Demonstration](https://raw.githubusercontent.com/leolion3/Portfolio/master/Python/YearlyYieldCalculator/yield_demo.png)

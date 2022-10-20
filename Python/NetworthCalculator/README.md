@@ -84,4 +84,4 @@ python3 calc.py 696 12 config.json
 
 ### Output
 
-![alt text](demo.png "Example")
+![alt text](https://raw.githubusercontent.com/leolion3/Portfolio/master/Python/NetworthCalculator/demo.png)
