@@ -36,6 +36,25 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	<hr/>
   </summary>
 <!---
+	Python MiniHTTP Server
+-->
+<h3>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/MiniHTTPServer' target='_blank' id='mini-http-server'>MiniHTTPServer (Minimal HTTP Server)</a>
+</h3>
+
+<details>
+  <summary>
+  	<b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+  	{% capture 21 %}{% include_relative Python/MiniHTTPServer/README.md %}{% endcapture %}
+	  {{ 21 | markdownify }}
+  </div>
+  <a href="#mini-http-server">Back to Top</a>
+</details>
+
+<hr/>
+<!---
 	Yearly Investment Yield Calculator
 -->
 <h3>
