@@ -47,8 +47,8 @@ Well you can stick around and take a look at the tools below, or you can go brow
   	<b style="color: purple;">Click to view Details</b>
   </summary>
   <div>
-  	{% capture 21 %}{% include_relative Python/MiniHTTPServer/README.md %}{% endcapture %}
-	  {{ 21 | markdownify }}
+  	{% capture p21 %}{% include_relative Python/MiniHTTPServer/README.md %}{% endcapture %}
+	  {{ p21 | markdownify }}
   </div>
   <a href="#mini-http-server">Back to Top</a>
 </details>
