@@ -6,8 +6,7 @@ For resources to help you with University subjects, check out my other <a href="
 
 # Who am I?
 
-{% capture p1 %}
-	{% include_relative Etc/leolion3/README.md %}{% endcapture %}
+{% capture p1 %}{% include_relative Etc/leolion3/README.md %}{% endcapture %}
 {{ p1 | markdownify }}
 
 Wanna know if you should hire me or need a software developed? Check out my interactive digital resume below (or <a href='https://github.com/leolion3/Portfolio/blob/master/CV/' target='_blank' id='digital-resume'>here</a>).
