@@ -71,8 +71,10 @@ def send_file(server):
     global IPAddr, Port, fileName
     print("Please enter filename with extension!")
     fileName = input("#> ")
-    if not len(fileName):
+    if not len(fileName) or not os.path.exists(fileName):
+        print('Filename empty or file doesnt exist in provided path!')
         send_file()
+        exit()
     server.bind((IPAddr, Port))
     server.listen(1)
     s, addr = server.accept()
@@ -175,7 +177,7 @@ def receive_file():
         fileSize = get_readable_file_size(original_size)
         previous_file_size = ""
         start_time = time.time()
-        file_exists = exists(fileName)
+        file_exists = os.path.exists(fileName)
         i = check_file_exists(client_socket, fileName, file_exists)
         print(client_socket.recv(4096).decode())
         client_socket.send(b'Beginning file transfer...')
