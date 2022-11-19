@@ -4,3 +4,6 @@
 [submodule "leolion3"]
 	path = leolion3
 	url = git@github.com:leolion3/leolion3.git
+[submodule "Etc/leolion3"]
+	path = Etc/leolion3
+	url = git@github.com:leolion3/leolion3.git
