@@ -1,3 +1,6 @@
 [submodule "Etc/DLU"]
 	path = Etc/DLU
 	url = https://gist.github.com/leolion3/ccf654ab60c8e110c65ef948da6af461
+[submodule "leolion3"]
+	path = leolion3
+	url = git@github.com:leolion3/leolion3.git
