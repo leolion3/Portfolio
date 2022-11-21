@@ -1,9 +1,4 @@
-<head>
-  <meta name="description" content="Leonard Haddad Portfolio Website">
-  <meta name="keywords" content="portfolio, leonard, haddad, development, java, python, c, c sharp, unity, unreal engine, projects, university, tools, hacking, pentesting, web, sql, hibernate, jakarta, spring boot, javaee, jsf, sqlite, scikit learn, github pages, matplotlib, job, hiring, freelance, lego, universe, documentation, adesso, mercedes, bachelor, master, linux, bash, profile, windows, resume, work, languages, programming, postgreSQL, powershell, duckyscript, solidity, blockchain, php, javascript, firstspirit, xml, haskell, css, html, nodejs, dart, kotlin, flutter, assembly, macos, debian, docker, terminal, sublime, text, nano, vim, gradle, maven, vscode, visual studio">
-  <meta name="author" content="Leonard Haddad">
-</head>
-<h2>Welcome, friend</h2>
+## Welcome, friend
 
 For resources to help you with University subjects, check out my other <a href="https://uni.leolion.tk/" target="_blank">website</a>
 
