@@ -125,7 +125,7 @@ def print_file_size(received_size, previous_file_size, fileSize):
 def check_hashes_match(client_socket, fileName):
     print("Checking Hashes:")
     client_socket.send(b"GIVE_ME_HASH")
-    original_hash = client_socket.recv(4096).decode()
+    original_hash = client_socket.recv(4096).decode()[:-1]
     received_file_hash = hash256(fileName)
     print("\t[Original Hash]: %s\n\t[Received File Hash]: %s" % (original_hash, received_file_hash))
     if original_hash == received_file_hash:
@@ -139,9 +139,9 @@ def check_hashes_match(client_socket, fileName):
 
 
 def initial_client_comm(client_socket):
-    fileName = client_socket.recv(4096).decode()
+    fileName = client_socket.recv(4096).decode()[:-1]
     client_socket.send(b"Received Name")
-    original_size = int(client_socket.recv(4096).decode())
+    original_size = int(client_socket.recv(4096).decode()[:-1])
     print("Receiving file...")
     return (fileName, original_size)
 
