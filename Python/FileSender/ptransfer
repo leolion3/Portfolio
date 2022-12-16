@@ -23,7 +23,7 @@ Port = 5050
 
 
 if len(sys.argv) > 2:
-	Port = int(sys.argv[2])
+    Port = int(sys.argv[2])
 
 
 # Filename
@@ -71,17 +71,15 @@ def send_file(server):
     global IPAddr, Port, fileName
     print("Please enter filename with extension!")
     fileName = input("#> ")
-    if not len(fileName) or not os.path.exists(fileName):
-        print('Filename empty or file doesnt exist in provided path!')
+    if not len(fileName):
         send_file()
-        exit()
     server.bind((IPAddr, Port))
     server.listen(1)
     s, addr = server.accept()
-    s.send(bytes(fileName, 'utf-8'))
+    s.send(bytes(fileName, 'utf-8') + b'\n')
     s.recv(4096)
     f = open(fileName,'rb')
-    s.send(bytes(str(getsize(fileName)),'utf-8'))
+    s.send(bytes(str(getsize(fileName)) + '\n','utf-8'))
     exists, current_size = client_file_exists(s)
     if exists:
         print(f'File exists! Reading {current_size} bytes...')
@@ -90,8 +88,9 @@ def send_file(server):
             threshold = get_read_threshold(current_size - i)
             f.read(threshold)
             i += threshold
-    s.send(b'Ready for transfer!')
+    s.send(b'Ready for transfer!\n')
     s.recv(4096).decode()
+    print('Sending file...')
     while True:
         try:
             data = f.read(2000000)
@@ -100,10 +99,9 @@ def send_file(server):
             s.send(data)
         except Exception as e:
             break
-    s.send(b"[DONE]")
     s.recv(4096).decode()
     original_hash = hash256(fileName)
-    s.send(bytes(original_hash, 'utf-8'))
+    s.send(bytes(original_hash, 'utf-8') + b'\n')
     f.close()
     print("File transfer complete.")
     server.close()
@@ -177,10 +175,10 @@ def receive_file():
         fileSize = get_readable_file_size(original_size)
         previous_file_size = ""
         start_time = time.time()
-        file_exists = os.path.exists(fileName)
+        file_exists = exists(fileName)
         i = check_file_exists(client_socket, fileName, file_exists)
         print(client_socket.recv(4096).decode())
-        client_socket.send(b'Beginning file transfer...')
+        client_socket.send(b'Beginning file transfer...\n')
         f = None
         if exists:
             f = open(fileName, 'ab')
@@ -190,8 +188,7 @@ def receive_file():
         while not done:
             data = client_socket.recv(2000000)
             i = i + len(data)
-            if i > original_size:
-                data = data[:-6]
+            if i >= original_size:
                 done = True
             f.write(data)
             clear()
@@ -212,10 +209,11 @@ def setup():
     print("Please select type send/receive")
     selected = input("#> ")
     if "s" in selected:
-        server = socket.socket()
+        server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         try:
             send_file(server)
-        except:
+        except Exception as e:
             server.close()
     elif "r" in selected:
         receive_file()
