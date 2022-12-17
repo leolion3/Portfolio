@@ -124,7 +124,7 @@ def print_file_size(received_size, previous_file_size, fileSize):
 
 def check_hashes_match(client_socket, fileName):
     print("Checking Hashes:")
-    client_socket.send(b"GIVE_ME_HASH")
+    client_socket.send(b'GIVE_ME_HASH\n')
     original_hash = client_socket.recv(4096).decode()[:-1]
     received_file_hash = hash256(fileName)
     print("\t[Original Hash]: %s\n\t[Received File Hash]: %s" % (original_hash, received_file_hash))
@@ -140,7 +140,7 @@ def check_hashes_match(client_socket, fileName):
 
 def initial_client_comm(client_socket):
     fileName = client_socket.recv(4096).decode()[:-1]
-    client_socket.send(b"Received Name")
+    client_socket.send(b'Received Name\n')
     original_size = int(client_socket.recv(4096).decode()[:-1])
     print("Receiving file...")
     return (fileName, original_size)
@@ -159,10 +159,10 @@ def check_file_exists(client_socket, fileName, file_exists):
                 f.write(old_fis.read(threshold))
                 i += threshold
         os.remove(old_filename)
-        client_socket.send(bytes(f'SIZE:{current_size}', 'utf-8'))
+        client_socket.send(bytes(f'SIZE:{current_size}\n', 'utf-8'))
         return current_size
     else:
-        client_socket.send(b'NONEXISTANT')
+        client_socket.send(b'NONEXISTANT\n')
         return 0
 
 
@@ -177,25 +177,26 @@ def receive_file():
         start_time = time.time()
         file_exists = exists(fileName)
         i = check_file_exists(client_socket, fileName, file_exists)
-        print(client_socket.recv(4096).decode())
+        client_socket.recv(4096).decode()
         client_socket.send(b'Beginning file transfer...\n')
-        f = None
-        if exists:
-            f = open(fileName, 'ab')
-        else:
-            f = open(fileName, 'wb+')
-        done = False
-        while not done:
-            data = client_socket.recv(2000000)
-            i = i + len(data)
-            if i >= original_size:
-                done = True
-            f.write(data)
-            clear()
-            received_size = get_readable_file_size(i)
-            print_file_size(received_size, previous_file_size, fileSize)
-            previous_file_size = received_size
-        f.close()
+        if i < original_size:
+            f = None
+            if exists:
+                f = open(fileName, 'ab')
+            else:
+                f = open(fileName, 'wb+')
+            done = False
+            while not done:
+                data = client_socket.recv(2000000)
+                i = i + len(data)
+                if i >= original_size:
+                    done = True
+                f.write(data)
+                clear()
+                received_size = get_readable_file_size(i)
+                print_file_size(received_size, previous_file_size, fileSize)
+                previous_file_size = received_size
+            f.close()
         end_time = time.time()
         check_hashes_match(client_socket, fileName)
         print(f'Transfer done in {round(end_time - start_time, 1)} seconds.')
