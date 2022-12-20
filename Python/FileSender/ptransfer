@@ -66,6 +66,20 @@ def get_read_threshold(fileSize):
     return 1
 
 
+def accept_ping(server):
+    try:
+        s, addr = server.accept()
+        msg = s.recv(4096).decode()[:-1]
+        if msg == 'init':
+            return (True, s)
+        print('Received ping from ' + addr[0] + ':' + str(addr[1]))
+        s.send(b'REPLY\n')
+        return (False, s)
+    except Exception as e:
+        print(e)
+        accept_ping(server)
+    return (False, s)
+
 # Send file to remote
 def send_file(server):
     global IPAddr, Port, fileName
@@ -74,8 +88,11 @@ def send_file(server):
     if not len(fileName):
         send_file()
     server.bind((IPAddr, Port))
-    server.listen(1)
-    s, addr = server.accept()
+    server.listen(True)
+    ping_result = accept_ping(server)
+    while not ping_result[0]:
+        ping_result = accept_ping(server)
+    s = ping_result[1]
     s.send(bytes(fileName, 'utf-8') + b'\n')
     s.recv(4096)
     f = open(fileName,'rb')
@@ -139,6 +156,7 @@ def check_hashes_match(client_socket, fileName):
 
 
 def initial_client_comm(client_socket):
+    client_socket.send(b'init\n')
     fileName = client_socket.recv(4096).decode()[:-1]
     client_socket.send(b'Received Name\n')
     original_size = int(client_socket.recv(4096).decode()[:-1])
@@ -215,6 +233,7 @@ def setup():
         try:
             send_file(server)
         except Exception as e:
+            print(e)
             server.close()
     elif "r" in selected:
         receive_file()
