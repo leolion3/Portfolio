@@ -115,7 +115,6 @@ The complete $PROFILE file looks like this:
 ```powershell
 Import-Module posh-git
 oh-my-posh init pwsh --config ~/.aliens.omp.json | Invoke-Expression
-Set-PoshPrompt -Theme aliens
 Import-Module -Name Terminal-Icons
 Import-Module PSReadLine
 Set-PSReadLineOption -PredictionSource History
