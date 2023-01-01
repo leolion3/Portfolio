@@ -1,4 +1,26 @@
-## Welcome, friend
+<nav>
+  <div class="navbar">
+    <div class="container nav-container">
+      <input class="checkbox" type="checkbox" name="" id="" />
+      <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>
+      <div class="menu-items">
+        <li><a href="#welcome">Welcome</a></li>
+        <li><a href="#my-resume">Resume</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#publications">Publications</a></li>
+	<li><a href="#me-etc">More from me</a></li>
+	<li><a href="#google-play">Google Play</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<h2 id="welcome">Welcome, friend</h2>
 
 On this website you can find a bunch of useful tools, both for your personal workstation, as well as for your professional life.
 This website also serves as my Portfolio, so if you're looking to hire me, or are interested in filing a development request, don't hesitate to use the <a href="#contact-section">contact section below</a>.
@@ -7,7 +29,7 @@ This website also serves as my Portfolio, so if you're looking to hire me, or ar
 
 **All tools provided on this website are free to use and change, misuse however, is prohibited. Any damage caused by these tools, in addition to violations of local restrictions, are your own problem, not mine.** 
 
-# Who am I?
+<h1 id="my-resume">Who am I?</h1>
 
 {% capture p1 %}{% include_relative Etc/leolion3/README.md %}{% endcapture %}
 {{ p1 | markdownify }}
@@ -26,7 +48,7 @@ This website also serves as my Portfolio, so if you're looking to hire me, or ar
 
 ---
 
-# Ok, so what's on the menu?
+<h1 id="tools">Ok, so what's on the menu?</h1>
 
 Well you can stick around and take a look at the list below, or you can go browse the repository!
 
@@ -438,7 +460,7 @@ The B-Human football robots were incapable of showing emotions during RoboCup ga
   <a href="#dancing-robots">Back to Top</a>
 </details>
 
-# More from Me
+<h1 id="me-etc">More from Me</h1>
 
 ## Teespring Merch
 
@@ -449,7 +471,7 @@ The B-Human football robots were incapable of showing emotions during RoboCup ga
 Check out the various cool merch on my <a href='https://leolions-merch.creator-spring.com/' target='_blank'>Teespring store</a>
 
 <!-- Google Play -->
-<h2>
+<h2 id="google-play">
   <img src="https://www.gstatic.com/android/market_images/web/play_prism_hlock_2x.png" width="168" height="35"/>
 </h2>
 
