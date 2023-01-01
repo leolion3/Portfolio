@@ -1,3 +1,4 @@
+<link rel="stylesheet" type="text/css" href="/html/style.css"/>
 <nav>
   <div class="navbar">
     <div class="container nav-container">
