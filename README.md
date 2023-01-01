@@ -1,14 +1,12 @@
-<table style="margin-left: auto; margin-right: auto; text-align:center; 43 nborder-collapse:collapse; border-spacing:0">
+<table style="margin-left: auto; margin-right: auto; text-align:center; 43 nborder-collapse:collapse; border-spacing:0; font-family:Arial, sans-serif;font-size:20px; font-weight:bold; padding:10px 5px; border-style:solid; border-width:1px; overflow:hidden; word-break:normal; border-color:#228B22; color:#228B22; vertical-align:top">
   <tr>
-    <div style="font-family:Arial, sans-serif;font-size:20px;font-weight:bold;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#228B22;background-color:#ffffff;color:#228B22;text-align:center;vertical-align:top">
-      <td><a href="#welcome">Welcome</a></td>
-      <td><a href="#my-resume">Resume</a></td>
-      <td><a href="#tools">Tools</a></td>
-      <td><a href="#publications">Publications</a></td>
-      <td><a href="#me-etc">More from me</a></td>
-      <td><a href="#google-play">Google Play</a></td>
-      <td><a href="#contact-section">Contact</a></td>
-    </div>
+    <th><a href="#welcome">Welcome</a></th>
+    <th><a href="#my-resume">Resume</a></th>
+    <th><a href="#tools">Tools</a></th>
+    <th><a href="#publications">Publications</a></th>
+    <th><a href="#me-etc">More from me</a></th>
+    <th><a href="#google-play">Google Play</a></th>
+    <th><a href="#contact-section">Contact</a></th>
   </tr>
 </table>
 
