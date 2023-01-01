@@ -2,16 +2,18 @@
 <div class="tg-wrap"><table class="tg">
 <thead>
   <tr>
-    <td class="tg-5oyt"><a href="#welcome" style="color:#b5e853; text-decoration: none; ">Welcome</a></td>
-    <td class="tg-5oyt"><a href="#my-resume" style="color:#b5e853; text-decoration: none; ">Resume</a></td>
-    <td class="tg-5oyt"><a href="#tools" style="color:#b5e853; text-decoration: none; ">Tools</a></td>
-    <td class="tg-5oyt"><a href="#publications" style="color:#b5e853; text-decoration: none; ">Publications</a></td>
-    <td class="tg-5oyt"><a href="#me-etc" style="color:#b5e853; text-decoration: none; ">More from me</a></td>
-    <td class="tg-5oyt"><a href="#google-play" style="color:#b5e853; text-decoration: none; ">Google Play</a></td>
-    <td class="tg-5oyt"><a href="#contact-section" style="color:#b5e853; text-decoration: none; ">Contact</a></td>
+    <th class="tg-5oyt"><a href="#welcome" style="color:#b5e853; text-decoration: none; ">Welcome</a></th>
+    <th class="tg-5oyt"><a href="#my-resume" style="color:#b5e853; text-decoration: none; ">Resume</a></th>
+    <th class="tg-5oyt"><a href="#tools" style="color:#b5e853; text-decoration: none; ">Tools</a></th>
+    <th class="tg-5oyt"><a href="#publications" style="color:#b5e853; text-decoration: none; ">Publications</a></th>
+    <th class="tg-5oyt"><a href="#me-etc" style="color:#b5e853; text-decoration: none; ">More from me</a></th>
+    <th class="tg-5oyt"><a href="#google-play" style="color:#b5e853; text-decoration: none; ">Google Play</a></th>
+    <th class="tg-5oyt"><a href="#contact-section" style="color:#b5e853; text-decoration: none; ">Contact</a></th>
   </tr>
 </thead>
 </table></div>
+
+<p><br></p>
 
 <h2 id="welcome">Welcome, friend</h2>
 
