@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="Portfolio/html/style.css"/>
+<link rel="stylesheet" type="text/css" href="html/style.css"/>
 <div class="tg-wrap"><table class="tg">
 <thead>
   <tr>
