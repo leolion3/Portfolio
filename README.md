@@ -1,14 +1,17 @@
-<table style="margin-left: auto; margin-right: auto; text-align:center; 43 nborder-collapse:collapse; border-spacing:0; font-family:Arial, sans-serif;font-size:20px; font-weight:bold; padding:10px 5px; border-style:solid; border-width:1px; overflow:hidden; word-break:normal; border-color:#228B22; color:#228B22; vertical-align:top">
+<link rel="stylesheet" type="text/css" href="Portfolio/html/style.css"/>
+<div class="tg-wrap"><table class="tg">
+<thead>
   <tr>
-    <th><a href="#welcome">Welcome</a></th>
-    <th><a href="#my-resume">Resume</a></th>
-    <th><a href="#tools">Tools</a></th>
-    <th><a href="#publications">Publications</a></th>
-    <th><a href="#me-etc">More from me</a></th>
-    <th><a href="#google-play">Google Play</a></th>
-    <th><a href="#contact-section">Contact</a></th>
+    <td class="tg-5oyt"><a href="#welcome" style="color:#b5e853; text-decoration: none; ">Welcome</a></td>
+    <td class="tg-5oyt"><a href="#my-resume" style="color:#b5e853; text-decoration: none; ">Resume</a></td>
+    <td class="tg-5oyt"><a href="#tools" style="color:#b5e853; text-decoration: none; ">Tools</a></td>
+    <td class="tg-5oyt"><a href="#publications" style="color:#b5e853; text-decoration: none; ">Publications</a></td>
+    <td class="tg-5oyt"><a href="#me-etc" style="color:#b5e853; text-decoration: none; ">More from me</a></td>
+    <td class="tg-5oyt"><a href="#google-play" style="color:#b5e853; text-decoration: none; ">Google Play</a></td>
+    <td class="tg-5oyt"><a href="#contact-section" style="color:#b5e853; text-decoration: none; ">Contact</a></td>
   </tr>
-</table>
+</thead>
+</table></div>
 
 <h2 id="welcome">Welcome, friend</h2>
 
