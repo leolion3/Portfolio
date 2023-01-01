@@ -1,25 +1,14 @@
-<link rel="stylesheet" type="text/css" href="/Portfolio/html/style.css"/>
-<nav>
-  <div class="navbar">
-    <div class="container nav-container">
-      <input class="checkbox" type="checkbox" name="" id="" />
-      <div class="hamburger-lines">
-        <span class="line line1"></span>
-        <span class="line line2"></span>
-        <span class="line line3"></span>
-      </div>
-      <div class="menu-items">
-        <li><a href="#welcome">Welcome</a></li>
-        <li><a href="#my-resume">Resume</a></li>
-        <li><a href="#tools">Tools</a></li>
-        <li><a href="#publications">Publications</a></li>
-	<li><a href="#me-etc">More from me</a></li>
-	<li><a href="#google-play">Google Play</a></li>
-        <li><a href="#contact-section">Contact</a></li>
-      </div>
-    </div>
-  </div>
-</nav>
+<table style="margin-left: auto; margin-right: auto; text-align:center;">
+  <tr>
+    <td><a href="#welcome">Welcome</a></td>
+    <td><a href="#my-resume">Resume</a></td>
+    <td><a href="#tools">Tools</a></td>
+    <td><a href="#publications">Publications</a></td>
+    <td><a href="#me-etc">More from me</a></td>
+    <td><a href="#google-play">Google Play</a></td>
+    <td><a href="#contact-section">Contact</a></td>
+  </tr>
+</table>
 
 <h2 id="welcome">Welcome, friend</h2>
 
