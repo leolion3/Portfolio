@@ -1,6 +1,9 @@
 ## Welcome, friend
 
-For resources to help you with University subjects, check out my other <a href="https://uni.leolion.tk/" target="_blank">website</a>
+On this website you can find a bunch of useful tools, both for your personal workstation, as well as for your professional life.
+This website also serves as my Portfolio, so if you're looking to hire me, or are interested in filing a development request, don't hesitate to use the <a href="#contact-section">contact section below</a>.
+
+*For resources to help you with University subjects, check out my other <a href="https://uni.leolion.tk/" target="_blank">website</a>.*
 
 **All tools provided on this website are free to use and change, misuse however, is prohibited. Any damage caused by these tools, in addition to violations of local restrictions, are your own problem, not mine.** 
 
@@ -9,7 +12,7 @@ For resources to help you with University subjects, check out my other <a href="
 {% capture p1 %}{% include_relative Etc/leolion3/README.md %}{% endcapture %}
 {{ p1 | markdownify }}
 
-Wanna know if you should hire me or need a software developed? Check out my interactive digital resume below (or <a href='https://github.com/leolion3/Portfolio/blob/master/CV/' target='_blank' id='digital-resume'>here</a>).
+<p>Wanna know if you should hire me or need a software developed? Check out my interactive digital resume below (or <a href='https://github.com/leolion3/Portfolio/blob/master/CV/' target='_blank' id='digital-resume'>here</a>).</p>
 
 <details>
   <summary>
@@ -23,15 +26,9 @@ Wanna know if you should hire me or need a software developed? Check out my inte
 
 ---
 
-# Can I use your tools?
+# Ok, so what's on the menu?
 
-Of course! You may also modify them at will. However any trouble caused by them will be your own problem, not mine! :)
-
-<hr/>
-
-# Ok I'm in, where are the tools?
-
-Well you can stick around and take a look at the tools below, or you can go browse the repository!
+Well you can stick around and take a look at the list below, or you can go browse the repository!
 
 <details>
   <summary>
@@ -507,6 +504,6 @@ Check out my Google Play Apps!
 
 <hr/>
 
-# Contact
+<h1 id="contact-section">Contact</h1>
 
 You can contact me using my <a href="mailto:s_xsipo6@uni-bremen.de">email address</a>, or on Instagram <a target="_blank" href="https://www.instagram.com/xleolion3">@xleolion3</a>
