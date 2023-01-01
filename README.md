@@ -13,7 +13,7 @@
 </thead>
 </table></div>
 
-<p><br></p>
+<br>
 
 <h2 id="welcome">Welcome, friend</h2>
 
