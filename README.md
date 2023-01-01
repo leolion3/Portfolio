@@ -1,5 +1,5 @@
 <link rel="stylesheet" type="text/css" href="html/style.css"/>
-<div class="tg-wrap"><table class="tg">
+<div class="tg-wrap"><table class="tg" style="width: 100%">
 <thead>
   <tr>
     <th class="tg-5oyt"><a href="#welcome" style="color:#b5e853; text-decoration: none; ">Welcome</a></th>
