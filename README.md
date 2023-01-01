@@ -1,6 +1,6 @@
 <table style="margin-left: auto; margin-right: auto; text-align:center; 43 nborder-collapse:collapse; border-spacing:0">
   <tr>
-    <div style="font-family:Arial, sans-serif;font-size:20px;font-weight:bold;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#228B22;background-color:#ffffff;color:#ffffff;text-align:center;vertical-align:top">
+    <div style="font-family:Arial, sans-serif;font-size:20px;font-weight:bold;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#228B22;background-color:#ffffff;color:#228B22;text-align:center;vertical-align:top">
       <td><a href="#welcome">Welcome</a></td>
       <td><a href="#my-resume">Resume</a></td>
       <td><a href="#tools">Tools</a></td>
