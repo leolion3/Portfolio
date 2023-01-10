@@ -18,7 +18,7 @@
 On this website you can find a bunch of useful tools, both for your personal workstation, as well as for your professional life.
 This website also serves as my Portfolio, so if you're looking to hire me, or are interested in filing a development request, don't hesitate to use the <a style="color:#b5e853; text-decoration: none;" href="#contact-section">contact section below</a>.
 
-*For resources to help you with University subjects, check out my other <a style="color:#b5e853; text-decoration: none;" href="https://uni.leolion.tk/" target="_blank">website</a>.*
+*For resources to help you with University subjects, check out my other <a style="color:#b5e853; text-decoration: none;" href="https://uni.leolion.tk/" target="_blank">website <i class="fa fa-external-link"></i></a>*
 
 **All tools provided on this website are free to use and change, misuse however, is prohibited. Any damage caused by these tools, in addition to violations of local restrictions, are your own problem, not mine.** 
 
