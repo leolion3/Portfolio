@@ -479,7 +479,7 @@ Check out my Google Play Apps!
 <!-- File transfer tool -->
   <li>
     <h2>
-      <img src="https://play-lh.googleusercontent.com/jGpeo-N4WzHxnvzVhauN7eagBU5vTiZPvnLLNgpP7xtVkjlFFV8BJquUdLsXfjGhnQ=w240-h480-rw" width="24" height="24"> Open Source Easy File Transfer <a style="color:#b5e853; text-decoration: none;" href="https://play.google.com/store/apps/details?id=software.isratech.filetransferos" target="_blank">(Google Play<i class="fa fa-external-link"></i>)</a>
+      <img src="https://play-lh.googleusercontent.com/jGpeo-N4WzHxnvzVhauN7eagBU5vTiZPvnLLNgpP7xtVkjlFFV8BJquUdLsXfjGhnQ=w240-h480-rw" width="24" height="24"> Open Source Easy File Transfer <a style="color:#b5e853; text-decoration: none;" href="https://play.google.com/store/apps/details?id=software.isratech.filetransferos" target="_blank">(Google Play <i class="fa fa-external-link"></i>)</a>
     </h2>
     <img src="https://play-lh.googleusercontent.com/iHuddteA7OHsEr9jMnzo15gXJbZaAOHeEBDGZ_cv1u1MF6mOJGNhSMnETmQMnQlc1nI=w526-h296-rw" width="17%">
     <img src="https://play-lh.googleusercontent.com/SG7YI3_F70NN1pWVLh4AJXPycm2YC9XSNjCwigQB6N7Q64leSXaZXaDoPxC4uTPebu5z=w526-h296-rw" width="17%">
@@ -491,7 +491,7 @@ Check out my Google Play Apps!
 <!-- Sharky -->
   <li>
     <h2>
-      <img src="https://lh3.googleusercontent.com/iwBywQJPRV8Rk-uuHzMzSspSaTO8AHjgBgeqovw8SlWpdej_vcU68LPLaRa9jptfHlk=s180-rw" width="24" height="24"> Sharky the hungry Sharkfish Game <a style="color:#b5e853; text-decoration: none;" target="_blank" href="https://play.google.com/store/apps/details?id=com.SpaceAhoy.Sharky">(Google Play<i class="fa fa-external-link"></i>)</a>
+      <img src="https://lh3.googleusercontent.com/iwBywQJPRV8Rk-uuHzMzSspSaTO8AHjgBgeqovw8SlWpdej_vcU68LPLaRa9jptfHlk=s180-rw" width="24" height="24"> Sharky the hungry Sharkfish Game <a style="color:#b5e853; text-decoration: none;" target="_blank" href="https://play.google.com/store/apps/details?id=com.SpaceAhoy.Sharky">(Google Play <i class="fa fa-external-link"></i>)</a>
     </h2>
     <img src="https://lh3.googleusercontent.com/O04pRpbIiKpY2r_QRSajjbVJ0cxDMSwJhoHZuXFl6fTBdlJUFj6oSbgS1nTyJghnz7E=w720-h310-rw" width="85%">
     <p>Sharky is very Hungry! Help by feeding him as many fish as you can, but watch out for those nasty harpoons!<br>Sharky is a family-friendly game designed for all ages. Furthermore it is completely FREE<br> and AD-FREE. Collect coins to unlock powerups and new skins, and get that highscore!<br>Sharky is a great time killer for your free time as well!<br /> Be it while waiting at the airport, or in the subway, sharky can played anywhere at any given time!<br /> What are you still waiting for? Get Sharky today!
@@ -500,7 +500,7 @@ Check out my Google Play Apps!
 <!-- Semesterplaner -->
   <li>
     <h2>
-      <img src="https://lh3.googleusercontent.com/asPozAuGQpJqNz-PB0yesBw9wRGkLDuquGqCf0p47rqBSvhxU5pdNHS27O5fuSF_RyY=s180-rw" width="24" height="24"> SemesterPlaner - Plan your Schedule! <a style="color:#b5e853; text-decoration: none;" target="_blank" href="https://play.google.com/store/apps/details?id=com.spaceahoy.semesterplaner">(Google Play<i class="fa fa-external-link"></i>)</a>
+      <img src="https://lh3.googleusercontent.com/asPozAuGQpJqNz-PB0yesBw9wRGkLDuquGqCf0p47rqBSvhxU5pdNHS27O5fuSF_RyY=s180-rw" width="24" height="24"> SemesterPlaner - Plan your Schedule! <a style="color:#b5e853; text-decoration: none;" target="_blank" href="https://play.google.com/store/apps/details?id=com.spaceahoy.semesterplaner">(Google Play <i class="fa fa-external-link"></i>)</a>
     </h2>
       <img src="https://lh3.googleusercontent.com/7VQlwaGV-Btk3i9eHY-unfSE1El_0YdQxBfO8yCXA_h4qVnpycARmJgWVFGvnavCuw=w720-h310-rw" width="17%">
       <img src="https://lh3.googleusercontent.com/7vt1bGzJIL-Pk_uBpK5hXMpATIz9thDZc0m6LmaNn4gdaKkqvnxuE-q4IvZXAUXxiDbc=w720-h310-rw" width="17%">
@@ -511,7 +511,7 @@ Check out my Google Play Apps!
 <!-- Password Generator -->
   <li>
     <h2>
-      <img src="https://lh3.googleusercontent.com/w_qN0qkMH9B-XmVHDn4GDEFfaISZ3ItJuwahMIqq0BfqW-3_GtLsETiG6URyOy_vKA=s180-rw" width="24" height="24"> Open-Source Password Generator App <a style="color:#b5e853; text-decoration: none;" target="_blank" href="https://play.google.com/store/apps/details?id=processing.test.password_generator">(Google Play<i class="fa fa-external-link"></i>)</a>
+      <img src="https://lh3.googleusercontent.com/w_qN0qkMH9B-XmVHDn4GDEFfaISZ3ItJuwahMIqq0BfqW-3_GtLsETiG6URyOy_vKA=s180-rw" width="24" height="24"> Open-Source Password Generator App <a style="color:#b5e853; text-decoration: none;" target="_blank" href="https://play.google.com/store/apps/details?id=processing.test.password_generator">(Google Play <i class="fa fa-external-link"></i>)</a>
     </h2>
     <img src="https://lh3.googleusercontent.com/XVku5gPbTFGz4LMZX9N8PnA-ptAwuMck9XifV_vJ3XIFe9pAS-debgjAPU0nlq5ZbZU=w720-h310-rw" width="17%">
     <img src="https://lh3.googleusercontent.com/F2CGan-SO4JPkvI7RxjksN97mC5EerzL-rKvzuMvwIOji1COJS_-2Bk59p4tXLd8bsQ=w720-h310-rw" width="17%">
