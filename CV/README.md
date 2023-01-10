@@ -4,21 +4,43 @@ This section is included, should you be interested in my capabilities for whatev
 
 ---
 
-<h2 id="toc">Table of Contents</h2>
-
-- ### [Education, Certifications, Trainings](#education)
-- ### [Work Experience](#work_experience)
-- ### [Projects](#my_projects)
-- ### [Apps](#my_apps)
-- ### [Languages](#my_languages)
-- ### [Programming and Scripting Languages](#programming_langs)
-- ### [Operating Systems](#oss)
-- ### [Tools I use](#tools)
-- ### [Skills](#my_skills)
+<div class="tg-wrap"><table class="tg" id="cv-toc">
+<thead>
+  <tr>
+    <th class="tg-5oyt">
+    	<a style="color:#b5e853; text-decoration: none;" href="#cv-education">Education, Certifications, Trainings</a>
+    </th>
+    <th class="tg-5oyt">
+    	<a style="color:#b5e853; text-decoration: none;" href="#cv-work_experience">Work Experience</a>
+    </th>
+    <th class="tg-5oyt">
+    	<a style="color:#b5e853; text-decoration: none;" href="#cv-my_projects">Projects</a>
+    </th>
+    <th class="tg-5oyt">
+    	<a style="color:#b5e853; text-decoration: none;" href="#cv-my_apps">Apps</a>
+    </th>
+    <th class="tg-5oyt">
+    	<a style="color:#b5e853; text-decoration: none;" href="#cv-my_languages">Languages</a>
+    </th>
+    <th class="tg-5oyt">
+    	<a style="color:#b5e853; text-decoration: none;" href="#cv-programming_langs">Programming and Scripting Languages</a>
+    </th>
+    <th class="tg-5oyt">
+    	<a style="color:#b5e853; text-decoration: none;" href="#cv-oss">Operating Systems</a>
+    </th>
+    <th class="tg-5oyt">
+    	<a style="color:#b5e853; text-decoration: none;" href="#cv-tools">Tools I use</a>
+    </th>
+    <th class="tg-5oyt">
+    	<a style="color:#b5e853; text-decoration: none;" href="#cv-my_skills">Skills</a>
+    </th>
+  </tr>
+</thead>
+</table></div>
 
 ---
 
-<h2 id="me_in_a_nutshell">This is me</h2>
+<h2 id="cv-me_in_a_nutshell">This is me</h2>
 
 This is me.
 
@@ -28,11 +50,11 @@ My name is Leonard Haddad. I am 23 years old and I am working on my Computer Sci
 
 I come originally from Israel (with both the Israeli and German passports), but am currently residing in Bremen. 
 
-<a href="#toc">Back to top</a>
+<a style="color:#b5e853; text-decoration: none;" href="#cv-toc">Back to top</a>
 
 ---
 
-<h2 id="education">Education, Certifications, Trainings</h2>
+<h2 id="cv-education">Education, Certifications, Trainings</h2>
 
 ### School
 
@@ -60,11 +82,11 @@ I'm persuing the following certifications:
 - Computer Science Msc. (eta. 2024)
 - Computer Science Phd. (eta. 2028)
 
-<a href="#toc">Back to top</a>
+<a style="color:#b5e853; text-decoration: none;" href="#cv-toc">Back to top</a>
 
 ---
 
-<h2 id="work_experience">Work Experience</h2>
+<h2 id="cv-work_experience">Work Experience</h2>
 
 Here's my work experience so far (*dates are in european format - DD/MM*):
 
@@ -80,11 +102,11 @@ Here's my work experience so far (*dates are in european format - DD/MM*):
 - 09/2017 - 01/2018: Worked at the print shop [Defus ha Hoshen Roberto](https://goo.gl/maps/8zqzMroYX5Tskej46)
 - pre-2017 (during school): Worked as a surveyor's assistant for [Gech-BJ Engineering](https://goo.gl/maps/zQoQCBHnWRMwrq867)).
 
-<a href="#toc">Back to top</a>
+<a style="color:#b5e853; text-decoration: none;" href="#cv-toc">Back to top</a>
 
 ---
 
-<h2 id="my_projects">Projects</h2>
+<h2 id="cv-my_projects">Projects</h2>
 
 A couple projects I worked on:
 
@@ -97,11 +119,11 @@ A couple projects I worked on:
 
 \* *Of course there are also the projects from work. These however cannot be mentioned for obvious reasons.*
 
-<a href="#toc">Back to top</a>
+<a style="color:#b5e853; text-decoration: none;" href="#cv-toc">Back to top</a>
 
 ---
 
-<h2 id="my_apps">Apps</h2>
+<h2 id="cv-my_apps">Apps</h2>
 
 I've published a couple apps on the Google Play Store. Check them out below (the code is mostly terrible, then again it was one of the first things I did):
 
@@ -110,11 +132,11 @@ I've published a couple apps on the Google Play Store. Check them out below (the
 - [Semester Planer Schedule Generator](https://play.google.com/store/apps/details?id=com.spaceahoy.semesterplaner) (Java with Android SDK).
 
 
-<a href="#toc">Back to top</a>
+<a style="color:#b5e853; text-decoration: none;" href="#cv-toc">Back to top</a>
 
 ---
 
-<h2 id="my_languages">Languages</h2>
+<h2 id="cv-my_languages">Languages</h2>
 
 ### Spoken
 
@@ -133,11 +155,11 @@ I'm learning the following languages for fun:
 - French
 - Turkish
 
-<a href="#toc">Back to top</a>
+<a style="color:#b5e853; text-decoration: none;" href="#cv-toc">Back to top</a>
 
 ---
 
-<h2 id="programming_langs">Programming and Scripting Languages</h2>
+<h2 id="cv-programming_langs">Programming and Scripting Languages</h2>
 
 ### In-Use
 
@@ -180,11 +202,11 @@ Im also learning the following languages:
 - Dart
 - Kotlin
 
-<a href="#toc">Back to top</a>
+<a style="color:#b5e853; text-decoration: none;" href="#cv-toc">Back to top</a>
 
 ---
 
-<h2 id="oss">Operating Systems</h2>
+<h2 id="cv-oss">Operating Systems</h2>
 
 I regularly use the following operating systems:
 
@@ -200,11 +222,11 @@ I regularly use the following operating systems:
 	- HiveOS
 - [Unifi OS](https://ui.com/consoles) by Ubiquiti
 
-<a href="#toc">Back to top</a>
+<a style="color:#b5e853; text-decoration: none;" href="#cv-toc">Back to top</a>
 
 ---
 
-<h2 id="tools">Tools I use</h2>
+<h2 id="cv-tools">Tools I use</h2>
 
 Pieces of software I use in my professional and daily life.
 
@@ -260,11 +282,11 @@ Tools I generally use (in addition to the abovementioned ones):
 - Windows Terminal (with Powershell 7 and WSL)
 - MS Office Tools
 
-<a href="#toc">Back to top</a>
+<a style="color:#b5e853; text-decoration: none;" href="#cv-toc">Back to top</a>
 
 ---
 
-<h2 id="my_skills">Skills</h2>
+<h2 id="cv-my_skills">Skills</h2>
 
 Some skills I have (besides flirting and dark humor):
 
@@ -278,4 +300,4 @@ Some skills I have (besides flirting and dark humor):
 - (Abstract-) Problem solving
 - Finding help when needed and getting projects done
 
-<a href="#toc">Back to top</a>
+<a style="color:#b5e853; text-decoration: none;" href="#cv-toc">Back to top</a>
