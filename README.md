@@ -4,7 +4,7 @@
   <tr>
     <th class="tg-5oyt"><a href="#welcome" style="color:#b5e853; text-decoration: none;">Welcome</a></th>
     <th class="tg-5oyt"><a href="#my-resume" style="color:#b5e853; text-decoration: none;">Resume</a></th>
-    <th class="tg-5oyt"><a href="#tools" style="color:#b5e853; text-decoration: none;">Tools</a></th>
+    <th class="tg-5oyt"><a href="#my-tools" style="color:#b5e853; text-decoration: none;">Tools</a></th>
     <th class="tg-5oyt"><a href="#publications" style="color:#b5e853; text-decoration: none;">Publications</a></th>
     <th class="tg-5oyt"><a href="#me-etc" style="color:#b5e853; text-decoration: none;">More from me</a></th>
     <th class="tg-5oyt"><a href="#google-play" style="color:#b5e853; text-decoration: none;">Google Play</a></th>
@@ -41,7 +41,7 @@ This website also serves as my Portfolio, so if you're looking to hire me, or ar
 
 ---
 
-<h1 id="tools">Ok, so what's on the menu?</h1>
+<h1 id="my-tools">Ok, so what's on the menu?</h1>
 
 Well you can stick around and take a look at the list below, or you can go browse the repository!
 
