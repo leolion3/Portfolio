@@ -56,7 +56,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Python MiniHTTP Server
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/MiniHTTPServer' target='_blank' id='mini-http-server'>MiniHTTPServer (Minimal HTTP Server)</a>
+	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/MiniHTTPServer' target='_blank' id='mini-http-server'>MiniHTTPServer (Minimal HTTP Server) <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -75,7 +75,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Yearly Investment Yield Calculator
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/YearlyYieldCalculator' target='_blank' id='investment-yield-ref'>Investment Yield Calculator</a>
+	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/YearlyYieldCalculator' target='_blank' id='investment-yield-ref'>Investment Yield Calculator <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -94,7 +94,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Bank Balance Calculator
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/NetworthCalculator' target='_blank' id='bank-balance-ref'>Bank-Balance Calculator</a>
+	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/NetworthCalculator' target='_blank' id='bank-balance-ref'>Bank-Balance Calculator <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -113,7 +113,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Password Vault
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/PasswordVault" target="_blank" id='password-vault-ref'>Password Vault</a>
+	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/PasswordVault" target="_blank" id='password-vault-ref'>Password Vault <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -133,7 +133,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	File Transfer Tool
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank' id='file-transfer-ref'>File Transfer Tool</a>
+	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank' id='file-transfer-ref'>File Transfer Tool <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -153,7 +153,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Password Transfer Tool
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/PasswordUtils' target='_blank' id='password-transfer-ref'>Password Transfer Tool</a>
+	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/PasswordUtils' target='_blank' id='password-transfer-ref'>Password Transfer Tool <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -173,7 +173,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Spotify Module
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/SpotifyAPI' target='_blank' id='spotify-api-ref'>Spotify API Modules</a>
+	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/SpotifyAPI' target='_blank' id='spotify-api-ref'>Spotify API Modules <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -193,7 +193,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Python Ethermine Ticker
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/Ethermine' target='_blank' id='ethermine-ticker-ref'>Ethermine Ticker</a>
+	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/Ethermine' target='_blank' id='ethermine-ticker-ref'>Ethermine Ticker <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -212,7 +212,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Monoalphabetic Decypherer
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/MonoalphabeticDecypherer" target="_blank" id='monoalphabetic-decypherer-ref'>Monoalphabetic Decypherer</a>
+	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/MonoalphabeticDecypherer" target="_blank" id='monoalphabetic-decypherer-ref'>Monoalphabetic Decypherer <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -231,7 +231,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Reverse Shell
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/PythonReverseShell" target="_blank" id='py-revshell-ref'>Reverse Shell</a>
+	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/PythonReverseShell" target="_blank" id='py-revshell-ref'>Reverse Shell <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -250,7 +250,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Markdown Text Editor
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/Markdown" target="_blank" id='py-texteditor-ref'>Markdown/Text Editor</a>
+	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/Markdown" target="_blank" id='py-texteditor-ref'>Markdown/Text Editor <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -269,7 +269,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Youtube to MP3
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/YouTube" target="_blank" id='yt-downloader-ref'>YouTube MP3 Downloader</a>
+	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/YouTube" target="_blank" id='yt-downloader-ref'>YouTube MP3 Downloader <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -288,7 +288,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Revshell Payload Generator
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/ShellGenerator" target="_blank" id='powershell-revshell-ref'>Powershell TCP Reverse Shell Generator</a>
+	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/ShellGenerator" target="_blank" id='powershell-revshell-ref'>Powershell TCP Reverse Shell Generator <i class="fa fa-external-link"></i></a>
 </h3>
 	
 <details>
@@ -307,7 +307,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Chat spammer
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/ChatSpammer" target="_blank" id='py-chatspammer-ref'>Chat Spammer</a>
+	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/ChatSpammer" target="_blank" id='py-chatspammer-ref'>Chat Spammer <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -324,7 +324,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 <hr/>
 
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/Introduction" target="_blank" id='python-introduction-ref'>Python Introduction</a>
+	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/Introduction" target="_blank" id='python-introduction-ref'>Python Introduction <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -346,7 +346,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	<hr/>
   </summary>
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Powershell/Customization" target="_blank" id='wt-customization'>Windows Terminal Customization</a>
+	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Powershell/Customization" target="_blank" id='wt-customization'>Windows Terminal Customization <i class="fa fa-external-link"></i></a>
 </h3>
 	<details>
 		<summary>
@@ -360,7 +360,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	</details>
 <hr/>
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/CustomCommands" target="_blank" id='custom-commands'>Custom Windows Commands and Git Shortcuts</a>
+	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/CustomCommands" target="_blank" id='custom-commands'>Custom Windows Commands and Git Shortcuts <i class="fa fa-external-link"></i></a>
 </h3>
 <details>
 		<summary>
@@ -382,7 +382,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	<hr/>
   </summary>
   <h3>
-		<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Linux/Customization/Oh-My-Zsh" target="_blank" id='terminal-customization'>Customize Terminal with Oh-My-Zsh</a>
+		<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Linux/Customization/Oh-My-Zsh" target="_blank" id='terminal-customization'>Customize Terminal with Oh-My-Zsh <i class="fa fa-external-link"></i></a>
 	</h3>
 	<details>
 	<summary>
@@ -404,7 +404,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	<hr/>
   </summary>
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://gist.github.com/leolion3/ccf654ab60c8e110c65ef948da6af461" target="_blank" id="dlu">DLU Lego Universe Server Setup</a>
+	<a style="color:#b5e853; text-decoration: none;" href="https://gist.github.com/leolion3/ccf654ab60c8e110c65ef948da6af461" target="_blank" id="dlu">DLU Lego Universe Server Setup <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -429,7 +429,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 
 The B-Human football robots were incapable of showing emotions during RoboCup games. This has been changed. The process of doing so required various tweaks dozens of code-fragments throughout the B-Human framework and the introduction of various new mechanisms. 
 
-**The thesis can be found <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/University_Stuff/Publications/BA_B-More-Human_leonard_haddad_SoSe22.pdf">here</a>.**
+**The thesis can be found <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/University_Stuff/Publications/BA_B-More-Human_leonard_haddad_SoSe22.pdf">here <i class="fa fa-external-link"></i></a>**
 
 **The thesis was graded with a 1.3 (an A if an A+ is the highest possible grade).**
 
@@ -456,7 +456,7 @@ The B-Human football robots were incapable of showing emotions during RoboCup ga
 
 ---
 
-<h2 id="me-etc">More from Me</h1>
+<h1 id="me-etc">More from Me</h1>
 
 ### Teespring Merch
 
@@ -464,14 +464,14 @@ The B-Human football robots were incapable of showing emotions during RoboCup ga
 	<img src='html/teespring.png' width='100%'/>
 </a>
 
-Check out the various cool merch on my <a style="color:#b5e853; text-decoration: none;" href='https://leolions-merch.creator-spring.com/' target='_blank'>Teespring store</a>
+Check out the various cool merch on my <a style="color:#b5e853; text-decoration: none;" href='https://leolions-merch.creator-spring.com/' target='_blank'>Teespring store <i class="fa fa-external-link"></i></a>
 
 ---
 
 <!-- Google Play -->
-<h2 id="google-play">
+<h1 id="google-play">
   <img src="https://www.gstatic.com/android/market_images/web/play_prism_hlock_2x.png" width="168" height="35"/>
-</h2>
+</h1>
 
 Check out my Google Play Apps!
 
@@ -517,7 +517,7 @@ Check out my Google Play Apps!
     <img src="https://lh3.googleusercontent.com/F2CGan-SO4JPkvI7RxjksN97mC5EerzL-rKvzuMvwIOji1COJS_-2Bk59p4tXLd8bsQ=w720-h310-rw" width="17%">
     <img src="https://lh3.googleusercontent.com/Ebmg4CAn755JETg3MU2DIOVTVZLZUvJdVINBK2n6PykKf4f_i0coL_gEQObh_VCIA0Y=w720-h310-rw" width="17%">
     <img src="https://lh3.googleusercontent.com/AZq9XFuuxM06D02eTipgmsPg7UO7iIZL2OiMvayBcOLDG8j3VbrKWBr7gdd1rCt-Aw=w720-h310-rw" width="17%">
-    <p>Passwords can be a real hustle, especially when you have a thousand accounts for a gazillion different websites...<br>There are some great password generators out there, however how can you ever really trust such a service if it is not open sourced?<br />Stop worrying about your passwords today, with this Free, Open-Source Password Generator!<br>Password Generator is completely FREE and AD-FREE, it works 100% offline an creates you a password in seconds!<br>The source code can be found on <a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/App-Tutorial/tree/master/Password_Generator" target="_blank">Github</a>
+    <p>Passwords can be a real hustle, especially when you have a thousand accounts for a gazillion different websites...<br>There are some great password generators out there, however how can you ever really trust such a service if it is not open sourced?<br />Stop worrying about your passwords today, with this Free, Open-Source Password Generator!<br>Password Generator is completely FREE and AD-FREE, it works 100% offline an creates you a password in seconds!<br>The source code can be found on <a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/App-Tutorial/tree/master/Password_Generator" target="_blank">Github <i class="fa fa-external-link"></i></a>
     </p>
   </li>
 </ul>
@@ -526,4 +526,4 @@ Check out my Google Play Apps!
 
 <h1 id="contact-section">Contact</h1>
 
-You can contact me using my <a style="color:#b5e853; text-decoration: none;" href="mailto:s_xsipo6@uni-bremen.de">email address</a>, or on Instagram <a style="color:#b5e853; text-decoration: none;" target="_blank" href="https://www.instagram.com/xleolion3">@xleolion3</a>
+You can contact me using my <a style="color:#b5e853; text-decoration: none;" href="mailto:s_xsipo6@uni-bremen.de">email address <i class="fa fa-external-link"></i></a>or on Instagram <a style="color:#b5e853; text-decoration: none;" target="_blank" href="https://www.instagram.com/xleolion3">@xleolion3 <i class="fa fa-external-link"></i></a>
