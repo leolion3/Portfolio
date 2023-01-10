@@ -111,7 +111,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Password Vault
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/PasswordVault" target="_blank" id='password-vault-ref'>Python Password Vault</a>
+	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/PasswordVault" target="_blank" id='password-vault-ref'>Password Vault</a>
 </h3>
 
 <details>
@@ -131,7 +131,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	File Transfer Tool
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank' id='file-transfer-ref'>Python File Transfer Tool</a>
+	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank' id='file-transfer-ref'>File Transfer Tool</a>
 </h3>
 
 <details>
@@ -151,7 +151,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Password Transfer Tool
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/PasswordUtils' target='_blank' id='password-transfer-ref'>Python Password Transfer Tool</a>
+	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/PasswordUtils' target='_blank' id='password-transfer-ref'>Password Transfer Tool</a>
 </h3>
 
 <details>
@@ -171,7 +171,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Spotify Module
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/SpotifyAPI' target='_blank' id='spotify-api-ref'>Python Spotify API Modules</a>
+	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/SpotifyAPI' target='_blank' id='spotify-api-ref'>Spotify API Modules</a>
 </h3>
 
 <details>
@@ -229,7 +229,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Reverse Shell
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/PythonReverseShell" target="_blank" id='py-revshell-ref'>Python Reverse Shell</a>
+	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/PythonReverseShell" target="_blank" id='py-revshell-ref'>Reverse Shell</a>
 </h3>
 
 <details>
@@ -248,7 +248,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Markdown Text Editor
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/Markdown" target="_blank" id='py-texteditor-ref'>Python Markdown/Text Editor</a>
+	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/Markdown" target="_blank" id='py-texteditor-ref'>Markdown/Text Editor</a>
 </h3>
 
 <details>
@@ -305,7 +305,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Chat spammer
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/ChatSpammer" target="_blank" id='py-chatspammer-ref'>Python Chat Spammer</a>
+	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/ChatSpammer" target="_blank" id='py-chatspammer-ref'>Chat Spammer</a>
 </h3>
 
 <details>
