@@ -454,6 +454,20 @@ The B-Human football robots were incapable of showing emotions during RoboCup ga
   <a style="color:#b5e853; text-decoration: none;" href="#dancing-robots">Back to Top</a>
 </details>
 
+<h2 id="iug">Cyberbullying - Causes, Appearances and Prevention</h2>
+
+<img src="https://github.com/leolion3/University_Stuff/raw/master/Publications/data/cyberbullying.png"/>
+
+Cyberbullying is one of the 21st century's new demons, where due to technology it is easier than ever to bully someone without being within their physical vicinity.
+
+In this homework for the "Informatik und Gesellschaft" (literally translated "IT and Society") we dive into the topic of cyberbullying, display some of its root causes and manifestations and then describe ways of preventing it.
+
+This publication can be found <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/University_Stuff/Publications/IuG.pdf">here <i class="fa fa-external-link"></i></a>
+
+It was graded with a 1.3 and the assessment can be provided upon request.
+
+*If you are suffering from cyberbullying, reach out to either an adult who is close to you, or to your national cyberbullying helpline! If you know someone suffering from cyberbullying, reach out and offer help and/or contact the local authorities!*
+
 ---
 
 <h1 id="me-etc">More from Me</h1>
