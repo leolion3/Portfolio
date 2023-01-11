@@ -418,7 +418,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	</div>
   <a style="color:#b5e853; text-decoration: none;" href="#dlu">Back to Top</a>
 </details>
-
+<hr/>
 </details>
 
 <h1 id="publications">Publications</h1>
