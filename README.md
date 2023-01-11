@@ -454,6 +454,8 @@ The B-Human football robots were incapable of showing emotions during RoboCup ga
   <a style="color:#b5e853; text-decoration: none;" href="#dancing-robots">Back to Top</a>
 </details>
 
+<br>
+
 <h2 id="iug">Cyberbullying - Causes, Appearances and Prevention</h2>
 
 <img src="https://github.com/leolion3/University_Stuff/raw/master/Publications/data/cyberbullying.png"/>
