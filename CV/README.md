@@ -2,7 +2,7 @@
 
 This section is included, should you be interested in my capabilities for whatever reason (I'm always open for fun projects, freelance work or similar offers).
 
-**The CV is also available as a PDF document <a style="color:#b5e853; text-decoration: none;" href="https://raw.githubusercontent.com/leolion3/Portfolio/master/CV/media/cv.pdf" target="_blank">here <i class="fa fa-external-link"></i></a>**
+**The CV is also available as a PDF document <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/Portfolio/CV/media/cv.pdf" target="_blank">here <i class="fa fa-external-link"></i></a>**
 
 ---
 
@@ -68,13 +68,13 @@ Don't think it interests anyone, but here you go:
 
 I've successfully attained the following certifications:
 
-- Computer Science Bsc. <a style="color:#b5e853; text-decoration: none;" href="https://raw.githubusercontent.com/leolion3/Portfolio/master/CV/media/certs/bsc.pdf" target="_blank">(View certificate) <i class="fa fa-external-link"></i></a>
+- Computer Science Bsc. <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/Portfolio/CV/media/certs/bsc.pdf" target="_blank">(View certificate) <i class="fa fa-external-link"></i></a>
 
 ### Trainings
 
 I've participated in the following trainings:
 
-- FirstSpirit® Advanced Training <a style="color:#b5e853; text-decoration: none;" href="https://raw.githubusercontent.com/leolion3/Portfolio/master/CV/media/certs/fs_advanced.pdf" target="_blank">(View certificate) <i class="fa fa-external-link"></i></a>
+- FirstSpirit® Advanced Training <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/Portfolio/CV/media/certs/fs_advanced.pdf" target="_blank">(View certificate) <i class="fa fa-external-link"></i></a>
 
 ### Pending
 
