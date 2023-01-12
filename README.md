@@ -29,7 +29,7 @@ This website also serves as my Portfolio, so if you're looking to hire me, or ar
 {% capture p1 %}{% include_relative Etc/leolion3/README.md %}{% endcapture %}
 {{ p1 | markdownify }}
 
-<p>Wanna know if you should hire me or need a software developed? Check out my interactive digital resume below (or <a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/blob/master/CV/' target='_blank' id='digital-resume'>here</a>).</p>
+<p>Wanna know if you should hire me or need a software developed? Check out my interactive digital resume below (or <a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/blob/master/CV/' target='_blank' id='digital-resume'>here <i class="fa fa-external-link"></i></a>).</p>
 
 <details>
   <summary>
