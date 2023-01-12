@@ -464,7 +464,7 @@ Cyberbullying is one of the 21st century's new demons, where due to technology i
 
 In this homework for the "Informatik und Gesellschaft" (literally translated "IT and Society") we dive into the topic of cyberbullying, display some of its root causes and manifestations and then describe ways of preventing it.
 
-This publication can be found <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/University_Stuff/Publications/IuG.pdf">here <i class="fa fa-external-link"></i></a>
+This publication can be found <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/University_Stuff/Publications/IuG.pdf" target="_blank">here <i class="fa fa-external-link"></i></a>
 
 It was graded with a 1.3 and the assessment can be provided upon request.
 
