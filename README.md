@@ -502,7 +502,7 @@ Check out my Google Play Apps!
     <img src="https://play-lh.googleusercontent.com/AR9QsUbVkMCtYRkU_MVl8jDhLWcjWvQIWtftM-4l1OxbuZ9LmGpsh6k3m2B4uMCK_ZBW=w526-h296-rw" width="17%">
     <img src="https://play-lh.googleusercontent.com/9mJW796gIMOoZ3HULnPw9pOxOhhjfhPLp9veOMIw-FBtW1ZVWTByD3t49aLNbCHOyVhI=w526-h296-rw" width="17%">
     <p>Tired of sending files back and forth through Whatsapp, just to transfer them from your PC to your Phone and vice versa? Would you like an AirDrop equivalent for Android and Windows? Well, this is it! Simply pick the file you want to send, and let the receiving device connect to your device and viola!</p>
-    <p>This is a companion app for the <a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank'>Python File Transfer Tool <i class="fa fa-external-link"></i></a> found <a style="color:#b5e853; text-decoration: none;" href="#file-transfer-ref">above</a>. A Java graphical variant is pending release and will soon be available on Github!</p>
+    <p>This is a companion app for the <a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank'>Python File Transfer Tool <i class="fa fa-external-link"></i></a> found <a style="color:#b5e853; text-decoration: none;" href="#file-transfer-ref">above</a>. A Java graphical variant is pending release and will soon be available on Github!<br>The source code can be found on <a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Simple-File-Transferer-Android" target="_blank">Github <i class="fa fa-external-link"></i></a></p>
   </li>
 <!-- Sharky -->
   <li>
