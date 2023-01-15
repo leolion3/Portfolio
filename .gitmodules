@@ -7,3 +7,9 @@
 [submodule "Etc/leolion3"]
 	path = Etc/leolion3
 	url = git@github.com:leolion3/leolion3.git
+[submodule "Etc/Simple-File-Transfer-PC"]
+	path = Etc/Simple-File-Transfer-PC
+	url = https://github.com/leolion3/Simple-File-Transfer-PC
+[submodule "Etc/Simple-File-Transferer-Android"]
+	path = Etc/Simple-File-Transferer-Android
+	url = https://github.com/leolion3/Simple-File-Transferer-Android

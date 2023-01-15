@@ -504,6 +504,28 @@ Check out my Google Play Apps!
     <p>Tired of sending files back and forth through Whatsapp, just to transfer them from your PC to your Phone and vice versa? Would you like an AirDrop equivalent for Android and Windows? Well, this is it! Simply pick the file you want to send, and let the receiving device connect to your device and viola!</p>
     <p>This is a companion app for the <a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank'>Python File Transfer Tool <i class="fa fa-external-link"></i></a> found <a style="color:#b5e853; text-decoration: none;" href="#file-transfer-ref">above</a>. A Java graphical variant can be found <a style="color:#b5e853; text-decoration: none;" target="_blank" href="https://github.com/leolion3/Simple-File-Transfer-PC">here <i class="fa fa-external-link"></i></a></p>
     <p>The source code can be found on <a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Simple-File-Transferer-Android" target="_blank">Github <i class="fa fa-external-link"></i></a></p>
+    <details id="simple-file-transfer-android">
+    	<p>
+			  <summary>
+			  	<b style="color:#b5e853">Simple File Transfer Android</b>
+			  </summary>
+			  <div>
+			  	{% capture p21 %}{% include_relative Etc/Simple-File-Transferer-Android/README.md %}{% endcapture %}
+				  {{ p21 | markdownify }}
+			  </div>
+			  <a style="color:#b5e853; text-decoration: none;" href="#simple-file-transfer-android">Back to Top</a>
+			</details>
+			<details id="simple-file-transfer-pc">
+			  <summary>
+			  	<b style="color:#b5e853">Simple File Transfer PC</b>
+			  </summary>
+			  <div>
+			  	{% capture p21 %}{% include_relative Etc/Simple-File-Transfer-PC/README.md %}{% endcapture %}
+				  {{ p21 | markdownify }}
+			  </div>
+			  <a style="color:#b5e853; text-decoration: none;" href="#simple-file-transfer-pc">Back to Top</a>
+			</details>
+		</p>
   </li>
 <!-- Sharky -->
   <li>
