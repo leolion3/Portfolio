@@ -506,26 +506,27 @@ Check out my Google Play Apps!
     <p>The source code can be found on <a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Simple-File-Transferer-Android" target="_blank">Github <i class="fa fa-external-link"></i></a></p>
     <details id="simple-file-transfer-android">
     	<p>
-			  <summary>
-			  	<b style="color:#b5e853">Simple File Transfer Android</b>
-			  </summary>
-			  <div>
-			  	{% capture p21 %}{% include_relative Etc/Simple-File-Transferer-Android/README.md %}{% endcapture %}
-				  {{ p21 | markdownify }}
-			  </div>
-			  <a style="color:#b5e853; text-decoration: none;" href="#simple-file-transfer-android">Back to Top</a>
-			</details>
-			<details id="simple-file-transfer-pc">
-			  <summary>
-			  	<b style="color:#b5e853">Simple File Transfer PC</b>
-			  </summary>
-			  <div>
-			  	{% capture p21 %}{% include_relative Etc/Simple-File-Transfer-PC/README.md %}{% endcapture %}
-				  {{ p21 | markdownify }}
-			  </div>
-			  <a style="color:#b5e853; text-decoration: none;" href="#simple-file-transfer-pc">Back to Top</a>
-			</details>
-		</p>
+      <summary>
+		<b style="color:#b5e853">Simple File Transfer Android</b>
+      </summary>
+      <details id="simple-file-transfer-android">
+	  <div>
+		{% capture p21 %}{% include_relative Etc/Simple-File-Transferer-Android/README.md %}{% endcapture %}
+		  {{ p21 | markdownify }}
+	  </div>
+	  <a style="color:#b5e853; text-decoration: none;" href="#simple-file-transfer-android">Back to Top</a>
+      </details>
+      <summary>
+		<b style="color:#b5e853">Simple File Transfer PC</b>
+      </summary>
+      <details id="simple-file-transfer-pc">
+	<div>
+		{% capture p21 %}{% include_relative Etc/Simple-File-Transfer-PC/README.md %}{% endcapture %}
+		  {{ p21 | markdownify }}
+	</div>
+	<a style="color:#b5e853; text-decoration: none;" href="#simple-file-transfer-pc">Back to Top</a>
+      </details>
+    </p>
   </li>
 <!-- Sharky -->
   <li>
