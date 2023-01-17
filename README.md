@@ -49,6 +49,32 @@ Well you can stick around and take a look at the list below, or you can go brows
 
 <details>
   <summary>
+  	<b style="color: limegreen;">Java</b>
+  	<hr/>
+  </summary>
+<!---
+	File Transfer Tool
+-->
+<h3>
+	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Simple-File-Transfer-PC' target='_blank' id='java-easy-file-transfer'>Easy File Transfer Tool (Cross-Platform) <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+  	<b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+  	{% capture p13 %}{% include_relative Etc/Simple-File-Transfer-PC/README.md %}{% endcapture %}
+	  {{ p13 | markdownify }}
+  </div>
+  <a style="color:#b5e853; text-decoration: none;" href="#java-easy-file-transfer">Back to Top</a>
+</details>
+
+<hr/>
+</details>
+
+<details>
+  <summary>
   	<b style="color: limegreen;">Python</b>
   	<hr/>
   </summary>
