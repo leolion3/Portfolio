@@ -592,15 +592,3 @@ Check out my Google Play Apps!
 <h1 id="contact-section">Contact</h1>
 
 You can contact me using my <a style="color:#b5e853; text-decoration: none;" href="mailto:s_xsipo6@uni-bremen.de">email address <i class="fa fa-envelope"></i></a> or on Instagram <a style="color:#b5e853; text-decoration: none;" target="_blank" href="https://www.instagram.com/xleolion3">@xleolion3 <i class="fa fa-external-link"></i></a>
-
-Alternatively, use the contact form below.
-
-<form method="post" action="https://forms.un-static.com/forms/a467406d5713488ad24d28fefbee3067b77a24d0">
-  <input type="text" name="name" placeholder="Enter your name" required>
-  <input type="email" name="email" placeholder="Enter your e-mail address" required>
-  <textarea name="message" cols="40" rows="15"></textarea>
-  <button type="submit">Send</button>
-  <div class="text-center">
-    <p><small>(Powered by <a rel="nofollow" href="Un-static Forms">Un-static Forms</a>)</small></p>
-  </div>
-</form>
