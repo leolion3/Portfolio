@@ -566,30 +566,3 @@ Check out my Google Play Apps!
 <h1 id="contact-section">Contact</h1>
 
 You can contact me using my <a style="color:#b5e853; text-decoration: none;" href="mailto:s_xsipo6@uni-bremen.de">email address <i class="fa fa-envelope"></i></a> or on Instagram <a style="color:#b5e853; text-decoration: none;" target="_blank" href="https://www.instagram.com/xleolion3">@xleolion3 <i class="fa fa-external-link"></i></a>
-
-Alternatively, use the contact form below.
-
-<form method="post" action="https://forms.un-static.com/forms/a467406d5713488ad24d28fefbee3067b77a24d0">
-  <div class="tg-wrap"><table class="tg" style="border: 0px solid !important; text-align: center; margin-left: auto; margin-right: auto;">
-  	<thead></thead>
-	<tbody>
-	  <tr>
-	    <td>
-	      <label for="inputName" class="col-sm-2 col-form-label">Name</label>
-	      <input type="text" class="form-control" id="inputName" placeholder="Your name"></td>
-	  </tr>
-	  <tr>
-	    <td>
-	      <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-	      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
-	    </td>
-	  </tr>
-	  <tr>
-	    <td>
-	      <textarea name="inputMessage" cols="40" rows="8" class="form-control"></textarea>
-	      <button type="submit" class="btn btn-primary">Send</button>
-	    </td>
-	  </tr>
-	</tbody>
-  </table></div>
-  <p><small>(Powered by <a rel="nofollow" href="Un-static Forms">Un-static Forms</a>)</small></p>
