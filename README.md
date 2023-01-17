@@ -570,7 +570,7 @@ You can contact me using my <a style="color:#b5e853; text-decoration: none;" hre
 Alternatively, use the contact form below.
 
 <form method="post" action="https://forms.un-static.com/forms/a467406d5713488ad24d28fefbee3067b77a24d0">
-  <div class="tg-wrap"><table class="tg">
+  <div class="tg-wrap"><table class="tg" style="border: 0px solid !important; text-align: center; margin-left: auto; margin-right: auto;">
   	<thead></thead>
 	<tbody>
 	  <tr>
@@ -585,9 +585,11 @@ Alternatively, use the contact form below.
 	    </td>
 	  </tr>
 	  <tr>
-	    <td><textarea name="inputMessage" cols="40" rows="8" class="form-control"></textarea></td>
+	    <td>
+	      <textarea name="inputMessage" cols="40" rows="8" class="form-control"></textarea>
+	      <button type="submit" class="btn btn-primary">Send</button>
+	    </td>
 	  </tr>
-	  <tr><button type="submit" class="btn btn-primary">Send</button></tr>
 	</tbody>
   </table></div>
   <p><small>(Powered by <a rel="nofollow" href="Un-static Forms">Un-static Forms</a>)</small></p>
