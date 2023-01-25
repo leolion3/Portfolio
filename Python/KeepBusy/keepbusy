@@ -1,0 +1,30 @@
+#!/usr/bin/env python3
+import pyautogui
+import math
+from time import sleep
+
+h = pyautogui.position().x
+k = pyautogui.position().y
+angle = 0
+r = 100
+
+def get_next_point_on_circle():
+    global r, h, k, angle
+    if angle >= 360:
+        angle = 0
+    x = pyautogui.position().x
+    y = pyautogui.position().y
+    l_x = r * math.cos(math.radians(angle))
+    l_y = r * math.sin(math.radians(angle))
+    y = k + l_y
+    x = h + l_x
+    angle += 1 
+    return (x, y)
+
+
+while (True):
+    try:
+        x, y = get_next_point_on_circle()
+        pyautogui.moveTo(x, y, _pause=False)
+    except KeyboardInterrupt:
+        exit()
