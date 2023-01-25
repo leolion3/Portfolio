@@ -98,6 +98,25 @@ Well you can stick around and take a look at the list below, or you can go brows
 
 <hr/>
 <!---
+	KeepBusy
+-->
+<h3>
+	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/KeepBusy' target='_blank' id='keep-busy'>KeepBusy Mouse Mover <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+  	<b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+  	{% capture p21 %}{% include_relative Python/KeepBusy/README.md %}{% endcapture %}
+	  {{ p21 | markdownify }}
+  </div>
+  <a style="color:#b5e853; text-decoration: none;" href="#keep-busy">Back to Top</a>
+</details>
+
+<hr/>
+<!---
 	Yearly Investment Yield Calculator
 -->
 <h3>
