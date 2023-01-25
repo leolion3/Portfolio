@@ -27,4 +27,4 @@ To make the circle bigger, simply change the `r` (radius) variable to whatever s
 
 ## Demo
 
-![Demo of mouse moving in a circle pattern.](media/demo.gif)
+![Demo of mouse moving in a circle pattern.](https://raw.githubusercontent.com/leolion3/Portfolio/master/Python/KeepBusy/media/demo.gif)
