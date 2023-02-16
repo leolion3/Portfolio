@@ -30,3 +30,7 @@
   text-align:center;
   vertical-align:top
 }
+a {
+  color:#b5e853 !important; 
+  text-decoration: none !important;
+}
