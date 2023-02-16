@@ -1,0 +1,34 @@
+#!/usr/bin/env python3
+"""
+Writes a git change log for multiple files.
+
+Author: Leonard Haddad, 2023
+Licensed in accords with the MIT License.
+Sourcecode: https://github.com/leolion3/Portfolio/tree/master/Python/GitDiff
+"""
+import subprocess
+
+# Commit to compare current Head to
+commit = '4f7ba2c'
+log_file_name = 'changelog.log'
+
+# Files to check for diff, list of strings
+changed_files = [
+	'massgdiff',
+	'README.md'
+]
+
+changes = []
+
+# Enumerate changes
+for file in changed_files:
+	changes.append(subprocess.check_output(f'git diff {commit} {file}', shell=True).decode())
+
+# Write changelog
+with open(log_file_name, 'w+') as f:
+	for change in changes:
+		f.write(change)
+
+print(f'Output log written to {log_file_name}')
+
+# ===== Your own enumeration/grepping =====
