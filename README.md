@@ -215,6 +215,26 @@ Well you can stick around and take a look at the list below, or you can go brows
 <hr/>
 
 <!---
+	Mass Git Diff
+-->
+<h3>
+	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/GitDiff' target='_blank' id='massgdiff-ref'>Mass Git Diff <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+  	<b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+  	{% capture p20 %}{% include_relative Python/GitDiff/README.md %}{% endcapture %}
+	  {{ p20 | markdownify }}
+  </div>
+  <a style="color:#b5e853; text-decoration: none;" href="#massgdiff-ref">Back to Top</a>
+</details>
+
+<hr/>
+
+<!---
 	Spotify Module
 -->
 <h3>
