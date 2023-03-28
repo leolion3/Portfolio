@@ -460,6 +460,20 @@ Well you can stick around and take a look at the list below, or you can go brows
 		<a style="color:#b5e853; text-decoration: none;" href="#terminal-customization">Back to Top</a>
 	</details>
 	<hr/>
+	<h3>
+		<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Linux/CustomCommands" target="_blank" id='linux-commands'>Custom Linux/MacOS Commands <i class="fa fa-external-link"></i></a>
+	</h3>
+	<details>
+	<summary>
+		<b style="color: purple;">Click to view Details</b>
+	</summary>
+		<div>
+			{% capture p10 %}{% include_relative Linux/CustomCommands/README.md %}{% endcapture %}
+			{{ p10 | markdownify }}
+		</div>
+		<a style="color:#b5e853; text-decoration: none;" href="#linux-commands">Back to Top</a>
+	</details>
+	<hr/>
 
 </details>
 
