@@ -594,7 +594,7 @@ Check out my Google Play Apps!
 	  </div>
 	  <a style="color:#b5e853; text-decoration: none;" href="#simple-file-transfer-android">Back to Top</a>
       </details>
-      <details id="simple-file-transfer-pc">
+      <details id="simple-file-transfer-pc-2">
       <summary>
 	<b style="color:#b5e853">Simple File Transfer PC</b>
       </summary>
@@ -602,7 +602,7 @@ Check out my Google Play Apps!
 		{% capture p21 %}{% include_relative Etc/Simple-File-Transfer-PC/README.md %}{% endcapture %}
 		  {{ p21 | markdownify }}
 	</div>
-	<a style="color:#b5e853; text-decoration: none;" href="#simple-file-transfer-pc">Back to Top</a>
+	<a style="color:#b5e853; text-decoration: none;" href="#simple-file-transfer-pc-2">Back to Top</a>
       </details>
     </p>
   </li>
