@@ -79,6 +79,25 @@ Well you can stick around and take a look at the list below, or you can go brows
   	<hr/>
   </summary>
 <!---
+	StudIP REST API
+-->
+<h3>
+	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/StudIP_REST_API' target='_blank' id='studip-rest-api'>StudIP REST API <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+  	<b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+  	{% capture p21 %}{% include_relative Python/StudIP_REST_API/README.md %}{% endcapture %}
+	  {{ p21 | markdownify }}
+  </div>
+  <a style="color:#b5e853; text-decoration: none;" href="#studip-rest-api">Back to Top</a>
+</details>
+
+<hr/>
+<!---
 	Python MiniHTTP Server
 -->
 <h3>
