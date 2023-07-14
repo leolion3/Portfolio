@@ -2,7 +2,7 @@ a {
   color:#b5e853 !important; 
   text-decoration: none !important;
 }
-.th {
+th {
   text-align: center;
   outline: 1px solid #b5e853;
   padding: 5px 10px;
