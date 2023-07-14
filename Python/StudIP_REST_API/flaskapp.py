@@ -14,7 +14,7 @@ rest_api = StudIPAuthenticator()
 scheduler = BackgroundScheduler()
 scheduler.start()
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/studip/rest', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
         # Retrieve the input data from the HTML form
