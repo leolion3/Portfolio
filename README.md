@@ -1,17 +1,21 @@
 <link rel="stylesheet" type="text/css" href="html/style.css"/>
-<div class="tg-wrap"><table class="tg">
-<thead>
-  <tr>
-    <th class="tg-5oyt"><a href="#welcome" style="color:#b5e853; text-decoration: none;">Welcome</a></th>
-    <th class="tg-5oyt"><a href="#my-resume" style="color:#b5e853; text-decoration: none;">Resume</a></th>
-    <th class="tg-5oyt"><a href="#my-tools" style="color:#b5e853; text-decoration: none;">Tools</a></th>
-    <th class="tg-5oyt"><a href="#publications" style="color:#b5e853; text-decoration: none;">Publications</a></th>
-    <th class="tg-5oyt"><a href="#me-etc" style="color:#b5e853; text-decoration: none;">More from me</a></th>
-    <th class="tg-5oyt"><a href="#google-play" style="color:#b5e853; text-decoration: none;">Google Play</a></th>
-    <th class="tg-5oyt"><a href="#contact-section" style="color:#b5e853; text-decoration: none;">Contact</a></th>
-  </tr>
-</thead>
-</table></div><p></p>
+<div class="table-responsive" style="overflow:auto;">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col"><a href="#welcome" style="color:#b5e853; text-decoration: none;">Welcome</a></th>
+        <th scope="col"><a href="#my-resume" style="color:#b5e853; text-decoration: none;">Resume</a></th>
+        <th scope="col"><a href="#my-tools" style="color:#b5e853; text-decoration: none;">Tools</a></th>
+        <th scope="col"><a href="#publications" style="color:#b5e853; text-decoration: none;">Publications</a></th>
+        <th scope="col"><a href="#me-etc" style="color:#b5e853; text-decoration: none;">More from me</a></th>
+        <th scope="col"><a href="#google-play" style="color:#b5e853; text-decoration: none;">Google Play</a></th>
+        <th scope="col"><a href="#contact-section" style="color:#b5e853; text-decoration: none;">Contact</a></th>
+      </tr>
+    </thead>
+  </table>
+</div>
+
+<p></p>
 
 <h2 id="welcome">Welcome, friend</h2>
 
