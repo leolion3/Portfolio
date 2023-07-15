@@ -6,39 +6,23 @@ This section is included, should you be interested in my capabilities for whatev
 
 ---
 
-<div class="tg-wrap"><table class="tg" id="cv-toc">
-<thead>
-  <tr>
-    <th class="tg-5oyt">
-    	<a style="color:#b5e853; text-decoration: none;" href="#cv-education">Education, Certifications, Trainings</a>
-    </th>
-    <th class="tg-5oyt">
-    	<a style="color:#b5e853; text-decoration: none;" href="#cv-work_experience">Work Experience</a>
-    </th>
-    <th class="tg-5oyt">
-    	<a style="color:#b5e853; text-decoration: none;" href="#cv-my_skills">Skills</a>
-    </th>
-    <th class="tg-5oyt">
-    	<a style="color:#b5e853; text-decoration: none;" href="#cv-my_projects">Projects</a>
-    </th>
-    <th class="tg-5oyt">
-    	<a style="color:#b5e853; text-decoration: none;" href="#cv-my_apps">Apps</a>
-    </th>
-    <th class="tg-5oyt">
-    	<a style="color:#b5e853; text-decoration: none;" href="#cv-my_languages">Languages</a>
-    </th>
-    <th class="tg-5oyt">
-    	<a style="color:#b5e853; text-decoration: none;" href="#cv-programming_langs">Programming and Scripting Languages</a>
-    </th>
-    <th class="tg-5oyt">
-    	<a style="color:#b5e853; text-decoration: none;" href="#cv-oss">Operating Systems</a>
-    </th>
-    <th class="tg-5oyt">
-    	<a style="color:#b5e853; text-decoration: none;" href="#cv-tools">Tools I use</a>
-    </th>
-  </tr>
-</thead>
-</table></div>
+<div class="table-responsive" style="overflow:auto;" id="cv-toc">
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col"><a style="color:#b5e853; text-decoration: none;" href="#cv-education">Education, Certifications, Trainings</a></th>
+        <th scope="col"><a style="color:#b5e853; text-decoration: none;" href="#cv-work_experience">Work Experience</a></th>
+        <th scope="col"><a style="color:#b5e853; text-decoration: none;" href="#cv-my_skills">Skills</a></th>
+        <th scope="col"><a style="color:#b5e853; text-decoration: none;" href="#cv-my_projects">Projects</a></th>
+        <th scope="col"><a style="color:#b5e853; text-decoration: none;" href="#cv-my_apps">Apps</a></th>
+        <th scope="col"><a style="color:#b5e853; text-decoration: none;" href="#cv-my_languages">Languages</a></th>
+        <th scope="col"><a style="color:#b5e853; text-decoration: none;" href="#cv-programming_langs">Programming and Scripting Languages</a></th>
+        <th scope="col"><a style="color:#b5e853; text-decoration: none;" href="#cv-oss">Operating Systems</a></th>
+        <th scope="col"><a style="color:#b5e853; text-decoration: none;" href="#cv-tools">Tools I use</a></th>
+      </tr>
+    </thead>
+  </table>
+</div>
 
 ---
 
