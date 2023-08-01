@@ -1,0 +1,228 @@
+#!/usr/bin/env python3
+from random_address import real_random_address
+import random
+import sys
+import time
+import json
+
+if len(sys.argv) < 2:
+	print('Usage: ./generate generate_amount')
+	exit()
+
+# Worldwide Company Endings
+worldwide_endings = [
+    "Ltd.",
+    "Inc.",
+    "GmbH",
+    "SA",
+    "AG",
+    "AB",
+    "BV",
+    "NV",
+    "Srl",
+    "AS",
+    "ApS",
+    "Oy",
+    "Sp. z o.o.",
+    "SARL",
+    "Pty. Ltd.",
+    "LLC",
+    "LP",
+    "LLP",
+]
+
+# European Company Endings
+european_endings = [
+    "S.A.",
+    "N.V.",
+    "S.p.A.",
+    "B.V.",
+    "S.C.A.",
+    "S.C.S.",
+]
+
+# German Company Endings
+german_endings = [
+    "e.G.",
+    "AG & Co. KG",
+    "gGmbH",
+    "KGaA",
+    "OHG",
+    "UG",
+]
+
+# US Company Endings
+us_endings = [
+    "Corp.",
+    "Corp",
+    "Co.",
+    "Co",
+    "Inc.",
+    "Inc",
+    "LLC",
+    "LLP",
+    "Ltd.",
+]
+
+# South American Company Endings
+south_american_endings = [
+    "S.A.",
+    "S.A.S.",
+    "Ltda.",
+    "Ltda",
+    "C.A.",
+]
+
+# Australian Company Endings
+australian_endings = [
+    "Pty. Ltd.",
+    "Pty Ltd",
+]
+
+# Combine all the endings into one list
+all_endings = (
+    worldwide_endings
+    + european_endings
+    + german_endings
+    + us_endings
+    + south_american_endings
+    + australian_endings
+)
+
+# Collection of words for generating company names
+word_collection = [
+    # Tech
+    "Tech",
+    "Code",
+    "Byte",
+    "Logic",
+    "Cyber",
+    "AI",
+    "Data",
+    "Cloud",
+    "Nano",
+    "Web",
+    # Creative
+    "Pixel",
+    "Design",
+    "Studio",
+    "Art",
+    "Imagine",
+    "Vision",
+    "Craft",
+    "Ink",
+    "Dream",
+    "Spark",
+    # Nature
+    "Eco",
+    "Green",
+    "Sky",
+    "Leaf",
+    "River",
+    "Sun",
+    "Earth",
+    "Mountain",
+    "Ocean",
+    "Bloom",
+    # Power
+    "Energy",
+    "Fusion",
+    "Volt",
+    "Spark",
+    "Dynamo",
+    "Force",
+    "Power",
+    "Impact",
+    "Pulse",
+    "Blaze",
+    # Connect
+    "Link",
+    "Connect",
+    "Nexus",
+    "Bridge",
+    "Loop",
+    "Sync",
+    "Pulse",
+    "Merge",
+    "Net",
+    "Unite",
+    # Solution
+    "Solve",
+    "Solution",
+    "Fix",
+    "Resolve",
+    "Cure",
+    "Heal",
+    "Answer",
+    "Aid",
+    "Way",
+    "Patch",
+    # Explore
+    "Discover",
+    "Explore",
+    "Journey",
+    "Venture",
+    "Seek",
+    "Roam",
+    "Wander",
+    "Trek",
+    "Navigate",
+    "Expedition",
+    # Infinite
+    "Infinite",
+    "Boundless",
+    "Eternal",
+    "Endless",
+    "Everlasting",
+    "Forever",
+    "Timeless",
+    "Perpetual",
+    "Immortal",
+    "Unending",
+    # Sparkle
+    "Sparkle",
+    "Glitter",
+    "Shine",
+    "Radiant",
+    "Gleam",
+    "Luminous",
+    "Dazzle",
+    "Twinkle",
+    "Glimmer",
+    "Shimmer",
+    # Nexus
+    "Nexus",
+    "Core",
+    "Hub",
+    "Axis",
+    "Center",
+    "Central",
+    "Pinnacle",
+    "Apex",
+    "Focus",
+    "Prime",
+]
+
+last_time = time.time()
+with open('data', 'a+') as f:
+	generate_amount = 0
+	try:
+		generate_amount = int(sys.argv[1])
+	except:
+		print('Amount entered is not a number! Aborting...')
+	print('Begin data generation...')
+	for i in range(generate_amount):
+		if generate_amount > 100000 and i % 1000 == 0 and i != 0 or generate_amount < 100000:
+			current_time = time.time()
+			interval = current_time - last_time
+			print(f'Generation took {round(interval, 4)} seconds. {round(interval / 1000 * generate_amount)} seconds remaining...' + \
+				f'\nGenerating... Progress {i}/{generate_amount}', end='\033[F\r')
+			last_time = current_time
+		data = real_random_address()
+		company_name = ''
+		for _ in range(random.randint(1, 10)):
+			company_name += random.choice(word_collection) + ' '
+		data['company'] = (company_name + random.choice(all_endings + [''])).strip()
+		del data['coordinates']
+		f.writelines(json.dumps(data) + '\n')
+	print('Data written to ./data')
