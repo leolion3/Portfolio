@@ -212,7 +212,7 @@ with open('data', 'a+') as f:
 		print('Amount entered is not a number! Aborting...')
 	print('Begin data generation...')
 	for i in range(generate_amount):
-		if generate_amount > 100000 and i % 1000 == 0 and i != 0 or generate_amount < 100000:
+		if generate_amount > 100000 and i % 1000 == 0 and i != 0 or generate_amount <= 100000:
 			current_time = time.time()
 			interval = current_time - last_time
 			print(f'Generation took {round(interval, 4)} seconds. {round(interval / 1000 * generate_amount)} seconds remaining...' + \
@@ -225,4 +225,5 @@ with open('data', 'a+') as f:
 		data['company'] = (company_name + random.choice(all_endings + [''])).strip()
 		del data['coordinates']
 		f.writelines(json.dumps(data) + '\n')
+    print()
 	print('Data written to ./data')
