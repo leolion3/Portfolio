@@ -7,6 +7,9 @@ from flask import Flask, jsonify, request, render_template
 app = Flask(__name__)
 API_URL = 'http://localhost:5000/pixel/'
 email_dict = {}
+transparent_pixel_gif = (
+    "R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+)
 
 def generate_tracking_pixel(email, subject):
     global email_dict
@@ -40,11 +43,18 @@ def generate_pixel():
 
 @app.route('/pixel/<pixel_hash>', methods=['GET'])
 def track_pixel(pixel_hash):
-    global email_dict
+    global email_dict, transparent_pixel_gif
     if pixel_hash not in email_dict:
         return "", 403
     logging.info(f"Email opened: {json.dumps(email_dict[pixel_hash])}")
-    return "", 200 
+
+    # Return a transparent pixel GIF (1x1)
+    response = app.response_class(
+        response=base64.b64decode(transparent_pixel_gif),
+        content_type='image/gif',
+        status=200
+    )
+    return response
 
 if __name__ == '__main__':
     logging.basicConfig(filename='app.log', level=logging.DEBUG,
