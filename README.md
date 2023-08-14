@@ -200,7 +200,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Password Vault
 -->
 <h3>
-	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/PasswordVault" target="_blank" rel=“noopener noreferrer“ id='password-vault-ref'>Password Vault <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/PasswordVault" target="_blank" rel="noopener noreferrer" id='password-vault-ref'>Password Vault <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -319,7 +319,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Monoalphabetic Decypherer
 -->
 <h3>
-	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/MonoalphabeticDecypherer" target="_blank" rel=“noopener noreferrer“ id='monoalphabetic-decypherer-ref'>Monoalphabetic Decypherer <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/MonoalphabeticDecypherer" target="_blank" rel="noopener noreferrer" id='monoalphabetic-decypherer-ref'>Monoalphabetic Decypherer <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -338,7 +338,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Reverse Shell
 -->
 <h3>
-	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/PythonReverseShell" target="_blank" rel=“noopener noreferrer“ id='py-revshell-ref'>Reverse Shell <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/PythonReverseShell" target="_blank" rel="noopener noreferrer" id='py-revshell-ref'>Reverse Shell <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -357,7 +357,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Markdown Text Editor
 -->
 <h3>
-	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/Markdown" target="_blank" rel=“noopener noreferrer“ id='py-texteditor-ref'>Markdown/Text Editor <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/Markdown" target="_blank" rel="noopener noreferrer" id='py-texteditor-ref'>Markdown/Text Editor <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -376,7 +376,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Youtube to MP3
 -->
 <h3>
-	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/YouTube" target="_blank" rel=“noopener noreferrer“ id='yt-downloader-ref'>YouTube MP3 Downloader <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/YouTube" target="_blank" rel="noopener noreferrer" id='yt-downloader-ref'>YouTube MP3 Downloader <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -395,7 +395,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Revshell Payload Generator
 -->
 <h3>
-	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/ShellGenerator" target="_blank" rel=“noopener noreferrer“ id='powershell-revshell-ref'>Powershell TCP Reverse Shell Generator <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/ShellGenerator" target="_blank" rel="noopener noreferrer" id='powershell-revshell-ref'>Powershell TCP Reverse Shell Generator <i class="fa fa-external-link"></i></a>
 </h3>
 	
 <details>
@@ -414,7 +414,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Chat spammer
 -->
 <h3>
-	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/ChatSpammer" target="_blank" rel=“noopener noreferrer“ id='py-chatspammer-ref'>Chat Spammer <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/ChatSpammer" target="_blank" rel="noopener noreferrer" id='py-chatspammer-ref'>Chat Spammer <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -431,7 +431,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 <hr/>
 
 <h3>
-	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/Introduction" target="_blank" rel=“noopener noreferrer“ id='python-introduction-ref'>Python Introduction <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/Introduction" target="_blank" rel="noopener noreferrer" id='python-introduction-ref'>Python Introduction <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -453,7 +453,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	<hr/>
   </summary>
 <h3>
-	<a href="https://github.com/leolion3/Portfolio/tree/master/Powershell/Customization" target="_blank" rel=“noopener noreferrer“ id='wt-customization'>Windows Terminal Customization <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Powershell/Customization" target="_blank" rel="noopener noreferrer" id='wt-customization'>Windows Terminal Customization <i class="fa fa-external-link"></i></a>
 </h3>
 	<details>
 		<summary>
@@ -467,7 +467,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	</details>
 <hr/>
 <h3>
-	<a href="https://github.com/leolion3/Portfolio/tree/master/CustomCommands" target="_blank" rel=“noopener noreferrer“ id='custom-commands'>Custom Windows Commands and Git Shortcuts <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/CustomCommands" target="_blank" rel="noopener noreferrer" id='custom-commands'>Custom Windows Commands and Git Shortcuts <i class="fa fa-external-link"></i></a>
 </h3>
 <details>
 		<summary>
@@ -489,7 +489,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	<hr/>
   </summary>
   <h3>
-		<a href="https://github.com/leolion3/Portfolio/tree/master/Linux/Customization/Oh-My-Zsh" target="_blank" rel=“noopener noreferrer“ id='terminal-customization'>Customize Terminal with Oh-My-Zsh <i class="fa fa-external-link"></i></a>
+		<a href="https://github.com/leolion3/Portfolio/tree/master/Linux/Customization/Oh-My-Zsh" target="_blank" rel="noopener noreferrer" id='terminal-customization'>Customize Terminal with Oh-My-Zsh <i class="fa fa-external-link"></i></a>
 	</h3>
 	<details>
 	<summary>
@@ -503,7 +503,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	</details>
 	<hr/>
 	<h3>
-		<a href="https://github.com/leolion3/Portfolio/tree/master/Linux/CustomCommands" target="_blank" rel=“noopener noreferrer“ id='linux-commands'>Custom Linux/MacOS Commands <i class="fa fa-external-link"></i></a>
+		<a href="https://github.com/leolion3/Portfolio/tree/master/Linux/CustomCommands" target="_blank" rel="noopener noreferrer" id='linux-commands'>Custom Linux/MacOS Commands <i class="fa fa-external-link"></i></a>
 	</h3>
 	<details>
 	<summary>
@@ -525,7 +525,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	<hr/>
   </summary>
 <h3>
-	<a href="https://gist.github.com/leolion3/ccf654ab60c8e110c65ef948da6af461" target="_blank" rel=“noopener noreferrer“ id="dlu">DLU Lego Universe Server Setup <i class="fa fa-external-link"></i></a>
+	<a href="https://gist.github.com/leolion3/ccf654ab60c8e110c65ef948da6af461" target="_blank" rel="noopener noreferrer" id="dlu">DLU Lego Universe Server Setup <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -623,7 +623,7 @@ Check out my Google Play Apps!
     <img src="https://play-lh.googleusercontent.com/AR9QsUbVkMCtYRkU_MVl8jDhLWcjWvQIWtftM-4l1OxbuZ9LmGpsh6k3m2B4uMCK_ZBW=w526-h296-rw" width="17%">
     <img src="https://play-lh.googleusercontent.com/9mJW796gIMOoZ3HULnPw9pOxOhhjfhPLp9veOMIw-FBtW1ZVWTByD3t49aLNbCHOyVhI=w526-h296-rw" width="17%">
     <p>Tired of sending files back and forth through Whatsapp, just to transfer them from your PC to your Phone and vice versa? Would you like an AirDrop equivalent for Android and Windows? Well, this is it! Simply pick the file you want to send, and let the receiving device connect to your device and viola!</p>
-    <p>This is a companion app for the <a href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank'>Python File Transfer Tool <i class="fa fa-external-link"></i></a> found <a href="#file-transfer-ref">above</a>.<br>A Java graphical variant (cross-platform) can be found <a target="_blank" rel=“noopener noreferrer“ href="https://github.com/leolion3/Simple-File-Transfer-PC">here <i class="fa fa-external-link"></i></a></p>
+    <p>This is a companion app for the <a href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank'>Python File Transfer Tool <i class="fa fa-external-link"></i></a> found <a href="#file-transfer-ref">above</a>.<br>A Java graphical variant (cross-platform) can be found <a target="_blank" rel="noopener noreferrer" href="https://github.com/leolion3/Simple-File-Transfer-PC">here <i class="fa fa-external-link"></i></a></p>
     <p>The source code can be found on <a href="https://github.com/leolion3/Simple-File-Transferer-Android" target="_blank">Github <i class="fa fa-external-link"></i></a></p>
     	<p>
       <details id="simple-file-transfer-android">
@@ -650,17 +650,17 @@ Check out my Google Play Apps!
 
   <p><strong>List of available Distros:</strong></p>
   <ul>
-    <li><a target="_blank" rel=“noopener noreferrer“ href="https://github.com/leolion3/Simple-File-Transfer-PC/releases"><i class="fa-solid fa-desktop"></i> PC Release <i class="fa fa-external-link"></i></a></li>
-    <li><a target="_blank" rel=“noopener noreferrer“ href="https://play.google.com/store/apps/details?id=software.isratech.filetransferos"><i class="fa-solid fa-mobile"></i> Android App <i class="fa fa-external-link"></i></a></li>
-    <li><a target="_blank" rel=“noopener noreferrer“ href="https://github.com/leolion3/Portfolio/tree/master/Python/FileSender"><i class="fa-solid fa-terminal"></i> Python CLI Tool <i class="fa fa-external-link"></i></a></li>
-    <li><a target="_blank" rel=“noopener noreferrer“ href="https://github.com/leolion3/Simple-File-Transfer-PC"><i class="fa-solid fa-code"></i> PC Source <i class="fa fa-external-link"></i></a></li>
+    <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/leolion3/Simple-File-Transfer-PC/releases"><i class="fa-solid fa-desktop"></i> PC Release <i class="fa fa-external-link"></i></a></li>
+    <li><a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=software.isratech.filetransferos"><i class="fa-solid fa-mobile"></i> Android App <i class="fa fa-external-link"></i></a></li>
+    <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/leolion3/Portfolio/tree/master/Python/FileSender"><i class="fa-solid fa-terminal"></i> Python CLI Tool <i class="fa fa-external-link"></i></a></li>
+    <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/leolion3/Simple-File-Transfer-PC"><i class="fa-solid fa-code"></i> PC Source <i class="fa fa-external-link"></i></a></li>
     <li><a href="https://github.com/leolion3/Simple-File-Transferer-Android" target="_blank"><i class="fa-solid fa-code"></i> Android Source <i class="fa fa-external-link"></i></a></li>
   </ul>
   </li>
 <!-- Sharky -->
   <li>
     <h2>
-      <img src="https://lh3.googleusercontent.com/iwBywQJPRV8Rk-uuHzMzSspSaTO8AHjgBgeqovw8SlWpdej_vcU68LPLaRa9jptfHlk=s180-rw" width="24" height="24"> Sharky the hungry Sharkfish Game <a target="_blank" rel=“noopener noreferrer“ href="https://play.google.com/store/apps/details?id=com.SpaceAhoy.Sharky">(Google Play <i class="fa fa-external-link"></i>)</a>
+      <img src="https://lh3.googleusercontent.com/iwBywQJPRV8Rk-uuHzMzSspSaTO8AHjgBgeqovw8SlWpdej_vcU68LPLaRa9jptfHlk=s180-rw" width="24" height="24"> Sharky the hungry Sharkfish Game <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.SpaceAhoy.Sharky">(Google Play <i class="fa fa-external-link"></i>)</a>
     </h2>
     <img src="https://lh3.googleusercontent.com/O04pRpbIiKpY2r_QRSajjbVJ0cxDMSwJhoHZuXFl6fTBdlJUFj6oSbgS1nTyJghnz7E=w720-h310-rw" width="85%">
     <p>Sharky is very Hungry! Help by feeding him as many fish as you can, but watch out for those nasty harpoons!<br>Sharky is a family-friendly game designed for all ages. Furthermore it is completely FREE<br> and AD-FREE. Collect coins to unlock powerups and new skins, and get that highscore!<br>Sharky is a great time killer for your free time as well!<br /> Be it while waiting at the airport, or in the subway, sharky can played anywhere at any given time!<br /> What are you still waiting for? Get Sharky today!
@@ -669,7 +669,7 @@ Check out my Google Play Apps!
 <!-- Semesterplaner -->
   <li>
     <h2>
-      <img src="https://lh3.googleusercontent.com/asPozAuGQpJqNz-PB0yesBw9wRGkLDuquGqCf0p47rqBSvhxU5pdNHS27O5fuSF_RyY=s180-rw" width="24" height="24"> SemesterPlaner - Plan your Schedule! <a target="_blank" rel=“noopener noreferrer“ href="https://play.google.com/store/apps/details?id=com.spaceahoy.semesterplaner">(Google Play <i class="fa fa-external-link"></i>)</a>
+      <img src="https://lh3.googleusercontent.com/asPozAuGQpJqNz-PB0yesBw9wRGkLDuquGqCf0p47rqBSvhxU5pdNHS27O5fuSF_RyY=s180-rw" width="24" height="24"> SemesterPlaner - Plan your Schedule! <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.spaceahoy.semesterplaner">(Google Play <i class="fa fa-external-link"></i>)</a>
     </h2>
       <img src="https://lh3.googleusercontent.com/7VQlwaGV-Btk3i9eHY-unfSE1El_0YdQxBfO8yCXA_h4qVnpycARmJgWVFGvnavCuw=w720-h310-rw" width="17%">
       <img src="https://lh3.googleusercontent.com/7vt1bGzJIL-Pk_uBpK5hXMpATIz9thDZc0m6LmaNn4gdaKkqvnxuE-q4IvZXAUXxiDbc=w720-h310-rw" width="17%">
@@ -680,7 +680,7 @@ Check out my Google Play Apps!
 <!-- Password Generator -->
   <li>
     <h2>
-      <img src="https://lh3.googleusercontent.com/w_qN0qkMH9B-XmVHDn4GDEFfaISZ3ItJuwahMIqq0BfqW-3_GtLsETiG6URyOy_vKA=s180-rw" width="24" height="24"> Open-Source Password Generator App <a target="_blank" rel=“noopener noreferrer“ href="https://play.google.com/store/apps/details?id=processing.test.password_generator">(Google Play <i class="fa fa-external-link"></i>)</a>
+      <img src="https://lh3.googleusercontent.com/w_qN0qkMH9B-XmVHDn4GDEFfaISZ3ItJuwahMIqq0BfqW-3_GtLsETiG6URyOy_vKA=s180-rw" width="24" height="24"> Open-Source Password Generator App <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=processing.test.password_generator">(Google Play <i class="fa fa-external-link"></i>)</a>
     </h2>
     <img src="https://lh3.googleusercontent.com/XVku5gPbTFGz4LMZX9N8PnA-ptAwuMck9XifV_vJ3XIFe9pAS-debgjAPU0nlq5ZbZU=w720-h310-rw" width="17%">
     <img src="https://lh3.googleusercontent.com/F2CGan-SO4JPkvI7RxjksN97mC5EerzL-rKvzuMvwIOji1COJS_-2Bk59p4tXLd8bsQ=w720-h310-rw" width="17%">
@@ -695,4 +695,4 @@ Check out my Google Play Apps!
 
 <h1 id="contact-section">Contact</h1>
 
-You can contact me using my <a href="mailto:s_xsipo6@uni-bremen.de">email address <i class="fa fa-envelope"></i></a> or on Instagram <a target="_blank" rel=“noopener noreferrer“ href="https://www.instagram.com/xleolion3">@xleolion3 <i class="fa fa-external-link"></i></a>
+You can contact me using my <a href="mailto:s_xsipo6@uni-bremen.de">email address <i class="fa fa-envelope"></i></a> or on Instagram <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/xleolion3">@xleolion3 <i class="fa fa-external-link"></i></a>
