@@ -20,9 +20,9 @@
 <h2 id="welcome">Welcome, friend</h2>
 
 On this website you can find a bunch of useful tools, both for your personal workstation, as well as for your professional life.
-This website also serves as my Portfolio, so if you're looking to hire me, or are interested in filing a development request, don't hesitate to use the <a style="color:#b5e853; text-decoration: none;" href="#contact-section">contact section below</a>.
+This website also serves as my Portfolio, so if you're looking to hire me, or are interested in filing a development request, don't hesitate to use the <a href="#contact-section">contact section below</a>.
 
-*For resources to help you with University subjects, check out my other <a style="color:#b5e853; text-decoration: none;" href="https://uni.leolion.tk/" target="_blank">website <i class="fa fa-external-link"></i></a>*
+*For resources to help you with University subjects, check out my other <a href="https://uni.leolion.tk/" target="_blank">website <i class="fa fa-external-link"></i></a>*
 
 **All tools provided on this website are free to use and change, misuse however, is prohibited. Any damage caused by these tools, in addition to violations of local restrictions, are your own problem, not mine.** 
 
@@ -33,7 +33,7 @@ This website also serves as my Portfolio, so if you're looking to hire me, or ar
 {% capture p1 %}{% include_relative Etc/leolion3/README.md %}{% endcapture %}
 {{ p1 | markdownify }}
 
-<p>Wanna know if you should hire me or need a software developed? Check out my interactive digital resume below (or <a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/blob/master/CV/' target='_blank' id='digital-resume'>here <i class="fa fa-external-link"></i></a>).</p>
+<p>Wanna know if you should hire me or need a software developed? Check out my interactive digital resume below (or <a href='https://github.com/leolion3/Portfolio/blob/master/CV/' target='_blank' id='digital-resume'>here <i class="fa fa-external-link"></i></a>).</p>
 
 <details>
   <summary>
@@ -60,7 +60,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	File Transfer Tool
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Simple-File-Transfer-PC' target='_blank' id='java-easy-file-transfer'>Easy File Transfer Tool (Cross-Platform) <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Simple-File-Transfer-PC' target='_blank' id='java-easy-file-transfer'>Easy File Transfer Tool (Cross-Platform) <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -71,7 +71,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	{% capture p13 %}{% include_relative Etc/Simple-File-Transfer-PC/README.md %}{% endcapture %}
 	  {{ p13 | markdownify }}
   </div>
-  <a style="color:#b5e853; text-decoration: none;" href="#java-easy-file-transfer">Back to Top</a>
+  <a href="#java-easy-file-transfer">Back to Top</a>
 </details>
 
 <hr/>
@@ -83,10 +83,29 @@ Well you can stick around and take a look at the list below, or you can go brows
   	<hr/>
   </summary>
 <!---
+  StudIP REST API
+-->
+<h3>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/CanaryTrackingPixel' target='_blank' id='canary-tracking-pixel'>Canary Tracking Pixel <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p21 %}{% include_relative Python/CanaryTrackingPixel/README.md %}{% endcapture %}
+    {{ p21 | markdownify }}
+  </div>
+  <a href="#canary-tracking-pixel">Back to Top</a>
+</details>
+
+<hr/>
+<!---
 	StudIP REST API
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/StudIP_REST_API' target='_blank' id='studip-rest-api'>StudIP REST API <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/StudIP_REST_API' target='_blank' id='studip-rest-api'>StudIP REST API <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -97,7 +116,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	{% capture p21 %}{% include_relative Python/StudIP_REST_API/README.md %}{% endcapture %}
 	  {{ p21 | markdownify }}
   </div>
-  <a style="color:#b5e853; text-decoration: none;" href="#studip-rest-api">Back to Top</a>
+  <a href="#studip-rest-api">Back to Top</a>
 </details>
 
 <hr/>
@@ -105,7 +124,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Python MiniHTTP Server
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/MiniHTTPServer' target='_blank' id='mini-http-server'>MiniHTTPServer (Minimal HTTP Server) <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/MiniHTTPServer' target='_blank' id='mini-http-server'>MiniHTTPServer (Minimal HTTP Server) <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -116,7 +135,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	{% capture p21 %}{% include_relative Python/MiniHTTPServer/README.md %}{% endcapture %}
 	  {{ p21 | markdownify }}
   </div>
-  <a style="color:#b5e853; text-decoration: none;" href="#mini-http-server">Back to Top</a>
+  <a href="#mini-http-server">Back to Top</a>
 </details>
 
 <hr/>
@@ -124,7 +143,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	KeepBusy
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/KeepBusy' target='_blank' id='keep-busy'>KeepBusy Mouse Mover <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/KeepBusy' target='_blank' id='keep-busy'>KeepBusy Mouse Mover <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -135,7 +154,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	{% capture p21 %}{% include_relative Python/KeepBusy/README.md %}{% endcapture %}
 	  {{ p21 | markdownify }}
   </div>
-  <a style="color:#b5e853; text-decoration: none;" href="#keep-busy">Back to Top</a>
+  <a href="#keep-busy">Back to Top</a>
 </details>
 
 <hr/>
@@ -143,7 +162,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Yearly Investment Yield Calculator
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/YearlyYieldCalculator' target='_blank' id='investment-yield-ref'>Investment Yield Calculator <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/YearlyYieldCalculator' target='_blank' id='investment-yield-ref'>Investment Yield Calculator <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -154,7 +173,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	{% capture p13 %}{% include_relative Python/YearlyYieldCalculator/README.md %}{% endcapture %}
 	  {{ p13 | markdownify }}
   </div>
-  <a style="color:#b5e853; text-decoration: none;" href="#investment-yield-ref">Back to Top</a>
+  <a href="#investment-yield-ref">Back to Top</a>
 </details>
 
 <hr/>
@@ -162,7 +181,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Bank Balance Calculator
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/NetworthCalculator' target='_blank' id='bank-balance-ref'>Bank-Balance Calculator <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/NetworthCalculator' target='_blank' id='bank-balance-ref'>Bank-Balance Calculator <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -173,7 +192,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	{% capture p1 %}{% include_relative Python/NetworthCalculator/README.md %}{% endcapture %}
 	  {{ p1 | markdownify }}
   </div>
-  <a style="color:#b5e853; text-decoration: none;" href="#bank-balance-ref">Back to Top</a>
+  <a href="#bank-balance-ref">Back to Top</a>
 </details>
 
 <hr/>
@@ -181,7 +200,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Password Vault
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/PasswordVault" target="_blank" id='password-vault-ref'>Password Vault <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/PasswordVault" target="_blank" rel="noopener noreferrer" id='password-vault-ref'>Password Vault <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -192,7 +211,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	{% capture p2 %}{% include_relative Python/PasswordVault/README.md %}{% endcapture %}
 	  {{ p2 | markdownify }}
   </div>
-  <a style="color:#b5e853; text-decoration: none;" href="#password-vault-ref">Back to Top</a>
+  <a href="#password-vault-ref">Back to Top</a>
 </details>
 
 <hr/>
@@ -201,7 +220,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	File Transfer Tool
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank' id='file-transfer-ref'>File Transfer Tool <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank' id='file-transfer-ref'>File Transfer Tool <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -212,7 +231,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	{% capture p3 %}{% include_relative Python/FileSender/README.md %}{% endcapture %}
 	  {{ p3 | markdownify }}
   </div>
-  <a style="color:#b5e853; text-decoration: none;" href="#file-transfer-ref">Back to Top</a>
+  <a href="#file-transfer-ref">Back to Top</a>
 </details>
 
 <hr/>
@@ -221,7 +240,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Password Transfer Tool
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/PasswordUtils' target='_blank' id='password-transfer-ref'>Password Transfer Tool <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/PasswordUtils' target='_blank' id='password-transfer-ref'>Password Transfer Tool <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -232,7 +251,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	{% capture p20 %}{% include_relative Python/PasswordUtils/README.md %}{% endcapture %}
 	  {{ p20 | markdownify }}
   </div>
-  <a style="color:#b5e853; text-decoration: none;" href="#password-transfer-ref">Back to Top</a>
+  <a href="#password-transfer-ref">Back to Top</a>
 </details>
 
 <hr/>
@@ -241,7 +260,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Mass Git Diff
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/GitDiff' target='_blank' id='massgdiff-ref'>Mass Git Diff <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/GitDiff' target='_blank' id='massgdiff-ref'>Mass Git Diff <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -252,7 +271,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	{% capture p20 %}{% include_relative Python/GitDiff/README.md %}{% endcapture %}
 	  {{ p20 | markdownify }}
   </div>
-  <a style="color:#b5e853; text-decoration: none;" href="#massgdiff-ref">Back to Top</a>
+  <a href="#massgdiff-ref">Back to Top</a>
 </details>
 
 <hr/>
@@ -261,7 +280,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Spotify Module
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/SpotifyAPI' target='_blank' id='spotify-api-ref'>Spotify API Modules <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/SpotifyAPI' target='_blank' id='spotify-api-ref'>Spotify API Modules <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -272,7 +291,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	{% capture p20 %}{% include_relative Python/SpotifyAPI/README.md %}{% endcapture %}
 	  {{ p20 | markdownify }}
   </div>
-  <a style="color:#b5e853; text-decoration: none;" href="#spotify-api-ref">Back to Top</a>
+  <a href="#spotify-api-ref">Back to Top</a>
 </details>
 
 <hr/>
@@ -281,7 +300,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Python Ethermine Ticker
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/Ethermine' target='_blank' id='ethermine-ticker-ref'>Ethermine Ticker <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/Ethermine' target='_blank' id='ethermine-ticker-ref'>Ethermine Ticker <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -292,7 +311,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	{% capture p4 %}{% include_relative Python/Ethermine/README.md %}{% endcapture %}
 	  {{ p4 | markdownify }}
   </div>
-  <a style="color:#b5e853; text-decoration: none;" href="#ethermine-ticker-ref">Back to Top</a>
+  <a href="#ethermine-ticker-ref">Back to Top</a>
 </details>
 
 <hr/>
@@ -300,7 +319,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Monoalphabetic Decypherer
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/MonoalphabeticDecypherer" target="_blank" id='monoalphabetic-decypherer-ref'>Monoalphabetic Decypherer <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/MonoalphabeticDecypherer" target="_blank" rel="noopener noreferrer" id='monoalphabetic-decypherer-ref'>Monoalphabetic Decypherer <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -311,7 +330,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	{% capture p5 %}{% include_relative Python/MonoalphabeticDecypherer/README.md %}{% endcapture %}
 	  {{ p5 | markdownify }}
   </div>
-  <a style="color:#b5e853; text-decoration: none;" href="#monoalphabetic-decypherer-ref">Back to Top</a>
+  <a href="#monoalphabetic-decypherer-ref">Back to Top</a>
 </details>
 
 <hr/>
@@ -319,7 +338,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Reverse Shell
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/PythonReverseShell" target="_blank" id='py-revshell-ref'>Reverse Shell <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/PythonReverseShell" target="_blank" rel="noopener noreferrer" id='py-revshell-ref'>Reverse Shell <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -330,7 +349,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	{% capture p6 %}{% include_relative Python/PythonReverseShell/README.md %}{% endcapture %}
 	  {{ p6 | markdownify }}
   </div>
-  <a style="color:#b5e853; text-decoration: none;" href="#py-revshell-ref">Back to Top</a>
+  <a href="#py-revshell-ref">Back to Top</a>
 </details>
 
 <hr/>
@@ -338,7 +357,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Markdown Text Editor
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/Markdown" target="_blank" id='py-texteditor-ref'>Markdown/Text Editor <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/Markdown" target="_blank" rel="noopener noreferrer" id='py-texteditor-ref'>Markdown/Text Editor <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -349,7 +368,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	{% capture p7 %}{% include_relative Python/Markdown/README.md %}{% endcapture %}
 	  {{ p7 | markdownify }}
   </div>
-  <a style="color:#b5e853; text-decoration: none;" href="#py-texteditor-ref">Back to Top</a>
+  <a href="#py-texteditor-ref">Back to Top</a>
 </details>
 
 <hr/>
@@ -357,7 +376,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Youtube to MP3
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/YouTube" target="_blank" id='yt-downloader-ref'>YouTube MP3 Downloader <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/YouTube" target="_blank" rel="noopener noreferrer" id='yt-downloader-ref'>YouTube MP3 Downloader <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -368,7 +387,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	{% capture p8 %}{% include_relative Python/YouTube/README.md %}{% endcapture %}
 	  {{ p8 | markdownify }}
   </div>
-  <a style="color:#b5e853; text-decoration: none;" href="#yt-downloader-ref">Back to Top</a>
+  <a href="#yt-downloader-ref">Back to Top</a>
 </details>
 
 <hr/>
@@ -376,7 +395,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Revshell Payload Generator
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/ShellGenerator" target="_blank" id='powershell-revshell-ref'>Powershell TCP Reverse Shell Generator <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/ShellGenerator" target="_blank" rel="noopener noreferrer" id='powershell-revshell-ref'>Powershell TCP Reverse Shell Generator <i class="fa fa-external-link"></i></a>
 </h3>
 	
 <details>
@@ -387,7 +406,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	{% capture p9 %}{% include_relative Python/ShellGenerator/README.md %}{% endcapture %}
 	  {{ p9 | markdownify }}
   </div>
-  <a style="color:#b5e853; text-decoration: none;" href="#powershell-revshell-ref">Back to Top</a>
+  <a href="#powershell-revshell-ref">Back to Top</a>
 </details>
 <hr/>
 
@@ -395,7 +414,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Chat spammer
 -->
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/ChatSpammer" target="_blank" id='py-chatspammer-ref'>Chat Spammer <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/ChatSpammer" target="_blank" rel="noopener noreferrer" id='py-chatspammer-ref'>Chat Spammer <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -406,13 +425,13 @@ Well you can stick around and take a look at the list below, or you can go brows
   	{% capture p16 %}{% include_relative Python/ChatSpammer/README.md %}{% endcapture %}
 	  {{ p16 | markdownify }}
   </div>
-  <a style="color:#b5e853; text-decoration: none;" href="#py-chatspammer-ref">Back to Top</a>
+  <a href="#py-chatspammer-ref">Back to Top</a>
 </details>
 
 <hr/>
 
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Python/Introduction" target="_blank" id='python-introduction-ref'>Python Introduction <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/Introduction" target="_blank" rel="noopener noreferrer" id='python-introduction-ref'>Python Introduction <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -423,7 +442,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	{% capture p10 %}{% include_relative Python/Introduction/README.md %}{% endcapture %}
 	  {{ p10 | markdownify }}
   </div>
-  <a style="color:#b5e853; text-decoration: none;" href="#python-introduction-ref">Back to Top</a>
+  <a href="#python-introduction-ref">Back to Top</a>
 </details>
 <hr/>
 </details>
@@ -434,7 +453,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	<hr/>
   </summary>
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Powershell/Customization" target="_blank" id='wt-customization'>Windows Terminal Customization <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Powershell/Customization" target="_blank" rel="noopener noreferrer" id='wt-customization'>Windows Terminal Customization <i class="fa fa-external-link"></i></a>
 </h3>
 	<details>
 		<summary>
@@ -444,11 +463,11 @@ Well you can stick around and take a look at the list below, or you can go brows
 			{% capture p11 %}{% include_relative Powershell/Customization/README.md %}{% endcapture %}
 			{{ p11 | markdownify }}
 		</div>
-		<a style="color:#b5e853; text-decoration: none;" href="#wt-customization">Back to Top</a>
+		<a href="#wt-customization">Back to Top</a>
 	</details>
 <hr/>
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/CustomCommands" target="_blank" id='custom-commands'>Custom Windows Commands and Git Shortcuts <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/CustomCommands" target="_blank" rel="noopener noreferrer" id='custom-commands'>Custom Windows Commands and Git Shortcuts <i class="fa fa-external-link"></i></a>
 </h3>
 <details>
 		<summary>
@@ -458,7 +477,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 			{% capture p12 %}{% include_relative CustomCommands/README.md %}{% endcapture %}
 			{{ p12 | markdownify }}
 		</div>
-		<a style="color:#b5e853; text-decoration: none;" href="#custom-commands">Back to Top</a>
+		<a href="#custom-commands">Back to Top</a>
 	</details>
 <hr/>
 
@@ -470,7 +489,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	<hr/>
   </summary>
   <h3>
-		<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Linux/Customization/Oh-My-Zsh" target="_blank" id='terminal-customization'>Customize Terminal with Oh-My-Zsh <i class="fa fa-external-link"></i></a>
+		<a href="https://github.com/leolion3/Portfolio/tree/master/Linux/Customization/Oh-My-Zsh" target="_blank" rel="noopener noreferrer" id='terminal-customization'>Customize Terminal with Oh-My-Zsh <i class="fa fa-external-link"></i></a>
 	</h3>
 	<details>
 	<summary>
@@ -480,11 +499,11 @@ Well you can stick around and take a look at the list below, or you can go brows
 			{% capture p10 %}{% include_relative Linux/Customization/Oh-My-Zsh/README.md %}{% endcapture %}
 			{{ p10 | markdownify }}
 		</div>
-		<a style="color:#b5e853; text-decoration: none;" href="#terminal-customization">Back to Top</a>
+		<a href="#terminal-customization">Back to Top</a>
 	</details>
 	<hr/>
 	<h3>
-		<a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Portfolio/tree/master/Linux/CustomCommands" target="_blank" id='linux-commands'>Custom Linux/MacOS Commands <i class="fa fa-external-link"></i></a>
+		<a href="https://github.com/leolion3/Portfolio/tree/master/Linux/CustomCommands" target="_blank" rel="noopener noreferrer" id='linux-commands'>Custom Linux/MacOS Commands <i class="fa fa-external-link"></i></a>
 	</h3>
 	<details>
 	<summary>
@@ -494,7 +513,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 			{% capture p10 %}{% include_relative Linux/CustomCommands/README.md %}{% endcapture %}
 			{{ p10 | markdownify }}
 		</div>
-		<a style="color:#b5e853; text-decoration: none;" href="#linux-commands">Back to Top</a>
+		<a href="#linux-commands">Back to Top</a>
 	</details>
 	<hr/>
 
@@ -506,7 +525,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	<hr/>
   </summary>
 <h3>
-	<a style="color:#b5e853; text-decoration: none;" href="https://gist.github.com/leolion3/ccf654ab60c8e110c65ef948da6af461" target="_blank" id="dlu">DLU Lego Universe Server Setup <i class="fa fa-external-link"></i></a>
+	<a href="https://gist.github.com/leolion3/ccf654ab60c8e110c65ef948da6af461" target="_blank" rel="noopener noreferrer" id="dlu">DLU Lego Universe Server Setup <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -518,7 +537,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 				{% include_relative Etc/DLU/1.DLUSetup.md %}{% endcapture %}
 			{{ p15 | markdownify }}
 	</div>
-  <a style="color:#b5e853; text-decoration: none;" href="#dlu">Back to Top</a>
+  <a href="#dlu">Back to Top</a>
 </details>
 <hr/>
 </details>
@@ -531,7 +550,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 
 The B-Human football robots were incapable of showing emotions during RoboCup games. This has been changed. The process of doing so required various tweaks dozens of code-fragments throughout the B-Human framework and the introduction of various new mechanisms. 
 
-**The thesis can be found <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/University_Stuff/Publications/BA_B-More-Human_leonard_haddad_SoSe22.pdf">here <i class="fa fa-external-link"></i></a>**
+**The thesis can be found <a href="https://leolion3.github.io/University_Stuff/Publications/BA_B-More-Human_leonard_haddad_SoSe22.pdf">here <i class="fa fa-external-link"></i></a>**
 
 **The thesis was graded with a 1.3 (an A if an A+ is the highest possible grade).**
 
@@ -553,7 +572,7 @@ The B-Human football robots were incapable of showing emotions during RoboCup ga
 			{% include youtube.html id="C-O1FXAt7Ek" %}
 			{% include youtube.html id="yvMbB3C7fME" %}
 	</div>
-  <a style="color:#b5e853; text-decoration: none;" href="#dancing-robots">Back to Top</a>
+  <a href="#dancing-robots">Back to Top</a>
 </details>
 
 <br>
@@ -566,7 +585,7 @@ Cyberbullying is one of the 21st century's new demons, where due to technology i
 
 In this homework for the "Informatik und Gesellschaft" (literally translated "IT and Society") we dive into the topic of cyberbullying, display some of its root causes and manifestations and then describe ways of preventing it.
 
-This publication can be found <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/University_Stuff/Publications/IuG.pdf" target="_blank">here <i class="fa fa-external-link"></i></a>
+This publication can be found <a href="https://leolion3.github.io/University_Stuff/Publications/IuG.pdf" target="_blank">here <i class="fa fa-external-link"></i></a>
 
 It was graded with a 1.3 and the assessment can be provided upon request.
 
@@ -578,11 +597,11 @@ It was graded with a 1.3 and the assessment can be provided upon request.
 
 ### Teespring Merch
 
-<a style="color:#b5e853; text-decoration: none;" href='https://leolions-merch.creator-spring.com/' target='_blank'>
+<a href='https://leolions-merch.creator-spring.com/' target='_blank'>
 	<img src='html/teespring.png' width='100%'/>
 </a>
 
-Check out the various cool merch on my <a style="color:#b5e853; text-decoration: none;" href='https://leolions-merch.creator-spring.com/' target='_blank'>Teespring store <i class="fa fa-external-link"></i></a>
+Check out the various cool merch on my <a href='https://leolions-merch.creator-spring.com/' target='_blank'>Teespring store <i class="fa fa-external-link"></i></a>
 
 ---
 
@@ -597,15 +616,15 @@ Check out my Google Play Apps!
 <!-- File transfer tool -->
   <li>
     <h2>
-      <img src="https://play-lh.googleusercontent.com/jGpeo-N4WzHxnvzVhauN7eagBU5vTiZPvnLLNgpP7xtVkjlFFV8BJquUdLsXfjGhnQ=w240-h480-rw" width="24" height="24"> Open Source Easy File Transfer <a style="color:#b5e853; text-decoration: none;" href="https://play.google.com/store/apps/details?id=software.isratech.filetransferos" target="_blank">(Google Play <i class="fa fa-external-link"></i>)</a>
+      <img src="https://play-lh.googleusercontent.com/jGpeo-N4WzHxnvzVhauN7eagBU5vTiZPvnLLNgpP7xtVkjlFFV8BJquUdLsXfjGhnQ=w240-h480-rw" width="24" height="24"> Open Source Easy File Transfer <a href="https://play.google.com/store/apps/details?id=software.isratech.filetransferos" target="_blank">(Google Play <i class="fa fa-external-link"></i>)</a>
     </h2>
     <img src="https://play-lh.googleusercontent.com/iHuddteA7OHsEr9jMnzo15gXJbZaAOHeEBDGZ_cv1u1MF6mOJGNhSMnETmQMnQlc1nI=w526-h296-rw" width="17%">
     <img src="https://play-lh.googleusercontent.com/SG7YI3_F70NN1pWVLh4AJXPycm2YC9XSNjCwigQB6N7Q64leSXaZXaDoPxC4uTPebu5z=w526-h296-rw" width="17%">
     <img src="https://play-lh.googleusercontent.com/AR9QsUbVkMCtYRkU_MVl8jDhLWcjWvQIWtftM-4l1OxbuZ9LmGpsh6k3m2B4uMCK_ZBW=w526-h296-rw" width="17%">
     <img src="https://play-lh.googleusercontent.com/9mJW796gIMOoZ3HULnPw9pOxOhhjfhPLp9veOMIw-FBtW1ZVWTByD3t49aLNbCHOyVhI=w526-h296-rw" width="17%">
     <p>Tired of sending files back and forth through Whatsapp, just to transfer them from your PC to your Phone and vice versa? Would you like an AirDrop equivalent for Android and Windows? Well, this is it! Simply pick the file you want to send, and let the receiving device connect to your device and viola!</p>
-    <p>This is a companion app for the <a style="color:#b5e853; text-decoration: none;" href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank'>Python File Transfer Tool <i class="fa fa-external-link"></i></a> found <a style="color:#b5e853; text-decoration: none;" href="#file-transfer-ref">above</a>.<br>A Java graphical variant (cross-platform) can be found <a style="color:#b5e853; text-decoration: none;" target="_blank" href="https://github.com/leolion3/Simple-File-Transfer-PC">here <i class="fa fa-external-link"></i></a></p>
-    <p>The source code can be found on <a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/Simple-File-Transferer-Android" target="_blank">Github <i class="fa fa-external-link"></i></a></p>
+    <p>This is a companion app for the <a href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank'>Python File Transfer Tool <i class="fa fa-external-link"></i></a> found <a href="#file-transfer-ref">above</a>.<br>A Java graphical variant (cross-platform) can be found <a target="_blank" rel="noopener noreferrer" href="https://github.com/leolion3/Simple-File-Transfer-PC">here <i class="fa fa-external-link"></i></a></p>
+    <p>The source code can be found on <a href="https://github.com/leolion3/Simple-File-Transferer-Android" target="_blank">Github <i class="fa fa-external-link"></i></a></p>
     	<p>
       <details id="simple-file-transfer-android">
       <summary>
@@ -615,7 +634,7 @@ Check out my Google Play Apps!
 		{% capture p21 %}{% include_relative Etc/Simple-File-Transferer-Android/README.md %}{% endcapture %}
 		  {{ p21 | markdownify }}
 	  </div>
-	  <a style="color:#b5e853; text-decoration: none;" href="#simple-file-transfer-android">Back to Top</a>
+	  <a href="#simple-file-transfer-android">Back to Top</a>
       </details>
       <details id="simple-file-transfer-pc-2">
       <summary>
@@ -625,14 +644,23 @@ Check out my Google Play Apps!
 		{% capture p21 %}{% include_relative Etc/Simple-File-Transfer-PC/README.md %}{% endcapture %}
 		  {{ p21 | markdownify }}
 	</div>
-	<a style="color:#b5e853; text-decoration: none;" href="#simple-file-transfer-pc-2">Back to Top</a>
+	<a href="#simple-file-transfer-pc-2">Back to Top</a>
       </details>
     </p>
+
+  <p><strong>List of available Distros:</strong></p>
+  <ul style="margin-bottom: 10px;">
+    <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/leolion3/Simple-File-Transfer-PC/releases"><i class="fa-solid fa-desktop"></i> PC Release <i class="fa fa-external-link"></i></a></li>
+    <li><a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=software.isratech.filetransferos"><i class="fa-solid fa-mobile"></i> Android App <i class="fa fa-external-link"></i></a></li>
+    <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/leolion3/Portfolio/tree/master/Python/FileSender"><i class="fa-solid fa-terminal"></i> Python CLI Tool <i class="fa fa-external-link"></i></a></li>
+    <li><a target="_blank" rel="noopener noreferrer" href="https://github.com/leolion3/Simple-File-Transfer-PC"><i class="fa-solid fa-code"></i> PC Source <i class="fa fa-external-link"></i></a></li>
+    <li><a href="https://github.com/leolion3/Simple-File-Transferer-Android" target="_blank"><i class="fa-solid fa-code"></i> Android Source <i class="fa fa-external-link"></i></a></li>
+  </ul>
   </li>
 <!-- Sharky -->
   <li>
     <h2>
-      <img src="https://lh3.googleusercontent.com/iwBywQJPRV8Rk-uuHzMzSspSaTO8AHjgBgeqovw8SlWpdej_vcU68LPLaRa9jptfHlk=s180-rw" width="24" height="24"> Sharky the hungry Sharkfish Game <a style="color:#b5e853; text-decoration: none;" target="_blank" href="https://play.google.com/store/apps/details?id=com.SpaceAhoy.Sharky">(Google Play <i class="fa fa-external-link"></i>)</a>
+      <img src="https://lh3.googleusercontent.com/iwBywQJPRV8Rk-uuHzMzSspSaTO8AHjgBgeqovw8SlWpdej_vcU68LPLaRa9jptfHlk=s180-rw" width="24" height="24"> Sharky the hungry Sharkfish Game <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.SpaceAhoy.Sharky">(Google Play <i class="fa fa-external-link"></i>)</a>
     </h2>
     <img src="https://lh3.googleusercontent.com/O04pRpbIiKpY2r_QRSajjbVJ0cxDMSwJhoHZuXFl6fTBdlJUFj6oSbgS1nTyJghnz7E=w720-h310-rw" width="85%">
     <p>Sharky is very Hungry! Help by feeding him as many fish as you can, but watch out for those nasty harpoons!<br>Sharky is a family-friendly game designed for all ages. Furthermore it is completely FREE<br> and AD-FREE. Collect coins to unlock powerups and new skins, and get that highscore!<br>Sharky is a great time killer for your free time as well!<br /> Be it while waiting at the airport, or in the subway, sharky can played anywhere at any given time!<br /> What are you still waiting for? Get Sharky today!
@@ -641,7 +669,7 @@ Check out my Google Play Apps!
 <!-- Semesterplaner -->
   <li>
     <h2>
-      <img src="https://lh3.googleusercontent.com/asPozAuGQpJqNz-PB0yesBw9wRGkLDuquGqCf0p47rqBSvhxU5pdNHS27O5fuSF_RyY=s180-rw" width="24" height="24"> SemesterPlaner - Plan your Schedule! <a style="color:#b5e853; text-decoration: none;" target="_blank" href="https://play.google.com/store/apps/details?id=com.spaceahoy.semesterplaner">(Google Play <i class="fa fa-external-link"></i>)</a>
+      <img src="https://lh3.googleusercontent.com/asPozAuGQpJqNz-PB0yesBw9wRGkLDuquGqCf0p47rqBSvhxU5pdNHS27O5fuSF_RyY=s180-rw" width="24" height="24"> SemesterPlaner - Plan your Schedule! <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.spaceahoy.semesterplaner">(Google Play <i class="fa fa-external-link"></i>)</a>
     </h2>
       <img src="https://lh3.googleusercontent.com/7VQlwaGV-Btk3i9eHY-unfSE1El_0YdQxBfO8yCXA_h4qVnpycARmJgWVFGvnavCuw=w720-h310-rw" width="17%">
       <img src="https://lh3.googleusercontent.com/7vt1bGzJIL-Pk_uBpK5hXMpATIz9thDZc0m6LmaNn4gdaKkqvnxuE-q4IvZXAUXxiDbc=w720-h310-rw" width="17%">
@@ -652,14 +680,14 @@ Check out my Google Play Apps!
 <!-- Password Generator -->
   <li>
     <h2>
-      <img src="https://lh3.googleusercontent.com/w_qN0qkMH9B-XmVHDn4GDEFfaISZ3ItJuwahMIqq0BfqW-3_GtLsETiG6URyOy_vKA=s180-rw" width="24" height="24"> Open-Source Password Generator App <a style="color:#b5e853; text-decoration: none;" target="_blank" href="https://play.google.com/store/apps/details?id=processing.test.password_generator">(Google Play <i class="fa fa-external-link"></i>)</a>
+      <img src="https://lh3.googleusercontent.com/w_qN0qkMH9B-XmVHDn4GDEFfaISZ3ItJuwahMIqq0BfqW-3_GtLsETiG6URyOy_vKA=s180-rw" width="24" height="24"> Open-Source Password Generator App <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=processing.test.password_generator">(Google Play <i class="fa fa-external-link"></i>)</a>
     </h2>
     <img src="https://lh3.googleusercontent.com/XVku5gPbTFGz4LMZX9N8PnA-ptAwuMck9XifV_vJ3XIFe9pAS-debgjAPU0nlq5ZbZU=w720-h310-rw" width="17%">
     <img src="https://lh3.googleusercontent.com/F2CGan-SO4JPkvI7RxjksN97mC5EerzL-rKvzuMvwIOji1COJS_-2Bk59p4tXLd8bsQ=w720-h310-rw" width="17%">
     <img src="https://lh3.googleusercontent.com/Ebmg4CAn755JETg3MU2DIOVTVZLZUvJdVINBK2n6PykKf4f_i0coL_gEQObh_VCIA0Y=w720-h310-rw" width="17%">
     <img src="https://lh3.googleusercontent.com/AZq9XFuuxM06D02eTipgmsPg7UO7iIZL2OiMvayBcOLDG8j3VbrKWBr7gdd1rCt-Aw=w720-h310-rw" width="17%">
     <p>Passwords can be a real hustle, especially when you have a thousand accounts for a gazillion different websites...<br>There are some great password generators out there, however how can you ever really trust such a service if it is not open sourced?<br />Stop worrying about your passwords today, with this Free, Open-Source Password Generator!<br>Password Generator is completely FREE and AD-FREE, it works 100% offline an creates you a password in seconds!</p>
-    <p>The source code can be found on <a style="color:#b5e853; text-decoration: none;" href="https://github.com/leolion3/App-Tutorial/tree/master/Password_Generator" target="_blank">Github <i class="fa fa-external-link"></i></a></p>
+    <p>The source code can be found on <a href="https://github.com/leolion3/App-Tutorial/tree/master/Password_Generator" target="_blank">Github <i class="fa fa-external-link"></i></a></p>
   </li>
 </ul>
 
@@ -667,4 +695,4 @@ Check out my Google Play Apps!
 
 <h1 id="contact-section">Contact</h1>
 
-You can contact me using my <a style="color:#b5e853; text-decoration: none;" href="mailto:s_xsipo6@uni-bremen.de">email address <i class="fa fa-envelope"></i></a> or on Instagram <a style="color:#b5e853; text-decoration: none;" target="_blank" href="https://www.instagram.com/xleolion3">@xleolion3 <i class="fa fa-external-link"></i></a>
+You can contact me using my <a href="mailto:s_xsipo6@uni-bremen.de">email address <i class="fa fa-envelope"></i></a> or on Instagram <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/xleolion3">@xleolion3 <i class="fa fa-external-link"></i></a>
