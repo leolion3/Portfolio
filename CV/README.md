@@ -60,6 +60,12 @@ I've participated in the following trainings:
 
 - FirstSpirit® Advanced Training <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/Portfolio/CV/media/certs/fs_advanced.pdf" target="_blank">(View certificate) <i class="fa fa-external-link"></i></a>
 
+### Career Center
+
+I've also participated in the following [Career Center](https://www.uni-bremen.de/career-center) courses:
+
+- Blockchain - A technology with a wide range of applications <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/Portfolio/CV/media/certs/career_center/blockchain.pdf" target="_blank">(View certificate) <i class="fa fa-external-link"></i></a>
+
 ### Pending
 
 I'm persuing the following certifications:
