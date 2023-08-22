@@ -19,14 +19,39 @@ pixel_times_dict = {}
 db_connections = threading.local()
 db_connections.connection = None  # Initialize thread-local connection
 
+
 def get_db_connection():
     if not hasattr(db_connections, 'connection') or db_connections.connection is None:
         db_connections.connection = sqlite3.connect('database.db')
     return db_connections.connection
 
+
 def get_db_cursor():
     connection = get_db_connection()
     return connection.cursor()
+
+
+def create_tables():
+    db_cursor = get_db_cursor()
+
+    db_cursor.execute('''
+        CREATE TABLE IF NOT EXISTS email_data (
+            pixel_hash TEXT PRIMARY KEY,
+            recipient TEXT,
+            subject TEXT
+        )
+    ''')
+
+    db_cursor.execute('''
+        CREATE TABLE IF NOT EXISTS pixel_times (
+            pixel_hash TEXT PRIMARY KEY,
+            times TEXT
+        )
+    ''')
+    get_db_connection().commit()
+
+create_tables()
+
 
 def load_data_from_db():
     global email_dict, pixel_times_dict
@@ -47,6 +72,7 @@ def load_data_from_db():
         pixel_times_dict[pixel_hash] = times_str.split(',')
 
 load_data_from_db()
+
 
 def persist_data_to_db():
     global email_dict, pixel_times_dict
