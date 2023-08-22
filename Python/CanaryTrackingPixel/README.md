@@ -12,10 +12,10 @@ instead of writing logs. Use it as you desire.
 
 ## Requirements
 
-To run the app, Flask is required. It can be installed using
+To run the app, Flask and sqlite3 are required. They can be installed using
 
 ```bash
-pip3 install Flask -y
+pip3 install -r requirements.txt
 ```
 
 ## GUI
@@ -23,3 +23,7 @@ pip3 install Flask -y
 The GUI is shown below
 
 ![Canary Tracker GUI](https://raw.githubusercontent.com/leolion3/Portfolio/master/Python/CanaryTrackingPixel/media/demo.png)
+
+![Generating Canaries](https://raw.githubusercontent.com/leolion3/Portfolio/master/Python/CanaryTrackingPixel/media/demo-2.png)
+
+![Checking Calls](https://raw.githubusercontent.com/leolion3/Portfolio/master/Python/CanaryTrackingPixel/media/demo-3.png)
