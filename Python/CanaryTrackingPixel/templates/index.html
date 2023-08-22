@@ -3,40 +3,148 @@
 <head>
     <title>Canary Tracking Pixel Generator</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <style>
+        .rounded-form {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .blue-header {
+            color: #007bff;
+        }
+
+        .btn-copy {
+            background-color: #ddd;
+        }
+
+        /* Add spacing between logo and text */
+        .navbar-logo {
+            max-height: 32px;
+        }
+
+        /* Style the text "A product of..." */
+        .navbar-product-text {
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
 </head>
 <body>
-    <div class="container mt-5">
-        <h1 class="mb-4">Canary Tracking Pixel Generator</h1>
-        <form id="generator-form">
-            <div class="form-group">
-                <label for="email">Recipient's Email:</label>
-                <input type="email" class="form-control" id="email" required>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#" onclick="toggleForm('about-section')">Canary Pixel Generator</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" onclick="toggleForm('generator-form')">
+                            <i class="fas fa-file-alt"></i> Generate Pixel
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="toggleForm('lookup-form')">
+                            <i class="fas fa-search"></i> Lookup Pixel
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="toggleForm('about-section')">
+                            <i class="fas fa-question"></i> About
+                        </a>
+                    </li>
+                </ul>
+                <div class="navbar-nav ml-auto">
+                    <a href="http://isratech.software/" target="_blank" class="nav-link">
+                        <img src="https://media.licdn.com/dms/image/C4E0BAQF3PqVgZJpqDg/company-logo_100_100/0/1675986825443?e=2147483647&v=beta&t=kukeqEZ2cIS9L7GrSLVL8efYzOQ92aZ-IvCjudrsgEs" alt="Logo" class="navbar-logo mr-1">
+                        <span class="navbar-product-text">A product of IsraTech</span>
+                    </a>
+                </div>
             </div>
-            <div class="form-group">
-                <label for="subject">Email Subject:</label>
-                <input type="text" class="form-control" id="subject" required>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="rounded-form" id="generator-form">
+                    <h2 class="blue-header">Generate Canary Pixel</h2>
+                    <form id="generator-form-inner">
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-3 col-form-label">Recipient's Email:</label>
+                            <div class="col-sm-9">
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="subject" class="col-sm-3 col-form-label">Email Subject:</label>
+                            <div class="col-sm-9">
+                                <input type="text" class="form-control" id="subject" required>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-9 offset-sm-3">
+                                <button type="submit" class="btn btn-primary">Generate</button>
+                                <button type="button" class="btn btn-copy ml-2" style="display: none" onclick="copyToClipboard('uid-value')">
+                                    Copy to Clipboard
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="mt-2">
+                        <div id="success-alert" class="alert alert-success" style="display: none; overflow: auto;">
+                            Generated UID: <span id="uid-value"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-form" id="lookup-form" style="display: none;">
+                    <h2 class="blue-header">Canary Pixel Lookup</h2>
+                    <form id="lookup-form-inner">
+                        <div class="form-group">
+                            <label for="lookup-pixel">Enter Pixel Hash:</label>
+                            <input type="text" class="form-control" id="lookup-pixel" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Lookup</button>
+                    </form>
+                    <div id="message" class="mt-2"></div>
+                </div>
+                <div class="rounded-form" id="about-section" style="display: none;">
+                    <h2 class="blue-header">About Canary Tracking Pixel</h2>
+                    <p>
+                        The Canary Tracking Pixel Generator is a tool that enables the creation of tracking pixels, also known as web beacons or clear gifs. These pixels are tiny, transparent images placed within emails or web content to monitor user activity. They're often used to track email opens, link clicks, and user engagement.
+                    </p>
+                    <p>
+                        When an email containing a tracking pixel is opened, the recipient's email client sends a request to the server hosting the pixel image. This request can include information like the recipient's IP address, the time the email was opened, and more. By analyzing these requests, senders can gain insights into the effectiveness of their campaigns.
+                    </p>
+                    <p>
+                        It's important to note that the use of tracking pixels raises privacy concerns, as they can collect data without the recipient's explicit consent. Additionally, many email clients and web browsers allow users to disable the loading of external images, which can prevent tracking pixels from being effective.
+                    </p>
+                </div>
             </div>
-            <button type="submit" class="btn btn-primary">Generate</button>
-        </form>
-        <div class="mt-4">
-            <div id="success-alert" class="alert alert-success" style="display: none; overflow: auto;">
-                Generated UID: <span id="uid-value"></span>
-            </div>
+        </div>
+        <div id="lookup-result" class="mt-4">
+            <!-- Table for displaying lookup result -->
         </div>
     </div>
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            const form = document.querySelector('#generator-form');
+            const generatorForm = document.querySelector('#generator-form-inner');
+            const lookupForm = document.querySelector('#lookup-form-inner');
             const successAlert = document.querySelector('#success-alert');
             const uidValue = document.querySelector('#uid-value');
+            const lookupResult = document.querySelector('#lookup-result');
             let generatedUids = new Set();
 
-            form.addEventListener('submit', function(event) {
+            generatorForm.addEventListener('submit', function(event) {
                 event.preventDefault();
 
-                const email = document.querySelector('#email').value;
-                const subject = document.querySelector('#subject').value;
+                const email = generatorForm.querySelector('#email').value;
+                const subject = generatorForm.querySelector('#subject').value;
                 const data = { email, subject };
 
                 fetch('/generate_pixel', {
@@ -50,12 +158,144 @@
                 .then(result => {
                     uidValue.textContent = result.tracking_pixel;
                     successAlert.style.display = 'block';
+
+                    const copyButton = generatorForm.querySelector('.btn-copy');
+                    copyButton.style.display = 'inline-block';
                 })
                 .catch(error => {
                     console.error('Error:', error);
                 });
             });
+
+            lookupForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                let lookupPixel = lookupForm.querySelector('#lookup-pixel').value;
+
+                fetch(`/check?pixel_hash=${encodeURIComponent(lookupPixel)}`)
+                    .then(response => response.json())
+                    .then(result => {
+                        if (result.length === 0) {
+                            message.innerHTML = '<div class="alert alert-danger" role="alert">No data found for the specified pixel hash.</div>';
+                            lookupResult.innerHTML = '';
+                        } else {
+                            const accessCount = result[0].Times.length;
+                            message.innerHTML = `<div class="alert alert-success" role="alert">Pixel accessed ${accessCount} times.</div>`;
+                            const table = createTable(result);
+                            lookupResult.innerHTML = '';
+                            lookupResult.appendChild(table);
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                    });
+            });
+
+            function createTable(data) {
+                const table = document.createElement('table');
+                table.className = 'table';
+                const thead = document.createElement('thead');
+                const tbody = document.createElement('tbody');
+
+                const headerRow = document.createElement('tr');
+                const headers = ['Recipient', 'Subject', 'Pixel Hash', 'Access Times'];
+                headers.forEach(headerText => {
+                    const headerCell = document.createElement('th');
+                    headerCell.textContent = headerText;
+                    headerRow.appendChild(headerCell);
+                });
+                thead.appendChild(headerRow);
+
+                data.forEach(entry => {
+                    const row = document.createElement('tr');
+                    const recipientCell = document.createElement('td');
+                    recipientCell.textContent = entry.Recipient;
+                    const subjectCell = document.createElement('td');
+                    subjectCell.textContent = entry.Subject;
+                    const pixelHashCell = document.createElement('td');
+                    pixelHashCell.textContent = entry.PixelHash;
+                    const accessTimesCell = document.createElement('td');
+                    accessTimesCell.textContent = entry.Times.join(', ');
+
+                    row.appendChild(recipientCell);
+                    row.appendChild(subjectCell);
+                    row.appendChild(pixelHashCell);
+                    row.appendChild(accessTimesCell);
+
+                    tbody.appendChild(row);
+                });
+
+                table.appendChild(thead);
+                table.appendChild(tbody);
+                return table;
+            }
         });
+
+        function hideData() {
+            const generatorForm = document.querySelector('#generator-form-inner');
+            const successAlert = document.querySelector('#success-alert');
+            const lookupResult = document.querySelector('#lookup-result');
+            const copyButton = generatorForm.querySelector('.btn-copy');
+            successAlert.style.display = 'none';
+            copyButton.style.display = 'none';
+            lookupResult.innerHTML = '';
+            message.innerHTML = '';
+        }
+
+        function toggleForm(formId) {
+            const forms = document.querySelectorAll('.rounded-form');
+            const nav = document.querySelectorAll('.nav-item');
+            let counter = 0;
+            hideData();
+            forms.forEach(form => {
+                if (form.id === formId) {
+                    form.style.display = 'block';
+                    nav[counter].className = 'nav-item active';
+                } else {
+                    form.style.display = 'none';
+                    nav[counter].className = 'nav-item';
+                }
+                counter = counter + 1;
+            });
+        }
+
+        function copyToClipboard(elementId) {
+            const element = document.getElementById(elementId);
+            const range = document.createRange();
+            range.selectNode(element);
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(range);
+            document.execCommand('copy');
+            window.getSelection().removeAllRanges();
+
+            const copyButton = document.querySelector('.btn-copy');
+            copyButton.classList.add('clicked');
+
+            showToast('Text Copied to Clipboard');
+        }
+
+        function showToast(message) {
+            const toast = document.createElement('div');
+            toast.classList.add('toast', 'show');
+            toast.setAttribute('role', 'alert');
+            toast.setAttribute('aria-live', 'assertive');
+            toast.setAttribute('aria-atomic', 'true');
+
+            const toastBody = document.createElement('div');
+            toastBody.classList.add('toast-body');
+            toastBody.textContent = message;
+
+            toast.appendChild(toastBody);
+            document.body.appendChild(toast);
+
+            setTimeout(function() {
+                toast.remove();
+            }, 3000);
+        }
     </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
