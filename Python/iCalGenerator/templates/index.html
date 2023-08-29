@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>iCal Generator</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        @media (max-width: 1200px) {
+            body {
+                padding-left: 0;
+                padding-right: 0;
+                font-size: 32px !important;
+            }
+            .container {
+                max-width: 100%;
+                padding-left: 0;
+                padding-right: 0;
+            }
+            label {
+                font-size: 32px;
+            }
+            input[type="text"],
+            input[type="url"],
+            input[type="file"],
+            input[type="datetime-local"],
+            textarea,
+            select {
+                font-size: 32px;
+                padding: 10px;
+                width: 100%;
+            }
+            #map {
+                height: 300px;
+            }
+            .btn.btn-primary {
+                font-size: 32px;
+                padding: 10px 20px;
+            }
+            .form-group.row.full-width .form-check-input {
+                width: 32px;
+                height: 32px;
+                margin-top: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">iCal Event Generator</h2>
+        <form method="post" action="/" id="icalForm" enctype="multipart/form-data">
+            <div class="card">
+                <div class="card-body">
+                    <div class="form-group row">
+                        <label for="summary" class="col-sm-3 col-12 col-form-label">Summary</label>
+                        <div class="col-sm-9 col-12">
+                            <input type="text" class="form-control w-100" id="summary" name="summary" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="location" class="col-sm-3 col-12 col-form-label">Location</label>
+                        <div class="col-sm-9 col-12">
+                            <input type="text" class="form-control w-100" id="location" name="location" required>
+                            <small class="form-text text-muted">Type or click on the map icon to select a location.</small>
+                            <div id="map" style="height: 300px;"></div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="description" class="col-sm-3 col-12 col-form-label">Description</label>
+                        <div class="col-sm-9 col-12">
+                            <textarea class="form-control w-100" id="description" name="description" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="start_datetime" class="col-sm-3 col-12 col-form-label">Start Date and Time</label>
+                        <div class="col-sm-9 col-12">
+                            <input type="datetime-local" class="form-control w-100" id="start_datetime" name="start_datetime" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="end_datetime" class="col-sm-3 col-12 col-form-label">End Date and Time</label>
+                        <div class="col-sm-9 col-12">
+                            <input type="datetime-local" class="form-control w-100" id="end_datetime" name="end_datetime" required>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="image" class="col-sm-3 col-12 col-form-label">Image</label>
+                        <div class="col-sm-9 col-12">
+                            <input type="file" class="form-control w-100-file" id="image" name="image">
+                        </div>
+                    </div>
+                    <div class="form-group row full-width">
+                        <label class="col-sm-3 col-12 col-form-label" for="is_meeting">Meeting</label>
+                        <div class="col-sm-9 col-12 form-check">
+                            <input type="checkbox" class="form-check-input" id="is_meeting" name="is_meeting">
+                        </div>
+                    </div>
+                    <div class="form-group row" id="meetingUrlRow" style="display: none;">
+                        <div class="col-sm-12">
+                            <input type="url" class="form-control w-100" id="meeting_url" name="meeting_url" placeholder="Meeting URL">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-primary btn-block mt-3" id="generateButton">Generate iCal</button>
+        </form>
+    </div>
+    <script>
+    function initMap() {
+        var mapElement = document.getElementById('map');
+        var locationInput = document.getElementById('location');
+        
+        if (mapElement && locationInput) {
+            try {
+                var map = new google.maps.Map(mapElement, {
+                    center: { lat: 0, lng: 0 },
+                    zoom: 1
+                });
+
+                var autocomplete = new google.maps.places.Autocomplete(locationInput);
+
+                var marker = new google.maps.Marker({
+                    map: map,
+                    anchorPoint: new google.maps.Point(0, -29)
+                });
+
+                autocomplete.addListener('place_changed', function() {
+                    marker.setVisible(false);
+                    var place = autocomplete.getPlace();
+                    if (!place.geometry) {
+                        window.alert("No details available for input: '" + place.name + "'");
+                        return;
+                    }
+
+                    if (place.geometry.viewport) {
+                        map.fitBounds(place.geometry.viewport);
+                    } else {
+                        map.setCenter(place.geometry.location);
+                        map.setZoom(17);
+                    }
+                    marker.setPosition(place.geometry.location);
+                    marker.setVisible(true);
+
+                    // Set the value of the 'location' input field
+                    locationInput.value = place.formatted_address;
+                });
+            } catch (error) {
+                // Handle the error by disabling the map and enabling the text input.
+                mapElement.style.display = 'none';
+                locationInput.style.display = 'block';
+                locationInput.removeAttribute('readonly');
+            }
+        }
+    }
+
+    document.getElementById('is_meeting').addEventListener('change', function() {
+        var meetingUrlRow = document.getElementById('meetingUrlRow');
+        if (this.checked) {
+            meetingUrlRow.style.display = 'block';
+        } else {
+            meetingUrlRow.style.display = 'none';
+        }
+    });
+
+    document.getElementById('generateButton').addEventListener('click', function() {
+        document.getElementById('icalForm').submit();
+    });
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=&libraries=places&callback=initMap" async defer></script>
+</body>
+</html>

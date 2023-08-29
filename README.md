@@ -83,7 +83,26 @@ Well you can stick around and take a look at the list below, or you can go brows
   	<hr/>
   </summary>
 <!---
-  StudIP REST API
+  iCal Generator
+-->
+<h3>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/iCalGenerator' target='_blank' id='ical-generator'>iCal File Generator <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p21 %}{% include_relative Python/iCalGenerator/README.md %}{% endcapture %}
+    {{ p21 | markdownify }}
+  </div>
+  <a href="#ical-generator">Back to Top</a>
+</details>
+
+<hr/>
+<!---
+  Canary Tracker
 -->
 <h3>
   <a href='https://github.com/leolion3/Portfolio/tree/master/Python/CanaryTrackingPixel' target='_blank' id='canary-tracking-pixel'>Canary Tracking Pixel <i class="fa fa-external-link"></i></a>
