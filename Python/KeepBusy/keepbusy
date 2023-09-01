@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import pyautogui
 import math
-
+import time
 
 h = pyautogui.position().x
 k = pyautogui.position().y
@@ -9,6 +9,10 @@ angle = 0
 r = 100
 prev_x, prev_y = None, None
 
+# Calculate the step size based on 60Hz refresh rate
+refresh_rate = 60  # Refresh rate in Hz
+frame_time = 1 / refresh_rate
+angle_step = 360 * frame_time  # Angle change per frame
 
 def get_next_point_on_circle():
     global r, h, k, angle
@@ -18,24 +22,28 @@ def get_next_point_on_circle():
     l_y = r * math.sin(math.radians(angle))
     y = k + l_y
     x = h + l_x
-    angle += 1
+    angle += angle_step
     return (x, y)
-
 
 def check_previous_position():
     global h, k
-    if prev_x != None and prev_x != int(pyautogui.position().x):
+    if prev_x is not None and prev_x != int(pyautogui.position().x):
         h = pyautogui.position().x - r * math.cos(math.radians(angle))
-    if prev_y != None and prev_y != int(pyautogui.position().y):
+    if prev_y is not None and prev_y != int(pyautogui.position().y):
         k = pyautogui.position().y - r * math.sin(math.radians(angle))
 
-
-while (True):
+while True:
     try:
         check_previous_position()
         x, y = get_next_point_on_circle()
         pyautogui.moveTo(x, y, _pause=False)
         prev_x = int(pyautogui.position().x)
         prev_y = int(pyautogui.position().y)
+
+        # Ensure the script runs at the same speed as a 60Hz display
+        elapsed_time = time.time() % frame_time
+        if elapsed_time < frame_time:
+            time.sleep(frame_time - elapsed_time)
+
     except KeyboardInterrupt:
         exit()
