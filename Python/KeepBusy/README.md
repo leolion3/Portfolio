@@ -8,6 +8,11 @@ To stop, simply use your switch-window shortcut (`Alt-Tab` on Windows, `Ctrl-Tab
 
 This tool requires the Python module `pyautogui`.
 
+## Adjusting Speed
+
+To adjust to refresh rates beyond 60Hz, make sure to set the `refresh_rate = 144` to your monitor's refresh rate. This will
+ensure the cursor does not move too quickly.
+
 ## Usage
 
 Run the tool from a commandline window (easiest) or double click the file. 
