@@ -71,7 +71,7 @@ $$B\rightarrow A:\text{"NONEXISTENT"}$$
 
 or
 
-$$B\rightarrow A:\text{"SIZE:current_size"}$$
+$$B\rightarrow A:\text{"SIZE:current\_size"}$$
 
 If the file exists, the server proceeds sending the remaining *m-n* bytes of the file, otherwise, it sends all *m*-bytes of the file.
 
@@ -81,7 +81,7 @@ $$A\rightarrow B:\text{File data in chunks of 2MB}$$
 
 (\*) The client calculates the received data by himself. After receiving all *m*-bytes of the file, the client checks the file hash against that of the server.
 
-$$B\rightarrow A:\text{"GIVE_ME_HASH"}$$
+$$B\rightarrow A:\text{"GIVE\_ ME\_HASH"}$$
 $$A\rightarrow B:\text{Original file hash}$$
 
 If the hashes dont match, the client prompts for deletion of the data.
