@@ -12,7 +12,7 @@ prev_x, prev_y = None, None
 # Calculate the step size based on 60Hz refresh rate
 refresh_rate = 60  # Refresh rate in Hz
 frame_time = 1 / refresh_rate
-angle_step = 360 * frame_time  # Angle change per frame
+angle_step = 360 * frame_time / 4  # Angle change per frame
 
 def get_next_point_on_circle():
     global r, h, k, angle
