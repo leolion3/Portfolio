@@ -54,13 +54,17 @@ The script uses a proprietary protocol through TCP. The exchanged messages are d
 Before doing a transfer, the server allows pings to be received to support the scan feature of mobile and java clients. Here is the initial protocol step (**A** is the **sender**/server, **B** the **receiver**/client):
 
 $$B\rightarrow A:\text{PING}$$
+
 $$A\rightarrow B:\text{REPLY}$$
 
 If **B** sends a ping, it receives a reply from the server, otherwise (if it sends **init**) the following messages are exchanged:
 
 $$B\rightarrow A:\text{"init"}$$
+
 $$A\rightarrow B:\text{File name}$$
+
 $$B\rightarrow A:\text{"Received Name"}$$
+
 $$A\rightarrow B:\text{File size}$$
 
 At this point the client has the file name and size. Now they proceed to check whether the file already exists, and if so, read the existing *n*-bytes into a new file, while renaming the existing file into `file name_old.ext`. 
@@ -76,12 +80,15 @@ $$B\rightarrow A:\text{"SIZE:current size"}$$
 If the file exists, the server proceeds sending the remaining *m-n* bytes of the file, otherwise, it sends all *m*-bytes of the file.
 
 $$A\rightarrow B:\text{"Ready for transfer!"}$$
+
 $$B\rightarrow A:\text{"Beginning file transfer..." (printed on client side)}$$
+
 $$A\rightarrow B:\text{File data in chunks of 2MB}$$
 
 (\*) The client calculates the received data by himself. After receiving all *m*-bytes of the file, the client checks the file hash against that of the server.
 
 $$B\rightarrow A:\text{"GIVE ME HASH"}$$
+
 $$A\rightarrow B:\text{Original file hash}$$
 
 If the hashes dont match, the client prompts for deletion of the data.
