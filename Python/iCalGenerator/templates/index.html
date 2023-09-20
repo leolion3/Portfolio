@@ -2,10 +2,11 @@
 <html>
 <head>
     <title>iCal Generator</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
         @media (max-width: 1200px) {
             body {
@@ -47,11 +48,34 @@
     </style>
 </head>
 <body>
-    <div class="container mt-5">
-        <h2 class="text-center">iCal Event Generator</h2>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">iCal Event Generator</a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbarNav" style="">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-file-alt"></i> Generate iCal</a>
+                    </li>
+                </ul>
+                <div class="navbar-nav ml-auto">
+                    <a href="http://isratech.software/" target="_blank" class="nav-link">
+                        <img src="https://media.licdn.com/dms/image/C4E0BAQF3PqVgZJpqDg/company-logo_100_100/0/1675986825443?e=2147483647&amp;v=beta&amp;t=kukeqEZ2cIS9L7GrSLVL8efYzOQ92aZ-IvCjudrsgEs" alt="Logo" class="navbar-logo mr-1" style="
+    max-height: 32px;
+">
+                        <span class="navbar-product-text">A product of IsraTech</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-4">
         <form method="post" action="/" id="icalForm" enctype="multipart/form-data">
             <div class="card">
-                <div class="card-body">
+                <div class="card-body" style="background-color: #f8f9fa;">
                     <div class="form-group row">
                         <label for="summary" class="col-sm-3 col-12 col-form-label">Summary</label>
                         <div class="col-sm-9 col-12">
