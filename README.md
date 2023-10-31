@@ -563,6 +563,14 @@ Well you can stick around and take a look at the list below, or you can go brows
 
 <h1 id="publications">Publications</h1>
 
+<h2 id="trash-separation">Trash Separation Using AI (Prototype paper)</h2>
+
+<img src="html/robot-arm.png" alt="robot arm https://www.pngitem.com/middle/ihmmoJx_robot-machine-technology-robot-arm-3d-camera-hd/"/>
+
+A paper proposing a robot-arm trash separation approach, applicable on a large-scale using IoT Devices and public networks.
+
+*The paper can be found <a href="https://leolion3.github.io/University_Stuff/Publications/trash-separation.pdf">here <i class="fa fa-external-link"></i></a>*
+
 <h2 id="bachelor-robots">B-More-Human: Dynamic Cheering Reactions for humanoid Football-Robots (Bachelor Thesis)</h2>
 
 <img src="html/b-human.jpg"/>
