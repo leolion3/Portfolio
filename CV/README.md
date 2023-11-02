@@ -65,6 +65,7 @@ I've participated in the following trainings:
 I've also participated in the following [Career Center](https://www.uni-bremen.de/career-center) courses:
 
 - Blockchain - A technology with a wide range of applications <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/Portfolio/CV/media/certs/career_center/blockchain.pdf" target="_blank">(View certificate) <i class="fa fa-external-link"></i></a>
+- An introduction to business for engineers <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/Portfolio/CV/media/certs/career_center/bwl.pdf" target="_blank">(View certificate) <i class="fa fa-external-link"></i></a>
 
 ### Pending
 
