@@ -62,7 +62,7 @@ def accept_ping(server):
     try:
         s, addr = server.accept()
         msg = s.recv(4096).decode()[:-1]
-        if msg == 'init':
+        if msg.replace('\n','').replace('\r','') == 'init':
             return (True, s)
         print('Received ping from ' + addr[0] + ':' + str(addr[1]))
         s.send(b'REPLY\n')
