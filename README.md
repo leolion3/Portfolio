@@ -83,6 +83,23 @@ Well you can stick around and take a look at the list below, or you can go brows
   	<hr/>
   </summary>
 <!---
+  DL Envelope Generator
+-->
+<h3>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/Envelope' target='_blank' id='dl-generator'>DL Envelope Printable Generator <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p21 %}{% include_relative Python/Envelope/README.md %}{% endcapture %}
+    {{ p21 | markdownify }}
+  </div>
+  <a href="#dl-generator">Back to Top</a>
+</details>
+<!---
   iCal Generator
 -->
 <h3>
