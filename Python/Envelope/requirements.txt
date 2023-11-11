@@ -1,0 +1,6 @@
+python-docx
+Pillow
+lxml
+PyMuPDF
+opencv-python-headless
+numpy
