@@ -99,6 +99,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   </div>
   <a href="#dl-generator">Back to Top</a>
 </details>
+<hr/>
 <!---
   iCal Generator
 -->
