@@ -2,8 +2,17 @@ from flask import Flask, render_template, request, Response
 from icalendar import Calendar, Event
 from datetime import datetime
 import re
+from unidecode import unidecode
+
 
 app = Flask(__name__)
+
+
+ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg', 'gif'}
+
+def allowed_file(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -19,19 +28,20 @@ def index():
         }
 
         image = request.files['image']
-        if image:
+        if image and allowed_file(image.filename):
             image_path = f"uploads/{image.filename}"
             image.save(image_path)
             event_data['image'] = image_path
 
         ical_data = generate_ical(event_data)
-        filename = f"{event_data['summary']}.ics"
+        filename = f"{unidecode(event_data['summary'])}.ics"
         filename = re.sub(r'[\/:*?"<>|]', '_', filename)
-        response = Response(ical_data, mimetype='text/calendar')
+        response = Response(ical_data, mimetype='text/calendar; charset=utf-8')
         response.headers['Content-Disposition'] = f'attachment; filename="{filename}"'
         return response
 
     return render_template('index.html')
+
 
 def generate_ical(event_data):
     cal = Calendar()
