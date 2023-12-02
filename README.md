@@ -101,6 +101,25 @@ Well you can stick around and take a look at the list below, or you can go brows
 </details>
 <hr/>
 <!---
+  Trash Schedule Notifier
+-->
+<h3>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/TrashScheduleNotifier' target='_blank' id='trash-notifier'>Telegram Trash Schedule Notifier <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p21 %}{% include_relative Python/TrashScheduleNotifier/README.md %}{% endcapture %}
+    {{ p21 | markdownify }}
+  </div>
+  <a href="#trash-notifier">Back to Top</a>
+</details>
+
+<hr/>
+<!---
   iCal Generator
 -->
 <h3>
