@@ -40,7 +40,7 @@ def index():
             response = Response(ical_data, mimetype='text/calendar; charset=utf-8')
             response.headers['Content-Disposition'] = f'attachment; filename="{filename}"'
             return response
-        else:
+        except:
             err = {'Error': 'Invalid request format!'}
             return json.dumps(err), 400, {'content-type': 'application/json'}
 
