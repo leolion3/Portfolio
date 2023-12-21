@@ -23,9 +23,9 @@ translated_names = {
         "Deutsch": "Weihnachtsbaum",
         "English": "Christmas Tree"
     },
-    "risidual": {
+    "residual": {
         "Deutsch": "Restmüll",
-        "English": "Risidual"
+        "English": "Residual"
     },
     "organic": {
         "Deutsch": "Bio",
