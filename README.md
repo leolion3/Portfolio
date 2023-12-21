@@ -101,6 +101,25 @@ Well you can stick around and take a look at the list below, or you can go brows
 </details>
 <hr/>
 <!---
+  Earthquake Notifier
+-->
+<h3>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/EarthquakeMonitor' target='_blank' id='earthquake-notifier'>Earthquake Monitor w/ Telegram Notifications <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p21 %}{% include_relative Python/EarthquakeMonitor/README.md %}{% endcapture %}
+    {{ p21 | markdownify }}
+  </div>
+  <a href="#earthquake-notifier">Back to Top</a>
+</details>
+
+<hr/>
+<!---
   Trash Schedule Notifier
 -->
 <h3>
