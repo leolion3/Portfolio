@@ -560,7 +560,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 
 <details>
   <summary>
-  	<b style="color: orange;"><i class="fa-brands fa-linux"></i> Linux/Bash</b>
+  	<b style="color: white;"><i class="fa-brands fa-linux"></i> Linux/Bash</b>
   	<hr/>
   </summary>
   <h3>
@@ -596,7 +596,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 
 <details>
   <summary>
-  	<b style="color: yellow;"><i class="fa-solid fa-circle-ellipsis"></i> Etc</b>
+  	<b style="color: yellow;"><i class="fa-solid fa-ellipsis"></i> Etc</b>
   	<hr/>
   </summary>
 <h3>
