@@ -53,7 +53,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 
 <details>
   <summary>
-  	<b style="color: limegreen;">Java</b>
+  	<b style="color: #f89820;"><i class="fa-brands fa-java"></i> Java</b>
   	<hr/>
   </summary>
 <!---
@@ -79,7 +79,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 
 <details>
   <summary>
-  	<b style="color: limegreen;">Python</b>
+  	<b style="color: limegreen;"><i class="fab fa-python"></i> Python</b>
   	<hr/>
   </summary>
 <!---
@@ -524,7 +524,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 
 <details>
   <summary>
-  	<b style="color: cyan;">Windows Terminal/Batchfile</b>
+  	<b style="color: cyan;"><i class="fa-brands fa-windows"></i> Windows Terminal/Batchfile</b>
   	<hr/>
   </summary>
 <h3>
@@ -560,7 +560,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 
 <details>
   <summary>
-  	<b style="color: orange;">Linux/Bash</b>
+  	<b style="color: orange;"><i class="fa-brands fa-linux"></i> Linux/Bash</b>
   	<hr/>
   </summary>
   <h3>
@@ -596,7 +596,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 
 <details>
   <summary>
-  	<b style="color: yellow;">Etc</b>
+  	<b style="color: yellow;"><i class="fa-solid fa-circle-ellipsis"></i> Etc</b>
   	<hr/>
   </summary>
 <h3>
