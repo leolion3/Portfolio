@@ -600,7 +600,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   	<hr/>
   </summary>
 <h3>
-	<a href="https://gist.github.com/leolion3/ccf654ab60c8e110c65ef948da6af461" target="_blank" rel="noopener noreferrer" id="dlu">DLU Lego Universe Server Setup <i class="fa fa-external-link"></i></a>
+	<a href="https://gist.github.com/leolion3/ccf654ab60c8e110c65ef948da6af461" target="_blank" rel="noopener noreferrer" id="dlu"><img src="https://cdn2.steamgriddb.com/logo/1c8dcf919f8a604f3a488b0e4b0f1420.png" style="height: 18px"> DLU Lego Universe Server Setup <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
