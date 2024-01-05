@@ -37,7 +37,7 @@ This website also serves as my Portfolio, so if you're looking to hire me, or ar
 
 <details>
   <summary>
-  	<b style="color: purple;">Show Resume</b>
+  	<b style="color: purple;"><i class="fa-solid fa-user"></i> Show Resume</b>
   </summary>
   <div>
   	{% capture p21 %}{% include_relative CV/README.md %}{% endcapture %}
@@ -53,14 +53,14 @@ Well you can stick around and take a look at the list below, or you can go brows
 
 <details>
   <summary>
-  	<b style="color: limegreen;">Java</b>
+  	<b style="color: #f89820;"><i class="fa-brands fa-java"></i> Java</b>
   	<hr/>
   </summary>
 <!---
 	File Transfer Tool
 -->
 <h3>
-	<a href='https://github.com/leolion3/Simple-File-Transfer-PC' target='_blank' id='java-easy-file-transfer'>Easy File Transfer Tool (Cross-Platform) <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Simple-File-Transfer-PC' target='_blank' id='java-easy-file-transfer'><i class="fa-solid fa-file-arrow-up"></i> Easy File Transfer Tool (Cross-Platform) <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -79,14 +79,14 @@ Well you can stick around and take a look at the list below, or you can go brows
 
 <details>
   <summary>
-  	<b style="color: limegreen;">Python</b>
+  	<b style="color: limegreen;"><i class="fab fa-python"></i> Python</b>
   	<hr/>
   </summary>
 <!---
   DL Envelope Generator
 -->
 <h3>
-  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/Envelope' target='_blank' id='dl-generator'>DL Envelope Printable Generator <i class="fa fa-external-link"></i></a>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/Envelope' target='_blank' id='dl-generator'><i class="fa-solid fa-envelope"></i> DL Envelope Printable Generator <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -104,7 +104,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   Earthquake Notifier
 -->
 <h3>
-  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/EarthquakeMonitor' target='_blank' id='earthquake-notifier'>Earthquake Monitor w/ Telegram Notifications <i class="fa fa-external-link"></i></a>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/EarthquakeMonitor' target='_blank' id='earthquake-notifier'><i class="fa-solid fa-house-chimney-crack"></i> Earthquake Monitor w/ Telegram Notifications <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -123,7 +123,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   Trash Schedule Notifier
 -->
 <h3>
-  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/TrashScheduleNotifier' target='_blank' id='trash-notifier'>Telegram Trash Schedule Notifier <i class="fa fa-external-link"></i></a>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/TrashScheduleNotifier' target='_blank' id='trash-notifier'><i class="fa-solid fa-trash"></i> Telegram Trash Schedule Notifier <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -142,7 +142,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   iCal Generator
 -->
 <h3>
-  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/iCalGenerator' target='_blank' id='ical-generator'>iCal File Generator <i class="fa fa-external-link"></i></a>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/iCalGenerator' target='_blank' id='ical-generator'><i class="fa-solid fa-calendar-days"></i> iCal File Generator <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -161,7 +161,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   Canary Tracker
 -->
 <h3>
-  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/CanaryTrackingPixel' target='_blank' id='canary-tracking-pixel'>Canary Tracking Pixel <i class="fa fa-external-link"></i></a>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/CanaryTrackingPixel' target='_blank' id='canary-tracking-pixel'><i class="fa-solid fa-magnifying-glass"></i> Canary Tracking Pixel <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -180,7 +180,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	StudIP REST API
 -->
 <h3>
-	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/StudIP_REST_API' target='_blank' id='studip-rest-api'>StudIP REST API <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/StudIP_REST_API' target='_blank' id='studip-rest-api'><i class="fa-solid fa-graduation-cap"></i> StudIP REST API <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -199,7 +199,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Python MiniHTTP Server
 -->
 <h3>
-	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/MiniHTTPServer' target='_blank' id='mini-http-server'>MiniHTTPServer (Minimal HTTP Server) <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/MiniHTTPServer' target='_blank' id='mini-http-server'><i class="fa-solid fa-server"></i> MiniHTTPServer (Minimal HTTP Server) <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -218,7 +218,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	KeepBusy
 -->
 <h3>
-	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/KeepBusy' target='_blank' id='keep-busy'>KeepBusy Mouse Mover <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/KeepBusy' target='_blank' id='keep-busy'><i class="fa-solid fa-computer-mouse"></i> KeepBusy Mouse Mover <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -237,7 +237,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Yearly Investment Yield Calculator
 -->
 <h3>
-	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/YearlyYieldCalculator' target='_blank' id='investment-yield-ref'>Investment Yield Calculator <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/YearlyYieldCalculator' target='_blank' id='investment-yield-ref'><i class="fa-solid fa-money-bill-trend-up"></i> Investment Yield Calculator <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -256,7 +256,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Bank Balance Calculator
 -->
 <h3>
-	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/NetworthCalculator' target='_blank' id='bank-balance-ref'>Bank-Balance Calculator <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/NetworthCalculator' target='_blank' id='bank-balance-ref'><i class="fa-solid fa-money-check-dollar"></i> Bank-Balance Calculator <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -275,7 +275,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Password Vault
 -->
 <h3>
-	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/PasswordVault" target="_blank" rel="noopener noreferrer" id='password-vault-ref'>Password Vault <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/PasswordVault" target="_blank" rel="noopener noreferrer" id='password-vault-ref'><i class="fa-solid fa-lock"></i> Password Vault <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -295,7 +295,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	File Transfer Tool
 -->
 <h3>
-	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank' id='file-transfer-ref'>File Transfer Tool <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank' id='file-transfer-ref'><i class="fa-solid fa-file-arrow-up"></i> File Transfer Tool <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -315,7 +315,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Password Transfer Tool
 -->
 <h3>
-	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/PasswordUtils' target='_blank' id='password-transfer-ref'>Password Transfer Tool <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/PasswordUtils' target='_blank' id='password-transfer-ref'><i class="fa-solid fa-key"></i> Password Transfer Tool <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -335,7 +335,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Mass Git Diff
 -->
 <h3>
-	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/GitDiff' target='_blank' id='massgdiff-ref'>Mass Git Diff <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/GitDiff' target='_blank' id='massgdiff-ref'><i class="fa-brands fa-git-alt"></i> Mass Git Diff <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -355,7 +355,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Spotify Module
 -->
 <h3>
-	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/SpotifyAPI' target='_blank' id='spotify-api-ref'>Spotify API Modules <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/SpotifyAPI' target='_blank' id='spotify-api-ref'><i class="fa-brands fa-spotify"></i> Spotify API Modules <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -375,7 +375,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Python Ethermine Ticker
 -->
 <h3>
-	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/Ethermine' target='_blank' id='ethermine-ticker-ref'>Ethermine Ticker <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/Ethermine' target='_blank' id='ethermine-ticker-ref'><i class="fa-brands fa-bitcoin"></i> Ethermine Ticker <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -394,7 +394,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Monoalphabetic Decypherer
 -->
 <h3>
-	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/MonoalphabeticDecypherer" target="_blank" rel="noopener noreferrer" id='monoalphabetic-decypherer-ref'>Monoalphabetic Decypherer <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/MonoalphabeticDecypherer" target="_blank" rel="noopener noreferrer" id='monoalphabetic-decypherer-ref'><i class="fa-solid fa-language"></i> Monoalphabetic Decypherer <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -413,7 +413,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Reverse Shell
 -->
 <h3>
-	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/PythonReverseShell" target="_blank" rel="noopener noreferrer" id='py-revshell-ref'>Reverse Shell <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/PythonReverseShell" target="_blank" rel="noopener noreferrer" id='py-revshell-ref'><i class="fa-solid fa-terminal"></i> Reverse Shell <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -432,7 +432,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Markdown Text Editor
 -->
 <h3>
-	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/Markdown" target="_blank" rel="noopener noreferrer" id='py-texteditor-ref'>Markdown/Text Editor <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/Markdown" target="_blank" rel="noopener noreferrer" id='py-texteditor-ref'><i class="fa-solid fa-newspaper"></i> Markdown/Text Editor <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -451,7 +451,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Youtube to MP3
 -->
 <h3>
-	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/YouTube" target="_blank" rel="noopener noreferrer" id='yt-downloader-ref'>YouTube MP3 Downloader <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/YouTube" target="_blank" rel="noopener noreferrer" id='yt-downloader-ref'><i class="fa-brands fa-youtube"></i> YouTube MP3 Downloader <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -470,7 +470,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Revshell Payload Generator
 -->
 <h3>
-	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/ShellGenerator" target="_blank" rel="noopener noreferrer" id='powershell-revshell-ref'>Powershell TCP Reverse Shell Generator <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/ShellGenerator" target="_blank" rel="noopener noreferrer" id='powershell-revshell-ref'><i class="fa-brands fa-windows"></i> Powershell TCP Reverse Shell Generator <i class="fa fa-external-link"></i></a>
 </h3>
 	
 <details>
@@ -489,7 +489,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	Chat spammer
 -->
 <h3>
-	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/ChatSpammer" target="_blank" rel="noopener noreferrer" id='py-chatspammer-ref'>Chat Spammer <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/ChatSpammer" target="_blank" rel="noopener noreferrer" id='py-chatspammer-ref'><i class="fa-regular fa-comments"></i> Chat Spammer <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -506,7 +506,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 <hr/>
 
 <h3>
-	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/Introduction" target="_blank" rel="noopener noreferrer" id='python-introduction-ref'>Python Introduction <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Python/Introduction" target="_blank" rel="noopener noreferrer" id='python-introduction-ref'><i class="fa-brands fa-python"></i> Python Introduction <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -524,11 +524,11 @@ Well you can stick around and take a look at the list below, or you can go brows
 
 <details>
   <summary>
-  	<b style="color: cyan;">Windows Terminal/Batchfile</b>
+  	<b style="color: cyan;"><i class="fa-brands fa-windows"></i> Windows Terminal/Batchfile</b>
   	<hr/>
   </summary>
 <h3>
-	<a href="https://github.com/leolion3/Portfolio/tree/master/Powershell/Customization" target="_blank" rel="noopener noreferrer" id='wt-customization'>Windows Terminal Customization <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/Powershell/Customization" target="_blank" rel="noopener noreferrer" id='wt-customization'><i class="fa-solid fa-terminal"></i> Windows Terminal Customization <i class="fa fa-external-link"></i></a>
 </h3>
 	<details>
 		<summary>
@@ -542,7 +542,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	</details>
 <hr/>
 <h3>
-	<a href="https://github.com/leolion3/Portfolio/tree/master/CustomCommands" target="_blank" rel="noopener noreferrer" id='custom-commands'>Custom Windows Commands and Git Shortcuts <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/CustomCommands" target="_blank" rel="noopener noreferrer" id='custom-commands'><i class="fa-brands fa-git-alt"></i> Custom Windows Commands and Git Shortcuts <i class="fa fa-external-link"></i></a>
 </h3>
 <details>
 		<summary>
@@ -560,11 +560,11 @@ Well you can stick around and take a look at the list below, or you can go brows
 
 <details>
   <summary>
-  	<b style="color: orange;">Linux/Bash</b>
+  	<b style="color: white;"><i class="fa-brands fa-linux"></i> Linux/Bash</b>
   	<hr/>
   </summary>
   <h3>
-		<a href="https://github.com/leolion3/Portfolio/tree/master/Linux/Customization/Oh-My-Zsh" target="_blank" rel="noopener noreferrer" id='terminal-customization'>Customize Terminal with Oh-My-Zsh <i class="fa fa-external-link"></i></a>
+		<a href="https://github.com/leolion3/Portfolio/tree/master/Linux/Customization/Oh-My-Zsh" target="_blank" rel="noopener noreferrer" id='terminal-customization'><i class="fa-solid fa-terminal"></i> Customize Terminal with Oh-My-Zsh <i class="fa fa-external-link"></i></a>
 	</h3>
 	<details>
 	<summary>
@@ -578,7 +578,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	</details>
 	<hr/>
 	<h3>
-		<a href="https://github.com/leolion3/Portfolio/tree/master/Linux/CustomCommands" target="_blank" rel="noopener noreferrer" id='linux-commands'>Custom Linux/MacOS Commands <i class="fa fa-external-link"></i></a>
+		<a href="https://github.com/leolion3/Portfolio/tree/master/Linux/CustomCommands" target="_blank" rel="noopener noreferrer" id='linux-commands'><i class="fa-brands fa-git-alt"></i> Custom Linux/MacOS Commands <i class="fa fa-external-link"></i></a>
 	</h3>
 	<details>
 	<summary>
@@ -596,11 +596,11 @@ Well you can stick around and take a look at the list below, or you can go brows
 
 <details>
   <summary>
-  	<b style="color: yellow;">Etc</b>
+  	<b style="color: yellow;"><i class="fa-solid fa-ellipsis"></i> Etc</b>
   	<hr/>
   </summary>
 <h3>
-	<a href="https://gist.github.com/leolion3/ccf654ab60c8e110c65ef948da6af461" target="_blank" rel="noopener noreferrer" id="dlu">DLU Lego Universe Server Setup <i class="fa fa-external-link"></i></a>
+	<a href="https://gist.github.com/leolion3/ccf654ab60c8e110c65ef948da6af461" target="_blank" rel="noopener noreferrer" id="dlu"><img src="https://cdn2.steamgriddb.com/logo/1c8dcf919f8a604f3a488b0e4b0f1420.png" style="height: 18px"> DLU Lego Universe Server Setup <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
