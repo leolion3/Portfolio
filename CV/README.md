@@ -48,11 +48,15 @@ Don't think it interests anyone, but here you go:
 
 - Finished high school with Israeli Bagrut in 2017. Main subjects: Physics, Mathematics, Electronics and English.
 
-### Earned Certifications
+### Earned Certificates
 
 I've successfully attained the following certifications:
 
 - Computer Science Bsc. <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/Portfolio/CV/media/certs/bsc.pdf" target="_blank">(View certificate) <i class="fa fa-external-link"></i></a>
+
+### Certifications
+
+- TryHackMe Advent of Code 2023 <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/Portfolio/CV/media/certs/AoC23.pdf" target="_blank">(View certificate) <i class="fa fa-external-link"></i></a>
 
 ### Trainings
 
@@ -71,7 +75,7 @@ I've also participated in the following [Career Center](https://www.uni-bremen.d
 
 I'm persuing the following certifications:
 
-- Cisco Certified Network Associate (CCNA, eta. 2023)
+- Cisco Certified Network Associate (CCNA, eta. 2024)
 - Computer Science Msc. (eta. 2024)
 - Computer Science Phd. (eta. 2028)
 
