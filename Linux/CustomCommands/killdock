@@ -1,0 +1,4 @@
+#!/bin/bash
+# Kills macos dock.
+sudo pkill TouchBarServer
+sudo killall "ControlStrip"

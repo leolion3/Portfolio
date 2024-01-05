@@ -1,8 +1,15 @@
 # Custom Linux/MacOS Commands
 
-I've used the here provided commands pretty much every day in my professional life.
-Im sharing them here as shortcuts for common commands.
+Here is a list of custom commands crafted as extensions for your OS's commands. They include git shortcuts, common task shortcuts and some shortened commands.
 
 ## Installation
 
-To add the tools, simply create a directory `~/etc`, put the commands into it and add the following to your shell's rc file `export PATH="$PATH:$HOME/etc"`
+To install and use the commands, simply download the `install.sh` file and execute it:
+
+```bash
+curl -O https://raw.githubusercontent.com/leolion3/Portfolio/master/Linux/CustomCommands/install.sh
+chmod +x install.sh
+./install.sh
+```
+
+The command executables will be placed under `~/.commands`, which you then need to add to your shell's `rc` file.
