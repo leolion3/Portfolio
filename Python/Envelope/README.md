@@ -33,3 +33,5 @@ The script allows you to generate DL envelope templates with and without stamps.
 To add a stamp, get yourself a printable PDF stamp from your post office provider with cut-out marks around the corners ([see the `testprint_deutsche_post.pdf` file <i class="fa fa-external-link"></i>](https://raw.githubusercontent.com/leolion3/Portfolio/master/Python/Envelope/testprint_deutsche_post.pdf)) and execute the script with the pdf file as the first argument `envelope test_deutsche_post.pdf`. This will make you enter the details like in the default mode, but substitute the template file within the docx template with the printable stamp. If you'd like to try this mode, go ahead and do some with the provided stamp.
 
 Now just open the docx file and print it! Viola!
+
+![Demo picture <i class="fa fa-external-link"></i>](https://raw.githubusercontent.com/leolion3/Portfolio/master/Python/Envelope/media/envelope-demo.png)

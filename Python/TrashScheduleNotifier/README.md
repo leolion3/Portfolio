@@ -19,3 +19,7 @@ They can be installed using the provided `requirements.txt` file.
 To allow Telegram notifications, a Bot needs to be created ([see how](https://core.telegram.org/bots/tutorial)) and the Chat-ID of the chat/group-chat needs to be provided to the script.
 
 Since the contacted API service is quite "primitive", the street address and house number need to be provided in the correct abbreviations and capitalisations. To check how your address is spelled, check the network logs when accessing the service at https://www.die-bremer-stadtreinigung.de/abfallkalender.
+
+## Demo
+
+![Screenshot showcasing Telegram bot](https://raw.githubusercontent.com/leolion3/Portfolio/master/Python/TrashScheduleNotifier/media/demo.jpg)
