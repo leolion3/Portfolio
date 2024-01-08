@@ -83,6 +83,24 @@ Well you can stick around and take a look at the list below, or you can go brows
   	<hr/>
   </summary>
 <!---
+  Red Alert Telegram Notifier
+-->
+<h3>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/RedAlert' target='_blank' id='red-alert'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/red-alert.png" style="height: 18px"> Israel Red-Alert Telegram Notifier <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p21 %}{% include_relative Python/RedAlert/README.md %}{% endcapture %}
+    {{ p21 | markdownify }}
+  </div>
+  <a href="#red-alert">Back to Top</a>
+</details>
+<hr/>
+<!---
   DL Envelope Generator
 -->
 <h3>

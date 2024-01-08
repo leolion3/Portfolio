@@ -21,3 +21,7 @@ Quakes that have been notified about will get cached. The cache gets cleared eve
 The monitor automatically reaches out to the [API](https://earthquake.usgs.gov/earthquakes) every 30 seconds for an update on current quakes, hopefully giving you enough time to find shelter!
 
 ![Demo Thumbnail](https://raw.githubusercontent.com/leolion3/Portfolio/master/Python/EarthquakeMonitor/media/demo.png)
+
+## Demo
+
+![Telegram bot demo](https://raw.githubusercontent.com/leolion3/Portfolio/master/Python/EarthquakeMonitor/media/demo2.jpg)
