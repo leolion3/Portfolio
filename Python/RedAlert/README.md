@@ -6,7 +6,7 @@
 
 This python script allows setting up Telegram Notifications for the Israeli Red Alerts issued by Pikud Haeoref during emergencies.
 
-The API is queried every 15 seconds for updated, which are reformatted and sent per Telegram.
+The API is queried every 15 seconds for updates, which are reformatted and sent per Telegram.
 
 (\*) The app runs in debug (PoC) mode by default. If you'd like to actually use it, set the `DEBUG` variable to false. This is done since the app only works from **within Israeli territory** due to firewall and national security restrictions.
 
