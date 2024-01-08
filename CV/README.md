@@ -56,7 +56,7 @@ I've successfully attained the following certifications:
 
 ### Certifications
 
-- TryHackMe Advent of Code 2023 <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/Portfolio/CV/media/certs/AoC23.pdf" target="_blank">(View certificate) <i class="fa fa-external-link"></i></a>
+- TryHackMe Advent of Code 2023 <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/Portfolio/CV/media/certs/AoC23.png" target="_blank">(View certificate) <i class="fa fa-external-link"></i></a>
 
 ### Trainings
 
