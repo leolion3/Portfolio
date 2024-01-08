@@ -655,7 +655,7 @@ The B-Human football robots were incapable of showing emotions during RoboCup ga
 
 **The thesis was graded with a 1.3 (an A if an A+ is the highest possible grade).**
 
-**\* The professors' assessments can be provided upon request. Long live upon source and free access to information!**
+**\* The professors' assessments can be provided upon request. Long live open source and free access to information!**
 
 <p id="dancing-robots">Check out the dancing robots below!</p>
 
