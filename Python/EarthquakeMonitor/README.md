@@ -22,6 +22,6 @@ The monitor automatically reaches out to the [API](https://earthquake.usgs.gov/e
 
 ![Demo Thumbnail](https://raw.githubusercontent.com/leolion3/Portfolio/master/Python/EarthquakeMonitor/media/demo.png)
 
-## Demo
+## Bot Demo
 
 ![Telegram bot demo](https://raw.githubusercontent.com/leolion3/Portfolio/master/Python/EarthquakeMonitor/media/demo2.jpg)
