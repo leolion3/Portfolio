@@ -42,7 +42,7 @@ Since the app has a main UI thread, running in in a simple terminal instance is 
 
 ## Credit
 
-Credit where credit is due: This project was inspired by the [red-alert-python]() project. The `targets.json` file (containing the monitored regions and first downloaded when running the app), is also taken from there.
+Credit where credit is due: This project was inspired by the [red-alert-python](https://github.com/Zontex/python-red-alert) project. The `targets.json` file (containing the monitored regions and first downloaded when running the app), is also taken from there.
 
 ## Demo
 
