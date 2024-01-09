@@ -33,7 +33,7 @@ This website also serves as my Portfolio, so if you're looking to hire me, or ar
 {% capture p1 %}{% include_relative Etc/leolion3/README.md %}{% endcapture %}
 {{ p1 | markdownify }}
 
-<p>Wanna know if you should hire me or need a software developed? Check out my interactive digital resume below (or <a href='https://github.com/leolion3/Portfolio/blob/master/CV/' target='_blank' id='digital-resume'>here <i class="fa fa-external-link"></i></a>).</p>
+<p>Wanna know if you should hire me or need a software developed? Check out my interactive digital resume below (or <a href='https://leolion3.github.io/Portfolio/CV/' target='_blank' id='digital-resume'>here <i class="fa fa-external-link"></i></a>).</p>
 
 <details>
   <summary>
@@ -560,7 +560,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	</details>
 <hr/>
 <h3>
-	<a href="https://github.com/leolion3/Portfolio/tree/master/CustomCommands" target="_blank" rel="noopener noreferrer" id='custom-commands'><i class="fa-brands fa-git-alt"></i> Custom Windows Commands and Git Shortcuts <i class="fa fa-external-link"></i></a>
+	<a href="https://github.com/leolion3/Portfolio/tree/master/CustomCommands" target="_blank" rel="noopener noreferrer" id='custom-windows-commands'><i class="fa-brands fa-git-alt"></i> Custom Windows Commands and Git Shortcuts <i class="fa fa-external-link"></i></a>
 </h3>
 <details>
 		<summary>
@@ -570,7 +570,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 			{% capture p12 %}{% include_relative CustomCommands/README.md %}{% endcapture %}
 			{{ p12 | markdownify }}
 		</div>
-		<a href="#custom-commands">Back to Top</a>
+		<a href="#custom-windows-commands">Back to Top</a>
 	</details>
 <hr/>
 
