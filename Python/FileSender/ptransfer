@@ -116,19 +116,25 @@ def send_file(server):
     server.close()
 
 
-def get_readable_file_size(fileSize):
-    if fileSize > 1000000000:
-        return "%s.%s GB" % (str(int(fileSize / 1000000000)), str(int(fileSize / 10000000))[-2:-1])
-    elif fileSize > 1000000:
-        return "%s.%s MB" % (str(int(fileSize / 1000000)), str(int(fileSize / 10000))[-2:-1])
-    elif fileSize > 1000:
-        return "%s.%s KB" % (str(int(fileSize / 1000)), str(int(fileSize / 100))[-1])
-    return str(fileSize)
+def get_readable_file_size(file_size):
+    if -1000 < file_size < 1000:
+        return f"{file_size} B"
+    
+    suffix = "kMGTPE"
+    ci = iter(suffix)
+
+    for i in range(len(suffix)):
+        if file_size <= -999_950 or file_size >= 999_950:
+            file_size /= 1000
+        else:
+            break
+    file_size /= 1000
+    return f"{file_size:.1f} {suffix[i]}B"
 
 
 def print_file_size(received_size, previous_file_size, fileSize):
     if previous_file_size != fileSize:
-        print(f"Received {received_size} / {fileSize}", end='\r')
+        print(f"Received {received_size} / {fileSize}{' ' * 10}", end='\r')
 
 
 def check_hashes_match(client_socket, fileName):
