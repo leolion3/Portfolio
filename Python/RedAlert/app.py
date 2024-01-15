@@ -328,7 +328,10 @@ def ui_thread():
 def monitor_thread():
 	global monitor_active, ROOT_URL, API_URL
 	while monitor_active:
-		extract_data_and_notify(fetch_alert(ROOT_URL, API_URL))
+		try:
+			extract_data_and_notify(fetch_alert(ROOT_URL, API_URL))
+		except Exception as e:
+			logging.error(f'Error occurred: {e}')
 		sleep(5)
 
 
