@@ -66,7 +66,7 @@ def __get_tomorrow():
     Get the next day, formatted as YYYY-mm-dd.
     """
     return (datetime.now() + timedelta(days=1)).strftime('%Y-%m-%d')
-
+    
 
 def __validate_data(data: str, tomorrow: str) -> bool:
     """
@@ -95,9 +95,10 @@ def __get_altered(data: str, tomorrow: str, message: str, lang: str) -> str:
     if not altered:
         return message
     langs = {
-        'Deutsch': '\n(*) Es gab eine Änderung in dem Abfallkalendar:\n- Der {0} abfall Abholtermin wurde verschoben.\n',
-        'English': '\n(*) The trash schedule has been altered:\n- The {0} trash schedule was changed.\n'
+        'Deutsch': '\n(*) Es gab eine Änderung in dem Abfallkalendar\n',
+        'English': '\n(*) The trash schedule has been altered\n'
     }
+    waste = data.get(tomorrow).get('waste')
     for waste_type in waste:
         if waste_type.get('isAltered'):
             message += langs.get(lang).format(__convert_trash_to_string(waste_type.get('type'), lang))
