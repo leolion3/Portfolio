@@ -214,6 +214,25 @@ Well you can stick around and take a look at the list below, or you can go brows
 
 <hr/>
 <!---
+  StreamTogether
+-->
+<h3>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/StreamTogether' target='_blank' id='stream-together'><i class="fa-solid fa-film"></i> StreamTogether (Synchronous Streaming) <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p21 %}{% include_relative Python/StreamTogether/README.md %}{% endcapture %}
+    {{ p21 | markdownify }}
+  </div>
+  <a href="#stream-together">Back to Top</a>
+</details>
+
+<hr/>
+<!---
 	Python MiniHTTP Server
 -->
 <h3>
