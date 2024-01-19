@@ -6,6 +6,14 @@ Here is a list of custom commands crafted as extensions for your OS's commands. 
 
 To install and use the commands, simply download the `install.sh` file and execute it:
 
+### Quick Install
+
+```bash
+curl https://raw.githubusercontent.com/leolion3/Portfolio/master/Linux/CustomCommands/install.sh | /bin/bash
+```
+
+### Manual Install
+
 ```bash
 curl -O https://raw.githubusercontent.com/leolion3/Portfolio/master/Linux/CustomCommands/install.sh
 chmod +x install.sh
