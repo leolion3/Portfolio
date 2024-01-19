@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 #                                           PYTHON PASSWORD VAULT
 # ========================================================================================================
 # The Python Password Vault is an AES-256 Encrypted Database in which you can store your passwords 
