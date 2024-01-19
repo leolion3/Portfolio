@@ -83,6 +83,24 @@ Well you can stick around and take a look at the list below, or you can go brows
   	<hr/>
   </summary>
 <!---
+  ONOC Tools
+-->
+<h3>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/ONOC' target='_blank' id='onoc-tools'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/Python/ONOC/media/pizza_bot.jpg" style="height: 18px"> ONOC Tools <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p21 %}{% include_relative Python/ONOC/README.md %}{% endcapture %}
+    {{ p21 | markdownify }}
+  </div>
+  <a href="#onoc-tools">Back to Top</a>
+</details>
+<hr/>
+<!---
   Red Alert Telegram Notifier
 -->
 <h3>
