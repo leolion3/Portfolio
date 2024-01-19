@@ -2,7 +2,7 @@
 
 Just a bunch of tools for the annual [ONOC](https://onoc.eu/).
 
-## <img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/Python/ONOC/media/pizza_bot.jpg" style="width: 36px!important"> Pizza bot
+## <img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/Python/ONOC/media/pizza_bot.jpg" style="width: 24px!important"> Pizza bot
 
 Bot for notifying you per Telegram when your pizza order has arrived.
 
