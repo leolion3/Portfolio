@@ -33,7 +33,7 @@ rm -rf commands/
 # Ready components
 cd "$cmd_dir/"
 rm "README.md"
-rm "install.sh"
+rm install.sh
 chmod +x ./ptransfer
 chmod +x ./passtransfer
 chmod +x ./keepbusy
