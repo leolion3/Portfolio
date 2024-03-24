@@ -83,6 +83,24 @@ Well you can stick around and take a look at the list below, or you can go brows
   	<hr/>
   </summary>
 <!---
+  Gmail Permutator
+-->
+<h3>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/GmailPermutationGenerator' target='_blank' id='gmail-permutator'><i class="fa-solid fa-envelope"></i> Gmail Permutation Generator <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p21 %}{% include_relative Python/GmailPermutationGenerator/README.md %}{% endcapture %}
+    {{ p21 | markdownify }}
+  </div>
+  <a href="#gmail-permutator">Back to Top</a>
+</details>
+<hr/>
+<!---
   ONOC Tools
 -->
 <h3>
