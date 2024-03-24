@@ -29,8 +29,10 @@ def telegram_notify(quake):
 	magnitude = quake['properties']['mag']
 	place = quake['properties']['place']
 	msg = f'[ALERT] {time} Earthquake of magnitude {magnitude} occurred {place}!'
-	r =	requests.get(f'{TELEGRAM_URL}{msg}')
-	print(msg)
+	if not msg in cache:
+		cache.append(msg)
+		r =	requests.get(f'{TELEGRAM_URL}{msg}')
+		print(msg)
 
 
 def check_loc_and_notify(c, cc):
