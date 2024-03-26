@@ -2,25 +2,40 @@
 
 This is a super duper mega simple file transfer tool which may be used to transfer files between two different systems on the same network.
 
-Note: The file is sent in an unencrypted manner, so DO NOT USE THIS ON A PUBLIC NETWORK / ACCROSS THE BIG EVIL WWB
+(\*) Note: The file is sent in an unencrypted manner.
 
 ## Usage
 
-The sending PC acts as the server. The tool needs to be run with the IPv4 Address of the sending PC.
+The script can be ran in either send or receive mode, with either the sender or the receiver acting as the host.
 
-Sender:
+It can either be ran with all arguments given when running the command, or by merely supplying the ip address and setting the remaining variables through prompts.
 
-```bash
-./ptransfer own_ipv4_address
-```
-
-Receiver:
+Syntax:
 
 ```bash
-./ptransfer sender_ipv4_address
+ptransfer <IP Address> [[s]end/[r]eceive] [reversed (T/F)] [filepath] [port]
 ```
 
-The mode Sender/Receiver needs to be picked after the above command is run (you will get a prompt). The sender needs to specify the full filename including the file extension. Note that the path of the sent file is relative to the current directory from which this script is run.
+- IP Address: The Interface to listen on/connect to.
+- Mode (Optional): \[s]end or \[r]eceive.
+- Reversed (Optional): \[f]alse or \[t]rue. Usually the sender acts as the server, but this can be reversed on machines where opening a port is disallowed.
+- Filepath (Optional): Path to the file to send.
+- Port (Optional): Port to connect to/listen on.
+
+Note: While the arguments are optional, it is mandatory to include them in a row (script does not use getopt!). If the port is supplied, then all arguments preceeding it need to be supplied as well!
+
+Running without arguments:
+
+```bash
+#> ptransfer 127.0.0.1
+Please select type send/receive
+#> r
+Would you like to run in reverse connection mode (sender connects to receiver)?
+- True: Receiver must start script FIRST.
+- False (default): Sender must start script FIRST.
+(*) Note: Android and Java variants dont support reverse mode!
+(True/False) #> f
+```
 
 ## Function
 
