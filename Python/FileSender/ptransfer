@@ -10,7 +10,7 @@ import time
 
 
 if len(sys.argv) < 2:
-    print("Usage: ptransfer ip_addr_of_sender")
+    print("Usage: ptransfer <IP Address> [[s]end/[r]eceive] [reversed (T/F)] [filepath] [port]")
     exit()
 
 
@@ -22,13 +22,30 @@ IPAddr = sys.argv[1]
 Port = 5050
 
 
-if len(sys.argv) > 2:
-    Port = int(sys.argv[2])
-
-
 # Filename
 fileName = "" 
 
+rev = None
+if len(sys.argv) > 3:
+    if 't' in sys.argv[3]:
+        rev = True
+    else:
+        rev = False
+
+stype = False
+if len(sys.argv) > 2:
+    if 's' in sys.argv[2]:
+        stype = 's'
+    else:
+        stype = 'r'
+
+if len(sys.argv) > 5 and stype == 's':
+    Port = int(sys.argv[5])
+elif len(sys.argv) > 4 and stype == 'r':
+    Port = int(sys.argv[4])
+
+if len(sys.argv) > 4 and stype == 's':
+    fileName = sys.argv[4]
 
 # Hash a given value using SHA256
 def hash256(fileName):
@@ -72,20 +89,37 @@ def accept_ping(server):
         accept_ping(server)
     return (False, s)
 
-# Send file to remote
-def send_file(server):
-    global IPAddr, Port, fileName
-    print("Please enter filename with extension!")
-    fileName = input("#> ")
-    if not len(fileName):
-        send_file()
-    server.bind((IPAddr, Port))
-    server.listen(True)
-    ping_result = accept_ping(server)
-    while not ping_result[0]:
+
+def get_send_socket(server, rev):
+    global IPAddr, Port
+    if not rev:
+        server.bind((IPAddr, Port))
+        server.listen(True)
+        print(f'[*] Listening for connections on {IPAddr}:{Port}...')
         ping_result = accept_ping(server)
-    s = ping_result[1]
-    s.send(bytes(fileName, 'utf-8') + b'\n')
+        while not ping_result[0]:
+            ping_result = accept_ping(server)
+        print(f'[*] Client connected. Starting transfer...')
+        s = ping_result[1]
+    else:
+        s = socket.socket()
+        print(f'[*] Connecting to {IPAddr}{Port}...')
+        s.connect((IPAddr, Port))
+        s.recv(4096)
+    return s
+
+
+
+# Send file to remote
+def send_file(server, rev):
+    global fileName
+    if not len(fileName):
+        print("Please enter filename with extension!")
+        fileName = input("#> ")
+        if not len(fileName):
+            send_file()
+    s = get_send_socket(server, rev)
+    s.send(bytes(os.path.basename(fileName), 'utf-8') + b'\n')
     s.recv(4096)
     f = open(fileName,'rb')
     s.send(bytes(str(getsize(fileName)) + '\n','utf-8'))
@@ -182,11 +216,22 @@ def check_file_exists(client_socket, fileName, file_exists):
         return 0
 
 
-def receive_file():
+def receive_file(rev):
     global IPAddr, Port, fileName
-    client_socket = socket.socket()
     try:
-        client_socket.connect((IPAddr,Port))
+        if not rev:
+            client_socket = socket.socket()
+            print(f'[*] Connecting to {IPAddr}:{Port}...')
+            client_socket.connect((IPAddr,Port))
+            print('[*] Connected. Beginning transfer...')
+        else:
+            server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+            server.bind((IPAddr, Port))
+            server.listen(True)
+            print(f'[*] Listening for connections on {IPAddr}:{Port}...')
+            client_socket, client_addr = server.accept()
+            print(f'[*] Client connected from {client_addr[0]}:{client_addr[1]}. Starting transfer...')
         fileName, original_size = initial_client_comm(client_socket)
         fileSize = get_readable_file_size(original_size)
         previous_file_size = ""
@@ -223,18 +268,33 @@ def receive_file():
 
 # Setup
 def setup():
-    print("Please select type send/receive")
-    selected = input("#> ")
+    global rev, stype
+    if stype in ['s','r']:
+        selected = stype
+    else:
+        print("Please select type send/receive")
+        selected = input("#> ")
+    if rev is None:
+        print("Would you like to run in reverse connection mode (sender connects to receiver)?")
+        print('- True: Receiver must start script FIRST.')
+        print('- False (default): Sender must start script FIRST.')
+        print('(*) Note: Android and Java variants dont support reverse mode!')
+        rev = input('(True/False) #> ')
+        if 't' in rev.lower():
+            print('[*] Running in reverse mode\n')
+            rev = True
+        else:
+            rev = False
     if "s" in selected:
         server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         try:
-            send_file(server)
+            send_file(server, rev)
         except Exception as e:
             print(e)
             server.close()
     elif "r" in selected:
-        receive_file()
+        receive_file(rev)
     else:
         setup()
 
