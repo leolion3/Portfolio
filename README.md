@@ -83,10 +83,30 @@ Well you can stick around and take a look at the list below, or you can go brows
   	<hr/>
   </summary>
 <!---
+  File Transfer Tool
+-->
+<h3>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank' id='file-transfer-ref'><img src="html/media/ptransfer/logo.webp" style="width: 24px; vertical-align: top;"> File Transfer Tool <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p3 %}{% include_relative Python/FileSender/README.md %}{% endcapture %}
+    {{ p3 | markdownify }}
+  </div>
+  <a href="#file-transfer-ref">Back to Top</a>
+</details>
+
+<hr/>
+
+<!---
   Gmail Permutator
 -->
 <h3>
-  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/GmailPermutationGenerator' target='_blank' id='gmail-permutator'><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="52 42 88 66"><path fill="#4285f4" d="M58 108h14V74L52 59v43c0 3.32 2.69 6 6 6"/><path fill="#34a853" d="M120 108h14c3.32 0 6-2.69 6-6V59l-20 15"/><path fill="#fbbc04" d="M120 48v26l20-15v-8c0-7.42-8.47-11.65-14.4-7.2"/><path fill="#ea4335" d="M72 74V48l24 18 24-18v26L96 92"/><path fill="#c5221f" d="M52 51v8l20 15V48l-5.6-4.2c-5.94-4.45-14.4-.22-14.4 7.2"/></svg> Gmail Permutation Generator <i class="fa fa-external-link"></i></a>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/GmailPermutationGenerator' target='_blank' id='gmail-permutator'><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="52 42 88 66"><path fill="#4285f4" d="M58 108h14V74L52 59v43c0 3.32 2.69 6 6 6"/><path fill="#34a853" d="M120 108h14c3.32 0 6-2.69 6-6V59l-20 15"/><path fill="#fbbc04" d="M120 48v26l20-15v-8c0-7.42-8.47-11.65-14.4-7.2"/><path fill="#ea4335" d="M72 74V48l24 18 24-18v26L96 92"/><path fill="#c5221f" d="M52 51v8l20 15V48l-5.6-4.2c-5.94-4.45-14.4-.22-14.4 7.2"/></svg> Gmail Permutation Generator <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -104,7 +124,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   ONOC Tools
 -->
 <h3>
-  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/ONOC' target='_blank' id='onoc-tools'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/Python/ONOC/media/pizza_bot.jpg" style="height: 18px"> ONOC Tools <i class="fa fa-external-link"></i></a>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/ONOC' target='_blank' id='onoc-tools'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/Python/ONOC/media/pizza_bot.jpg" style="height: 24px; vertical-align: top"> ONOC Tools <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -122,7 +142,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   Red Alert Telegram Notifier
 -->
 <h3>
-  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/RedAlert' target='_blank' id='red-alert'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/red-alert.png" style="height: 18px"> Israel Red-Alert Telegram Notifier <i class="fa fa-external-link"></i></a>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/RedAlert' target='_blank' id='red-alert'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/red-alert.png" style="height: 24px; vertical-align: middle"> Israel Red-Alert Telegram Notifier <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -360,26 +380,6 @@ Well you can stick around and take a look at the list below, or you can go brows
 	  {{ p2 | markdownify }}
   </div>
   <a href="#password-vault-ref">Back to Top</a>
-</details>
-
-<hr/>
-
-<!---
-	File Transfer Tool
--->
-<h3>
-	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/FileSender' target='_blank' id='file-transfer-ref'><i class="fa-solid fa-file-arrow-up"></i> File Transfer Tool <i class="fa fa-external-link"></i></a>
-</h3>
-
-<details>
-  <summary>
-  	<b style="color: purple;">Click to view Details</b>
-  </summary>
-  <div>
-  	{% capture p3 %}{% include_relative Python/FileSender/README.md %}{% endcapture %}
-	  {{ p3 | markdownify }}
-  </div>
-  <a href="#file-transfer-ref">Back to Top</a>
 </details>
 
 <hr/>
@@ -774,7 +774,7 @@ Check out my Google Play Apps!
 <!-- File transfer tool -->
   <li>
     <h2>
-      <img src="html/media/ptransfer/logo.webp" width="24" height="24"> Open Source Easy File Transfer <a href="https://play.google.com/store/apps/details?id=software.isratech.filetransferos" target="_blank">(Google Play <i class="fa fa-external-link"></i>)</a>
+      <img src="html/media/ptransfer/logo.webp" style="vertical-align: middle;" width="24" height="24"> Open Source Easy File Transfer <a href="https://play.google.com/store/apps/details?id=software.isratech.filetransferos" target="_blank">(Google Play <i class="fa fa-external-link"></i>)</a>
     </h2>
     <img src="html/media/ptransfer/demo-1.webp" width="17%">
     <img src="html/media/ptransfer/demo-2.webp" width="17%">
@@ -818,7 +818,7 @@ Check out my Google Play Apps!
 <!-- Sharky -->
   <li>
     <h2>
-      <img src="html/media/sharky/logo.webp" width="24" height="24"> Sharky the hungry Sharkfish Game <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.SpaceAhoy.Sharky">(Google Play <i class="fa fa-external-link"></i>)</a>
+      <img src="html/media/sharky/logo.webp" style="vertical-align: middle;" width="24" height="24"> Sharky the hungry Sharkfish Game <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.SpaceAhoy.Sharky">(Google Play <i class="fa fa-external-link"></i>)</a>
     </h2>
     <img src="html/media/sharky/demo.webp" width="85%">
     <p>Sharky is very Hungry! Help by feeding him as many fish as you can, but watch out for those nasty harpoons!<br>Sharky is a family-friendly game designed for all ages. Furthermore it is completely FREE<br> and AD-FREE. Collect coins to unlock powerups and new skins, and get that highscore!<br>Sharky is a great time killer for your free time as well!<br /> Be it while waiting at the airport, or in the subway, sharky can played anywhere at any given time!<br /> What are you still waiting for? Get Sharky today!
@@ -827,7 +827,7 @@ Check out my Google Play Apps!
 <!-- Semesterplaner -->
   <li>
     <h2>
-      <img src="html/media/planer/logo.webp" width="24" height="24"> SemesterPlaner - Plan your Schedule! <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.spaceahoy.semesterplaner">(Google Play <i class="fa fa-external-link"></i>)</a>
+      <img src="html/media/planer/logo.webp" style="vertical-align: middle;" width="24" height="24"> SemesterPlaner - Plan your Schedule! <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.spaceahoy.semesterplaner">(Google Play <i class="fa fa-external-link"></i>)</a>
     </h2>
       <img src="html/media/planer/demo-1.webp" width="17%">
       <img src="html/media/planer/demo-2.webp" width="17%">
@@ -838,7 +838,7 @@ Check out my Google Play Apps!
 <!-- Password Generator -->
   <li>
     <h2>
-      <img src="html/media/genpass/logo.webp" width="24" height="24"> Open-Source Password Generator App <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=processing.test.password_generator">(Google Play <i class="fa fa-external-link"></i>)</a>
+      <img src="html/media/genpass/logo.webp" style="vertical-align: middle;" width="24" height="24"> Open-Source Password Generator App <a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=processing.test.password_generator">(Google Play <i class="fa fa-external-link"></i>)</a>
     </h2>
     <img src="html/media/genpass/demo-1.webp" width="17%">
     <img src="html/media/genpass/demo-2.webp" width="17%">
