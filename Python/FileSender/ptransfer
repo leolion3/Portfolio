@@ -22,6 +22,10 @@ IPAddr = sys.argv[1]
 Port = 5050
 
 
+# Decorative
+loading_idx = 0
+
+
 # Filename
 fileName = "" 
 
@@ -81,7 +85,7 @@ def accept_ping(server):
         msg = s.recv(4096).decode()[:-1]
         if msg.replace('\n','').replace('\r','') == 'init':
             return (True, s)
-        print('Received ping from ' + addr[0] + ':' + str(addr[1]))
+        print('(*) Received ping from ' + addr[0] + ':' + str(addr[1]))
         s.send(b'REPLY\n')
         return (False, s)
     except Exception as e:
@@ -114,7 +118,7 @@ def get_send_socket(server, rev):
 def send_file(server, rev):
     global fileName
     if not len(fileName):
-        print("Please enter filename with extension!")
+        print("[#] Please enter filename with extension!")
         fileName = input("#> ")
         if not len(fileName):
             send_file()
@@ -125,7 +129,7 @@ def send_file(server, rev):
     s.send(bytes(str(getsize(fileName)) + '\n','utf-8'))
     exists, current_size = client_file_exists(s)
     if exists:
-        print(f'File exists! Reading {current_size} bytes...')
+        print(f'[!] File exists! Reading {current_size} bytes...')
         i = 0
         while i < current_size:
             threshold = get_read_threshold(current_size - i)
@@ -133,7 +137,7 @@ def send_file(server, rev):
             i += threshold
     s.send(b'Ready for transfer!\n')
     s.recv(4096).decode()
-    print('Sending file...')
+    print('[^] Sending file...')
     while True:
         try:
             data = f.read(2000000)
@@ -146,7 +150,7 @@ def send_file(server, rev):
     original_hash = hash256(fileName)
     s.send(bytes(original_hash, 'utf-8') + b'\n')
     f.close()
-    print("File transfer complete.")
+    print("[✓] File transfer complete.")
     server.close()
 
 
@@ -166,25 +170,40 @@ def get_readable_file_size(file_size):
     return f"{file_size:.1f} {suffix[i]}B"
 
 
+def get_loading_char():
+    """
+    Decorative loading animation.
+    """
+    global loading_idx
+    try:
+        loading_idx += 1
+        loading_idx %= 40
+        if loading_idx >= 20:
+            return '⟳'
+        return '↻'
+    except:
+        return '[*]'
+
+
 def print_file_size(received_size, previous_file_size, fileSize):
     if previous_file_size != fileSize:
-        print(f"Received {received_size} / {fileSize}{' ' * 10}", end='\r')
+        print(f"[{get_loading_char()}] Received {received_size} / {fileSize}{' ' * 10}", end='\r')
 
 
 def check_hashes_match(client_socket, fileName):
-    print("Checking Hashes:")
+    print("[?] Checking Hashes:")
     client_socket.send(b'GIVE_ME_HASH\n')
     original_hash = client_socket.recv(4096).decode()[:-1].strip()
     received_file_hash = hash256(fileName)
-    print("\t[Original Hash]: %s\n\t[Received File Hash]: %s" % (original_hash, received_file_hash))
+    print("\t[Original Hash]: %s\n\t[Received Hash]: %s" % (original_hash, received_file_hash))
     if original_hash == received_file_hash:
-        print("Hashes match!")
+        print("[✓] Hashes match!")
     else:
-        print("Hash mismatch, delete file?")
+        print("[x] Hash mismatch, delete file?")
         user_input = input("Y/N #> ")
         if 'y' in user_input.lower():
             os.remove(fileName)
-            print("Deleted File!")
+            print("[✓] Deleted File!")
 
 
 def initial_client_comm(client_socket):
@@ -192,7 +211,7 @@ def initial_client_comm(client_socket):
     fileName = client_socket.recv(4096).decode()[:-1].strip()
     client_socket.send(b'Received Name\n')
     original_size = int(client_socket.recv(4096).decode()[:-1])
-    print("Receiving file...")
+    print("[?] Receiving file...")
     return (fileName, original_size)
 
 
@@ -260,7 +279,7 @@ def receive_file(rev):
         end_time = time.time()
         print()
         check_hashes_match(client_socket, fileName)
-        print(f'Transfer done in {round(end_time - start_time, 1)} seconds.')
+        print(f'[✓] Transfer done in {round(end_time - start_time, 1)} seconds.')
     finally:
         client_socket.close()
     exit()
@@ -272,7 +291,7 @@ def setup():
     if stype in ['s','r']:
         selected = stype
     else:
-        print("Please select type send/receive")
+        print("[#] Please select type send/receive")
         selected = input("#> ")
     if rev is None:
         print("Would you like to run in reverse connection mode (sender connects to receiver)?")
