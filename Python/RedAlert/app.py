@@ -320,13 +320,13 @@ def loop():
 
 
 def ui_thread():
-	setup()
 	help()
 	loop()
 
 
 def monitor_thread():
 	global monitor_active, ROOT_URL, API_URL
+	setup()
 	while monitor_active:
 		try:
 			extract_data_and_notify(fetch_alert(ROOT_URL, API_URL))
