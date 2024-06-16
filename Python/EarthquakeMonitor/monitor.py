@@ -28,9 +28,10 @@ def telegram_notify(quake):
 	time = datetime.now().strftime('%Y-%m-%d')
 	magnitude = quake['properties']['mag']
 	place = quake['properties']['place']
-	msg = f'[ALERT] {time} Earthquake of magnitude {magnitude} occurred {place}!'
-	if not msg in cache:
-		cache.append(msg)
+	alert = f'Earthquake of magnitude {magnitude} occurred {place}!'
+	msg = f'[ALERT] {time} {alert}'
+	if not alert in cache:
+		cache.append(alert)
 		r =	requests.get(f'{TELEGRAM_URL}{msg}')
 		print(msg)
 
@@ -71,7 +72,7 @@ if __name__ == '__main__':
 		loop()
 		exit(0)
 	scheduler = BlockingScheduler()
-	scheduler.add_job(clear_cache, 'cron', day=7, hour=0, minute=0, second=15)
+	scheduler.add_job(clear_cache, 'cron', day=3, hour=0, minute=0, second=15)
 	scheduler.add_job(loop, 'interval', seconds=30)
 	try:
 		cache = requests.get(API).json()['features']
