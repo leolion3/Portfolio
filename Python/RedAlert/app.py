@@ -23,11 +23,11 @@ if not os.path.exists('targets.json'):
 # Debug on by default, turn off if you want to use the app.
 DEBUG = True
 
-TELEGRAM_API_KEY = getpass('Input Telegram API Key (Redacted): ')
-TELEGRAM_CHAT_ID = getpass('Input Telegram Chat ID (Redacted): ')
-TELEGRAM_URL = f"https://api.telegram.org/bot{TELEGRAM_API_KEY}/sendMessage?chat_id={TELEGRAM_CHAT_ID}&text="
-
 if not DEBUG:
+	TELEGRAM_API_KEY = getpass('Input Telegram API Key (Redacted): ')
+	TELEGRAM_CHAT_ID = getpass('Input Telegram Chat ID (Redacted): ')
+	TELEGRAM_URL = f"https://api.telegram.org/bot{TELEGRAM_API_KEY}/sendMessage?chat_id={TELEGRAM_CHAT_ID}&text="
+
 	ROOT_URL = 'https://www.oref.org.il/'
 	API_URL = 'https://www.oref.org.il/WarningMessages/alert/alerts.json'
 	requests.get(TELEGRAM_URL + 'Api is up and listening...')
@@ -81,6 +81,25 @@ emojis = {
 	'טיל' : '🚀',
 	'כלי טיס' : '✈️'
 }
+REGIONS_CACHE_FILE = 'monitored_regions.json'
+
+
+def create_regions_cache():
+	global monitored_regions, REGIONS_CACHE_FILE
+	if os.path.isfile(REGIONS_CACHE_FILE):
+		os.remove(REGIONS_CACHE_FILE)
+	with open(REGIONS_CACHE_FILE, 'w+') as f:
+		json.dump(monitored_regions, f)
+		f.flush()
+		print('[CACHE] Updated regions cache.\n')
+
+
+def load_regions_cache():
+	global monitored_regions, REGIONS_CACHE_FILE
+	if os.path.isfile(REGIONS_CACHE_FILE):
+		with open(REGIONS_CACHE_FILE, 'r') as f:
+			monitored_regions = json.load(f)
+			print('[CACHE] Loaded cached monitors.\n')
 
 
 def cache_alert(alert):
@@ -222,6 +241,7 @@ def load_regions():
 
 
 def setup():
+	load_regions_cache()
 	load_regions()
 	extract_region_keys()
 	get_labels()
@@ -229,14 +249,14 @@ def setup():
 
 def help():
 	print()
-	print('=============== Red Alert Monitor ===============')
+	print('==================== Red Alert Monitor ====================')
 	print()
-	print('?, help              - Display this menu')
-	print('s, search {name}     - Search for a city')
-	print('a, add {id}          - Add city to monitor by id')
-	print('r, remove {id}       - Remove id from monitor')
-	print('l, list              - List active monitors')
-	print('exit                 - Terminate monitor')
+	print('?, help                        - Display this menu')
+	print('s, search {name}               - Search for a city')
+	print('a, add {id}[,][more ids]       - Add city(ies) to monitor by id(s)')
+	print('r, remove {id}[,][more ids]    - Remove id(s) from monitor')
+	print('l, list                        - List active monitors')
+	print('exit                           - Terminate monitor')
 
 
 def list_monitors():
@@ -251,13 +271,15 @@ def list_monitors():
 		print(key, '. ', label)
 
 
-def remove(key):
+def remove(keys):
 	global monitored_regions
-	if key in monitored_regions.keys():
-		del monitored_regions[key]
-		print('> Deleted region', key)
-	else:
-		print('- No monitor active for region', key)
+	for key in keys:
+		if key in monitored_regions.keys():
+			del monitored_regions[key]
+			print('> Deleted region', key)
+			create_regions_cache()
+		else:
+			print('- No monitor active for region', key)
 
 
 def search(key):
@@ -270,14 +292,16 @@ def search(key):
 		print(entry)
 
 
-def add(key):
+def add(keys):
 	global region_keys, regions, monitored_regions
-	if not key in region_keys:
-		print('- Illegal region key entered! Region keys can only be numbers!')
-		return
-	else:
-		monitored_regions[key] = regions[key].get('label')
-		print('> Added', key, 'to monitor!')
+	for key in keys:
+		if not key in region_keys:
+			print('- Illegal region key entered! Region keys can only be numbers!')
+			return
+		else:
+			monitored_regions[key] = regions[key].get('label')
+			print('> Added', key, 'to monitor!')
+			create_regions_cache()
 
 
 def loop():
@@ -300,14 +324,11 @@ def loop():
 			print('Monitor thread terminated, exiting...')
 			exit(0)
 		elif cmd.split(' ')[0] == 'r' or 'remove' in cmd:
-			cmd, key = cmd.split(' ')
-			remove(key)
+			remove(' '.join(cmd.split(' ')[1:]).split(','))
 		elif cmd.split(' ')[0] == 's' or 'search' in cmd:
-			cmd, key = cmd.split(' ')
-			search(key)
+			search(' '.join(cmd.split(' ')[1:]))
 		elif cmd.split(' ')[0] == 'a' or 'add' in cmd:
-			cmd, key = cmd.split(' ')
-			add(key)
+			add(' '.join(cmd.split(' ')[1:]).split(','))
 		else:
 			raise Exception()
 	except Exception as e:
@@ -337,14 +358,13 @@ def monitor_thread():
 
 if __name__ == '__main__':
 	t1 = Thread(target=ui_thread)
-	t2 = Thread(target=monitor_thread)
-	t2.setDaemon(True)
+	t2 = Thread(target=monitor_thread, daemon=True)
 	t1.start()
 	if DEBUG:
-		t3 = Thread(target=flask_thread)
-		t3.setDaemon(True)
+		t3 = Thread(target=flask_thread, daemon=True)
 		t3.start()
 	t2.start()
 	t1.join()
 	t2.join()
-	t3.join()
+	if DEBUG:
+		t3.join()
