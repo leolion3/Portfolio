@@ -23,26 +23,40 @@ cache = []
 alerted = []
 
 
+def get_loc(quake):
+	try:
+		return quake['properties']['place'].lower()
+	except:
+		return None
+
+
 def telegram_notify(quake):
 	global TELEGRAM_URL, DEBUG
 	time = datetime.now().strftime('%Y-%m-%d')
 	magnitude = quake['properties']['mag']
-	place = quake['properties']['place']
-	alert = f'Earthquake of magnitude {magnitude} occurred {place}!'
-	msg = f'[ALERT] {time} {alert}'
-	if not alert in cache:
-		cache.append(alert)
-		r =	requests.get(f'{TELEGRAM_URL}{msg}')
-		print(msg)
+	place = get_loc(quake)
+	msg = f'[ALERT] {time} Earthquake of magnitude {magnitude} occurred {place}!'
+	r =	requests.get(f'{TELEGRAM_URL}{msg}')
+
+
+def check_cache(quake):
+	global alerted
+	loc = get_loc(quake)
+	mag = quake['properties']['mag']
+	cached = f'{loc} {mag}'
+	if cached in alerted:
+		return True
+	alerted.append(cached)
+	return False
 
 
 def check_loc_and_notify(c, cc):
 	global cache
 	for quake in cache:
-		ct = c.lower() in quake['properties']['place'].lower()
-		cct = cc.lower() in quake['properties']['place'].lower()
-		if (ct or cct) and not quake in alerted:
-			alerted.append(quake)
+		loc = get_loc(quake)
+		ct = c.lower() in loc
+		cct = cc.lower() in loc
+		if (ct or cct) and not check_cache(quake):
 			telegram_notify(quake)
 
 
