@@ -82,12 +82,17 @@ def start_server():
 		server.listen()
 		print('Server listening on [::]...')
 		while True:
-			s, addr = server.accept()
-			s.settimeout(0.5)
-			s.send(b'Please respect the game and dont attempt attacking this server.\nALL TRAFFIC IS LOGGED ALONG WITH SOURCE IPs!\nNote: You can round answers!\n')
-			t = threading.Thread(target=client_handler, args=(s,addr))
-			t.start()
-			t.join()
+			# Exception handling for connection fails
+			try:
+				s, addr = server.accept()
+				s.settimeout(0.5)
+				s.send(b'Please respect the game and dont attempt attacking this server.\nALL TRAFFIC IS LOGGED ALONG WITH SOURCE IPs!\nNote: You can round answers!\n')
+				t = threading.Thread(target=client_handler, args=(s,addr))
+				t.start()
+				t.join()
+			except:
+				#ignored
+				continue
 	finally:
 		server.close()
 
