@@ -273,7 +273,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	StudIP REST API
 -->
 <h3>
-	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/StudIP_REST_API' target='_blank' id='studip-rest-api'><i class="fa-solid fa-graduation-cap"></i> StudIP REST API <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Portfolio/tree/master/Python/StudIP_REST_API' target='_blank' id='studip-rest-api'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/studip.png" style="height: 24px; vertical-align: middle"> StudIP REST API <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -323,6 +323,25 @@ Well you can stick around and take a look at the list below, or you can go brows
 	  {{ p21 | markdownify }}
   </div>
   <a href="#mini-http-server">Back to Top</a>
+</details>
+
+<hr/>
+<!---
+  Duplicate file deleter
+-->
+<h3>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/DuplicateFileDetector' target='_blank' id='duplicate-file-detector'><i class="fa-solid fa-file"></i> Duplicate File Deleter <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p21 %}{% include_relative Python/DuplicateFileDetector/README.md %}{% endcapture %}
+    {{ p21 | markdownify }}
+  </div>
+  <a href="#duplicate-file-detector">Back to Top</a>
 </details>
 
 <hr/>
