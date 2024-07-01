@@ -213,6 +213,25 @@ Well you can stick around and take a look at the list below, or you can go brows
 
 <hr/>
 <!---
+  Trash Calendar
+-->
+<h3>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/TrashCalendar' target='_blank' id='trash-calendar'><i class="fa-solid fa-trash"></i> Telegram Trash Calendar Renderer <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p21 %}{% include_relative Python/TrashCalendar/README.md %}{% endcapture %}
+    {{ p21 | markdownify }}
+  </div>
+  <a href="#trash-calendar">Back to Top</a>
+</details>
+
+<hr/>
+<!---
   Trash Schedule Notifier
 -->
 <h3>
