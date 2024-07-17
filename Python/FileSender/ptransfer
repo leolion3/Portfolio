@@ -107,7 +107,7 @@ def get_send_socket(server, rev):
         s = ping_result[1]
     else:
         s = socket.socket()
-        print(f'[*] Connecting to {IPAddr}{Port}...')
+        print(f'[*] Connecting to {IPAddr}:{Port}...')
         s.connect((IPAddr, Port))
         s.recv(4096)
     return s
