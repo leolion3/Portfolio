@@ -54,7 +54,7 @@ def hash_data(data,salt):
 def decrypt_data(key,data,iv):
     global BLOCK_SIZE
     aes = AES.new(key,AES.MODE_CBC,iv)
-    return unpad(aes.decrypt(data),BLOCK_SIZE)
+    return unpad(aes.decrypt(data),BLOCK_SIZE).decode('utf-8')
 
     
 # ===== Encrypt data =====
