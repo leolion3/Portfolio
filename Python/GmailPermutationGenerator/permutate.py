@@ -71,7 +71,8 @@ def generate_permutations(username: str, charcase: bool) -> List[str]:
 	permutated_usernames = [username]
 	if charcase:
 		permutated_usernames = generate_character_permutations(username)
-	for i in range(1, len(username)):
+	# Changed to 3 due to exponential growth
+	for i in range(1, 3):
 		p = generate_dot_positions(username, i)
 		for s in permutated_usernames:
 			dotted = add_dots_to_string(s, p)

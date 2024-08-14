@@ -201,7 +201,7 @@ def copy_password(username,ID):
     for a in encrypted_data:
         new_iv_encoded = a[3]
         new_iv = base64.b64decode(new_iv_encoded)
-        data.append((str(decrypt_data(database_encryption_key[0:BYTE_LEN],base64.b64decode(a[1]),new_iv))[2:-1],str(decrypt_data(database_encryption_key[0:BYTE_LEN],base64.b64decode(a[2]),new_iv))[2:-1]))
+        data.append((decrypt_data(database_encryption_key[0:BYTE_LEN],base64.b64decode(a[1]),new_iv).decode(),decrypt_data(database_encryption_key[0:BYTE_LEN],base64.b64decode(a[2]),new_iv).decode()))
     for a in data:
         pyperclip.copy(a[1])
         print('\n===== Password copied to clipboard! =====\n')
@@ -218,7 +218,7 @@ def display_password(username,ID):
     for a in encrypted_data:
         new_iv_encoded = a[3]
         new_iv = base64.b64decode(new_iv_encoded)
-        data.append((str(decrypt_data(database_encryption_key[0:BYTE_LEN],base64.b64decode(a[1]),new_iv))[2:-1],str(decrypt_data(database_encryption_key[0:BYTE_LEN],base64.b64decode(a[2]),new_iv))[2:-1]))
+        data.append((decrypt_data(database_encryption_key[0:BYTE_LEN],base64.b64decode(a[1]),new_iv).decode(),decrypt_data(database_encryption_key[0:BYTE_LEN],base64.b64decode(a[2]),new_iv).decode()))
     for a in data:
         print('\n===== Password =====\n\nUsername: %s | Password: %s\n\n====================\n' % (a[0],a[1]))
         
