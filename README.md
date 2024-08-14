@@ -51,6 +51,34 @@ This website also serves as my Portfolio, so if you're looking to hire me, or ar
 
 Well you can stick around and take a look at the list below, or you can go browse the repository!
 
+<!-- DEV Tools -->
+<details>
+  <summary>
+    <b style="color: #ffffff;"><i class="fa-brands fa-dev"></i> Developer Tools</b>
+    <hr/>
+  </summary>
+<!---
+  Python Logger
+-->
+<h3>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/Logger' target='_blank' id='python-logger'><i class="fa-solid fa-rectangle-list"></i> Python Logging Module <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p1 %}{% include_relative Python/Logger/README.md %}{% endcapture %}
+    {{ p1 | markdownify }}
+  </div>
+  <a href="#python-logger">Back to Top</a>
+</details>
+
+<hr/>
+</details>
+
+<!-- JAVA -->
 <details>
   <summary>
   	<b style="color: #f89820;"><i class="fa-brands fa-java"></i> Java</b>
