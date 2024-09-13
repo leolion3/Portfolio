@@ -176,6 +176,24 @@ Well you can stick around and take a look at the list below, or you can go brows
 </details>
 <hr/>
 <!---
+  Mensa Food Telegram Notifier
+-->
+<h3>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/UniMensa' target='_blank' id='uni-mensa'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/mensa.webp" style="height: 24px; vertical-align: middle"> Uni Bremen Mensa-Food Telegram Notifier <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p1 %}{% include_relative Python/UniMensa/README.md %}{% endcapture %}
+    {{ p1 | markdownify }}
+  </div>
+  <a href="#uni-mensa">Back to Top</a>
+</details>
+<hr/>
+<!---
   DL Envelope Generator
 -->
 <h3>
