@@ -76,6 +76,25 @@ Well you can stick around and take a look at the list below, or you can go brows
 </details>
 
 <hr/>
+<!---
+  Git config gen
+-->
+<h3>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/GitConfigGenerator' target='_blank' id='git-conf-gen'><i class="fab fa-git-alt"></i> Git SSH Config Generator <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p1 %}{% include_relative Python/GitConfigGenerator/README.md %}{% endcapture %}
+    {{ p1 | markdownify }}
+  </div>
+  <a href="#git-conf-gen">Back to Top</a>
+</details>
+
+<hr/>
 </details>
 
 <!-- JAVA -->
