@@ -110,7 +110,7 @@ This section is included, should you be interested in my capabilities for whatev
 				<div style="background: white">
 					<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Logo_ub_2021.png" style="max-height: 60px; margin-top: 5px; margin-left: 5px; margin-right: 5px; overflow: scroll">
 				</div>
-        <p>Computer Science Msc. at <a style="color:#b5e853; text-decoration: none;" href="https://www.uni-bremen.de/" target="_blank">University of Bremen <i class="fa fa-external-link"></i></a></p>
+        <p>Computer Science M.Sc. at <a style="color:#b5e853; text-decoration: none;" href="https://www.uni-bremen.de/" target="_blank">University of Bremen <i class="fa fa-external-link"></i></a></p>
         <div class="container">
         	<a href="https://www.python.org/" target="_blank" rel="noreferrer">
 						<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/python-colored.svg" width="36" height="36" alt="Python">
@@ -147,8 +147,8 @@ This section is included, should you be interested in my capabilities for whatev
         <span>07/2024</span>
       </div>
       <div class="description">
-      	<div class="container" style="background: white; width: 100%">
-      		<img src="https://raw.githubusercontent.com/leolion3/Portfolio/refs/heads/master/CV/media/logos/oci-gen-ai.jpg" style="max-height: 60px">
+      	<div class="container" style="width: 100%">
+      		<img src="https://raw.githubusercontent.com/leolion3/Portfolio/refs/heads/master/CV/media/logos/oci-gen-ai.jpg" style="max-height: 80px">
       	</div>
         <p>Oracle Cloud Infrastructure 2024 Generative AI Certified Professional <a style="color:#b5e853; text-decoration: none;" href="https://catalog-education.oracle.com/pls/certview/sharebadge?id=4244007FFFB9C9AE824A2ACE4FA821C597B1E7D710A77C8FB573C99784DF56D0" target="_blank">(Show Certificate) <i class="fa fa-external-link"></i></a></p>
 				<div class="container">
@@ -161,8 +161,8 @@ This section is included, should you be interested in my capabilities for whatev
 		<!-- Advent of Cyber 2023 - Left -->
 		<div class="left">
       <div class="description">
-				<div style="background: white">
-					<img src="https://raw.githubusercontent.com/leolion3/Portfolio/refs/heads/master/CV/media/logos/tryhackme_logo.jpg" style="max-height: 60px; margin-top: 5px; margin-left: 5px; margin-right: 5px; overflow: scroll">
+				<div>
+					<img src="https://raw.githubusercontent.com/leolion3/Portfolio/refs/heads/master/CV/media/logos/tryhackme_logo.jpg" style="max-height: 80px; margin-top: 5px; margin-left: 5px; margin-right: 5px; overflow: scroll">
 				</div>
         <p>Advent of Cyber 2023 from TryHackMe <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/Portfolio/CV/media/certs/AoC23.png" target="_blank">(Show Certificate) <i class="fa fa-external-link"></i></a></p>
       </div>
@@ -181,7 +181,7 @@ This section is included, should you be interested in my capabilities for whatev
       	<div style="background: white">
 					<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Logo_ub_2021.png" style="max-height: 60px; margin-top: 5px; margin-left: 5px; margin-right: 5px; overflow: scroll">
 				</div>
-        <p>Agile Work Techniques at Career Center (University of Bremen) <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/Portfolio/CV/media/certs/career_center/agile.pdf" target="_blank">(View certificate) <i class="fa fa-external-link"></i></a></p>
+        <p>Agile Work Techniques at Career Center <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/Portfolio/CV/media/certs/career_center/agile.pdf" target="_blank">(View certificate) <i class="fa fa-external-link"></i></a></p>
       </div>
     </div>
 		<!-- Career center - intro to business - Left -->
@@ -190,7 +190,7 @@ This section is included, should you be interested in my capabilities for whatev
 				<div style="background: white">
 					<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Logo_ub_2021.png" style="max-height: 60px; margin-top: 5px; margin-left: 5px; margin-right: 5px; overflow: scroll">
 				</div>
-        <p>An introduction to business for engineers at Career Center (University of Bremen) <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/Portfolio/CV/media/certs/career_center/bwl.pdf" target="_blank">(View certificate) <i class="fa fa-external-link"></i></a></p>
+        <p>An introduction to business for engineers at Career Center <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/Portfolio/CV/media/certs/career_center/bwl.pdf" target="_blank">(View certificate) <i class="fa fa-external-link"></i></a></p>
       </div>
       <div class="year">
         <span>11/2023</span>
@@ -207,7 +207,7 @@ This section is included, should you be interested in my capabilities for whatev
       	<div style="background: white">
 					<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Logo_ub_2021.png" style="max-height: 60px; margin-top: 5px; margin-left: 5px; margin-right: 5px; overflow: scroll">
 				</div>
-        <p>Blockchain - A Technology with Various Applications at Career Center (University of Bremen) <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/Portfolio/CV/media/certs/career_center/blockchain.pdf" target="_blank">(View certificate) <i class="fa fa-external-link"></i></a></p>
+        <p>Blockchain - A Technology with Various Applications at Career Center <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/Portfolio/CV/media/certs/career_center/blockchain.pdf" target="_blank">(View certificate) <i class="fa fa-external-link"></i></a></p>
       </div>
     </div>
 		<!-- adesso FirstSpirit training - Left -->
@@ -233,7 +233,7 @@ This section is included, should you be interested in my capabilities for whatev
       	<div style="background: white">
 					<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Logo_ub_2021.png" style="max-height: 60px; margin-top: 5px; margin-left: 5px; margin-right: 5px; overflow: scroll">
 				</div>
-        <p>Computer Science Bsc. <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/Portfolio/CV/media/certs/bsc.pdf" target="_blank">(View certificate) <i class="fa fa-external-link"></i></a></p>
+        <p>Computer Science B.Sc. <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/Portfolio/CV/media/certs/bsc.pdf" target="_blank">(View certificate) <i class="fa fa-external-link"></i></a></p>
 				<div class="container">
         	<a href="https://www.oracle.com/java/" target="_blank" rel="noreferrer">
 						<img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg" width="36" height="36" alt="Java">
