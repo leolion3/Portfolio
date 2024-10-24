@@ -213,7 +213,7 @@ This section is included, should you be interested in my capabilities for whatev
 		<!-- adesso FirstSpirit training - Left -->
 		<div class="left">
       <div class="description">
-				<div class="svg">
+				<div>
       		<img src="https://raw.githubusercontent.com/leolion3/Portfolio/refs/heads/master/CV/media/adesso_logo.svg">
       	</div>
         <p>FirstSpirit® Advanced Training at adesso SE AG <a style="color:#b5e853; text-decoration: none;" href="https://leolion3.github.io/Portfolio/CV/media/certs/fs_advanced.pdf" target="_blank">(View certificate) <i class="fa fa-external-link"></i></a></p>
@@ -356,7 +356,7 @@ This section is included, should you be interested in my capabilities for whatev
         <span>01/2022-09/2024</span>
       </div>
       <div class="description">
-      	<div class="svg">
+      	<div>
       		<img src="https://raw.githubusercontent.com/leolion3/Portfolio/refs/heads/master/CV/media/adesso_logo.svg">
       	</div>
         <p>Java Full Stack and <a style="color:#b5e853; text-decoration: none;" href="https://www.e-spirit.com/us/product/firstspirit-dxp/enterprise-cms/" target="_blank">FirstSpirit® <i class="fa fa-external-link"></i></a> developer at <a style="color:#b5e853; text-decoration: none;" href="https://www.adesso.de/de/index.jsp" target="_blank">adesso SE <i class="fa fa-external-link"></i></a></p>
