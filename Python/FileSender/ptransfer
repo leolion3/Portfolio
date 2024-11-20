@@ -123,29 +123,17 @@ def send_file(server, rev):
         if not len(fileName):
             send_file()
     s = get_send_socket(server, rev)
+    s.setsockopt(socket.SOL_SOCKET, socket.SO_SNDBUF, 16 * (1024 ** 2))
+    s.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
     s.send(bytes(os.path.basename(fileName), 'utf-8') + b'\n')
     s.recv(4096)
     f = open(fileName,'rb')
     s.send(bytes(str(getsize(fileName)) + '\n','utf-8'))
     exists, current_size = client_file_exists(s)
-    if exists:
-        print(f'[!] File exists! Reading {current_size} bytes...')
-        i = 0
-        while i < current_size:
-            threshold = get_read_threshold(current_size - i)
-            f.read(threshold)
-            i += threshold
     s.send(b'Ready for transfer!\n')
     s.recv(4096).decode()
     print('[^] Sending file...')
-    while True:
-        try:
-            data = f.read(2000000)
-            if not len(data):
-                break
-            s.send(data)
-        except Exception as e:
-            break
+    s.sendfile(f, offset=current_size)
     s.recv(4096).decode()
     original_hash = hash256(fileName)
     s.send(bytes(original_hash, 'utf-8') + b'\n')
@@ -218,16 +206,6 @@ def initial_client_comm(client_socket):
 def check_file_exists(client_socket, fileName, file_exists):
     if file_exists:
         current_size = getsize(fileName)
-        old_filename = fileName + 'old'
-        os.rename(fileName, old_filename)
-        i = 0
-        old_fis = open(old_filename, 'rb')
-        with open(fileName, 'wb+') as f:
-            while i < current_size:
-                threshold = get_read_threshold(current_size - i)
-                f.write(old_fis.read(threshold))
-                i += threshold
-        os.remove(old_filename)
         client_socket.send(bytes(f'SIZE:{current_size}\n', 'utf-8'))
         return current_size
     else:
@@ -242,10 +220,14 @@ def receive_file(rev):
             client_socket = socket.socket()
             print(f'[*] Connecting to {IPAddr}:{Port}...')
             client_socket.connect((IPAddr,Port))
+            client_socket.setsockopt(socket.SOL_SOCKET, socket.SO_RCVBUF, 16 * (1024 ** 2))
+            client_socket.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
             print('[*] Connected. Beginning transfer...')
         else:
             server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+            server.setsockopt(socket.SOL_SOCKET, socket.SO_RCVBUF, 16 * (1024 ** 2))
+            server.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
             server.bind((IPAddr, Port))
             server.listen(True)
             print(f'[*] Listening for connections on {IPAddr}:{Port}...')
@@ -307,6 +289,8 @@ def setup():
     if "s" in selected:
         server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         server.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        server.setsockopt(socket.SOL_SOCKET, socket.SO_SNDBUF, 16 * (1024 ** 2))
+        server.setsockopt(socket.IPPROTO_TCP, socket.TCP_NODELAY, 1)
         try:
             send_file(server, rev)
         except Exception as e:
