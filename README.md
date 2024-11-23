@@ -76,6 +76,26 @@ Well you can stick around and take a look at the list below, or you can go brows
 </details>
 
 <hr/>
+
+<!---
+  Python CSV Module
+-->
+<h3>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/CSVImportExport' target='_blank' id='python-csv'><i class="fa-solid fa-file-csv"></i> Python CSV Module <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p1 %}{% include_relative Python/CSVImportExport/README.md %}{% endcapture %}
+    {{ p1 | markdownify }}
+  </div>
+  <a href="#python-csv">Back to Top</a>
+</details>
+
+<hr/>
 <!---
   Git config gen
 -->

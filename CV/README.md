@@ -99,8 +99,6 @@ This section is included, should you be interested in my capabilities for whatev
 
 <h2 id="cv-education">Education, Certifications, Trainings</h2>
 
-<a style="color:#b5e853; text-decoration: none;" href="#cv-toc">Back to top</a>
-
 <div class="container">
   <div style="position: relative; padding: 50px 0;">
     <div style="position: absolute; top: 0; bottom: 0; left: 50%; border-left: 1px dashed #b5e853;"></div>
@@ -268,6 +266,8 @@ This section is included, should you be interested in my capabilities for whatev
 		<!-- END -->
 	</div>
 </div>
+
+<a style="color:#b5e853; text-decoration: none;" href="#cv-toc">Back to top</a>
 
 ---
 
