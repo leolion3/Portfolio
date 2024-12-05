@@ -16,8 +16,8 @@ logger: Logger = get_instance()
 class CSVHandler:
     """
     Handles csv import/export.
-    Default delimiter is semicolon (;) for higher compatability.
-    Default escape char is double quotes (") for Microsoft Excel compatability.
+    Default delimiter is semicolon (;) for higher compatibility.
+    Default escape char is double quotes (") for Microsoft Excel compatibility.
     """
     CSV_DELIMITER: str = os.getenv('CSV_DELIMITER') or ';'
     CSV_ESCAPE_CHARACTER: str = os.getenv('CSV_ESCAPE_CHARACTER') or '"'
