@@ -832,6 +832,32 @@ Well you can stick around and take a look at the list below, or you can go brows
 <hr/>
 </details>
 
+<details>
+  <summary>
+    <b style="color: coral;"><i class="fa-solid fa-calendar-day"></i> Events</b>
+    <hr/>
+  </summary>
+  <h3 id="advent-of-code">
+    <i class="fa-solid fa-tree"></i> Advent of Code
+  </h3>
+  <details>
+    <summary>
+      <b style="color: purple;">Click to view Details</b>
+    </summary>
+    <div>
+        <img src="https://github.com/leolion3/advent-of-code-2023/assets/45939246/1121e7ce-c1cd-4b94-9f5d-f7ff8a5c65d9" alt="Banner from https://blog.pythondiscord.com/advent-of-code-2020/" />
+    </div>
+    <h4>
+      <a href="https://github.com/leolion3/advent-of-code-2024" target="_blank" rel="noopener noreferrer" id="aoc2024"><i class="fa-solid fa-tree"></i> Advent of Code 2024 (Python) <i class="fa fa-external-link"></i></a>
+    </h4>
+    <h4>
+      <a href="https://github.com/leolion3/advent-of-code-2023" target="_blank" rel="noopener noreferrer" id="aoc2023"><i class="fa-solid fa-tree"></i> Advent of Code 2023 (Python) <i class="fa fa-external-link"></i></a>
+    </h4>
+    <a href="#advent-of-code">Back to Top</a>
+  </details>
+  <hr/>
+</details>
+
 <h1 id="publications">Publications</h1>
 
 <h2 id="trash-separation">Trash Separation Using AI (Prototype paper)</h2>
