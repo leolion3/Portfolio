@@ -5,11 +5,8 @@ Provided in accords with the MIT License.
 More on GitHub at https://leolion.tk/
 """
 import os
-
 from enum import Enum
-from typing import TextIO, List
-from datetime import datetime
-
+from typing import TextIO, Optional
 from loguru import logger
 
 LOGFILE: str = os.getenv('LOGFILE') or os.path.join(os.path.dirname(os.path.abspath(__file__)), 'application.log')
@@ -177,7 +174,7 @@ class Logger:
         self.__write_log(message=msg, mtype=LogType.DEBUG)
 
     def __init__(self):
-        self.__fp: TextIO = None
+        self.__fp: Optional[TextIO] = None
         logger.info(self.__build_message(message='Initialising logger...', module=Module.LOGGER))
         self.__log_level = self.__get_log_level()
         try:
