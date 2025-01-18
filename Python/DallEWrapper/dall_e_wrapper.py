@@ -92,7 +92,7 @@ class DallE:
             logger.error('Failed to generate image. Trace:', e, module=Module.DALL_E)
             if retries < 3:
                 logger.error(f'Retrying {retries + 1}/3...')
-                return self.make_dall_e_request(
+                return self.generate_image(
                     prompt,
                     image_size,
                     image_style,
