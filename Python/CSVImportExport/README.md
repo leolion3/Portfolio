@@ -58,7 +58,7 @@ def __write_content(self, writer: csv, data_stream: Generator) -> None:
   :return:
   """
   logger.info('Writing CSV rows...', module=Module.CSV)
-  for record in record_stream:
+  for row in data_stream:
     row = [
       # Perform data manipulation. Output still needs to be a List[str] as required by csv.writer
     ]
