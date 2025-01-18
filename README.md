@@ -51,6 +51,55 @@ This website also serves as my Portfolio, so if you're looking to hire me, or ar
 
 Well you can stick around and take a look at the list below, or you can go browse the repository!
 
+<!-- AI Wrappers -->
+<details>
+  <summary>
+    <b style="color: #10a37f;"><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/gpt.svg" style="height: 24px; vertical-align: middle"> (Azure-) OpenAI API Wrappers</b>
+    <hr/>
+  </summary>
+
+<!---
+  Python Azure OpenAI Assistants Wrapper
+-->
+<h3>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/AzureAssistantsWrapper' target='_blank' id='python-assistants-wrapper'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/gpt.svg" style="height: 24px; vertical-align: middle"> Python Azure OpenAI Assistants Wrapper <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p1 %}{% include_relative Python/AzureAssistantsWrapper/README.md %}{% endcapture %}
+    {{ p1 | markdownify }}
+  </div>
+  <a href="#python-assistants-wrapper">Back to Top</a>
+</details>
+
+<hr/>
+
+<!---
+  Python Azure OpenAI Dall-E Wrapper
+-->
+<h3>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/DallEWrapper' target='_blank' id='python-dalle-wrapper'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/gpt.svg" style="height: 24px; vertical-align: middle"> Python Azure OpenAI Dall-E Wrapper <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p1 %}{% include_relative Python/DallEWrapper/README.md %}{% endcapture %}
+    {{ p1 | markdownify }}
+  </div>
+  <a href="#python-dalle-wrapper">Back to Top</a>
+</details>
+
+<hr/>
+
+</details>
+
 <!-- DEV Tools -->
 <details>
   <summary>
@@ -97,25 +146,6 @@ Well you can stick around and take a look at the list below, or you can go brows
 
 <hr/>
 
-<!---
-  Python Dall-E Wrapper
--->
-<h3>
-  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/DallEWrapper' target='_blank' id='python-dalle-wrapper'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/gpt.svg" style="height: 24px; vertical-align: middle"> Python Azure OpenAI Dall-E Wrapper <i class="fa fa-external-link"></i></a>
-</h3>
-
-<details>
-  <summary>
-    <b style="color: purple;">Click to view Details</b>
-  </summary>
-  <div>
-    {% capture p1 %}{% include_relative Python/DallEWrapper/README.md %}{% endcapture %}
-    {{ p1 | markdownify }}
-  </div>
-  <a href="#python-dalle-wrapper">Back to Top</a>
-</details>
-
-<hr/>
 <!---
   Git config gen
 -->
