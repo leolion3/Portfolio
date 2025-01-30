@@ -13,3 +13,7 @@
 [submodule "Etc/Simple-File-Transferer-Android"]
 	path = Etc/Simple-File-Transferer-Android
 	url = https://github.com/leolion3/Simple-File-Transferer-Android
+[submodule "Etc/ai-wrappers"]
+	path = Etc/ai-wrappers
+	url = git@github.com:leolion3/ai-wrappers.git
+	branch = main

@@ -54,15 +54,15 @@ Well you can stick around and take a look at the list below, or you can go brows
 <!-- AI Wrappers -->
 <details>
   <summary>
-    <b style="color: #10a37f;"><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/gpt.svg" style="height: 24px; vertical-align: middle"> (Azure-) OpenAI API Wrappers</b>
+    <b style="color: #10a37f;"><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/deepseek.png" style="height: 24px; vertical-align: middle"> AI API Wrappers</b>
     <hr/>
   </summary>
 
 <!---
-  Python Azure OpenAI Assistants Wrapper
+  Python Perplexity API Wrapper
 -->
 <h3>
-  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/AzureAssistantsWrapper' target='_blank' id='python-assistants-wrapper'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/gpt.svg" style="height: 24px; vertical-align: middle"> Python Azure OpenAI Assistants Wrapper <i class="fa fa-external-link"></i></a>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Etc/ai-wrappers/PerplexityWrapper' target='_blank' id='python-perplexity-wrapper'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/perplexity.jpg" style="height: 24px; vertical-align: middle"> Python Perplexity API Wrapper <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -70,7 +70,27 @@ Well you can stick around and take a look at the list below, or you can go brows
     <b style="color: purple;">Click to view Details</b>
   </summary>
   <div>
-    {% capture p1 %}{% include_relative Python/AzureAssistantsWrapper/README.md %}{% endcapture %}
+    {% capture p1 %}{% include_relative Etc/ai-wrappers/PerplexityWrapper/README.md %}{% endcapture %}
+    {{ p1 | markdownify }}
+  </div>
+  <a href="#python-perplexity-wrapper">Back to Top</a>
+</details>
+
+<hr/>
+
+<!---
+  Python Azure OpenAI Assistants Wrapper
+-->
+<h3>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Etc/ai-wrappers/AzureAssistantsWrapper' target='_blank' id='python-assistants-wrapper'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/gpt.svg" style="height: 24px; vertical-align: middle"> Python Azure OpenAI Assistants Wrapper <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p1 %}{% include_relative Etc/ai-wrappers/AzureAssistantsWrapper/README.md %}{% endcapture %}
     {{ p1 | markdownify }}
   </div>
   <a href="#python-assistants-wrapper">Back to Top</a>
@@ -82,7 +102,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   Python Azure OpenAI Dall-E Wrapper
 -->
 <h3>
-  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/DallEWrapper' target='_blank' id='python-dalle-wrapper'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/gpt.svg" style="height: 24px; vertical-align: middle"> Python Azure OpenAI Dall-E Wrapper <i class="fa fa-external-link"></i></a>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Etc/ai-wrappers/DallEWrapper' target='_blank' id='python-dalle-wrapper'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/gpt.svg" style="height: 24px; vertical-align: middle"> Python Azure OpenAI Dall-E Wrapper <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -90,7 +110,7 @@ Well you can stick around and take a look at the list below, or you can go brows
     <b style="color: purple;">Click to view Details</b>
   </summary>
   <div>
-    {% capture p1 %}{% include_relative Python/DallEWrapper/README.md %}{% endcapture %}
+    {% capture p1 %}{% include_relative Etc/ai-wrappers/DallEWrapper/README.md %}{% endcapture %}
     {{ p1 | markdownify }}
   </div>
   <a href="#python-dalle-wrapper">Back to Top</a>
