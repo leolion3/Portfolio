@@ -62,7 +62,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   Python Perplexity API Wrapper
 -->
 <h3>
-  <a href='https://github.com/leolion3/Portfolio/tree/master/Etc/ai-wrappers/PerplexityWrapper' target='_blank' id='python-perplexity-wrapper'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/perplexity.jpg" style="height: 24px; vertical-align: middle"> Python Perplexity API Wrapper <i class="fa fa-external-link"></i></a>
+  <a href='https://github.com/leolion3/ai-wrappers/tree/main/PerplexityWrapper' target='_blank' id='python-perplexity-wrapper'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/perplexity.jpg" style="height: 24px; vertical-align: middle"> Python Perplexity API Wrapper <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -82,7 +82,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   Python Azure OpenAI Assistants Wrapper
 -->
 <h3>
-  <a href='https://github.com/leolion3/Portfolio/tree/master/Etc/ai-wrappers/AzureAssistantsWrapper' target='_blank' id='python-assistants-wrapper'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/gpt.svg" style="height: 24px; vertical-align: middle"> Python Azure OpenAI Assistants Wrapper <i class="fa fa-external-link"></i></a>
+  <a href='https://github.com/leolion3/ai-wrappers/tree/main/AzureAssistantsWrapper' target='_blank' id='python-assistants-wrapper'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/gpt.svg" style="height: 24px; vertical-align: middle"> Python Azure OpenAI Assistants Wrapper <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
@@ -102,7 +102,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   Python Azure OpenAI Dall-E Wrapper
 -->
 <h3>
-  <a href='https://github.com/leolion3/Portfolio/tree/master/Etc/ai-wrappers/DallEWrapper' target='_blank' id='python-dalle-wrapper'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/gpt.svg" style="height: 24px; vertical-align: middle"> Python Azure OpenAI Dall-E Wrapper <i class="fa fa-external-link"></i></a>
+  <a href='https://github.com/leolion3/ai-wrappers/tree/main/DallEWrapper' target='_blank' id='python-dalle-wrapper'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/gpt.svg" style="height: 24px; vertical-align: middle"> Python Azure OpenAI Dall-E Wrapper <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
