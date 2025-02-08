@@ -17,3 +17,7 @@
 	path = Etc/ai-wrappers
 	url = git@github.com:leolion3/ai-wrappers.git
 	branch = main
+[submodule "Etc/electron-screen-recorder"]
+	path = Etc/electron-screen-recorder
+	url = git@github.com:leolion3/electron-screen-recorder.git
+	branch = main

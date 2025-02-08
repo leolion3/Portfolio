@@ -214,6 +214,33 @@ Well you can stick around and take a look at the list below, or you can go brows
 <hr/>
 </details>
 
+<!-- JavaScript -->
+<details>
+  <summary>
+    <b style="color: #358EF1;"><i class="fa-brands fa-js"></i> JavaScript / TypeScript</b>
+    <hr/>
+  </summary>
+<!---
+  Electron Screen Recorder
+-->
+<h3>
+  <a href='https://github.com/leolion3/electron-screen-recorder' target='_blank' id='electron-screen-recorder'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/electron.png" style="height: 24px; vertical-align: middle"> ElectronJS Screen Recorder <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p1 %}{% include_relative Etc/electron-screen-recorder/README.md %}{% endcapture %}
+    {{ p1 | markdownify }}
+  </div>
+  <a href="#electron-screen-recorder">Back to Top</a>
+</details>
+
+<hr/>
+</details>
+
 <details>
   <summary>
   	<b style="color: limegreen;"><i class="fab fa-python"></i> Python</b>
