@@ -1,5 +1,3 @@
-from rabbit_messageio import RabbitMessageIOfrom rabbit_messageio import RabbitMessageIO
-
 # RabbitMQ Connector Module
 
 This module allows easily integrating RabbitMQ communication into your software.
