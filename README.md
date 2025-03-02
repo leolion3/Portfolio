@@ -217,7 +217,7 @@ Well you can stick around and take a look at the list below, or you can go brows
 	File Transfer Tool
 -->
 <h3>
-	<a href='https://github.com/leolion3/Simple-File-Transfer-PC' target='_blank' id='java-easy-file-transfer'><i class="fa-solid fa-file-arrow-up"></i> Easy File Transfer Tool (Cross-Platform) <i class="fa fa-external-link"></i></a>
+	<a href='https://github.com/leolion3/Simple-File-Transfer-PC' target='_blank' id='java-easy-file-transfer'><img src="html/media/ptransfer/logo.webp" style="width: 24px; vertical-align: top;"> Easy File Transfer Tool (Cross-Platform) <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
