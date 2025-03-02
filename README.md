@@ -167,6 +167,26 @@ Well you can stick around and take a look at the list below, or you can go brows
 <hr/>
 
 <!---
+  Python RabbitMQ Adapter
+-->
+<h3>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/RabbitMQConnector' target='_blank' id='python-rabbitmq'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/rabbitmq.png" style="height: 24px; vertical-align: middle"> Python RabbitMQ Adapter <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p1 %}{% include_relative Python/RabbitMQConnector/README.md %}{% endcapture %}
+    {{ p1 | markdownify }}
+  </div>
+  <a href="#python-rabbitmq">Back to Top</a>
+</details>
+
+<hr/>
+
+<!---
   Git config gen
 -->
 <h3>

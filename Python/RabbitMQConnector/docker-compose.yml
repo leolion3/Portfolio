@@ -1,0 +1,12 @@
+# Demo file for rabbitMQ server
+services:
+  rabbitmq:
+    image: rabbitmq:latest
+    container_name: rabbitmq
+    restart: unless-stopped
+    ports:
+      - "5672:5672"  # AMQP protocol port
+      - "15672:15672"  # Management UI port
+    environment:
+      RABBITMQ_DEFAULT_USER: guest # Demo credentials
+      RABBITMQ_DEFAULT_PASS: guest # Demo credentials
