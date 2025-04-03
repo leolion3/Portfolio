@@ -130,7 +130,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   Windows Debloater
 -->
 <h3>
-  <a href='https://github.com/leolion3/windows-11-debloat-tools' target='_blank' id='windows-debloat'><i class="fa-solid fa-windows"></i> Windows 11 Debloater Tools <i class="fa fa-external-link"></i></a>
+  <a href='https://github.com/leolion3/windows-11-debloat-tools' target='_blank' id='windows-debloat'><i class="fa-brands fa-windows"></i> Windows 11 Debloater Tools <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
