@@ -21,3 +21,7 @@
 	path = Etc/electron-screen-recorder
 	url = git@github.com:leolion3/electron-screen-recorder.git
 	branch = main
+[submodule "Etc/windows-11-debloat-tools"]
+	path = Etc/windows-11-debloat-tools
+	url = git@github.com:leolion3/windows-11-debloat-tools.git
+	branch = main
