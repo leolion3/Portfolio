@@ -59,14 +59,17 @@ class ThreadSafeQueue:
                 return True
             return False
 
-    def pop(self) -> Optional[Any]:
+    def pop(self, timeout: float = 30) -> Optional[Any]:
         """
         Pops the first element of the queue (blocking).
+        :param timeout: max timeout (in seconds) to wait before terminating. Can be None for wait-forever.
         :return: The first element of the queue (FIFO).
         """
         with self._not_empty:
-            while not self._queue:
-                self._not_empty.wait()
+            if not self._queue:
+                notified: bool = self._not_empty.wait(timeout=timeout)
+                if not notified or not self._queue:
+                    return None
             return self._queue.pop(0)
 
     def put_unique(self, elem: Any) -> bool:
