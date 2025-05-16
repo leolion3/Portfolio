@@ -214,6 +214,26 @@ Well you can stick around and take a look at the list below, or you can go brows
 <hr/>
 
 <!---
+  Thread-Safe Queue
+-->
+<h3>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/ThreadSafeQueue' target='_blank' id='python-thread-safe-queue'><i class="fa-solid fa-clock"></i> Python Thread-Safe Queue <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p1 %}{% include_relative Python/ThreadSafeQueue/README.md %}{% endcapture %}
+    {{ p1 | markdownify }}
+  </div>
+  <a href="#python-thread-safe-queue">Back to Top</a>
+</details>
+
+<hr/>
+
+<!---
   Git config gen
 -->
 <h3>
