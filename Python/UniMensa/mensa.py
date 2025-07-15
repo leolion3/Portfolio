@@ -4,17 +4,13 @@ import re
 import json
 import getpass
 import urllib
-from typing import List
+from typing import List, Dict
 from datetime import datetime
 from apscheduler.schedulers.blocking import BlockingScheduler
 
 
 DEBUG = False
 
-food_splitter = 'food-plan-header'
-name_splitter = 'field-name-field-description">'
-student_price_splitter = 'field-name-field-price-students">'
-closing_tag_split = '</td>'
 message_template = """
 Das heutige Mensa-Essensangebot ([DATE]):
 
@@ -26,41 +22,59 @@ if not DEBUG:
 	CHAT_ID = getpass.getpass('Enter Telegram Chat ID:')
 	TELEGRAM_URL = f"https://api.telegram.org/bot{TOKEN}/sendMessage?chat_id={CHAT_ID}&text="
 
+url = 'https://www.stw-bremen.de/de/essen-und-trinken/universitaet-bremen/uni-mensa/'
+api_url: str = 'https://content.stw-bremen.de/api/kqlnocache'
+payload: Dict[str, str] = {
+"query":f"page('meals').children.filterBy('location', '300').filterBy('date', '{datetime.now().strftime('%Y-%m-%d')}').filterBy('printonly', 0)",
+"select": {
+		"title": True,
+		"ingredients":"page.ingredients.toObject",
+		"prices":"page.prices.toObject",
+		"location": True,
+		"counter": True,
+		"date": True,
+		"mealadds": True,
+		"mark": True,
+		"frei3": True,
+		"printonly": True,
+		"kombicategory": True,
+		"categories":"page.categories.split"
+	}
+}
+headers = {
+	'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36 OPR/119.0.0.0',
+	'X-Language': 'de'
+}
 
 def get_todays_food() -> str:
-	global food_splitter
-	url = 'https://www.stw-bremen.de'
-	r = requests.get(url)
-	# Index 1 entry is always current day
-	return r.text.split(food_splitter)[1]
+	global url, api_url, payload, headers
+	s = requests.session()
+	s.get(url, headers=headers)
+	r = s.post(api_url, headers=headers, json=payload)
+	return r.json()
 
 
-def clean_up_food_name(name: str) -> str:
-	if '<sup>' in name:
-		name = re.sub("<sup>(.+?)</sup>", '', name)
-	return name.replace('\r\n', ' ').replace('  ', ' ')
-
-
-def get_foods(today: str) -> List[str]:
-	global name_splitter, closing_tag_split
-	foods = []
-
-	for food in today.split(name_splitter)[1:]:
-		name = food.split(closing_tag_split)[0]
-		name = clean_up_food_name(name) 	
-		if not 'wechselndes' in name:
-			# No price or details for sauces
-			foods.append(name)
-	return foods
+def get_foods(today: Dict[str, str]) -> List[str]:
+	try:
+		return [f['title'] for f in today['result']]
+	except:
+		return []
 
 
 def get_prices(today: str) -> List[str]:
-	global student_price_splitter, closing_tag_split
-	prices = []
-	for student_price in today.split(student_price_splitter)[1:]:
-		price = student_price.split(closing_tag_split)[0]
-		prices.append(price)
-	return prices
+	try:
+		foods = today['result']
+		prices: List[List[Dict[str, str]]] = [f['prices'] for f in foods]
+		actual = []
+		for price_list in prices:
+			for price in price_list:
+				if 'stud' in price['label'].lower():
+					actual.append(price['price'].strip() + '€')
+					break
+		return actual
+	except Exception as e:
+		print(e)
+		return []
 
 
 def pretty_print(foods: List[str], prices: List[str]) -> str:
