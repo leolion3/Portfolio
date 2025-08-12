@@ -25,3 +25,7 @@
 	path = Etc/windows-11-debloat-tools
 	url = git@github.com:leolion3/windows-11-debloat-tools.git
 	branch = main
+[submodule "Etc/rs-DandD"]
+	path = Etc/rs-DandD
+	url = git@github.com:leolion3/RuneScape-D-and-D-Bot.git
+	branch = main

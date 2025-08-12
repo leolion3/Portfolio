@@ -978,6 +978,24 @@ Well you can stick around and take a look at the list below, or you can go brows
   	<b style="color: yellow;"><i class="fa-solid fa-ellipsis"></i> Etc</b>
   	<hr/>
   </summary>
+<!-- RuneScapr D and D -->
+<h3>
+  <a href="https://github.com/leolion3/RuneScape-D-and-D-Bot" target="_blank" rel="noopener noreferrer" id="rsdnd"><img src="html/rs3.jpg" style="height: 18px"> RuneScape Distractions and Diversions Notification Bot <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+      {% capture p1 %}
+        {% include_relative Etc/rs-DandD/README.md %}{% endcapture %}
+      {{ p1 | markdownify }}
+  </div>
+  <a href="#rsdnd">Back to Top</a>
+</details>
+<hr/>
+<!-- LU -->
 <h3>
 	<a href="https://gist.github.com/leolion3/ccf654ab60c8e110c65ef948da6af461" target="_blank" rel="noopener noreferrer" id="dlu"><img src="https://cdn2.steamgriddb.com/logo/1c8dcf919f8a604f3a488b0e4b0f1420.png" style="height: 18px"> DLU Lego Universe Server Setup <i class="fa fa-external-link"></i></a>
 </h3>
