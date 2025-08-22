@@ -11,18 +11,6 @@ from loguru import logger
 
 LOGFILE: str = os.getenv('LOGFILE') or os.path.join(os.path.dirname(os.path.abspath(__file__)), 'application.log')
 LOG_LEVEL: str = os.getenv('LOG_LEVEL') or 'DEBUG'
-_instance = None
-
-
-def get_instance():
-    """
-    Logger singleton.
-    :return the Logger singleton instance.
-    """
-    global _instance
-    if _instance is None:
-        _instance = Logger()
-    return _instance
 
 
 class Module(Enum):
@@ -194,3 +182,6 @@ class Logger:
             self.info(message='Logger initialized.', module=Module.LOGGER)
         except Exception as e:
             self.error(message=f'Error occurred! Logger running without caching. Trace: {e}', module=Module.LOGGER)
+
+
+log: Logger = Logger()
