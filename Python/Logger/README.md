@@ -17,12 +17,9 @@ and should be added to the project's requirements (or lock) file.
 The logger uses a singleton instance which can be referenced anywhere:
 
 ```python
-import log_handler
-from log_handler import Logger, Module
+from log_handler import log, Module
 
-
-logger: Logger = log_handler.get_instance()
-logger.info('Hello world!', module=Module.LOGGER)
+log.info('Hello world!', module=Module.LOGGER)
 ```
 
 Output:
@@ -51,7 +48,7 @@ class Module(Enum):
 Usage:
 
 ```python
-logger.info('^ [::] 127.0.0.1 --> 127.0.0.1', module=Module.API)
+log.info('^ [::] 127.0.0.1 --> 127.0.0.1', module=Module.API)
 ```
 
 Output:
@@ -82,12 +79,12 @@ By default, the module runs in DEBUG mode, printing all logs. This can be change
 The log level can also be changed by calling the `change_log_level` method with the desired log level's name. Example, extending the previous demo:
 
 ```python
-logger.change_log_level('INFO')
-logger.debug('This message is redacted')
-logger.info('Info works, debug does not')
+log.change_log_level('INFO')
+log.debug('This message is redacted')
+log.info('Info works, debug does not')
 
-logger.change_log_level('DEBUG')
-logger.debug('Debug works again!')
+log.change_log_level('DEBUG')
+log.debug('Debug works again!')
 ```
 
 Output:
