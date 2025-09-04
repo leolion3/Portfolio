@@ -218,7 +218,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   MSAL Tools
 -->
 <h3>
-  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/GraphAPI' target='_blank' id='python-msal-tools'><i class="fa-solid fa-clock"></i> Python MSAL Graph-API Modules <i class="fa fa-external-link"></i></a>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/GraphAPI' target='_blank' id='python-msal-tools'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/graph_api_logo.png" style="height: 24px; vertical-align: middle">Python MSAL Graph-API Modules <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
