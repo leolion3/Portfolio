@@ -213,6 +213,27 @@ Well you can stick around and take a look at the list below, or you can go brows
 
 <hr/>
 
+
+<!---
+  MSAL Tools
+-->
+<h3>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/GraphAPI' target='_blank' id='python-msal-tools'><i class="fa-solid fa-clock"></i> Python MSAL Graph-API Modules <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p1 %}{% include_relative Python/GraphAPI/README.md %}{% endcapture %}
+    {{ p1 | markdownify }}
+  </div>
+  <a href="#python-msal-tools">Back to Top</a>
+</details>
+
+<hr/>
+
 <!---
   Thread-Safe Queue
 -->

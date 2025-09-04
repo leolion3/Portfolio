@@ -1,0 +1,5 @@
+{
+  "TENANT_ID": "App Registration Tenant ID",
+  "CLIENT_ID": "App Registration Client ID",
+  "OUTGOING_MAILBOX_ADDRESS": "Email address used for outgoing emails."
+}
