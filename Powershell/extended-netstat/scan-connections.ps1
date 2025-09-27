@@ -120,8 +120,15 @@ while ($true) {
     }
 
     if ($OutCsv) {
-        try { $current | Export-Csv -Path $OutCsv -NoTypeInformation -Force } catch {}
+        try {
+            if (-not (Test-Path $OutCsv)) {
+                $current | Export-Csv -Path $OutCsv -NoTypeInformation -Force
+            } else {
+                $current | Export-Csv -Path $OutCsv -NoTypeInformation -Append
+            }
+        } catch { Write-Host "Failed to save CSV: $_" -ForegroundColor Red }
     }
+
 
     Start-Sleep -Seconds $RefreshSeconds
 }
