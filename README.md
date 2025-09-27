@@ -149,7 +149,7 @@ Well you can stick around and take a look at the list below, or you can go brows
   Extended Netstat
 -->
 <h3>
-  <a href='https://github.com/leolion3/Portfolio/tree/master/Powershell/extended-netstat' target='_blank' id='extended-netstat'><i class="fa-brands fa-ethernet"></i> Netstat Service Scanner <i class="fa fa-external-link"></i></a>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Powershell/extended-netstat' target='_blank' id='extended-netstat'><i class="fa fa-ethernet"></i> Netstat Service Scanner <i class="fa fa-external-link"></i></a>
 </h3>
 
 <details>
