@@ -1018,7 +1018,24 @@ Well you can stick around and take a look at the list below, or you can go brows
   	<b style="color: yellow;"><i class="fa-solid fa-ellipsis"></i> Etc</b>
   	<hr/>
   </summary>
-<!-- RuneScapr D and D -->
+<!-- SmellInspector Companion -->
+<h3>
+  <a href="https://github.com/leolion3/SmartNanoTubes-SmellInspector-Companion" target="_blank" rel="noopener noreferrer" id="smellinspector-companion"><img src="html/smellinspector.png" style="height: 18px"> SmartNanoTubes SmellInspector Companion Software <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+      {% capture p1 %}
+        {% include_relative Etc/SmartNanoTubes-SmellInspector-Companion/README.md %}{% endcapture %}
+      {{ p1 | markdownify }}
+  </div>
+  <a href="#smellinspector-companion">Back to Top</a>
+</details>
+<hr/>
+<!-- RuneScape D and D -->
 <h3>
   <a href="https://github.com/leolion3/RuneScape-D-and-D-Bot" target="_blank" rel="noopener noreferrer" id="rsdnd"><img src="html/rs3.jpg" style="height: 18px"> RuneScape Distractions and Diversions Notification Bot <i class="fa fa-external-link"></i></a>
 </h3>

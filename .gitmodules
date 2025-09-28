@@ -29,3 +29,7 @@
 	path = Etc/rs-DandD
 	url = git@github.com:leolion3/RuneScape-D-and-D-Bot.git
 	branch = main
+[submodule "Etc/SmartNanoTubes-SmellInspector-Companion"]
+	path = Etc/SmartNanoTubes-SmellInspector-Companion
+	url = git@github.com:leolion3/SmartNanoTubes-SmellInspector-Companion.git
+	branch = main
