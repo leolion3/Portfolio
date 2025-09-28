@@ -1,4 +1,5 @@
 #!/bin/bash
+set +e
 echo ''
 echo '\033[0;33m===== Custom Commands by Leonard Haddad ====='
 echo '\033[0;36mGithub: https://github.com/leolion3'
@@ -26,6 +27,7 @@ mv commands/Python/FileSender/ptransfer "./$cmd_dir/"
 mv commands/Python/PasswordUtils/passtransfer "./$cmd_dir/"
 mv commands/Python/KeepBusy/keepbusy* "./$cmd_dir/"
 mv commands/Python/PasswordVault/passwordVault.py "./$cmd_dir/pv"
+mv "commands/CustomCommands/Scripts - DONT ADD TO PATH/passwordGen.py" "./$cmd_dir/genpass"
 
 # Cleanup
 rm -rf commands/
@@ -39,5 +41,29 @@ chmod +x ./passtransfer
 chmod +x ./keepbusy
 chmod +x ./keepbusy_cross
 chmod +x ./pv
+chmod +x ./genpass
 
-echo "Please add this to your terminal's rc file: export PATH=\"$PWD:\$PATH\""
+echo "Installing python packages..."
+# Installts pyperclip for genpass/passtransfer, 
+# cryptodome for password vault
+# and pyautogui for keepbusy
+pip3 install pyperclip pycryptodome PyAutoGUI >/dev/null 2>&1
+
+echo "Appending path to shell rc files..."
+LINE="export PATH=\"$PWD:\$PATH\""
+
+# List of common rc files
+RC_FILES=("$HOME/.bashrc" "$HOME/.bash_profile" "$HOME/.zshrc")
+
+for FILE in "${RC_FILES[@]}"; do
+    # Only append if the file exists or can be created
+    touch "$FILE" 2>/dev/null || continue
+    # Append if the line doesn't already exist
+    if ! grep -Fxq "$LINE" "$FILE"; then
+        echo "$LINE" >> "$FILE"
+        echo "Added to $FILE"
+    else
+        echo "Line already exists in $FILE"
+    fi
+done
+echo "To manually add the scripts to a new shell, append this to your rc file: export PATH=\"$PWD:\$PATH\""
