@@ -254,6 +254,26 @@ Well you can stick around and take a look at the list below, or you can go brows
 <hr/>
 
 <!---
+  VAPI Wrapper
+-->
+<h3>
+  <a href='https://github.com/leolion3/Portfolio/tree/master/Python/VAPIWrapper' target='_blank' id='python-vapi-wrapper'><img src="https://raw.githubusercontent.com/leolion3/Portfolio/master/html/vapi.svg" style="height: 24px; vertical-align: middle"> Python VAPI API Wrapper <i class="fa fa-external-link"></i></a>
+</h3>
+
+<details>
+  <summary>
+    <b style="color: purple;">Click to view Details</b>
+  </summary>
+  <div>
+    {% capture p1 %}{% include_relative Python/VAPIWrapper/README.md %}{% endcapture %}
+    {{ p1 | markdownify }}
+  </div>
+  <a href="#python-vapi-wrapper">Back to Top</a>
+</details>
+
+<hr/>
+
+<!---
   Thread-Safe Queue
 -->
 <h3>
