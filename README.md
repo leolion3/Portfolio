@@ -1106,6 +1106,9 @@ Well you can stick around and take a look at the list below, or you can go brows
     <div>
         <img src="https://github.com/leolion3/advent-of-code-2023/assets/45939246/1121e7ce-c1cd-4b94-9f5d-f7ff8a5c65d9" alt="Banner from https://blog.pythondiscord.com/advent-of-code-2020/" />
     </div>
+	<h4>
+      <a href="https://github.com/leolion3/advent-of-code-2025" target="_blank" rel="noopener noreferrer" id="aoc2025"><i class="fa-solid fa-tree"></i> Advent of Code 2025 (Python) <i class="fa fa-external-link"></i></a>
+    </h4>
     <h4>
       <a href="https://github.com/leolion3/advent-of-code-2024" target="_blank" rel="noopener noreferrer" id="aoc2024"><i class="fa-solid fa-tree"></i> Advent of Code 2024 (Python) <i class="fa fa-external-link"></i></a>
     </h4>
