@@ -47,7 +47,7 @@ echo "Installing python packages..."
 # Installts pyperclip for genpass/passtransfer, 
 # cryptodome for password vault
 # and pyautogui for keepbusy
-pip3 install pyperclip pycryptodome PyAutoGUI >/dev/null 2>&1
+pip3 install pyperclip pycryptodome PyAutoGUI pillow >/dev/null 2>&1
 
 echo "Appending path to shell rc files..."
 LINE="export PATH=\"$PWD:\$PATH\""

@@ -1,0 +1,43 @@
+#!/usr/bin/env python3
+from PIL import Image
+from sys import argv
+from typing import List
+
+
+err = '[PDF Merger] Usage: merge_pdf file_1.png, [file_2.png], [...], [output.pdf]'
+
+if len(argv) < 2:
+    print(err)
+    exit(1)
+
+image_files: List[str] = []
+output_filename: str = 'output.pdf'
+custom_name: bool = False
+
+for arg in argv:
+    if '.' not in arg:
+        continue
+    if '.pdf' in arg:
+        output_filename = arg
+        custom_name = True
+    elif arg.lower().split('.')[-1] in ['png', 'jpeg', 'jpg']:
+        image_files.append(arg) 
+
+if not len(image_files):
+    print(err)
+    exit(1)
+
+if not custom_name:
+    output_filename = '.'.join(image_files[0].split('.')[0:-1]) + '.pdf'
+
+images = [Image.open(f).convert("RGB") for f in image_files]
+first_image = images[0]
+
+first_image.save(
+    output_filename,
+    save_all=True,
+    append_images=images[1:],
+    optimize=True
+)
+
+print("[PDF Merger] PDF created:", output_filename)

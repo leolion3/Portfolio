@@ -36,6 +36,7 @@ The following commands are included:
 | gdiff            | alias   | `git alias [args]`                                                                    |
 | merge            | alias   | `git merge [args]`                                                                    |
 | p                | alias   | `git pull`                                                                            |
+| pdfmerge         | script  | `pdfmerge file_1.png [file_2.jpeg] [file_3.jpg] [...] [output_file.pdf]`              |
 | s                | alias   | `git status`                                                                          |
 | sts              | alias   | `git stash [args]`                                                                    |
 | lg               | alias   | `git lg` from [johanmeiring](https://gist.github.com/johanmeiring/3002458)            |
