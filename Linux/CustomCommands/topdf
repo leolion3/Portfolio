@@ -93,7 +93,7 @@ def _get_css() -> str:
     return """
         @page {
             size: A4;
-            margin: 25mm 15mm;
+            margin: 15mm 15mm;
             background-color: #f0f4f8; /* Grey background outside the paper */
             
             /* --- ADDITION 4: Page Numbers --- */
@@ -109,7 +109,7 @@ def _get_css() -> str:
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             color: #2c3e50;
             background-color: #ffffff; /* White paper background */
-            padding: 20mm 15mm;
+            padding: 15mm 15mm;
             font-size: 10.5pt;
             line-height: 1.6;
         }
@@ -118,7 +118,7 @@ def _get_css() -> str:
         /* position: fixed makes it repeat on every page in WeasyPrint */
         .logo-top-right {
             position: fixed;
-            top: -20mm;      /* Pushes it UP 20mm into the 25mm top grey margin */
+            top: -15mm;      /* Pushes it UP 20mm into the 25mm top grey margin */
             right: 0mm;    /* Pushes it RIGHT 12mm into the 15mm right grey margin */
             width: 64px;     /* Kept slightly smaller than 15mm to avoid clipping */
             height: 64px;
