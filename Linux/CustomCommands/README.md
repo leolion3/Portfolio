@@ -53,3 +53,4 @@ The following commands are included:
 | pv               | script  | [Python password vault](https://github.com/leolion3/Portfolio/blob/master/Python/PasswordVault/passwordVault.py) |
 | serve            | alias   | `python3 -m http.server`                                                              |
 | wd               | alias   | `open .` - opens current working directory in default window manager                  |
+| topdf            | script  | Renders a given markdown file as PDF. Requires python libs: `markdown pygments weasyprint` and `pango` (`brew install pango`)|
