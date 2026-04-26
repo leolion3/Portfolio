@@ -17,6 +17,18 @@ from typing import List
 import argparse
 import os
 import sys
+
+# --- MAC ARM64 FIX ---
+# We inject the Homebrew path directly into the process environment 
+# BEFORE importing weasyprint.
+if sys.platform == "darwin":
+    homebrew_lib = "/opt/homebrew/lib"
+    if os.path.exists(homebrew_lib):
+        # 1. Update the DLL search path for cffi
+        os.environ["DYLD_LIBRARY_PATH"] = f"{homebrew_lib}:{os.environ.get('DYLD_LIBRARY_PATH', '')}"
+        # 2. Add to PATH just in case
+        os.environ["PATH"] = f"{homebrew_lib}:{os.environ.get('PATH', '')}"
+
 import re
 import urllib.parse
 import urllib.request
