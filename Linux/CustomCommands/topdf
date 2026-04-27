@@ -89,11 +89,11 @@ def _fetch_math_base64(math_str: str) -> str:
 def _apply_mathjax(md_text: str) -> str:
     def _repl_block(m):
         b64_img = _fetch_math_base64(m.group(1))
-        return f'<span style="display:block; text-align:center; margin: 15px 0;"><img src="{b64_img}" style="max-width: 100%;" alt="Block Math" /></span>'
+        return f'<span style="display:block; text-align:center; margin: 15px 0;"><img src="{b64_img}" style="height: 1em; max-width: 100%;" alt="Block Math" /></span>'
     md_text = re.sub(r'(?<!\\)\$\$(.*?)(?<!\\)\$\$', _repl_block, md_text, flags=re.DOTALL)
     def _repl_inline(m):
         b64_img = _fetch_math_base64(m.group(1))
-        return f'<img style="vertical-align:middle; height: 1.5em;" src="{b64_img}" alt="Inline Math" />'
+        return f'<img style="vertical-align: text-bottom; height: 1em; margin: 0 2px;" src="{b64_img}" alt="Inline Math" />'
     return re.sub(r'(?<!\\)\$(?!\s)([^$\n]+?)(?<!\s)(?<!\\)\$', _repl_inline, md_text)
 
 
