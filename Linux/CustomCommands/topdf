@@ -65,7 +65,8 @@ def _get_md_text(input_file) -> str:
 
 
 def _apply_page_breaks(md_text: str) -> str:
-    return md_text.replace(r'\newpage', '<div style="page-break-before: always;"></div>')
+    md_text = md_text.replace(r'\newpage', '<div style="page-break-before: always;"></div>')
+    return md_text.replace(r'\n', '<br/>')
 
 
 def _fetch_math_base64(math_str: str) -> str:
@@ -275,12 +276,13 @@ def _apply_table_alignment(html_body: str) -> str:
     return re.sub(right_pattern, r'<td style="text-align: right;">\1</td>', html_body, flags=re.DOTALL)
 
 
-def convert_md_to_pdf(input_file, output_file, logo) -> None:
+def convert_md_to_pdf(input_file, output_file, logo, css) -> None:
     """
     Converts the given markdown file to pdf.
     :param input_file: Markdown input file path.
     :param output_file: PDF output file path.
     :param logo: (Optional) Path to image file to include as logo.
+    :param css: (Optional) Custom css stylesheet.
     :return:
     """
     _ensure_exists(input_file=input_file)
@@ -289,12 +291,15 @@ def convert_md_to_pdf(input_file, output_file, logo) -> None:
     md_text = _apply_page_breaks(md_text=md_text)
     md_text = _apply_mathjax(md_text=md_text)
     
-    extensions: List[str] = ['fenced_code', 'codehilite', 'tables', 'sane_lists']
+    extensions: List[str] = ['fenced_code', 'codehilite', 'tables', 'sane_lists', 'attr_list']
     html_body: str = _to_html(md_text=md_text, extensions=extensions)
     html_body = _apply_table_alignment(html_body)
     
     pygments_css: str = HtmlFormatter(style='default').get_style_defs('.codehilite')
     custom_css: str = _get_css()
+    if css:
+        custom_css = _get_md_text(input_file=css)
+    
     logo_html: str = _get_logo_html(logo)
 
     full_html = _generate_html_output(
@@ -316,9 +321,10 @@ def main():
     parser.add_argument('-i', '--input', required=True, help="Path to the input Markdown file (.md)")
     parser.add_argument('-o', '--output', required=True, help="Path to the output PDF file (.pdf)")
     parser.add_argument('-l', '--logo', required=False, help="Path to the custom logo image file.")
+    parser.add_argument('-s', '--css', required=False, help="Path to the custom CSS stylesheet.")
 
     args = parser.parse_args()
-    convert_md_to_pdf(args.input, args.output, args.logo)
+    convert_md_to_pdf(args.input, args.output, args.logo, args.css)
 
 if __name__ == "__main__":
     main()
