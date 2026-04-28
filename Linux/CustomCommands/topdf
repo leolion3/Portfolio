@@ -227,9 +227,14 @@ def _get_css() -> str:
             width: 100%;
             margin: 20px 0;
         }
+        th {
+            text-align: center;
+        }
         th, td {
             border: 1px solid #ddd;
             padding: 10px;
+        }
+        td {
             text-align: left;
         }
         th { background-color: #f2f6f9; color: #0d3b66; font-weight: bold; }
@@ -263,6 +268,13 @@ def _render_pdf(html: str, input_file_path: str, output_file_path: str) -> None:
     print("PDF generated successfully.")
 
 
+def _apply_table_alignment(html_body: str) -> str:
+    centered_pattern = r'<td>\s*\\c\s*(.*?)</td>'
+    html_body = re.sub(centered_pattern, r'<td style="text-align: center;">\1</td>', html_body, flags=re.DOTALL)
+    right_pattern = r'<td>\s*\\r\s*(.*?)</td>'
+    return re.sub(right_pattern, r'<td style="text-align: right;">\1</td>', html_body, flags=re.DOTALL)
+
+
 def convert_md_to_pdf(input_file, output_file, logo) -> None:
     """
     Converts the given markdown file to pdf.
@@ -279,6 +291,7 @@ def convert_md_to_pdf(input_file, output_file, logo) -> None:
     
     extensions: List[str] = ['fenced_code', 'codehilite', 'tables', 'sane_lists']
     html_body: str = _to_html(md_text=md_text, extensions=extensions)
+    html_body = _apply_table_alignment(html_body)
     
     pygments_css: str = HtmlFormatter(style='default').get_style_defs('.codehilite')
     custom_css: str = _get_css()
