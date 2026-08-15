@@ -265,7 +265,8 @@ def _generate_html_output(custom_css: str, pygments_css: str, logo_html: str, ht
 
 def _render_pdf(html: str, input_file_path: str, output_file_path: str) -> None:
     print(f"Converting '{input_file_path}' to '{output_file_path}'...")
-    HTML(string=html).write_pdf(output_file_path)
+    base_dir = os.path.abspath(os.path.dirname(input_file_path))
+    HTML(string=html, base_url=base_dir).write_pdf(output_file_path)
     print("PDF generated successfully.")
 
 
